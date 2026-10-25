@@ -25,6 +25,9 @@ from sobs import config  # noqa: E402
 SITE = config.ROOT / "site"
 PORT = 8791
 
+# Если передан URL — проверяем развёрнутый сайт, иначе поднимаем локальный сервер.
+TARGET = sys.argv[1] if len(sys.argv) > 1 else None
+
 
 def serve() -> None:
     handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(SITE))
@@ -33,8 +36,12 @@ def serve() -> None:
         httpd.serve_forever()
 
 
-threading.Thread(target=serve, daemon=True).start()
-time.sleep(0.6)
+if TARGET is None:
+    threading.Thread(target=serve, daemon=True).start()
+    time.sleep(0.6)
+    URL = f"http://127.0.0.1:{PORT}/"
+else:
+    URL = TARGET
 
 errors: list[str] = []
 with sync_playwright() as pw:
@@ -45,7 +52,7 @@ with sync_playwright() as pw:
         lambda m: errors.append(f"{m.type}: {m.text}") if m.type == "error" else None,
     )
     page.on("pageerror", lambda e: errors.append(f"pageerror: {e}"))
-    page.goto(f"http://127.0.0.1:{PORT}/", wait_until="load", timeout=60000)
+    page.goto(URL, wait_until="load", timeout=60000)
     page.wait_for_timeout(5000)
 
     counts = {
