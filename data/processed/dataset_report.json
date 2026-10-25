@@ -207,7 +207,7 @@
   "season": "autumn",
   "year": 2026,
   "chosen_source": "live_endpoint",
-  "snapshot": "2026-10-25T11:29:15+00:00",
+  "snapshot": "2026-10-25T11:42:20+00:00",
   "n_appids": 7304,
   "expected": 7240,
   "status": "ok",
@@ -221,7 +221,7 @@
    {
     "source": "live_endpoint",
     "n": 7304,
-    "snapshot": "2026-10-25T11:29:15+00:00"
+    "snapshot": "2026-10-25T11:42:20+00:00"
    }
   ]
  }
