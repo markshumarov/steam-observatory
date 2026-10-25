@@ -1,70 +1,95 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Steam Observatory — Steam Next Fest в цифрах</title>
+<title>Steam Observatory — Steam Next Fest in numbers</title>
+<meta name="description" content="Steam Next Fest lineups, tag saturation and demo concurrent players, built from public Steam data and Internet Archive snapshots.">
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-  <h1>Steam Observatory</h1>
-  <p class="lede">Цифры первичны: составы фестивалей Steam Next Fest, насыщенность тегов
-  и игроки в демо. RU/EN. <a href="https://github.com/markshumarov/steam-observatory">Исходные данные</a>.</p>
-  <nav>
-    <a href="#editions">Издания</a>
-    <a href="#tags">Теги</a>
-    <a href="#ccu">Демо</a>
-    <a href="#about">Методология</a>
+  <div class="topline">
+    <a class="brand" href="./"><span class="dot"></span>Steam Observatory</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="ru">RU</button>
+    </div>
+  </div>
+  <p class="lede"><span data-i18n="lede"></span>
+    <a href="https://github.com/markshumarov/steam-observatory" data-i18n="data_link"></a>.</p>
+  <nav class="tabs">
+    <a href="#editions" data-i18n="nav_editions"></a>
+    <a href="#tags" data-i18n="nav_tags"></a>
+    <a href="#ccu" data-i18n="nav_ccu"></a>
+    <a href="#about" data-i18n="nav_about"></a>
   </nav>
 </header>
 
 <main>
   <section id="editions">
-    <h2>Участники по изданиям</h2>
-    <p class="hint">Синие столбцы — финальный состав, серая линия с точками — зарегистрировавшиеся
-    (press preview, где архив сохранил), красные точки — контрольные данные GameDiscoverCo.
-    Издания с расхождением с контролем больше 25% не публикуются.</p>
+    <h2 data-i18n="editions_title"></h2>
+    <p class="hint" data-i18n="editions_hint"></p>
+    <div class="legend">
+      <span><i class="sw sw-final"></i><span data-i18n="legend_final"></span></span>
+      <span><i class="sw sw-preview"></i><span data-i18n="legend_preview"></span></span>
+      <span><i class="sw sw-control"></i><span data-i18n="legend_control"></span></span>
+    </div>
     <div id="chart-editions" class="chart"></div>
     <div id="table-editions" class="table"></div>
   </section>
 
   <section id="tags">
-    <h2>Насыщенность тегов</h2>
-    <p class="hint">Клик по тегу добавляет или убирает его. Доля считается среди участников издания,
-    поэтому рост поля не искажает картину.</p>
-    <div id="tag-picker" class="chips"></div>
+    <h2 data-i18n="tags_title"></h2>
+    <p class="hint" data-i18n="tags_hint"></p>
+    <div class="toolbar">
+      <input id="tag-search" type="search" autocomplete="off">
+      <span id="tag-count" class="counter"></span>
+      <button id="tag-clear" type="button" class="ghost" data-i18n="tags_clear"></button>
+    </div>
+    <div id="tag-picker" class="chips" role="group"></div>
     <div id="chart-tags" class="chart"></div>
+    <h3 data-i18n="compare_title"></h3>
     <div class="row">
-      <label>Издание A <select id="fest-a"></select></label>
-      <label>Издание B <select id="fest-b"></select></label>
+      <label><span data-i18n="edition_a"></span> <select id="fest-a"></select></label>
+      <label><span data-i18n="edition_b"></span> <select id="fest-b"></select></label>
     </div>
     <div id="table-tags" class="table"></div>
   </section>
 
   <section id="ccu">
-    <h2>Игроки в демо: октябрь 2026</h2>
-    <p class="hint">Пик одновременных игроков по каждому демо. Сбор идёт непрерывно до конца
-    фестиваля (26 октября, 17:00 UTC), поэтому цифры растут.</p>
-    <div id="ccu-meta" class="hint"></div>
-    <div id="chart-ccu" class="chart"></div>
+    <h2 data-i18n="ccu_title"></h2>
+    <p class="hint" data-i18n="ccu_hint"></p>
+    <div id="kpis" class="kpis"></div>
+    <div class="split">
+      <div class="col">
+        <h3 data-i18n="hist_title"></h3>
+        <div id="chart-hist" class="chart"></div>
+      </div>
+      <div class="col">
+        <h3 id="ccu-chart-title"></h3>
+        <div class="toolbar">
+          <input id="ccu-search" type="search" autocomplete="off">
+          <select id="ccu-sort"></select>
+          <select id="ccu-limit"></select>
+          <a id="ccu-csv" class="ghost" href="data/ccu.csv" download></a>
+        </div>
+        <div id="chart-ccu" class="chart"></div>
+      </div>
+    </div>
+    <div id="table-ccu" class="table scroll"></div>
   </section>
 
   <section id="about">
-    <h2>Методология</h2>
-    <p>Состав изданий: публичный эндпоинт страницы фестиваля и архивные копии Internet Archive.
-    Игроки: публичный API Steam. Контроль качества: число участников сверено с GameDiscoverCo
-    и How To Market A Game (расхождение ≤1% для изданий 2024–2026).</p>
-    <p>Вишлисты Steam не публикует: любые числа вишлистов являются оценками и так помечаются.</p>
-    <p>Steam является торговой маркой Valve Corporation; проект не аффилирован с Valve.</p>
+    <h2 data-i18n="about_title"></h2>
+    <p data-i18n="about_p1"></p>
+    <p data-i18n="about_p2"></p>
+    <p data-i18n="about_p3"></p>
   </section>
 </main>
 
-<footer>
-  <p>Steam Observatory · данные обновляются скриптами из репозитория · 2026</p>
-</footer>
-
+<footer><p id="footer"></p></footer>
 <script type="module" src="app.js"></script>
 </body>
 </html>

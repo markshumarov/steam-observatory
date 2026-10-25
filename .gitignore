@@ -2,6 +2,11 @@
 data/raw/
 data/cache/
 data/processed/*.tmp
+data/processed/site_screenshot*.png
+# Каталог Gamalytic: сторонний снимок на 130+ тысяч игр (~43 МБ).
+# Скачивается скриптом ingest_gamalytic.py, в репозиторий не кладём;
+# результаты обогащения уже лежат в nextfest_games.jsonl.
+data/processed/gamalytic_games.jsonl
 
 # Python
 __pycache__/

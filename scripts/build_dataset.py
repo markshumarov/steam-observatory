@@ -79,9 +79,12 @@ def load_candidates() -> dict[str, list[dict]]:
         if rec.get("status") != "ok" or "games" not in rec:
             continue
         games = rec["games"]
+        strategy = rec.get("strategy") or "wayback_html"
         cands[slug_of(path)].append(
             {
-                "source": "wayback_html",
+                # источник важен: по нему отличаем полный HTML-состав от
+                # реконструкции по appid-срезам (`wayback_html_ids`)
+                "source": strategy if strategy.startswith("wayback_html_ids") else "wayback_html",
                 "appids": [g["appid"] for g in games],
                 "tag_facets": {},
                 "snapshot": rec.get("snapshot", {}).get("iso"),
@@ -143,6 +146,11 @@ def main() -> int:
             if isinstance(item, dict) and "tagid" in item:
                 tags[int(item["tagid"])] = item.get("name", "")
 
+    extra_file = SRC / "_tags_extra.json"
+    if extra_file.exists():
+        for tid, name in json.loads(extra_file.read_text(encoding="utf-8")).items():
+            tags.setdefault(int(tid), name)
+
     rows_games = rows_facets = 0
     report = []
 
@@ -157,9 +165,35 @@ def main() -> int:
 
             exp_check = fest.expected if fest else None
             n_best = len(best["appids"])
+            # Составы, восстановленные по appid из архивных снапшотов, заведомо
+            # неполные: страница отдавала только первый срез списка. Если есть
+            # контрольное число и покрытие ниже 90% — это «partial» (показываем
+            # как «≥ N»), если контроля нет — «reconstructed» (полнота неизвестна).
+            ids_based = best["source"].startswith("wayback_html_ids")
+            partial = ids_based and bool(exp_check) and n_best < 0.9 * exp_check
+            reconstructed = ids_based and not exp_check
+            quality = "partial" if partial else "reconstructed" if reconstructed else "full"
             # Контроль качества: если состав расходится с контрольным числом больше
             # чем на 25%, он неполный или захватывает лишние записи — не публикуем.
-            unreliable = bool(exp_check) and abs(n_best - exp_check) / exp_check > 0.25
+            unreliable = (
+                bool(exp_check)
+                and abs(n_best - exp_check) / exp_check > 0.25
+                and quality == "full"
+            )
+
+            # Фасеты тегов: у XHR-снимков они есть готовыми, у HTML-составов
+            # считаем сами по тегам игр — иначе издания 2021 и частичные
+            # остаются без раздела «насыщенность тегов».
+            facet_counts: dict = dict(best.get("tag_facets") or {})
+            facets_from = "xhr" if facet_counts else "games"
+            if not facet_counts:
+                facet_counts = dict(
+                    collections.Counter(
+                        int(tid)
+                        for g in best.get("games", [])
+                        for tid in (g.get("tag_ids") or [])
+                    )
+                )
 
             for appid in ([] if unreliable else best["appids"]):
                 meta = game_meta.get(appid, {})
@@ -189,7 +223,7 @@ def main() -> int:
                 )
                 rows_games += 1
 
-            for tid, cnt in ({} if unreliable else (best.get("tag_facets") or {})).items():
+            for tid, cnt in ({} if unreliable else facet_counts).items():
                 ff.write(
                     json.dumps(
                         {
@@ -210,6 +244,7 @@ def main() -> int:
                 {
                     "fest": slug,
                     "label_ru": fest.label_ru if fest else slug,
+                    "label_en": fest.label_en if fest else slug,
                     "season": fest.season if fest else None,
                     "year": fest.year if fest else None,
                     "chosen_source": best["source"],
@@ -217,6 +252,8 @@ def main() -> int:
                     "n_appids": n,
                     "expected": exp,
                     "status": "unreliable" if unreliable else "ok",
+                    "quality": quality,
+                    "facets_from": facets_from,
                     "diff_pct": round(100 * (n - exp) / exp, 1) if exp and n else None,
                     "candidates": [
                         {"source": c["source"], "n": len(c["appids"]), "snapshot": c.get("snapshot")}

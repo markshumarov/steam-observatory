@@ -1,7 +1,52 @@
 [
  {
+  "fest": "feb2022",
+  "label_ru": "Февраль 2022",
+  "label_en": "February 2022",
+  "season": "winter",
+  "year": 2022,
+  "chosen_source": "wayback_html_ids+gamalytic",
+  "snapshot": null,
+  "n_appids": 324,
+  "expected": null,
+  "status": "ok",
+  "quality": "reconstructed",
+  "facets_from": "games",
+  "diff_pct": null,
+  "candidates": [
+   {
+    "source": "wayback_html_ids+gamalytic",
+    "n": 324,
+    "snapshot": null
+   }
+  ]
+ },
+ {
+  "fest": "feb2023",
+  "label_ru": "Февраль 2023",
+  "label_en": "February 2023",
+  "season": "winter",
+  "year": 2023,
+  "chosen_source": "wayback_html_ids+gamalytic",
+  "snapshot": null,
+  "n_appids": 335,
+  "expected": null,
+  "status": "ok",
+  "quality": "reconstructed",
+  "facets_from": "games",
+  "diff_pct": null,
+  "candidates": [
+   {
+    "source": "wayback_html_ids+gamalytic",
+    "n": 335,
+    "snapshot": null
+   }
+  ]
+ },
+ {
   "fest": "feb2025",
   "label_ru": "Февраль 2025",
+  "label_en": "February 2025",
   "season": "winter",
   "year": 2025,
   "chosen_source": "wayback_xhr:1352159",
@@ -9,6 +54,8 @@
   "n_appids": 12,
   "expected": 2337,
   "status": "unreliable",
+  "quality": "full",
+  "facets_from": "xhr",
   "diff_pct": -99.5,
   "candidates": [
    {
@@ -26,6 +73,7 @@
  {
   "fest": "feb2026",
   "label_ru": "Февраль 2026",
+  "label_en": "February 2026",
   "season": "winter",
   "year": 2026,
   "chosen_source": "wayback_xhr:1420606",
@@ -33,6 +81,8 @@
   "n_appids": 3892,
   "expected": 3536,
   "status": "ok",
+  "quality": "full",
+  "facets_from": "xhr",
   "diff_pct": 10.1,
   "candidates": [
    {
@@ -50,6 +100,7 @@
  {
   "fest": "jun2021",
   "label_ru": "Июнь 2021",
+  "label_en": "June 2021",
   "season": "summer",
   "year": 2021,
   "chosen_source": "wayback_html",
@@ -57,6 +108,8 @@
   "n_appids": 611,
   "expected": null,
   "status": "ok",
+  "quality": "full",
+  "facets_from": "games",
   "diff_pct": null,
   "candidates": [
    {
@@ -67,8 +120,53 @@
   ]
  },
  {
+  "fest": "jun2022",
+  "label_ru": "Июнь 2022",
+  "label_en": "June 2022",
+  "season": "summer",
+  "year": 2022,
+  "chosen_source": "wayback_html_ids+gamalytic",
+  "snapshot": null,
+  "n_appids": 343,
+  "expected": null,
+  "status": "ok",
+  "quality": "reconstructed",
+  "facets_from": "games",
+  "diff_pct": null,
+  "candidates": [
+   {
+    "source": "wayback_html_ids+gamalytic",
+    "n": 343,
+    "snapshot": null
+   }
+  ]
+ },
+ {
+  "fest": "jun2023",
+  "label_ru": "Июнь 2023",
+  "label_en": "June 2023",
+  "season": "summer",
+  "year": 2023,
+  "chosen_source": "wayback_html_ids+gamalytic",
+  "snapshot": null,
+  "n_appids": 392,
+  "expected": 887,
+  "status": "ok",
+  "quality": "partial",
+  "facets_from": "games",
+  "diff_pct": -55.8,
+  "candidates": [
+   {
+    "source": "wayback_html_ids+gamalytic",
+    "n": 392,
+    "snapshot": null
+   }
+  ]
+ },
+ {
   "fest": "jun2025",
   "label_ru": "Июнь 2025",
+  "label_en": "June 2025",
   "season": "summer",
   "year": 2025,
   "chosen_source": "wayback_xhr:1384086",
@@ -76,6 +174,8 @@
   "n_appids": 2635,
   "expected": 2645,
   "status": "ok",
+  "quality": "full",
+  "facets_from": "xhr",
   "diff_pct": -0.4,
   "candidates": [
    {
@@ -103,6 +203,7 @@
  {
   "fest": "jun2026",
   "label_ru": "Июнь 2026",
+  "label_en": "June 2026",
   "season": "summer",
   "year": 2026,
   "chosen_source": "wayback_xhr:1440505",
@@ -110,6 +211,8 @@
   "n_appids": 4401,
   "expected": 4382,
   "status": "ok",
+  "quality": "full",
+  "facets_from": "xhr",
   "diff_pct": 0.4,
   "candidates": [
    {
@@ -127,25 +230,73 @@
  {
   "fest": "oct2021",
   "label_ru": "Октябрь 2021",
+  "label_en": "October 2021",
   "season": "autumn",
   "year": 2021,
-  "chosen_source": "wayback_html",
-  "snapshot": "2021-10-04T05:43:23Z",
-  "n_appids": 59,
+  "chosen_source": "wayback_html_ids+gamalytic",
+  "snapshot": null,
+  "n_appids": 598,
   "expected": null,
   "status": "ok",
+  "quality": "reconstructed",
+  "facets_from": "games",
   "diff_pct": null,
   "candidates": [
    {
-    "source": "wayback_html",
-    "n": 59,
-    "snapshot": "2021-10-04T05:43:23Z"
+    "source": "wayback_html_ids+gamalytic",
+    "n": 598,
+    "snapshot": null
+   }
+  ]
+ },
+ {
+  "fest": "oct2022",
+  "label_ru": "Октябрь 2022",
+  "label_en": "October 2022",
+  "season": "autumn",
+  "year": 2022,
+  "chosen_source": "wayback_html_ids+gamalytic",
+  "snapshot": null,
+  "n_appids": 301,
+  "expected": null,
+  "status": "ok",
+  "quality": "reconstructed",
+  "facets_from": "games",
+  "diff_pct": null,
+  "candidates": [
+   {
+    "source": "wayback_html_ids+gamalytic",
+    "n": 301,
+    "snapshot": null
+   }
+  ]
+ },
+ {
+  "fest": "oct2023",
+  "label_ru": "Октябрь 2023",
+  "label_en": "October 2023",
+  "season": "autumn",
+  "year": 2023,
+  "chosen_source": "wayback_html_ids+gamalytic",
+  "snapshot": null,
+  "n_appids": 301,
+  "expected": 972,
+  "status": "ok",
+  "quality": "partial",
+  "facets_from": "games",
+  "diff_pct": -69.0,
+  "candidates": [
+   {
+    "source": "wayback_html_ids+gamalytic",
+    "n": 301,
+    "snapshot": null
    }
   ]
  },
  {
   "fest": "oct2024",
   "label_ru": "Октябрь 2024",
+  "label_en": "October 2024",
   "season": "autumn",
   "year": 2024,
   "chosen_source": "wayback_xhr:1344427",
@@ -153,6 +304,8 @@
   "n_appids": 3197,
   "expected": 3008,
   "status": "ok",
+  "quality": "full",
+  "facets_from": "xhr",
   "diff_pct": 6.3,
   "candidates": [
    {
@@ -175,6 +328,7 @@
  {
   "fest": "oct2025",
   "label_ru": "Октябрь 2025",
+  "label_en": "October 2025",
   "season": "autumn",
   "year": 2025,
   "chosen_source": "wayback_xhr:1404384",
@@ -182,6 +336,8 @@
   "n_appids": 2956,
   "expected": 2963,
   "status": "ok",
+  "quality": "full",
+  "facets_from": "xhr",
   "diff_pct": -0.2,
   "candidates": [
    {
@@ -204,6 +360,7 @@
  {
   "fest": "oct2026",
   "label_ru": "Октябрь 2026",
+  "label_en": "October 2026",
   "season": "autumn",
   "year": 2026,
   "chosen_source": "live_endpoint",
@@ -211,6 +368,8 @@
   "n_appids": 7304,
   "expected": 7240,
   "status": "ok",
+  "quality": "full",
+  "facets_from": "xhr",
   "diff_pct": 0.9,
   "candidates": [
    {

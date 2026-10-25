@@ -39,9 +39,13 @@ def main() -> int:
         steps += [
             ("составы из Wayback (HTML, 2021)", ["scripts/backfill_nextfest.py", "--candidates", str(args.candidates)]),
             ("составы из Wayback (XHR, 2024+)", ["scripts/backfill_lineup_ajax.py", "--fetch"]),
+            # appid-срезы: страницы 2021–2024 отдавали в HTML только часть списка
+            ("appid-срезы Wayback (2021–2024)", ["scripts/backfill_ids.py"]),
         ]
     steps += [
         ("состав текущего издания", ["scripts/ingest_nextfest_lineup.py", args.slug]),
+        # названия и теги к восстановленным составам: Gamalytic + Steam appdetails
+        ("обогащение восстановленных составов", ["scripts/enrich_lineup_ids.py"]),
         ("единый датасет", ["scripts/build_dataset.py"]),
         ("данные сайта", ["scripts/build_site_data.py"]),
         ("отчёт по тегам", ["scripts/report_tags.py", args.slug, "--top", "15"]),

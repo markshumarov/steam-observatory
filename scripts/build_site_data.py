@@ -99,16 +99,23 @@ def main() -> int:
                 preview = {"n": c["n"], "source": c["source"], "snapshot": c.get("snapshot")}
                 break
 
-        note = None
-        if r["fest"] == "oct2021":
-            note = "частичный состав: страница 2021 года отдавалась сервером не полностью"
+        note_ru = None
+        note_en = None
+        if r.get("quality") == "partial":
+            note_ru = "частичный состав: архивная страница отдавала только первую часть списка"
+            note_en = "partial lineup: the archived page served only the first slice"
+        elif r.get("quality") == "reconstructed":
+            note_ru = "состав восстановлен по срезам архивной страницы; полнота неизвестна"
+            note_en = "rebuilt from archived page slices; completeness unknown"
         elif r.get("diff_pct") is not None and abs(r["diff_pct"]) > 5:
-            note = "расхождение с контролем больше 5%"
+            note_ru = f"расхождение с контролем {r['diff_pct']:+.1f}%"
+            note_en = f"{r['diff_pct']:+.1f}% off control"
 
         fests.append(
             {
                 "slug": r["fest"],
                 "label_ru": r["label_ru"],
+                "label_en": r.get("label_en") or r["label_ru"],
                 "season": r["season"],
                 "year": r["year"],
                 "n_final": final_n,
@@ -116,7 +123,10 @@ def main() -> int:
                 "expected": r["expected"],
                 "diff_pct": r["diff_pct"],
                 "source": r["chosen_source"],
-                "note": note,
+                "quality": r.get("quality", "full"),
+                "facets_from": r.get("facets_from"),
+                "note_ru": note_ru,
+                "note_en": note_en,
             }
         )
     fests.sort(key=lambda f: (f["year"] or 0, f["slug"]))
@@ -126,6 +136,25 @@ def main() -> int:
     if tags_path.exists():
         raw = json.loads(tags_path.read_text(encoding="utf-8"))
         tags = {str(k): v for k, v in raw.items() if v}
+    extra_tags = config.OUT_DIR / "nextfest" / "_tags_extra.json"
+    if extra_tags.exists():
+        for tid, name in json.loads(extra_tags.read_text(encoding="utf-8")).items():
+            tags.setdefault(str(tid), name)
+
+    # База для долей тегов. Когда фасеты пришли готовыми из Steam (XHR/живой
+    # эндпоинт), знаменатель — весь состав. Когда фасеты посчитаны по тегам игр
+    # (2021 и реконструкции), знаменатель — только игры с известными тегами.
+    tag_basis: dict[str, int] = collections.Counter()
+    games_path = config.OUT_DIR / "nextfest_games.jsonl"
+    if games_path.exists():
+        for line in games_path.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            rec = json.loads(line)
+            if rec.get("tags"):
+                tag_basis[rec["fest"]] += 1
+    for f in fests:
+        f["tag_basis"] = tag_basis.get(f["slug"]) if f.get("facets_from") == "games" else None
 
     tag_counts: dict[str, dict[str, int]] = collections.defaultdict(dict)
     facets_path = config.OUT_DIR / "nextfest_tag_facets.jsonl"
@@ -164,7 +193,12 @@ def main() -> int:
         for line in ccu_path.read_text(encoding="utf-8").splitlines():
             if not line.strip():
                 continue
-            rec = json.loads(line)
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                # последняя строка может быть недописана: поллер пишет в файл
+                # параллельно со сборкой
+                continue
             samples += 1
             appid = int(rec["appid"])
             peaks[appid] = max(peaks.get(appid, 0), int(rec["players"]))
@@ -181,7 +215,9 @@ def main() -> int:
     wanted |= set(peaks)
     names_out = {str(a): names.get(a, "") for a in wanted if names.get(a)}
 
-    top = sorted(peaks.items(), key=lambda kv: -kv[1])[:500]
+    # все демо с данными, а не только верхушка: сайт должен уметь искать
+    # и сортировать по всему списку, а не показывать топ-20
+    ranked = sorted(peaks.items(), key=lambda kv: -kv[1])
     ccu_out = [
         {
             "demo_appid": appid,
@@ -189,15 +225,57 @@ def main() -> int:
             "name": names.get(demo_to_base.get(str(appid), 0), "") or names.get(appid, ""),
             "peak": peak,
         }
-        for appid, peak in top
+        for appid, peak in ranked
     ]
+
+    values = sorted(v for v in peaks.values() if v > 0)
+    edges = [0, 1, 10, 50, 100, 500, 1000, 5000]
+    hist = []
+    for lo, hi in zip(edges, edges[1:]):
+        hist.append(
+            {
+                "from": lo,
+                "to": hi,
+                "games": sum(1 for v in peaks.values() if (v > lo if lo else v == 0) and v <= hi),
+            }
+        )
+    hist.append({"from": edges[-1], "to": None,
+                 "games": sum(1 for v in peaks.values() if v > edges[-1])})
+    stats = {
+        "samples": samples,
+        "games": len(peaks),
+        "sum_peak": sum(peaks.values()),
+        "median": values[len(values) // 2] if values else 0,
+        "p90": values[int(len(values) * 0.9)] if values else 0,
+        "ge100": sum(1 for v in values if v >= 100),
+        "ge1000": sum(1 for v in values if v >= 1000),
+        "hist": hist,
+    }
 
     (SITE_DATA / "names.json").write_text(
         json.dumps(names_out, ensure_ascii=False), encoding="utf-8"
     )
+
+    # полная выгрузка: сайт показывает топ и таблицу, но данные не должны
+    # упираться в топ — отдаём весь список одним CSV
+    import csv as _csv
+
+    with (SITE_DATA / "ccu.csv").open("w", encoding="utf-8", newline="") as fh:
+        writer = _csv.writer(fh)
+        writer.writerow(["rank", "name", "demo_appid", "base_appid", "peak_players"])
+        for i, row in enumerate(ccu_out, 1):
+            writer.writerow(
+                [i, row["name"], row["demo_appid"], row["base_appid"] or "", row["peak"]]
+            )
     (SITE_DATA / "ccu.json").write_text(
         json.dumps(
-            {"slug": "oct2026", "samples": samples, "games": len(peaks), "top": ccu_out},
+            {
+                "slug": "oct2026",
+                "samples": samples,
+                "games": len(peaks),
+                "stats": stats,
+                "top": ccu_out,
+            },
             ensure_ascii=False,
         ),
         encoding="utf-8",
@@ -205,7 +283,7 @@ def main() -> int:
 
     print(f"изданий: {len(fests)}, тегов: {len(tags)}, "
           f"изданий с гистограммой: {len(tag_counts)}, замеров CCU: {samples}, "
-          f"названий: {len(names_out)}")
+          f"названий: {len(names_out)}, демо в CCU: {len(ccu_out)}")
     print("папка:", SITE_DATA)
     return 0
 
