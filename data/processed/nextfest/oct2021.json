@@ -1,0 +1,3413 @@
+{
+ "fest": {
+  "slug": "oct2021",
+  "label_en": "October 2021",
+  "label_ru": "Октябрь 2021",
+  "season": "autumn",
+  "year": 2021,
+  "start": "2021-10-01",
+  "end": "2021-10-07",
+  "expected_participants": null
+ },
+ "snapshot": {
+  "timestamp": "20211004054323",
+  "iso": "2021-10-04T05:43:23Z",
+  "url": "http://web.archive.org/web/20211004054323id_/https://store.steampowered.com/sale/nextfest",
+  "cdx_length": 464368
+ },
+ "page_title": "Steam Next Fest | October 2021",
+ "strategy": "json_objects[unescape]",
+ "n_games": 59,
+ "n_objects": 426,
+ "games": [
+  {
+   "appid": 729000,
+   "title": "Wytchwood",
+   "type": "game",
+   "release": "2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Story Rich",
+    "RPG",
+    "Investigation",
+    "Crafting",
+    "Conversation",
+    "Exploration",
+    "Female Protagonist",
+    "Atmospheric",
+    "Dark Fantasy",
+    "Colorful"
+   ],
+   "tag_ids": [
+    1742,
+    122,
+    8369,
+    1702,
+    15172,
+    3834,
+    7208,
+    4166,
+    4604,
+    4305
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    32644677,
+    33246218
+   ],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 864700,
+   "title": "Dinosaur Fossil Hunter",
+   "type": "game",
+   "release": "Play Prologue now | 2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Simulation",
+    "Mining",
+    "Dinosaurs",
+    "Building",
+    "Sandbox",
+    "Open World",
+    "Management",
+    "First-Person",
+    "Exploration",
+    "Realistic"
+   ],
+   "tag_ids": [
+    599,
+    5981,
+    5160,
+    1643,
+    3810,
+    1695,
+    12472,
+    3839,
+    3834,
+    4175
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    35304179,
+    33701576
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    8,
+    12,
+    22
+   ]
+  },
+  {
+   "appid": 1067360,
+   "title": "Earth From Another Sun",
+   "type": "game",
+   "release": "2022",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Mechs",
+    "Action",
+    "RPG",
+    "Action-Adventure",
+    "Online Co-Op",
+    "Open World",
+    "Multiplayer",
+    "Strategy",
+    "Action RPG",
+    "First-Person"
+   ],
+   "tag_ids": [
+    4821,
+    19,
+    122,
+    4106,
+    3843,
+    1695,
+    3859,
+    9,
+    4231,
+    3839
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    36647176
+   ],
+   "localized_langs": [
+    0,
+    6
+   ]
+  },
+  {
+   "appid": 1101790,
+   "title": "War Mongrels",
+   "type": "game",
+   "release": "Oct 19, 2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [
+    2,
+    5
+   ],
+   "tags": [
+    "Real Time Tactics",
+    "Strategy",
+    "Action",
+    "Adventure",
+    "Isometric",
+    "RTS",
+    "World War II",
+    "Realistic",
+    "War",
+    "Inventory Management"
+   ],
+   "tag_ids": [
+    3813,
+    9,
+    19,
+    21,
+    5851,
+    1676,
+    4150,
+    4175,
+    1678,
+    6276
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    32941518,
+    34306834,
+    34055943
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    12,
+    21,
+    22
+   ]
+  },
+  {
+   "appid": 1138640,
+   "title": "Hometopia",
+   "type": "game",
+   "release": "January 2022",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Immersive Sim",
+    "Life Sim",
+    "City Builder",
+    "Design & Illustration",
+    "Sandbox",
+    "Building",
+    "Crafting",
+    "Management",
+    "Base Building",
+    "God Game"
+   ],
+   "tag_ids": [
+    9204,
+    10235,
+    4328,
+    84,
+    3810,
+    1643,
+    1702,
+    12472,
+    7332,
+    5300
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    35581423
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    8,
+    12,
+    22,
+    27
+   ]
+  },
+  {
+   "appid": 1158190,
+   "title": "Do Not Buy This Game",
+   "type": "game",
+   "release": "When everything is 100% ready for you to not buy!",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Adventure",
+    "Indie",
+    "Walking Simulator",
+    "Comedy",
+    "Casual",
+    "Funny",
+    "Story Rich",
+    "Singleplayer",
+    "Narration",
+    "Parody "
+   ],
+   "tag_ids": [
+    21,
+    492,
+    5900,
+    1719,
+    597,
+    4136,
+    1742,
+    4182,
+    5094,
+    4878
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    35808725
+   ],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1163350,
+   "title": "House Flipper City",
+   "type": "game",
+   "release": "2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Simulation",
+    "Casual",
+    "Indie",
+    "Strategy",
+    "Management",
+    "Singleplayer",
+    "Design & Illustration",
+    "Base Building",
+    "Economy",
+    "Realistic"
+   ],
+   "tag_ids": [
+    599,
+    597,
+    492,
+    9,
+    12472,
+    4182,
+    84,
+    7332,
+    4695,
+    4175
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    39974703
+   ],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1211240,
+   "title": "Trifox",
+   "type": "game",
+   "release": "To Be Announced",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Twin Stick Shooter",
+    "3D Platformer",
+    "Action-Adventure",
+    "Dungeon Crawler",
+    "Adventure",
+    "Action",
+    "Top-Down Shooter",
+    "Funny",
+    "Cartoony",
+    "Cute"
+   ],
+   "tag_ids": [
+    4758,
+    5395,
+    4106,
+    1720,
+    21,
+    19,
+    4637,
+    4136,
+    4195,
+    4726
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    35211588
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    14,
+    15,
+    21,
+    22
+   ]
+  },
+  {
+   "appid": 1222290,
+   "title": "Heist Simulator",
+   "type": "game",
+   "release": "Coming Soon!",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Simulation",
+    "Heist",
+    "Puzzle",
+    "Strategy RPG",
+    "Stealth",
+    "Strategy",
+    "Tactical",
+    "Logic",
+    "Sandbox",
+    "3D"
+   ],
+   "tag_ids": [
+    599,
+    1680,
+    1664,
+    17305,
+    1687,
+    9,
+    1708,
+    6129,
+    3810,
+    4191
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    29728776
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6
+   ]
+  },
+  {
+   "appid": 1231880,
+   "title": "Haiku, the Robot",
+   "type": "game",
+   "release": "Coming soon",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": true,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Metroidvania",
+    "Adventure",
+    "Pixel Graphics",
+    "Exploration",
+    "Platformer",
+    "2D Platformer",
+    "Atmospheric",
+    "Open World",
+    "Side Scroller",
+    "Dark Fantasy"
+   ],
+   "tag_ids": [
+    1628,
+    21,
+    3964,
+    3834,
+    1625,
+    5379,
+    4166,
+    1695,
+    3798,
+    4604
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    22,
+    27
+   ]
+  },
+  {
+   "appid": 1236930,
+   "title": "Outliver: Tribulation",
+   "type": "game",
+   "release": "COMING SOON! WISHLIST NOW!",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Realistic",
+    "Military",
+    "Demons",
+    "Mythology",
+    "Atmospheric",
+    "Supernatural",
+    "Adventure",
+    "Resource Management",
+    "Indie",
+    "Singleplayer"
+   ],
+   "tag_ids": [
+    4175,
+    4168,
+    9541,
+    16094,
+    4166,
+    10808,
+    21,
+    8945,
+    492,
+    4182
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1253610,
+   "title": "Braveland Knights",
+   "type": "game",
+   "release": "2022. Wishlist and Follow",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "4 Player Local",
+    "Online Co-Op",
+    "Action Roguelike",
+    "Beat 'em up",
+    "Side Scroller",
+    "Hack and Slash",
+    "Dungeon Crawler",
+    "Roguelite",
+    "PvE",
+    "PvP"
+   ],
+   "tag_ids": [
+    4840,
+    3843,
+    42804,
+    4158,
+    3798,
+    1646,
+    1720,
+    3959,
+    6730,
+    1775
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    33224023
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    6,
+    8
+   ]
+  },
+  {
+   "appid": 1254670,
+   "title": "Night Reverie",
+   "type": "game",
+   "release": "Oct 8, 2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Exploration",
+    "Puzzle",
+    "2D",
+    "Cute",
+    "Top-Down",
+    "Relaxing",
+    "Surreal",
+    "Choices Matter",
+    "Controller",
+    "Story Rich"
+   ],
+   "tag_ids": [
+    3834,
+    1664,
+    3871,
+    4726,
+    4791,
+    1654,
+    1710,
+    6426,
+    7481,
+    1742
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    36878641,
+    9170052
+   ],
+   "localized_langs": [
+    0,
+    3,
+    6,
+    7,
+    8,
+    27
+   ]
+  },
+  {
+   "appid": 1284190,
+   "title": "The Planet Crafter",
+   "type": "game",
+   "release": "Q1 2022 ⭐ Wishlist now!",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": true,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Open World Survival Craft",
+    "Survival",
+    "Open World",
+    "Exploration",
+    "Crafting",
+    "Base Building",
+    "Adventure",
+    "Singleplayer",
+    "First-Person",
+    "Building"
+   ],
+   "tag_ids": [
+    1100689,
+    1662,
+    1695,
+    3834,
+    1702,
+    7332,
+    21,
+    4182,
+    3839,
+    1643
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    37235584
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    22
+   ]
+  },
+  {
+   "appid": 1287840,
+   "title": "Pre-Purchase Disciples: Liberation",
+   "type": "game",
+   "release": "Oct 21, 2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": 3599,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [
+    1,
+    2,
+    5
+   ],
+   "tags": [
+    "RPG",
+    "Strategy",
+    "Dark Fantasy",
+    "Tactical RPG",
+    "Female Protagonist",
+    "Multiple Endings",
+    "Turn-Based Strategy",
+    "Strategy RPG",
+    "Turn-Based Tactics",
+    "Tactical"
+   ],
+   "tag_ids": [
+    122,
+    9,
+    4604,
+    21725,
+    7208,
+    6971,
+    1741,
+    17305,
+    14139,
+    1708
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    876623
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    5,
+    6
+   ]
+  },
+  {
+   "appid": 1288390,
+   "title": "Memory Lane",
+   "type": "game",
+   "release": "2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "RPG",
+    "Indie",
+    "Turn-Based Combat",
+    "Multiple Endings",
+    "Choose Your Own Adventure",
+    "Lore-Rich",
+    "Pixel Graphics",
+    "Emotional",
+    "Choices Matter",
+    "Interactive Fiction"
+   ],
+   "tag_ids": [
+    122,
+    492,
+    4325,
+    6971,
+    4486,
+    3854,
+    3964,
+    5608,
+    6426,
+    11014
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    1
+   ]
+  },
+  {
+   "appid": 1292500,
+   "title": "Harvest Island",
+   "type": "game",
+   "release": "2022",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Farming",
+    "Exploration",
+    "Adventure",
+    "Mystery",
+    "Cute",
+    "Colorful",
+    "Casual",
+    "Farming Sim",
+    "Story Rich",
+    "Investigation"
+   ],
+   "tag_ids": [
+    4520,
+    3834,
+    21,
+    5716,
+    4726,
+    4305,
+    597,
+    87918,
+    1742,
+    8369
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    37278270
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    10,
+    12,
+    21,
+    22,
+    27
+   ]
+  },
+  {
+   "appid": 1294880,
+   "title": "Blind Fate: Edo no Yami",
+   "type": "game",
+   "release": "Q1 2022",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Cyberpunk",
+    "Exploration",
+    "Side Scroller",
+    "Hack and Slash",
+    "Souls-like",
+    "Beat 'em up",
+    "Difficult",
+    "Adventure",
+    "Action-Adventure",
+    "2.5D"
+   ],
+   "tag_ids": [
+    4115,
+    3834,
+    3798,
+    1646,
+    29482,
+    4158,
+    4026,
+    21,
+    4106,
+    4975
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    36012658,
+    37268497
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    10,
+    22,
+    27
+   ]
+  },
+  {
+   "appid": 1296610,
+   "title": "Peglin",
+   "type": "game",
+   "release": "2021",
+   "coming_soon": true,
+   "early_access": true,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": true,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Pinball",
+    "Deckbuilding",
+    "Roguelite",
+    "Perma Death",
+    "Turn-Based",
+    "Roguelike",
+    "Strategy",
+    "2D",
+    "RPG",
+    "Cute"
+   ],
+   "tag_ids": [
+    6621,
+    32322,
+    3959,
+    1759,
+    1677,
+    1716,
+    9,
+    3871,
+    122,
+    4726
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    40773884,
+    39220934
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    7,
+    10,
+    14,
+    17,
+    22,
+    27
+   ]
+  },
+  {
+   "appid": 1299540,
+   "title": "The Zone: Stalker Stories",
+   "type": "game",
+   "release": "Q3 2021",
+   "coming_soon": true,
+   "early_access": true,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": true
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Early Access",
+    "Card Battler",
+    "RPG",
+    "Story Rich",
+    "2D",
+    "Survival",
+    "Exploration",
+    "Card Game",
+    "Post-apocalyptic",
+    "Hand-drawn"
+   ],
+   "tag_ids": [
+    493,
+    791774,
+    122,
+    1742,
+    3871,
+    1662,
+    3834,
+    1666,
+    3835,
+    6815
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1302490,
+   "title": "Fractured Atmosphere",
+   "type": "game",
+   "release": "Coming Soon",
+   "coming_soon": true,
+   "early_access": true,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Early Access",
+    "Exploration",
+    "Looter Shooter",
+    "FPS",
+    "Immersive Sim",
+    "Space",
+    "Survival",
+    "Stealth",
+    "Physics",
+    "Shooter"
+   ],
+   "tag_ids": [
+    493,
+    3834,
+    353880,
+    1663,
+    9204,
+    1755,
+    1662,
+    1687,
+    3968,
+    1774
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1345270,
+   "title": "Road to Hollow Hills",
+   "type": "game",
+   "release": "Coming soon 2021",
+   "coming_soon": true,
+   "early_access": true,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [
+    2,
+    5
+   ],
+   "tags": [
+    "Adventure",
+    "Survival Horror",
+    "RPG",
+    "Action-Adventure",
+    "Horror",
+    "Singleplayer",
+    "Souls-like",
+    "Dark",
+    "Third Person",
+    "Action"
+   ],
+   "tag_ids": [
+    21,
+    3978,
+    122,
+    4106,
+    1667,
+    4182,
+    29482,
+    4342,
+    1697,
+    19
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    5,
+    22
+   ]
+  },
+  {
+   "appid": 1345860,
+   "title": "Grapple Dog",
+   "type": "game",
+   "release": "Coming Soon",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "2D Platformer",
+    "Action",
+    "Platformer",
+    "2D",
+    "Cute",
+    "Funny",
+    "Adventure",
+    "Relaxing",
+    "Pixel Graphics",
+    "Cartoony"
+   ],
+   "tag_ids": [
+    5379,
+    19,
+    1625,
+    3871,
+    4726,
+    4136,
+    21,
+    1654,
+    3964,
+    4195
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1356250,
+   "title": "Airport Renovator",
+   "type": "game",
+   "release": "FREE DEMO XD",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Education",
+    "Casual",
+    "Building",
+    "Management",
+    "Economy",
+    "First-Person",
+    "Relaxing",
+    "Simulation",
+    "Realistic",
+    "Atmospheric"
+   ],
+   "tag_ids": [
+    1036,
+    597,
+    1643,
+    12472,
+    4695,
+    3839,
+    1654,
+    599,
+    4175,
+    4166
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    36247180
+   ],
+   "localized_langs": [
+    0,
+    3,
+    5,
+    8,
+    12,
+    18,
+    19,
+    21,
+    25,
+    26,
+    27
+   ]
+  },
+  {
+   "appid": 1359980,
+   "title": "POSTAL: Brain Damaged",
+   "type": "game",
+   "release": "May 2022 🧠",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [
+    1,
+    2,
+    5
+   ],
+   "tags": [
+    "Gore",
+    "FPS",
+    "Shooter",
+    "Retro",
+    "Arena Shooter",
+    "Fast-Paced",
+    "Violent",
+    "Psychedelic",
+    "Stylized",
+    "1990's"
+   ],
+   "tag_ids": [
+    4345,
+    1663,
+    1774,
+    4004,
+    5547,
+    1734,
+    4667,
+    1714,
+    4252,
+    6691
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    38371631,
+    4667105,
+    36010340
+   ],
+   "localized_langs": [
+    0,
+    12
+   ]
+  },
+  {
+   "appid": 1362560,
+   "title": "Fire Commander",
+   "type": "game",
+   "release": "TBA",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Strategy",
+    "Simulation",
+    "Real Time Tactics",
+    "Singleplayer",
+    "Realistic",
+    "RTS",
+    "Real-Time with Pause",
+    "Real-Time",
+    "Tactical",
+    "3D"
+   ],
+   "tag_ids": [
+    9,
+    599,
+    3813,
+    4182,
+    4175,
+    1676,
+    7107,
+    4161,
+    1708,
+    4191
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    36526341
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    12,
+    21,
+    22
+   ]
+  },
+  {
+   "appid": 1402030,
+   "title": "Strings Theory",
+   "type": "game",
+   "release": "Q4 2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": true,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Puzzle",
+    "Casual",
+    "Minimalist",
+    "Singleplayer",
+    "Co-op",
+    "Surreal",
+    "Adventure",
+    "Puzzle Platformer",
+    "Arcade",
+    "Logic"
+   ],
+   "tag_ids": [
+    1664,
+    597,
+    4094,
+    4182,
+    1685,
+    1710,
+    21,
+    5537,
+    1773,
+    6129
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    12
+   ]
+  },
+  {
+   "appid": 1411910,
+   "title": "Fallen Aces",
+   "type": "game",
+   "release": "SOON™",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "FPS",
+    "Immersive Sim",
+    "Comic Book",
+    "Action",
+    "Noir",
+    "Stealth",
+    "Shooter",
+    "Retro",
+    "2D",
+    "2.5D"
+   ],
+   "tag_ids": [
+    1663,
+    9204,
+    1751,
+    19,
+    6052,
+    1687,
+    1774,
+    4004,
+    3871,
+    4975
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    6856383
+   ],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1418360,
+   "title": "Lonesome Village",
+   "type": "game",
+   "release": "TBA",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Adventure",
+    "Simulation",
+    "Puzzle",
+    "Action-Adventure",
+    "Exploration",
+    "Life Sim",
+    "2D",
+    "Colorful",
+    "Cute",
+    "Top-Down"
+   ],
+   "tag_ids": [
+    21,
+    599,
+    1664,
+    4106,
+    3834,
+    10235,
+    3871,
+    4305,
+    4726,
+    4791
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1432680,
+   "title": "Mechanic 8230",
+   "type": "game",
+   "release": "Jan 3, 2022",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": true
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Adventure",
+    "Point & Click",
+    "3D",
+    "Puzzle",
+    "Exploration",
+    "Cyberpunk",
+    "Post-apocalyptic",
+    "Transhumanism",
+    "Sci-fi",
+    "Hidden Object"
+   ],
+   "tag_ids": [
+    21,
+    1698,
+    4191,
+    1664,
+    3834,
+    4115,
+    3835,
+    4137,
+    3942,
+    1738
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    8
+   ]
+  },
+  {
+   "appid": 1434540,
+   "title": "Zoeti",
+   "type": "game",
+   "release": "Mar 14, 2022",
+   "coming_soon": true,
+   "early_access": true,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": true,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Early Access",
+    "Strategy",
+    "Roguelite",
+    "Deckbuilding",
+    "Turn-Based Strategy",
+    "Card Battler",
+    "Fantasy",
+    "2D",
+    "Roguelike",
+    "Card Game"
+   ],
+   "tag_ids": [
+    493,
+    9,
+    3959,
+    32322,
+    1741,
+    791774,
+    1684,
+    3871,
+    1716,
+    1666
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    7
+   ]
+  },
+  {
+   "appid": 1442530,
+   "title": "Outbreak Island",
+   "type": "game",
+   "release": "TBA📸 — Add to Wishlist!",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [
+    2,
+    5
+   ],
+   "tags": [
+    "Open World Survival Craft",
+    "Survival",
+    "Open World",
+    "Horror",
+    "Crafting",
+    "Adventure",
+    "Building",
+    "Survival Horror",
+    "First-Person",
+    "Action"
+   ],
+   "tag_ids": [
+    1100689,
+    1662,
+    1695,
+    1667,
+    1702,
+    21,
+    1643,
+    3978,
+    3839,
+    19
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    26684285
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    8,
+    10,
+    12,
+    22
+   ]
+  },
+  {
+   "appid": 1488070,
+   "title": "Vesper: Ether Saga - Episode 1",
+   "type": "game",
+   "release": "Nov 30, 2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [
+    1,
+    2,
+    5
+   ],
+   "tags": [
+    "RPG",
+    "Strategy",
+    "Card Game",
+    "Strategy RPG",
+    "Party-Based RPG",
+    "Turn-Based Strategy",
+    "Card Battler",
+    "CRPG",
+    "Tactical RPG",
+    "Turn-Based Tactics"
+   ],
+   "tag_ids": [
+    122,
+    9,
+    1666,
+    17305,
+    10695,
+    1741,
+    791774,
+    4474,
+    21725,
+    14139
+   ],
+   "n_screenshots": 0,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    2
+   ]
+  },
+  {
+   "appid": 1202130,
+   "title": "Pre-Purchase Starship Troopers - Terran Command",
+   "type": "game",
+   "release": "Mar 31, 2022",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": 2999,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Strategy",
+    "RTS",
+    "Sci-fi",
+    "War",
+    "Tactical",
+    "Resource Management",
+    "Military",
+    "Singleplayer",
+    "Real-Time",
+    "Wargame"
+   ],
+   "tag_ids": [
+    9,
+    1676,
+    3942,
+    1678,
+    1708,
+    8945,
+    4168,
+    4182,
+    4161,
+    4684
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    4563585
+   ],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1092790,
+   "title": "Pre-Purchase Inscryption",
+   "type": "game",
+   "release": "Oct 19, 2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": 1799,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Card Battler",
+    "Horror",
+    "Roguelite",
+    "Card Game",
+    "Strategy",
+    "Experimental",
+    "Point & Click",
+    "Roguelike",
+    "2D",
+    "3D"
+   ],
+   "tag_ids": [
+    791774,
+    1667,
+    3959,
+    1666,
+    9,
+    13782,
+    1698,
+    1716,
+    3871,
+    4191
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    33030951,
+    6638525
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    22
+   ]
+  },
+  {
+   "appid": 1159420,
+   "title": "Robin Hood - Sherwood Builders",
+   "type": "game",
+   "release": "TBA",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "RPG",
+    "Adventure",
+    "Simulation",
+    "Open World",
+    "Base Building",
+    "3D",
+    "Singleplayer",
+    "Casual",
+    "Management",
+    "Sandbox"
+   ],
+   "tag_ids": [
+    122,
+    21,
+    599,
+    1695,
+    7332,
+    4191,
+    4182,
+    597,
+    12472,
+    3810
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    33025535
+   ],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1272320,
+   "title": "Diplomacy is Not an Option",
+   "type": "game",
+   "release": "26 January 2022",
+   "coming_soon": true,
+   "early_access": true,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [
+    2,
+    5
+   ],
+   "tags": [
+    "City Builder",
+    "Tower Defense",
+    "Sandbox",
+    "Strategy",
+    "Building",
+    "Survival",
+    "Procedural Generation",
+    "Base Building",
+    "RTS",
+    "Colorful"
+   ],
+   "tag_ids": [
+    4328,
+    1645,
+    3810,
+    9,
+    1643,
+    1662,
+    5125,
+    7332,
+    1676,
+    4305
+   ],
+   "n_screenshots": 0,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    8
+   ]
+  },
+  {
+   "appid": 1368030,
+   "title": "ANNO: Mutationem",
+   "type": "game",
+   "release": "2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Cyberpunk",
+    "Pixel Graphics",
+    "Female Protagonist",
+    "Action-Adventure",
+    "Adventure",
+    "Action",
+    "Anime",
+    "Action RPG",
+    "Lore-Rich",
+    "Indie"
+   ],
+   "tag_ids": [
+    4115,
+    3964,
+    7208,
+    4106,
+    21,
+    19,
+    4085,
+    4231,
+    3854,
+    492
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    37047916
+   ],
+   "localized_langs": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    22
+   ]
+  },
+  {
+   "appid": 1509510,
+   "title": "Settlement Survival",
+   "type": "game",
+   "release": "Oct 11, 2021",
+   "coming_soon": true,
+   "early_access": true,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "City Builder",
+    "Building",
+    "Management",
+    "Simulation",
+    "Colony Sim",
+    "Exploration",
+    "Sandbox",
+    "Indie",
+    "Strategy",
+    "Survival"
+   ],
+   "tag_ids": [
+    4328,
+    1643,
+    12472,
+    599,
+    220585,
+    3834,
+    3810,
+    492,
+    9,
+    1662
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    6,
+    8,
+    27
+   ]
+  },
+  {
+   "appid": 1522930,
+   "title": "Transiruby",
+   "type": "game",
+   "release": "Autumn. 2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Pixel Graphics",
+    "Action",
+    "Action-Adventure",
+    "Metroidvania",
+    "2D Platformer",
+    "Fantasy",
+    "Cute",
+    "Platformer",
+    "Hack and Slash",
+    "Side Scroller"
+   ],
+   "tag_ids": [
+    3964,
+    19,
+    4106,
+    1628,
+    5379,
+    1684,
+    4726,
+    1625,
+    1646,
+    3798
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    35482274
+   ],
+   "localized_langs": [
+    0,
+    6,
+    10
+   ]
+  },
+  {
+   "appid": 1525700,
+   "title": "Tavern Master",
+   "type": "game",
+   "release": "16 November 2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": true,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Strategy",
+    "Medieval",
+    "Simulation",
+    "Building",
+    "Indie",
+    "Resource Management",
+    "Management",
+    "Top-Down",
+    "Time Management",
+    "City Builder"
+   ],
+   "tag_ids": [
+    9,
+    4172,
+    599,
+    1643,
+    492,
+    8945,
+    12472,
+    4791,
+    16689,
+    4328
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    33182515
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    10,
+    21,
+    22,
+    27
+   ]
+  },
+  {
+   "appid": 1567100,
+   "title": "Repeat",
+   "type": "game",
+   "release": "Late 2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Puzzle Platformer",
+    "Puzzle",
+    "3D",
+    "First-Person",
+    "Relaxing",
+    "Action",
+    "Linear",
+    "Casual",
+    "Controller",
+    "Abstract"
+   ],
+   "tag_ids": [
+    5537,
+    1664,
+    4191,
+    3839,
+    1654,
+    19,
+    7250,
+    597,
+    7481,
+    4400
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1586800,
+   "title": "Lil Gator Game",
+   "type": "game",
+   "release": "2022",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": true,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Casual",
+    "Adventure",
+    "Cute",
+    "Open World",
+    "Platformer",
+    "Exploration",
+    "3D Platformer",
+    "Walking Simulator",
+    "Colorful",
+    "Indie"
+   ],
+   "tag_ids": [
+    597,
+    21,
+    4726,
+    1695,
+    1625,
+    3834,
+    5395,
+    5900,
+    4305,
+    492
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1592670,
+   "title": "Soda Crisis",
+   "type": "game",
+   "release": "TBA",
+   "coming_soon": true,
+   "early_access": true,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Side Scroller",
+    "Runner",
+    "Action",
+    "Shoot 'Em Up",
+    "Parkour",
+    "Shooter",
+    "Platformer",
+    "3D",
+    "Controller",
+    "Gun Customization"
+   ],
+   "tag_ids": [
+    3798,
+    8666,
+    19,
+    4255,
+    4036,
+    1774,
+    1625,
+    4191,
+    7481,
+    5765
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    6
+   ]
+  },
+  {
+   "appid": 1597580,
+   "title": "Clid The Snail",
+   "type": "game",
+   "release": "Late 2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [
+    2,
+    5
+   ],
+   "tags": [
+    "Action",
+    "Adventure",
+    "Shooter",
+    "Top-Down Shooter",
+    "3D",
+    "Third Person",
+    "Top-Down",
+    "Fantasy",
+    "Character Customization",
+    "Violent"
+   ],
+   "tag_ids": [
+    19,
+    21,
+    1774,
+    4637,
+    4191,
+    1697,
+    4791,
+    1684,
+    4747,
+    4667
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    12,
+    27
+   ]
+  },
+  {
+   "appid": 1607040,
+   "title": "Evertried",
+   "type": "game",
+   "release": "Oct 21, 2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Strategy",
+    "Roguelike",
+    "Mystery Dungeon",
+    "Real Time Tactics",
+    "Roguelite",
+    "2D",
+    "Isometric",
+    "Pixel Graphics",
+    "Atmospheric",
+    "Dark Fantasy"
+   ],
+   "tag_ids": [
+    9,
+    1716,
+    198631,
+    3813,
+    3959,
+    3871,
+    5851,
+    3964,
+    4166,
+    4604
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    33040219
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    7,
+    8,
+    10,
+    22,
+    27
+   ]
+  },
+  {
+   "appid": 1613580,
+   "title": "ARRIVAL: ZERO EARTH",
+   "type": "game",
+   "release": "TBA",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [
+    5
+   ],
+   "tags": [
+    "Action Roguelike",
+    "Roguelike",
+    "Isometric",
+    "Arena Shooter",
+    "Top-Down Shooter",
+    "Action",
+    "Procedural Generation",
+    "Shooter",
+    "Arcade",
+    "3D"
+   ],
+   "tag_ids": [
+    42804,
+    1716,
+    5851,
+    5547,
+    4637,
+    19,
+    5125,
+    1774,
+    1773,
+    4191
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    41286567
+   ],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1624540,
+   "title": "Storyteller",
+   "type": "game",
+   "release": "TBD",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": true,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Adventure",
+    "Interactive Fiction",
+    "Puzzle",
+    "Point & Click",
+    "2D",
+    "Hand-drawn",
+    "Fantasy",
+    "Mystery",
+    "Romance",
+    "Nonlinear"
+   ],
+   "tag_ids": [
+    21,
+    11014,
+    1664,
+    1698,
+    3871,
+    6815,
+    1684,
+    5716,
+    4947,
+    6869
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    41286645,
+    33023506
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    12,
+    21,
+    22,
+    27
+   ]
+  },
+  {
+   "appid": 1631790,
+   "title": "Dawnbreaker - Aeon's Reach",
+   "type": "game",
+   "release": "2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": true
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [
+    1,
+    5
+   ],
+   "tags": [
+    "Nudity",
+    "Dating Sim",
+    "Romance",
+    "Multiple Endings",
+    "Choose Your Own Adventure",
+    "Sexual Content",
+    "Visual Novel",
+    "Fantasy",
+    "Sci-fi",
+    "Cyberpunk"
+   ],
+   "tag_ids": [
+    6650,
+    9551,
+    4947,
+    6971,
+    4486,
+    12095,
+    3799,
+    1684,
+    3942,
+    4115
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1637560,
+   "title": "Crawlyard",
+   "type": "game",
+   "release": "Q1 2022",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "RPG",
+    "Deckbuilding",
+    "Card Game",
+    "Choices Matter",
+    "Roguelike",
+    "Roguelite",
+    "Story Rich",
+    "Dungeon Crawler",
+    "Tactical",
+    "Dark"
+   ],
+   "tag_ids": [
+    122,
+    32322,
+    1666,
+    6426,
+    1716,
+    3959,
+    1742,
+    1720,
+    1708,
+    4342
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    8
+   ]
+  },
+  {
+   "appid": 1640400,
+   "title": "Janosik 2",
+   "type": "game",
+   "release": "2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Action",
+    "Adventure",
+    "Platformer",
+    "2D Platformer",
+    "Exploration",
+    "Precision Platformer",
+    "Metroidvania",
+    "2D",
+    "Pixel Graphics",
+    "1980s"
+   ],
+   "tag_ids": [
+    19,
+    21,
+    1625,
+    5379,
+    3834,
+    3877,
+    1628,
+    3871,
+    3964,
+    7743
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    40645616
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    5,
+    8,
+    12
+   ]
+  },
+  {
+   "appid": 1649740,
+   "title": "Hunt the Night",
+   "type": "game",
+   "release": "TBA",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [
+    5
+   ],
+   "tags": [
+    "Action RPG",
+    "Dark Fantasy",
+    "Gothic",
+    "2D",
+    "Action",
+    "Adventure",
+    "Souls-like",
+    "Pixel Graphics",
+    "Hack and Slash",
+    "Top-Down"
+   ],
+   "tag_ids": [
+    4231,
+    4604,
+    3952,
+    3871,
+    19,
+    21,
+    29482,
+    3964,
+    1646,
+    4791
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    33040219
+   ],
+   "localized_langs": [
+    0,
+    5,
+    10
+   ]
+  },
+  {
+   "appid": 1661900,
+   "title": "Human Apocalypse",
+   "type": "game",
+   "release": "2021 🦠 Wishlist & Follow!",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": true,
+    "linux": true
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [
+    5
+   ],
+   "tags": [
+    "Story Rich",
+    "Walking Simulator",
+    "Point & Click",
+    "Atmospheric",
+    "Emotional",
+    "Interactive Fiction",
+    "Drama",
+    "Mystery",
+    "2D",
+    "Side Scroller"
+   ],
+   "tag_ids": [
+    1742,
+    5900,
+    1698,
+    4166,
+    5608,
+    11014,
+    5984,
+    5716,
+    3871,
+    3798
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    40692218
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    19,
+    21,
+    22,
+    25,
+    27
+   ]
+  },
+  {
+   "appid": 1667180,
+   "title": "No Man's Island",
+   "type": "game",
+   "release": "Add to your Wishlist and Play the DEMO now!",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Crafting",
+    "Open World",
+    "Survival",
+    "Singleplayer",
+    "Building",
+    "Exploration",
+    "Base Building",
+    "Sandbox",
+    "Adventure",
+    "Fantasy"
+   ],
+   "tag_ids": [
+    1702,
+    1695,
+    1662,
+    4182,
+    1643,
+    3834,
+    7332,
+    3810,
+    21,
+    1684
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0
+   ]
+  },
+  {
+   "appid": 1700870,
+   "title": "Clanfolk",
+   "type": "game",
+   "release": "2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Colony Sim",
+    "Medieval",
+    "Strategy",
+    "Base Building",
+    "Singleplayer",
+    "Life Sim",
+    "City Builder",
+    "Management",
+    "Sandbox",
+    "Immersive Sim"
+   ],
+   "tag_ids": [
+    220585,
+    4172,
+    9,
+    7332,
+    4182,
+    10235,
+    4328,
+    12472,
+    3810,
+    9204
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    6,
+    7
+   ]
+  },
+  {
+   "appid": 1713260,
+   "title": "Relash",
+   "type": "game",
+   "release": "Coming soon",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": true,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Puzzle",
+    "Action",
+    "Time Manipulation",
+    "Sci-fi",
+    "Casual",
+    "Third Person",
+    "3D",
+    "Cyberpunk",
+    "Controller",
+    "Singleplayer"
+   ],
+   "tag_ids": [
+    1664,
+    19,
+    6625,
+    3942,
+    597,
+    1697,
+    4191,
+    4115,
+    7481,
+    4182
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0,
+    10
+   ]
+  },
+  {
+   "appid": 1713810,
+   "title": "Lumencraft",
+   "type": "game",
+   "release": "TBA 🕹️ Add to wishlist to stay updated!",
+   "coming_soon": true,
+   "early_access": true,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": true
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Early Access",
+    "Action",
+    "Sandbox",
+    "Tower Defense",
+    "Action RPG",
+    "Shooter",
+    "Base Building",
+    "Exploration",
+    "Top-Down Shooter",
+    "Realistic"
+   ],
+   "tag_ids": [
+    493,
+    19,
+    3810,
+    1645,
+    4231,
+    1774,
+    7332,
+    3834,
+    4637,
+    4175
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    37957996
+   ],
+   "localized_langs": [
+    0,
+    12
+   ]
+  },
+  {
+   "appid": 1717570,
+   "title": "Pompom",
+   "type": "game",
+   "release": "Coming soon",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": true,
+    "linux": true
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Retro",
+    "Puzzle Platformer",
+    "Indie",
+    "2D",
+    "Pixel Graphics",
+    "Cute",
+    "Side Scroller",
+    "Family Friendly",
+    "Platformer",
+    "Singleplayer"
+   ],
+   "tag_ids": [
+    4004,
+    5537,
+    492,
+    3871,
+    3964,
+    4726,
+    3798,
+    5350,
+    1625,
+    4182
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [
+    40469584
+   ],
+   "localized_langs": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    10
+   ]
+  },
+  {
+   "appid": 1569170,
+   "title": "A Way Back",
+   "type": "game",
+   "release": "Winter 2021",
+   "coming_soon": true,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": true,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": 0,
+    "positive": 0,
+    "score": 0
+   },
+   "content_descriptors": [],
+   "tags": [
+    "Sokoban",
+    "Puzzle",
+    "Difficult",
+    "Cute",
+    "Relaxing",
+    "Stylized",
+    "Logic",
+    "Family Friendly",
+    "Strategy",
+    "Atmospheric"
+   ],
+   "tag_ids": [
+    1730,
+    1664,
+    4026,
+    4726,
+    1654,
+    4252,
+    6129,
+    5350,
+    9,
+    4166
+   ],
+   "n_screenshots": 4,
+   "has_microtrailer": true,
+   "creator_clan_ids": [],
+   "localized_langs": [
+    0
+   ]
+  }
+ ],
+ "status": "ok"
+}

@@ -1,0 +1,24 @@
+[
+ {
+  "fest": {
+   "slug": "jun2023",
+   "label_en": "June 2023",
+   "label_ru": "Июнь 2023",
+   "season": "summer",
+   "year": 2023,
+   "start": "2023-06-19",
+   "end": "2023-06-26",
+   "expected_participants": 887
+  },
+  "snapshot": {
+   "timestamp": "20230623165817",
+   "iso": "2023-06-23T16:58:17Z",
+   "url": "http://web.archive.org/web/20230623165817id_/https://store.steampowered.com/sale/nextfest",
+   "cdx_length": 527481
+  },
+  "page_title": "Next Fest June 2023 - NOW LIVE!",
+  "strategy": "json_objects[unescape]",
+  "n_games": 300,
+  "status": "ok"
+ }
+]

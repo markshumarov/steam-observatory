@@ -1,0 +1,32 @@
+{
+ "url": "https://store.steampowered.com/sale/nextfest",
+ "n_appids": 0,
+ "appids": [],
+ "xhr": [
+  {
+   "url": "https://cdn.akamai.steamstatic.com//store/videocaptions/next_fest_oct_2026/nextfest_oct_2026_manifest.json",
+   "status": 200,
+   "ct": "application/json"
+  },
+  {
+   "url": "https://store.steampowered.com/actions/ajaxgetdynamicsaleitems?origin=https%3A%2F%2Fstore.steampowered.com&max_results=10000&cc=GE&tagids_featured=1458863",
+   "status": 200,
+   "ct": "application/json; charset=utf-8"
+  },
+  {
+   "url": "https://store.steampowered.com/curator/39049601/ajaxgetcreatorhomeinfo?get_appids=true&l=english",
+   "status": 200,
+   "ct": "application/json; charset=utf-8"
+  },
+  {
+   "url": "https://store.steampowered.com/dynamicstore/saledata/?cc=GE",
+   "status": 200,
+   "ct": "application/json; charset=utf-8"
+  },
+  {
+   "url": "https://store.steampowered.com/dynamicstore/userdata/?id=0&cc=GE&origin=https://store.steampowered.com",
+   "status": 200,
+   "ct": "application/json; charset=utf-8"
+  }
+ ]
+}

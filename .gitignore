@@ -1,0 +1,17 @@
+# Сырые дампы (много мегабайт HTML) — не в git
+data/raw/
+data/cache/
+data/processed/*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Node / сайт
+node_modules/
+site/dist/
+site/.astro/
+.DS_Store
