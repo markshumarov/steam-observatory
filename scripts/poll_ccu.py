@@ -38,29 +38,67 @@ def _session() -> requests.Session:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--slug", default="oct2026")
+    ap.add_argument(
+        "--source",
+        choices=["base", "demo"],
+        default="base",
+        help="base — appid базовых игр, demo — appid демо (из demo_map)",
+    )
     ap.add_argument("--minutes", type=float, default=25.0, help="сколько минут опрашивать")
-    ap.add_argument("--workers", type=int, default=3)
-    ap.add_argument("--pause", type=float, default=0.5, help="пауза между запросами в потоке")
+    ap.add_argument("--workers", type=int, default=1)
+    ap.add_argument("--pause", type=float, default=0.0, help="(устарело) пауза между запросами")
+    ap.add_argument("--interval", type=float, default=1.1, help="мин. интервал между запросами, сек")
     ap.add_argument("--timeout", type=float, default=20.0)
     args = ap.parse_args()
 
     lineup_path = config.OUT_DIR / "nextfest" / f"{args.slug}_lineup.json"
     lineup = json.loads(lineup_path.read_text(encoding="utf-8"))
-    appids: list[int] = lineup["appids"]
-    out_path = config.OUT_DIR / "nextfest" / f"{args.slug}_ccu.jsonl"
+    if args.source == "demo":
+        map_path = config.OUT_DIR / "nextfest" / f"{args.slug}_demo_map.jsonl"
+        demo_ids: set[int] = set()
+        for line in map_path.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if rec.get("demo_appid"):
+                demo_ids.add(int(rec["demo_appid"]))
+        appids: list[int] = sorted(demo_ids)
+        out_path = config.OUT_DIR / "nextfest" / f"{args.slug}_demo_ccu.jsonl"
+    else:
+        appids = list(lineup["appids"])
+        out_path = config.OUT_DIR / "nextfest" / f"{args.slug}_ccu.jsonl"
 
     deadline = time.time() + args.minutes * 60
-    counter = {"done": 0, "err": 0}
+    counter = {"done": 0, "err": 0, "throttled": 0, "last_err": ""}
     lock = threading.Lock()
+    rate_lock = threading.Lock()
+    last_call = [0.0]
+
+    def rate_limit() -> None:
+        """Глобальный лимит: Steam режет частые запросы (429)."""
+        with rate_lock:
+            wait = args.interval - (time.time() - last_call[0])
+            if wait > 0:
+                time.sleep(wait)
+            last_call[0] = time.time()
 
     def fetch(appid: int) -> None:
         s = _session()
-        try:
-            r = s.get(
-                f"{config.STEAM_API}/ISteamUserStats/GetNumberOfCurrentPlayers/v1/",
-                params={"appid": appid},
-                timeout=args.timeout,
-            )
+        for attempt in range(1, 4):
+            rate_limit()
+            try:
+                r = s.get(
+                    f"{config.STEAM_API}/ISteamUserStats/GetNumberOfCurrentPlayers/v1/",
+                    params={"appid": appid},
+                    timeout=args.timeout,
+                )
+            except Exception as exc:  # noqa: BLE001
+                with lock:
+                    counter["last_err"] = repr(exc)
+                continue
             if r.status_code == 200:
                 payload = r.json().get("response", {})
                 if payload.get("result") == 1:
@@ -75,21 +113,28 @@ def main() -> int:
                     with lock:
                         counter["done"] += 1
                         if counter["done"] % 200 == 0:
-                            print(f"  опрошено {counter['done']}/{len(appids)}", flush=True)
+                            print(
+                                f"  опрошено {counter['done']}/{len(appids)} "
+                                f"(429: {counter['throttled']}, ошибок: {counter['err']})",
+                                flush=True,
+                            )
                     return
+            if r.status_code == 429:
+                with lock:
+                    counter["throttled"] += 1
+                time.sleep(5 * attempt)
+                continue
             with lock:
-                counter["err"] += 1
-        except Exception:  # noqa: BLE001
-            with lock:
-                counter["err"] += 1
-        time.sleep(args.pause)
+                counter["last_err"] = f"HTTP {r.status_code}: {r.text[:120]}"
+            break
+        with lock:
+            counter["err"] += 1
 
     def worker(queue: list[int]) -> None:
         for appid in queue:
             if time.time() > deadline:
                 return
             fetch(appid)
-            time.sleep(args.pause)
 
     # делим список по потокам
     chunks = [appids[i :: args.workers] for i in range(args.workers)]
@@ -101,10 +146,12 @@ def main() -> int:
         t.join()
 
     print(
-        f"готово: {counter['done']} ответов, ошибок {counter['err']}, "
-        f"{(time.time() - started) / 60:.1f} мин, файл {out_path}",
+        f"готово: {counter['done']} ответов, 429: {counter['throttled']}, "
+        f"ошибок {counter['err']}, {(time.time() - started) / 60:.1f} мин, файл {out_path}",
         flush=True,
     )
+    if counter["last_err"]:
+        print("последняя ошибка:", counter["last_err"], flush=True)
     return 0
 
 

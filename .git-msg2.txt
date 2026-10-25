@@ -1,0 +1,23 @@
+M0: найден и проверен эндпоинт полного состава Next Fest, CCU демо, мэппинг демо
+
+Найдено и проверено (октябрь 2026):
+- store.steampowered.com/actions/ajaxgetdynamicsaleitems — полный состав фестиваля:
+  7 322 элемента, из них 7 304 игры, bMoreResultsRemaining=false,
+  rgSolrFacetCounts — гистограмма по 421 тегу всего фестиваля.
+- CCU нерелизнутой игры недоступен (result 42/404): считать надо CCU демо,
+  а appid демо берётся из related_items.demo_appid на странице игры.
+- Steam режет частоту GetNumberOfCurrentPlayers (429): рабочий режим ~1 запрос/сек.
+- api/appdetails не принимает список appid.
+- Эндпоинт состава архивирован в Wayback (165 снапшотов) — путь к истории 2023+.
+
+Добавлено:
+- scripts/ingest_demo_map.py — мэппинг «игра -> демо» (устойчив к перезапуску).
+- scripts/poll_ccu.py — опрос CCU с честным лимитом, обработкой 429,
+  режимами --source base|demo и записью в JSONL.
+- scripts/backfill_lineup_ajax.py — восстановление составов 2023+ из архивных XHR.
+- scripts/probe_*.py — разведка (эндпоинты, фасеты, скорость API, DOM, демо-мэппинг).
+- docs/data-sources.md — раздел с найденными эндпоинтами и лимитами.
+- README — план M0..M4 со статусами.
+
+Проверки: 2021 год — 609 карточек игр с тегами из Wayback; октябрь 2026 —
+7 304 игры + 421 тег; CCU демо DRAGON QUEST MONSTERS = 131 игрок.

@@ -1,0 +1,8124 @@
+{
+ "fest": {
+  "slug": "oct2026",
+  "label_en": "October 2026",
+  "label_ru": "Октябрь 2026",
+  "season": "autumn",
+  "year": 2026,
+  "start": "2026-10-19",
+  "end": "2026-10-26",
+  "expected_participants": 7240
+ },
+ "snapshot": {
+  "timestamp": "20261024090040",
+  "iso": "2026-10-24T09:00:40Z",
+  "url": "http://web.archive.org/web/20261024090040id_/https://store.steampowered.com/sale/nextfest",
+  "cdx_length": 244763
+ },
+ "page_title": "Next Fest October 2026 - LIVE NOW",
+ "strategy": "json_objects[unescape]",
+ "n_games": 300,
+ "games": [
+  {
+   "appid": 503540,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 371640,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 451770,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 575660,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 828010,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 782430,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 848380,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1410040,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1624840,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1651430,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1063700,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1149050,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1128990,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1336650,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1222620,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1375140,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1619290,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1744930,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1744960,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1704950,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1769140,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1859970,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1862300,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2151940,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2300290,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1876210,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1782800,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2286460,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2265280,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2235310,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2236840,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2240940,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 639590,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1353450,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2411190,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2415710,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2420400,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2510420,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2513340,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2360430,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2360870,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2361090,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2392970,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2532010,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2532570,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2430710,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2386300,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2135560,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2130280,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1954240,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1955720,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1990240,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2104080,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1865270,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 882440,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2081660,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2015050,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2763570,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2764820,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2765870,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2768990,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2769870,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2668600,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2668640,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2684470,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2695720,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2486910,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2583700,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2583720,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2587940,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2712390,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2560470,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2735560,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2649300,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2705980,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2654210,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2654660,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2422470,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2429230,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2708920,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2460020,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2623980,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2554980,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2345810,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2349110,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2064310,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1999830,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1400710,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1715630,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2416930,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2428390,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1226260,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2191780,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2451080,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2517430,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2533700,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2553750,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2562910,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2597090,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2628810,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2321890,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2385930,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2386910,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2412030,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2419770,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1320170,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1356660,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2245130,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2652120,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2736890,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2754480,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2765990,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2096450,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2115670,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 955010,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1459800,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1799440,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2616100,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2621770,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2628880,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2629670,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2645200,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2645990,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2646170,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2649120,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2657960,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2659410,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2660180,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2662070,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2663360,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2664600,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2669710,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2671300,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2677980,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2678490,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2685440,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2692420,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2696110,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2708040,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2709420,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2711020,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2715880,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2719410,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2722220,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2722500,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2731030,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2735850,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2739510,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2749250,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2755260,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2760730,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2765070,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2766140,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2773630,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2775560,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2776360,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2780850,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2508440,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2513150,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2520780,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2537270,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2541560,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2547310,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2549980,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2551550,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2551970,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2558300,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2562390,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2563090,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2585900,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2589960,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2590490,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2594620,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2600820,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2603850,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2605970,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2606850,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2607680,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2608610,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2257440,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2259580,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2262630,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2278950,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2299490,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2321960,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2324550,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2328390,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2329050,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2330160,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2335500,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2335670,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2339000,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2341620,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2346760,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2348250,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2359660,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2364460,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2365750,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2366290,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2379350,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2384980,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2387740,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2399700,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2413370,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2418040,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2431920,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2433560,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2434830,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2434900,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2440350,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2440760,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2443590,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2455380,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2471800,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2481240,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2483570,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2483660,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2483700,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2487190,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2490650,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2500500,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2139040,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2146470,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2153760,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2155140,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2168120,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2203370,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2218060,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2228840,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2231090,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2245600,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2249060,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1763380,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1779750,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1835670,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1840410,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1854570,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1858720,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1864220,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1879270,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1917470,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1959360,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1970000,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1993410,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2008670,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2056530,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2068110,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2068650,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2083660,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2097190,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2097940,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2100410,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 611610,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 673100,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 712370,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 720830,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 724930,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 756510,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 757550,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1582930,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1584590,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1587920,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1600110,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1622130,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1641570,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1647220,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1686230,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1725710,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1749810,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1754880,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1025560,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1031000,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1102350,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1108600,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1118300,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1123990,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 812910,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 858200,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 864170,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 881940,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 896120,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 942780,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 951840,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 972450,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1172690,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1221770,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1252070,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1270660,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1316440,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1355000,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1377050,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1403960,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1445880,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 432120,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 456140,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 521180,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1853440,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2295170,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 2320980,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  },
+  {
+   "appid": 1799840,
+   "title": "",
+   "type": "game",
+   "release": "",
+   "coming_soon": false,
+   "early_access": false,
+   "is_free": false,
+   "price_cents": null,
+   "platforms": {
+    "win": false,
+    "mac": false,
+    "linux": false
+   },
+   "reviews": {
+    "n": null,
+    "positive": null,
+    "score": null
+   },
+   "content_descriptors": [],
+   "tags": [],
+   "tag_ids": [],
+   "n_screenshots": 0,
+   "has_microtrailer": false,
+   "creator_clan_ids": [],
+   "localized_langs": []
+  }
+ ],
+ "status": "ok"
+}

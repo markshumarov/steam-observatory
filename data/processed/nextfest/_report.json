@@ -1,24 +1,123 @@
 [
  {
   "fest": {
-   "slug": "jun2023",
-   "label_en": "June 2023",
-   "label_ru": "Июнь 2023",
+   "slug": "jun2021",
+   "label_en": "June 2021",
+   "label_ru": "Июнь 2021",
    "season": "summer",
-   "year": 2023,
-   "start": "2023-06-19",
-   "end": "2023-06-26",
-   "expected_participants": 887
+   "year": 2021,
+   "start": "2021-06-16",
+   "end": "2021-06-22",
+   "expected_participants": null
   },
   "snapshot": {
-   "timestamp": "20230623165817",
-   "iso": "2023-06-23T16:58:17Z",
-   "url": "http://web.archive.org/web/20230623165817id_/https://store.steampowered.com/sale/nextfest",
-   "cdx_length": 527481
+   "timestamp": "20210616170420",
+   "iso": "2021-06-16T17:04:20Z",
+   "url": "http://web.archive.org/web/20210616170420id_/https://store.steampowered.com/sale/nextfest",
+   "cdx_length": 335550
   },
-  "page_title": "Next Fest June 2023 - NOW LIVE!",
+  "page_title": "Steam Next Fest | June Edition",
   "strategy": "json_objects[unescape]",
-  "n_games": 300,
+  "n_games": 611,
+  "n_objects": 612,
   "status": "ok"
+ },
+ {
+  "fest": {
+   "slug": "oct2021",
+   "label_en": "October 2021",
+   "label_ru": "Октябрь 2021",
+   "season": "autumn",
+   "year": 2021,
+   "start": "2021-10-01",
+   "end": "2021-10-07",
+   "expected_participants": null
+  },
+  "snapshot": {
+   "timestamp": "20211004054323",
+   "iso": "2021-10-04T05:43:23Z",
+   "url": "http://web.archive.org/web/20211004054323id_/https://store.steampowered.com/sale/nextfest",
+   "cdx_length": 464368
+  },
+  "page_title": "Steam Next Fest | October 2021",
+  "strategy": "json_objects[unescape]",
+  "n_games": 59,
+  "n_objects": 426,
+  "status": "ok"
+ },
+ {
+  "fest": "feb2022",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "jun2022",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "oct2022",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "feb2023",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "jun2023",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "oct2023",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "feb2024",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "jun2024",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "oct2024",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "feb2025",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "jun2025",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "oct2025",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "feb2026",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "jun2026",
+  "status": "no_data",
+  "n_games": 0
+ },
+ {
+  "fest": "oct2026",
+  "status": "no_data",
+  "n_games": 0
  }
 ]
