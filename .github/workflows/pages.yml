@@ -1,0 +1,56 @@
+name: pages
+
+# Публикация сайта на GitHub Pages.
+# Сайт статический: HTML + Observable Plot из CDN + JSON в site/data.
+# Перед публикацией данные пересобираются из уже собранного датасета.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "data/processed/**"
+      - "scripts/build_site_data.py"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Зависимости
+        run: pip install -r requirements.txt
+
+      - name: Пересобрать данные сайта
+        run: python scripts/build_site_data.py
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

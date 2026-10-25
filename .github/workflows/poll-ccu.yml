@@ -1,0 +1,47 @@
+name: poll-ccu
+
+# Непрерывный опрос игроков в демо во время фестиваля.
+# Репозиторий публичный, поэтому минуты GitHub Actions не расходуются.
+# Каждый запуск работает ~1.5 часа, следующая смена стартует каждые 2 часа.
+
+on:
+  schedule:
+    - cron: "5 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: poll-ccu
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 115
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Зависимости
+        run: pip install -r requirements.txt
+
+      - name: Опрос CCU демо
+        run: python scripts/poll_ccu_loop.py --slug oct2026 --source demo --hours 1.4 --interval 1.1
+
+      - name: Коммит замеров
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A data/processed
+          if git diff --cached --quiet; then
+            echo "изменений нет"
+          else
+            git commit -m "data: замеры CCU ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git pull --rebase --autostash || true
+            git push
+          fi
