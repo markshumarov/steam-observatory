@@ -63,13 +63,21 @@ def parse_snapshot(snap: wayback.Snapshot) -> dict | None:
 
 
 def guess_fest(snap_iso: str):
+    """Ближайшее издание по дате снапшота.
+
+    Wayback сохраняет XHR не строго в дни фестиваля, поэтому берём ближайшее
+    издание в окне ±75 дней от старта. Итоговое имя издания проверяем по числу
+    участников (см. `expected` в fests.py).
+    """
     d = date.fromisoformat(snap_iso[:10])
+    best = None
+    best_delta: int | None = None
     for fest in FESTS:
         start = date.fromisoformat(fest.start)
-        end = date.fromisoformat(fest.end)
-        if start - (end - start) <= d <= end.replace(year=end.year):  # окно вокруг фестиваля
-            return fest
-    return None
+        delta = abs((d - start).days)
+        if delta <= 75 and (best_delta is None or delta < best_delta):
+            best, best_delta = fest, delta
+    return best
 
 
 def main() -> int:
