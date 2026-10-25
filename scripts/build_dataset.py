@@ -131,7 +131,13 @@ def main() -> int:
             best = pick_best(items, fest.expected if fest else None)
             game_meta = {g["appid"]: g for g in best.get("games", [])}
 
-            for appid in best["appids"]:
+            exp_check = fest.expected if fest else None
+            n_best = len(best["appids"])
+            # Контроль качества: если состав расходится с контрольным числом больше
+            # чем на 25%, он неполный или захватывает лишние записи — не публикуем.
+            unreliable = bool(exp_check) and abs(n_best - exp_check) / exp_check > 0.25
+
+            for appid in ([] if unreliable else best["appids"]):
                 meta = game_meta.get(appid, {})
                 for tid in meta.get("tag_ids") or []:
                     tags.setdefault(int(tid), "")
@@ -153,7 +159,7 @@ def main() -> int:
                 )
                 rows_games += 1
 
-            for tid, cnt in (best.get("tag_facets") or {}).items():
+            for tid, cnt in ({} if unreliable else (best.get("tag_facets") or {})).items():
                 ff.write(
                     json.dumps(
                         {
@@ -180,6 +186,7 @@ def main() -> int:
                     "snapshot": best.get("snapshot"),
                     "n_appids": n,
                     "expected": exp,
+                    "status": "unreliable" if unreliable else "ok",
                     "diff_pct": round(100 * (n - exp) / exp, 1) if exp and n else None,
                     "candidates": [
                         {"source": c["source"], "n": len(c["appids"]), "snapshot": c.get("snapshot")}

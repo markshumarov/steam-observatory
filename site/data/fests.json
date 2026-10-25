@@ -1,0 +1,98 @@
+[
+ {
+  "slug": "jun2021",
+  "label_ru": "Июнь 2021",
+  "season": "summer",
+  "year": 2021,
+  "n_final": 611,
+  "n_preview": null,
+  "expected": null,
+  "diff_pct": null,
+  "source": "wayback_html",
+  "note": null
+ },
+ {
+  "slug": "oct2021",
+  "label_ru": "Октябрь 2021",
+  "season": "autumn",
+  "year": 2021,
+  "n_final": 59,
+  "n_preview": null,
+  "expected": null,
+  "diff_pct": null,
+  "source": "wayback_html",
+  "note": "частичный состав: страница 2021 года отдавалась сервером не полностью"
+ },
+ {
+  "slug": "oct2024",
+  "label_ru": "Октябрь 2024",
+  "season": "autumn",
+  "year": 2024,
+  "n_final": 3197,
+  "n_preview": null,
+  "expected": 3008,
+  "diff_pct": 6.3,
+  "source": "wayback_xhr:1344427",
+  "note": "расхождение с контролем больше 5%"
+ },
+ {
+  "slug": "jun2025",
+  "label_ru": "Июнь 2025",
+  "season": "summer",
+  "year": 2025,
+  "n_final": 2635,
+  "n_preview": 3180,
+  "expected": 2645,
+  "diff_pct": -0.4,
+  "source": "wayback_xhr:1384086",
+  "note": null
+ },
+ {
+  "slug": "oct2025",
+  "label_ru": "Октябрь 2025",
+  "season": "autumn",
+  "year": 2025,
+  "n_final": 2956,
+  "n_preview": 3660,
+  "expected": 2963,
+  "diff_pct": -0.2,
+  "source": "wayback_xhr:1404384",
+  "note": null
+ },
+ {
+  "slug": "feb2026",
+  "label_ru": "Февраль 2026",
+  "season": "winter",
+  "year": 2026,
+  "n_final": 3892,
+  "n_preview": null,
+  "expected": 3536,
+  "diff_pct": 10.1,
+  "source": "wayback_xhr:1420606",
+  "note": "расхождение с контролем больше 5%"
+ },
+ {
+  "slug": "jun2026",
+  "label_ru": "Июнь 2026",
+  "season": "summer",
+  "year": 2026,
+  "n_final": 4401,
+  "n_preview": 4988,
+  "expected": 4382,
+  "diff_pct": 0.4,
+  "source": "wayback_xhr:1440505",
+  "note": null
+ },
+ {
+  "slug": "oct2026",
+  "label_ru": "Октябрь 2026",
+  "season": "autumn",
+  "year": 2026,
+  "n_final": 7304,
+  "n_preview": 8222,
+  "expected": 7240,
+  "diff_pct": 0.9,
+  "source": "live_endpoint",
+  "note": null
+ }
+]

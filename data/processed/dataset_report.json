@@ -8,6 +8,7 @@
   "snapshot": "2024-12-21T16:46:02Z",
   "n_appids": 12,
   "expected": 2337,
+  "status": "unreliable",
   "diff_pct": -99.5,
   "candidates": [
    {
@@ -31,6 +32,7 @@
   "snapshot": "2026-02-23T18:03:24Z",
   "n_appids": 3892,
   "expected": 3536,
+  "status": "ok",
   "diff_pct": 10.1,
   "candidates": [
    {
@@ -54,6 +56,7 @@
   "snapshot": "2021-06-16T17:04:20Z",
   "n_appids": 611,
   "expected": null,
+  "status": "ok",
   "diff_pct": null,
   "candidates": [
    {
@@ -72,6 +75,7 @@
   "snapshot": "2025-07-03T02:12:24Z",
   "n_appids": 2635,
   "expected": 2645,
+  "status": "ok",
   "diff_pct": -0.4,
   "candidates": [
    {
@@ -105,6 +109,7 @@
   "snapshot": "2026-06-21T20:29:23Z",
   "n_appids": 4401,
   "expected": 4382,
+  "status": "ok",
   "diff_pct": 0.4,
   "candidates": [
    {
@@ -128,6 +133,7 @@
   "snapshot": "2021-10-04T05:43:23Z",
   "n_appids": 59,
   "expected": null,
+  "status": "ok",
   "diff_pct": null,
   "candidates": [
    {
@@ -146,6 +152,7 @@
   "snapshot": "2024-10-04T07:53:52Z",
   "n_appids": 3197,
   "expected": 3008,
+  "status": "ok",
   "diff_pct": 6.3,
   "candidates": [
    {
@@ -174,6 +181,7 @@
   "snapshot": "2025-11-02T06:40:37Z",
   "n_appids": 2956,
   "expected": 2963,
+  "status": "ok",
   "diff_pct": -0.2,
   "candidates": [
    {
@@ -202,6 +210,7 @@
   "snapshot": "2026-10-25T11:29:15+00:00",
   "n_appids": 7304,
   "expected": 7240,
+  "status": "ok",
   "diff_pct": 0.9,
   "candidates": [
    {

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steam Observatory — Steam Next Fest в цифрах</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Steam Observatory</h1>
+  <p class="lede">Цифры первичны: составы фестивалей Steam Next Fest, насыщенность тегов
+  и игроки в демо. RU/EN. <a href="https://github.com/markshumarov/steam-observatory">Исходные данные</a>.</p>
+  <nav>
+    <a href="#editions">Издания</a>
+    <a href="#tags">Теги</a>
+    <a href="#ccu">Демо</a>
+    <a href="#about">Методология</a>
+  </nav>
+</header>
+
+<main>
+  <section id="editions">
+    <h2>Участники по изданиям</h2>
+    <p class="hint">Синие столбцы — финальный состав, серая линия с точками — зарегистрировавшиеся
+    (press preview, где архив сохранил), красные точки — контрольные данные GameDiscoverCo.
+    Издания с расхождением с контролем больше 25% не публикуются.</p>
+    <div id="chart-editions" class="chart"></div>
+    <div id="table-editions" class="table"></div>
+  </section>
+
+  <section id="tags">
+    <h2>Насыщенность тегов</h2>
+    <p class="hint">Клик по тегу добавляет или убирает его. Доля считается среди участников издания,
+    поэтому рост поля не искажает картину.</p>
+    <div id="tag-picker" class="chips"></div>
+    <div id="chart-tags" class="chart"></div>
+    <div class="row">
+      <label>Издание A <select id="fest-a"></select></label>
+      <label>Издание B <select id="fest-b"></select></label>
+    </div>
+    <div id="table-tags" class="table"></div>
+  </section>
+
+  <section id="ccu">
+    <h2>Игроки в демо: октябрь 2026</h2>
+    <p class="hint">Пик одновременных игроков по каждому демо. Сбор идёт непрерывно до конца
+    фестиваля (26 октября, 17:00 UTC), поэтому цифры растут.</p>
+    <div id="ccu-meta" class="hint"></div>
+    <div id="chart-ccu" class="chart"></div>
+  </section>
+
+  <section id="about">
+    <h2>Методология</h2>
+    <p>Состав изданий: публичный эндпоинт страницы фестиваля и архивные копии Internet Archive.
+    Игроки: публичный API Steam. Контроль качества: число участников сверено с GameDiscoverCo
+    и How To Market A Game (расхождение ≤1% для изданий 2024–2026).</p>
+    <p>Вишлисты Steam не публикует: любые числа вишлистов являются оценками и так помечаются.</p>
+    <p>Steam является торговой маркой Valve Corporation; проект не аффилирован с Valve.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Steam Observatory · данные обновляются скриптами из репозитория · 2026</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
