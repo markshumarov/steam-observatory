@@ -1,0 +1,219 @@
+[
+ {
+  "fest": "feb2025",
+  "label_ru": "Февраль 2025",
+  "season": "winter",
+  "year": 2025,
+  "chosen_source": "wayback_xhr:1352159",
+  "snapshot": "2024-12-21T16:46:02Z",
+  "n_appids": 12,
+  "expected": 2337,
+  "diff_pct": -99.5,
+  "candidates": [
+   {
+    "source": "wayback_xhr:1352159",
+    "n": 12,
+    "snapshot": "2024-12-21T16:46:02Z"
+   },
+   {
+    "source": "wayback_xhr:1364061",
+    "n": 12,
+    "snapshot": "2025-03-01T00:22:01Z"
+   }
+  ]
+ },
+ {
+  "fest": "feb2026",
+  "label_ru": "Февраль 2026",
+  "season": "winter",
+  "year": 2026,
+  "chosen_source": "wayback_xhr:1420606",
+  "snapshot": "2026-02-23T18:03:24Z",
+  "n_appids": 3892,
+  "expected": 3536,
+  "diff_pct": 10.1,
+  "candidates": [
+   {
+    "source": "wayback_xhr:1420600",
+    "n": 3962,
+    "snapshot": "2026-02-19T14:34:25Z"
+   },
+   {
+    "source": "wayback_xhr:1420606",
+    "n": 3892,
+    "snapshot": "2026-02-23T18:03:24Z"
+   }
+  ]
+ },
+ {
+  "fest": "jun2021",
+  "label_ru": "Июнь 2021",
+  "season": "summer",
+  "year": 2021,
+  "chosen_source": "wayback_html",
+  "snapshot": "2021-06-16T17:04:20Z",
+  "n_appids": 611,
+  "expected": null,
+  "diff_pct": null,
+  "candidates": [
+   {
+    "source": "wayback_html",
+    "n": 611,
+    "snapshot": "2021-06-16T17:04:20Z"
+   }
+  ]
+ },
+ {
+  "fest": "jun2025",
+  "label_ru": "Июнь 2025",
+  "season": "summer",
+  "year": 2025,
+  "chosen_source": "wayback_xhr:1384086",
+  "snapshot": "2025-07-03T02:12:24Z",
+  "n_appids": 2635,
+  "expected": 2645,
+  "diff_pct": -0.4,
+  "candidates": [
+   {
+    "source": "wayback_xhr:1383110",
+    "n": 3180,
+    "snapshot": "2025-05-30T02:36:40Z"
+   },
+   {
+    "source": "wayback_xhr:1365183",
+    "n": 2673,
+    "snapshot": "2025-05-29T16:12:56Z"
+   },
+   {
+    "source": "wayback_xhr:1384086",
+    "n": 2635,
+    "snapshot": "2025-07-03T02:12:24Z"
+   },
+   {
+    "source": "wayback_xhr:1366895",
+    "n": 2425,
+    "snapshot": "2025-04-30T11:14:51Z"
+   }
+  ]
+ },
+ {
+  "fest": "jun2026",
+  "label_ru": "Июнь 2026",
+  "season": "summer",
+  "year": 2026,
+  "chosen_source": "wayback_xhr:1440505",
+  "snapshot": "2026-06-21T20:29:23Z",
+  "n_appids": 4401,
+  "expected": 4382,
+  "diff_pct": 0.4,
+  "candidates": [
+   {
+    "source": "wayback_xhr:1438938",
+    "n": 4988,
+    "snapshot": "2026-06-04T17:16:26Z"
+   },
+   {
+    "source": "wayback_xhr:1440505",
+    "n": 4401,
+    "snapshot": "2026-06-21T20:29:23Z"
+   }
+  ]
+ },
+ {
+  "fest": "oct2021",
+  "label_ru": "Октябрь 2021",
+  "season": "autumn",
+  "year": 2021,
+  "chosen_source": "wayback_html",
+  "snapshot": "2021-10-04T05:43:23Z",
+  "n_appids": 59,
+  "expected": null,
+  "diff_pct": null,
+  "candidates": [
+   {
+    "source": "wayback_html",
+    "n": 59,
+    "snapshot": "2021-10-04T05:43:23Z"
+   }
+  ]
+ },
+ {
+  "fest": "oct2024",
+  "label_ru": "Октябрь 2024",
+  "season": "autumn",
+  "year": 2024,
+  "chosen_source": "wayback_xhr:1344427",
+  "snapshot": "2024-10-04T07:53:52Z",
+  "n_appids": 3197,
+  "expected": 3008,
+  "diff_pct": 6.3,
+  "candidates": [
+   {
+    "source": "wayback_xhr:1344427",
+    "n": 3197,
+    "snapshot": "2024-10-04T07:53:52Z"
+   },
+   {
+    "source": "wayback_xhr:1345321",
+    "n": 2698,
+    "snapshot": "2024-11-16T03:16:04Z"
+   },
+   {
+    "source": "wayback_xhr:1348746",
+    "n": 23,
+    "snapshot": "2024-11-28T17:15:17Z"
+   }
+  ]
+ },
+ {
+  "fest": "oct2025",
+  "label_ru": "Октябрь 2025",
+  "season": "autumn",
+  "year": 2025,
+  "chosen_source": "wayback_xhr:1404384",
+  "snapshot": "2025-11-02T06:40:37Z",
+  "n_appids": 2956,
+  "expected": 2963,
+  "diff_pct": -0.2,
+  "candidates": [
+   {
+    "source": "wayback_xhr:1401694",
+    "n": 3660,
+    "snapshot": "2025-10-04T02:24:13Z"
+   },
+   {
+    "source": "wayback_xhr:1404384",
+    "n": 2956,
+    "snapshot": "2025-11-02T06:40:37Z"
+   },
+   {
+    "source": "wayback_xhr:1387179",
+    "n": 200,
+    "snapshot": "2025-10-04T22:46:16Z"
+   }
+  ]
+ },
+ {
+  "fest": "oct2026",
+  "label_ru": "Октябрь 2026",
+  "season": "autumn",
+  "year": 2026,
+  "chosen_source": "live_endpoint",
+  "snapshot": "2026-10-25T11:29:15+00:00",
+  "n_appids": 7304,
+  "expected": 7240,
+  "diff_pct": 0.9,
+  "candidates": [
+   {
+    "source": "wayback_xhr:1458102",
+    "n": 8222,
+    "snapshot": "2026-10-09T04:53:33Z"
+   },
+   {
+    "source": "live_endpoint",
+    "n": 7304,
+    "snapshot": "2026-10-25T11:29:15+00:00"
+   }
+  ]
+ }
+]

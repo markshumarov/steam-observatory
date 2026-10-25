@@ -115,8 +115,9 @@ def main() -> int:
         fest = guess_fest(best["snapshot"]["iso"])
         rec = {"tagid": tagid, "fest_slug": fest.slug if fest else None, **best}
         results.append(rec)
-        name = fest.slug if fest else f"unknown_{tagid}"
-        (out_dir / f"{name}_lineup_ajax.json").write_text(
+        name = fest.slug if fest else "unknown"
+        # tagid в имени: одному изданию может соответствовать несколько снапшотов
+        (out_dir / f"{name}_{tagid}_lineup_ajax.json").write_text(
             json.dumps(rec, ensure_ascii=False, indent=1), encoding="utf-8"
         )
         exp = fest.expected if fest else None

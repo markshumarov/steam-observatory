@@ -50,6 +50,24 @@ python scripts/backfill_nextfest.py
 
 # одно издание
 python scripts/backfill_nextfest.py --only oct2026
+
+# составы 2024+ из архивированных XHR (точность ~1% против GameDiscoverCo)
+python scripts/backfill_lineup_ajax.py --fetch
+
+# состав текущего издания + гистограмма тегов
+python scripts/ingest_nextfest_lineup.py oct2026
+
+# мэппинг «игра -> демо» (нужен для CCU демо)
+python scripts/ingest_demo_map.py --slug oct2026 --minutes 150
+
+# непрерывный опрос игроков в демо до конца фестиваля
+python scripts/poll_ccu_loop.py --slug oct2026 --source demo --hours 20
+
+# единый датасет
+python scripts/build_dataset.py
+
+# первый числовой отчёт: насыщенность тегов и динамика
+python scripts/report_tags.py oct2026 --compare jun2026
 ```
 
 ## Данные / Data
@@ -74,6 +92,8 @@ python scripts/backfill_nextfest.py --only oct2026
 | M1 | Бэкфилл 2024–2026 через архивированные XHR | **готово**: сверка с GameDiscoverCo — июнь 2025: 2 635 против 2 645; октябрь 2025: 2 956 против 2 963; июнь 2026: 4 401 против 4 382 |
 | M1 | Press preview → финальный состав | **бонус**: октябрь 2026 — 8 222 зарегистрированных против 7 240 в финале |
 | M1 | Обогащение метаданными (цена, даты релиза, платформы) | не начато |
+| M1 | Единый датасет (`build_dataset.py`) + справочник тегов | **готово**: 25 067 строк (игра×издание) и 2 790 строк (тег×издание) |
+| M1 | Первый числовой отчёт (`report_tags.py`) | **готово**: доля Action −3.9 п.п., Adventure −3.7 п.п., Indie +2.6 п.п. между июнем и октябрём 2026 |
 | M2 | Сайт: интерактивные вью по фестам (Astro + DuckDB-WASM + Observable Plot) | не начато |
 | M3 | Модель «вишлисты/CCU → результат» + what-if калькулятор | не начато |
 | M4 | Статьи, подкаст, открытый датасет для цитирования | не начато |
