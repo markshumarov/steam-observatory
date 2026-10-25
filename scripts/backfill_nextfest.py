@@ -69,7 +69,13 @@ def backfill_fest(fest: Fest, *, min_games: int = 50, candidates: int = 6) -> di
         valid = [
             g
             for g in games_raw
-            if (g.get("title") or g.get("name")) and (g.get("tags") or g.get("capsule"))
+            if (g.get("title") or g.get("name"))
+            and (
+                g.get("tags")
+                or g.get("capsule")
+                or g.get("tiny_capsule")
+                or g.get("main_capsule")
+            )
         ]
         log.info(
             "%s: снапшот %s (%d КБ) -> объектов %d, из них карточек игр %d, стратегия %s, заголовок %r",
