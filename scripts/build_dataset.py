@@ -91,6 +91,29 @@ def load_candidates() -> dict[str, list[dict]]:
     return cands
 
 
+def load_gamalytic() -> dict[int, dict]:
+    """Бесплатный каталог Gamalytic: теги, жанры, цена, отзывы, тираж.
+
+    Вишлистов в бесплатной выдаче нет (они только в платном `/game/<appid>`),
+    но теги по каждому appid — именно то, чего не хватало изданиям 2024+.
+    """
+    path = config.OUT_DIR / "gamalytic_games.jsonl"
+    out: dict[int, dict] = {}
+    if not path.exists():
+        return out
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            rec = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        appid = rec.get("steamId") or rec.get("id")
+        if appid:
+            out[int(appid)] = rec
+    return out
+
+
 def pick_best(cands: list[dict], expected: int | None) -> dict:
     """Выбрать состав: ближайший к контрольному числу (иначе — самый большой).
 
@@ -111,6 +134,7 @@ def pick_best(cands: list[dict], expected: int | None) -> dict:
 
 def main() -> int:
     cands = load_candidates()
+    gamalytic = load_gamalytic()
     tags: dict[int, str] = {}
 
     tag_file = SRC / "steam_tags.json"
@@ -139,6 +163,7 @@ def main() -> int:
 
             for appid in ([] if unreliable else best["appids"]):
                 meta = game_meta.get(appid, {})
+                gm = gamalytic.get(appid, {})
                 for tid in meta.get("tag_ids") or []:
                     tags.setdefault(int(tid), "")
                 fg.write(
@@ -146,11 +171,16 @@ def main() -> int:
                         {
                             "fest": slug,
                             "appid": appid,
-                            "title": meta.get("title", ""),
-                            "tags": meta.get("tags", []),
+                            "title": meta.get("title") or gm.get("name") or "",
+                            "tags": meta.get("tags") or gm.get("tags") or [],
+                            "genres": gm.get("genres") or [],
                             "release": meta.get("release", ""),
+                            "release_ts": gm.get("releaseDate"),
                             "is_free": meta.get("is_free"),
                             "price_cents": meta.get("price_cents"),
+                            "review_score": gm.get("reviewScore"),
+                            "copies_sold": gm.get("copiesSold"),
+                            "unreleased": gm.get("unreleased"),
                             "source": best["source"],
                         },
                         ensure_ascii=False,
