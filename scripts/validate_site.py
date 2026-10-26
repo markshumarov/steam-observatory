@@ -65,9 +65,40 @@ with sync_playwright() as pw:
     page = browser.new_page(viewport={"width": 1400, "height": 1000})
     page.on("console", lambda m: errors.append(f"{m.type}: {m.text}") if m.type == "error" else None)
     page.on("pageerror", lambda e: errors.append(f"pageerror: {e}"))
-    page.goto(URL, wait_until="load", timeout=60000)
-    page.wait_for_selector("#chart-editions svg", timeout=30000)
+
+    # --- 0. ленивая загрузка ------------------------------------------------
+    # Пока тяжёлый ccu.json в пути, страница не должна выглядеть пустой:
+    # издания и теги рисуются из маленьких файлов, в блоке демо — скелетоны.
+    # Задержку делаем внутри страницы: page.route со sleep блокирует сам Playwright.
+    page.add_init_script(
+        """
+        const orig = window.fetch;
+        window.fetch = (input, init) => {
+          const url = typeof input === "string" ? input : input.url;
+          if (url.includes("ccu.json")) {
+            return new Promise((res) => setTimeout(() => res(orig(input, init)), 3000));
+          }
+          return orig(input, init);
+        };
+        """
+    )
+    page.goto(URL, wait_until="domcontentloaded", timeout=60000)
     page.wait_for_timeout(1200)
+    early_rows = page.eval_on_selector_all("#table-editions tbody tr", "els => els.length")
+    early_chips = page.eval_on_selector_all(".chip", "els => els.length")
+    early_skel = page.eval_on_selector_all("#ccu .skel", "els => els.length")
+    check("издания и теги видны до загрузки демо", early_rows >= 8 and early_chips > 300,
+          f"строк={early_rows}, чипов={early_chips}")
+    check("во время загрузки демо видны скелетоны", early_skel > 0, f"скелетонов={early_skel}")
+    page.wait_for_selector("#table-ccu tbody tr", timeout=30000)
+    page.wait_for_timeout(400)
+    check("после загрузки скелетоны убраны",
+          page.eval_on_selector_all(".skel", "els => els.length") == 0)
+    page.reload(wait_until="load", timeout=60000)
+    page.wait_for_selector("#chart-editions svg", timeout=30000)
+    # init-скрипт с задержкой действует и после перезагрузки — ждём блок демо
+    page.wait_for_selector("#table-ccu tbody tr", timeout=30000)
+    page.wait_for_timeout(600)
 
     # --- 1. язык ---------------------------------------------------------
     check("язык по умолчанию английский", page.evaluate("document.documentElement.lang") == "en")

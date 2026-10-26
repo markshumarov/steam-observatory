@@ -113,6 +113,43 @@ h3 { font-size: 15px; margin: 24px 0 10px; color: var(--text); font-weight: 600;
 .chart svg { background: transparent !important; overflow: visible; }
 .chart svg text { fill: currentColor; }
 
+/* ---------- состояние загрузки ---------- */
+/* Скелетоны видны сразу после открытия страницы: данные грузятся двумя
+   этапами, и до прихода файлов в блоках не должно быть пустоты. */
+.skel {
+  border-radius: 10px;
+  background: linear-gradient(90deg, #151c2b 25%, #1f2941 37%, #151c2b 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+.skel-chart { height: 320px; }
+.skel-chart-sm { height: 240px; }
+.skel-table { height: 200px; }
+.skel-chips { height: 92px; }
+.skel-line { height: 44px; }
+/* внутри flex-контейнера чипов скелетон должен занимать всю ширину */
+.chips .skel { flex: 1 1 100%; }
+
+@keyframes shimmer {
+  from { background-position: 100% 0; }
+  to { background-position: 0 0; }
+}
+
+@media (prefers-reduced-motion: reduce) { .skel { animation: none; } }
+
+.loadnote {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 12px 0;
+  padding: 10px 14px;
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  background: var(--panel-2);
+}
+
+.loadnote[hidden] { display: none; }
+
 /* ---------- элементы управления ---------- */
 .toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 0 0 14px; }
 

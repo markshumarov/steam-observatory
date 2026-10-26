@@ -36,8 +36,8 @@
       <span><i class="sw sw-preview"></i><span data-i18n="legend_preview"></span></span>
       <span><i class="sw sw-control"></i><span data-i18n="legend_control"></span></span>
     </div>
-    <div id="chart-editions" class="chart"></div>
-    <div id="table-editions" class="table"></div>
+    <div id="chart-editions" class="chart"><div class="skel skel-chart"></div></div>
+    <div id="table-editions" class="table"><div class="skel skel-table"></div></div>
   </section>
 
   <section id="tags">
@@ -48,24 +48,29 @@
       <span id="tag-count" class="counter"></span>
       <button id="tag-clear" type="button" class="ghost" data-i18n="tags_clear"></button>
     </div>
-    <div id="tag-picker" class="chips" role="group"></div>
-    <div id="chart-tags" class="chart"></div>
+    <div id="tag-picker" class="chips" role="group"><div class="skel skel-chips"></div></div>
+    <div id="chart-tags" class="chart"><div class="skel skel-chart"></div></div>
     <h3 data-i18n="compare_title"></h3>
     <div class="row">
       <label><span data-i18n="edition_a"></span> <select id="fest-a"></select></label>
       <label><span data-i18n="edition_b"></span> <select id="fest-b"></select></label>
     </div>
-    <div id="table-tags" class="table"></div>
+    <div id="table-tags" class="table"><div class="skel skel-table"></div></div>
   </section>
 
   <section id="ccu">
     <h2 data-i18n="ccu_title"></h2>
     <p class="hint" data-i18n="ccu_hint"></p>
-    <div id="kpis" class="kpis"></div>
+    <div id="kpis" class="kpis">
+      <div class="kpi"><div class="skel skel-line"></div></div>
+      <div class="kpi"><div class="skel skel-line"></div></div>
+      <div class="kpi"><div class="skel skel-line"></div></div>
+      <div class="kpi"><div class="skel skel-line"></div></div>
+    </div>
     <div class="split">
       <div class="col">
         <h3 data-i18n="hist_title"></h3>
-        <div id="chart-hist" class="chart"></div>
+        <div id="chart-hist" class="chart"><div class="skel skel-chart-sm"></div></div>
       </div>
       <div class="col">
         <h3 id="ccu-chart-title"></h3>
@@ -75,10 +80,11 @@
           <select id="ccu-limit"></select>
           <a id="ccu-csv" class="ghost" href="data/ccu.csv" download></a>
         </div>
-        <div id="chart-ccu" class="chart"></div>
+        <div id="chart-ccu" class="chart"><div class="skel skel-chart"></div></div>
       </div>
     </div>
-    <div id="table-ccu" class="table scroll"></div>
+    <p id="ccu-status" class="loadnote" hidden></p>
+    <div id="table-ccu" class="table scroll"><div class="skel skel-table"></div></div>
   </section>
 
   <section id="about">
@@ -90,6 +96,11 @@
 </main>
 
 <footer><p id="footer"></p></footer>
+<noscript>
+  <p class="loadnote">Steam Observatory draws its charts in the browser; JavaScript is required.
+  All raw numbers are available as JSON/CSV in the <code>data/</code> folder of the site
+  and in the repository.</p>
+</noscript>
 <script type="module" src="app.js"></script>
 </body>
 </html>

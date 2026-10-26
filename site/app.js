@@ -2,12 +2,16 @@ import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm"
 import { STR } from "./i18n.js";
 
 const load = (name) => fetch(`data/${name}`).then((r) => (r.ok ? r.json() : null));
-const [festsRaw, tags, tagCounts, ccu] = await Promise.all([
+
+// Данные грузятся двумя этапами. Сначала маленькие файлы (издания, теги) —
+// страница сразу показывает цифры. Тяжёлый ccu.json (7 тысяч демо) идёт вторым
+// запросом: пока он в пути, в блоках видны скелетоны, а не пустота.
+const [festsRaw, tags, tagCounts] = await Promise.all([
   load("fests.json"),
   load("tags.json"),
   load("tag_counts.json"),
-  load("ccu.json"),
 ]);
+let ccu = null;
 
 // --- язык ---------------------------------------------------------------
 // По умолчанию английский; выбор запоминается в localStorage.
@@ -77,7 +81,7 @@ function applyStatic() {
 }
 
 function ccuLimitLabel() {
-  const v = el("#ccu-limit")?.value ?? "25";
+  const v = el("#ccu-limit")?.value || ccuLimit;
   return v === "all" ? t("ccu_all") : v;
 }
 
@@ -334,9 +338,15 @@ function renderCompare() {
 let ccuQuery = "";
 let ccuSort = "peak-desc";
 let ccuLimit = "25";
-const ccuAll = ccu && ccu.top ? ccu.top.slice() : [];
-const stats = (ccu && ccu.stats) || {};
+let ccuAll = [];
+let stats = {};
 const gameLabel = (d) => d.name || `appid ${d.demo_appid}`;
+
+function setCcu(data) {
+  ccu = data;
+  ccuAll = data && data.top ? data.top.slice() : [];
+  stats = (data && data.stats) || {};
+}
 
 function buildCcuControls() {
   const sortSel = el("#ccu-sort");
@@ -386,6 +396,7 @@ function filteredCcu() {
 }
 
 function renderCcu() {
+  if (!ccu) return; // данные ещё в пути — в блоках остаются скелетоны
   const kpis = [
     [fmt(stats.samples ?? 0), "kpi_samples"],
     [fmt(stats.games ?? ccuAll.length), "kpi_demos"],
@@ -503,8 +514,6 @@ function renderAll() {
 }
 
 // --- запуск -------------------------------------------------------------
-buildCcuControls();
-
 el("#tag-search").addEventListener("input", (e) => {
   tagQuery = e.target.value;
   renderPicker();
@@ -519,4 +528,23 @@ el("#fest-b").addEventListener("change", renderCompare);
 
 renderAll();
 renderPicker();
+
+// --- этап 2: тяжёлые данные по демо ------------------------------------
+(async () => {
+  const status = el("#ccu-status");
+  status.hidden = false;
+  status.textContent = t("loading");
+  const data = await load("ccu.json");
+  if (!data) {
+    status.textContent = t("load_error");
+    for (const sel of ["#kpis", "#chart-hist", "#chart-ccu", "#table-ccu"]) {
+      el(sel).innerHTML = "";
+    }
+    return;
+  }
+  setCcu(data);
+  status.hidden = true;
+  buildCcuControls();
+  renderCcu();
+})();
 

@@ -68,6 +68,8 @@ export const STR = {
     ccu_table_note: "table shows the first {n} matches; the CSV holds every demo",
     ccu_csv: "Download CSV",
     loading: "collecting data…",
+    load_error: "Could not load the data. Check your connection and reload the page.",
+    load_partial: "Lineups and tags are ready; demo numbers are still loading.",
 
     about_title: "Method",
     about_p1:
@@ -145,6 +147,8 @@ export const STR = {
     ccu_table_note: "в таблице первые {n} совпадений, полный список — в CSV",
     ccu_csv: "Скачать CSV",
     loading: "данные собираются…",
+    load_error: "Не удалось загрузить данные. Проверьте связь и обновите страницу.",
+    load_partial: "Составы и теги готовы, данные по демо ещё загружаются.",
 
     about_title: "Методология",
     about_p1:
