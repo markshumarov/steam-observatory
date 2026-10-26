@@ -271,3 +271,45 @@ footer { color: var(--muted); font-size: 13px; padding: 28px 24px 56px; }
   input[type="search"] { min-width: 140px; }
 }
 
+/* ---------- страница-разбор ---------- */
+.story h1 { font-size: 34px; line-height: 1.15; margin: 20px 0 10px; max-width: 24ch; }
+
+.story-link {
+  display: inline-block;
+  padding: 9px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.story-link:hover { background: rgba(107, 155, 255, 0.12); }
+
+@media (max-width: 640px) { .story h1 { font-size: 26px; } }
+
+.kicker {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 2px;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.takeaways { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 10px; }
+
+.takeaways li { position: relative; padding-left: 22px; font-size: 15px; }
+
+.takeaways li::before { content: "→"; position: absolute; left: 0; color: var(--accent); }
+
+.takeaways b, .checklist b { color: #fff; font-weight: 650; }
+
+.checklist { display: grid; gap: 12px; padding-left: 20px; margin: 0; }
+
+.checklist li { font-size: 15px; }
+
+.story table td:first-child { white-space: nowrap; }
+

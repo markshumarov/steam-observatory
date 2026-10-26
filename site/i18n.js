@@ -6,6 +6,7 @@ export const STR = {
     lede:
       "Who joined each Steam Next Fest, how crowded the tags are, and how many people actually played the demos. Raw data and scripts are in the repository.",
     data_link: "source data",
+    story_link: "Read the analysis: what the numbers mean for developers →",
     nav_editions: "Editions",
     nav_tags: "Tags",
     nav_ccu: "Demos",
@@ -85,6 +86,7 @@ export const STR = {
     lede:
       "Кто участвовал в каждом Steam Next Fest, насколько тесно в тегах и сколько людей реально играли в демо. Исходные данные и скрипты — в репозитории.",
     data_link: "исходные данные",
+    story_link: "Разбор: что эти цифры значат для разработчиков →",
     nav_editions: "Издания",
     nav_tags: "Теги",
     nav_ccu: "Демо",

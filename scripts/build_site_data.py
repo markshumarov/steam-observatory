@@ -236,7 +236,7 @@ def main() -> int:
             {
                 "from": lo,
                 "to": hi,
-                "games": sum(1 for v in peaks.values() if (v > lo if lo else v == 0) and v <= hi),
+                "games": sum(1 for v in peaks.values() if (v >= lo if lo else v == 0) and v <= hi),
             }
         )
     hist.append({"from": edges[-1], "to": None,

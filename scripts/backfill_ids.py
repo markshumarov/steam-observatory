@@ -71,6 +71,7 @@ def backfill(fest, *, max_snapshots: int, probe: bool = False) -> dict:
     demo_map: dict[int, int] = {}
     used: list[dict] = []
     titles: dict[int, str] = {}
+    title_attempts = 0
 
     for snap in snaps[:max_snapshots]:
         if snap.length < 15_000:
@@ -97,8 +98,11 @@ def backfill(fest, *, max_snapshots: int, probe: bool = False) -> dict:
             print(f"   {snap.timestamp} ({snap.length // 1024} КБ): {len(ids)} id, "
                   f"+{len(all_ids) - before} новых, всего {len(all_ids)}")
 
-        # названия, если страница их содержала (иногда только на части карточек)
-        if len(ids) < 60 or len(titles) < 60:
+        # Названия вытаскиваем только на первых снапшотах: полный разбор страницы
+        # дорогой (десятки секунд на файл), а в изданиях 2022–2023 названий в HTML
+        # нет вообще. Названия и теги к найденным appid добавляет enrich_lineup_ids.py.
+        if title_attempts < 3 and len(titles) < 60:
+            title_attempts += 1
             try:
                 games_raw, _ = extract_games(html)
             except Exception:  # noqa: BLE001

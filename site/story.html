@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steam Observatory — what the Next Fest numbers say</title>
+<meta name="description" content="Supply, attention and wishlist conversion in Steam Next Fest October 2026: what the numbers mean for developers.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="story">
+<header>
+  <div class="topline">
+    <a class="brand" href="./"><span class="dot"></span>Steam Observatory</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="ru">RU</button>
+    </div>
+  </div>
+  <h1 data-i18n="h1"></h1>
+  <p class="lede" data-i18n="lede"></p>
+  <nav class="tabs">
+    <a href="#supply" data-i18n="nav_supply"></a>
+    <a href="#attention" data-i18n="nav_attention"></a>
+    <a href="#wishlists" data-i18n="nav_wishlists"></a>
+    <a href="#cozy" data-i18n="nav_cozy"></a>
+    <a href="#takeaways" data-i18n="nav_takeaways"></a>
+    <a href="./" data-i18n="nav_data"></a>
+  </nav>
+</header>
+
+<main>
+  <section id="supply">
+    <p class="kicker" id="k-supply"></p>
+    <h2 data-i18n="supply_title"></h2>
+    <p class="hint" data-i18n="supply_hint"></p>
+    <div id="chart-supply" class="chart"><div class="skel skel-chart"></div></div>
+    <ul class="takeaways" id="take-supply"></ul>
+  </section>
+
+  <section id="attention">
+    <p class="kicker" id="k-attention"></p>
+    <h2 data-i18n="attention_title"></h2>
+    <p class="hint" data-i18n="attention_hint"></p>
+    <div class="split">
+      <div class="col"><div id="chart-attention" class="chart"><div class="skel skel-chart"></div></div></div>
+      <div class="col"><div id="chart-peaks" class="chart"><div class="skel skel-chart"></div></div></div>
+    </div>
+    <ul class="takeaways" id="take-attention"></ul>
+  </section>
+
+  <section id="wishlists">
+    <p class="kicker" id="k-wishlists"></p>
+    <h2 data-i18n="wishlists_title"></h2>
+    <p class="hint" data-i18n="wishlists_hint"></p>
+    <div id="chart-wishlists" class="chart"><div class="skel skel-chart"></div></div>
+    <ul class="takeaways" id="take-wishlists"></ul>
+  </section>
+
+  <section id="cozy">
+    <p class="kicker" id="k-cozy"></p>
+    <h2 data-i18n="cozy_title"></h2>
+    <p class="hint" data-i18n="cozy_hint"></p>
+    <div id="chart-cozy" class="chart"><div class="skel skel-chart"></div></div>
+    <ul class="takeaways" id="take-cozy"></ul>
+  </section>
+
+  <section id="takeaways">
+    <h2 data-i18n="takeaways_title"></h2>
+    <p class="hint" data-i18n="takeaways_hint"></p>
+    <ol class="checklist" id="checklist"></ol>
+  </section>
+
+  <section id="method">
+    <h2 data-i18n="method_title"></h2>
+    <p data-i18n="method_p1"></p>
+    <p data-i18n="method_p2"></p>
+    <div id="sources" class="table"></div>
+  </section>
+</main>
+
+<footer><p id="footer"></p></footer>
+<script type="module" src="story.js"></script>
+</body>
+</html>

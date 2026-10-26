@@ -1,0 +1,508 @@
+{
+ "as_of": "2026-10-26",
+ "supply": [
+  {
+   "slug": "jun2021",
+   "games": 611
+  },
+  {
+   "slug": "oct2021",
+   "games": 598
+  },
+  {
+   "slug": "feb2022",
+   "games": 324
+  },
+  {
+   "slug": "jun2022",
+   "games": 343
+  },
+  {
+   "slug": "oct2022",
+   "games": 301
+  },
+  {
+   "slug": "feb2023",
+   "games": 335
+  },
+  {
+   "slug": "jun2023",
+   "games": 392
+  },
+  {
+   "slug": "oct2023",
+   "games": 301
+  },
+  {
+   "slug": "feb2024",
+   "games": 302
+  },
+  {
+   "slug": "jun2024",
+   "games": 323
+  },
+  {
+   "slug": "oct2024",
+   "games": 3197
+  },
+  {
+   "slug": "jun2025",
+   "games": 2635
+  },
+  {
+   "slug": "oct2025",
+   "games": 2956
+  },
+  {
+   "slug": "feb2026",
+   "games": 3892
+  },
+  {
+   "slug": "jun2026",
+   "games": 4401
+  },
+  {
+   "slug": "oct2026",
+   "games": 7304
+  }
+ ],
+ "editions": [
+  {
+   "slug": "jun2021",
+   "games": 611,
+   "median_copies": 3178,
+   "share_under_1000": 0.327,
+   "share_no_reviews": 0.193,
+   "months": 57.4
+  },
+  {
+   "slug": "oct2024",
+   "games": 3197,
+   "median_copies": 611,
+   "share_under_1000": 0.581,
+   "share_no_reviews": 0.315,
+   "months": 20.8
+  },
+  {
+   "slug": "jun2025",
+   "games": 2635,
+   "median_copies": 622,
+   "share_under_1000": 0.569,
+   "share_no_reviews": 0.268,
+   "months": 13.3
+  },
+  {
+   "slug": "oct2025",
+   "games": 2956,
+   "median_copies": 591,
+   "share_under_1000": 0.581,
+   "share_no_reviews": 0.274,
+   "months": 10.3
+  },
+  {
+   "slug": "feb2026",
+   "games": 3892,
+   "median_copies": 462,
+   "share_under_1000": 0.614,
+   "share_no_reviews": 0.387,
+   "months": 5.9
+  },
+  {
+   "slug": "jun2026",
+   "games": 4401,
+   "median_copies": 304,
+   "share_under_1000": 0.666,
+   "share_no_reviews": 0.45,
+   "months": 2.6
+  }
+ ],
+ "attention": {
+  "lineup": 7319,
+  "rows": 200,
+  "top10_share": 63.8,
+  "sum_top10": 150867,
+  "sum_top50": 199361,
+  "sum_all": 236381,
+  "median_peak_top200": 264,
+  "max_peak": 39811,
+  "our_games": 7073,
+  "our_median": 2,
+  "our_zero_or_one": 2466,
+  "our_ge_100": 189,
+  "our_hist": [
+   {
+    "from": 0,
+    "to": 1,
+    "games": 2466
+   },
+   {
+    "from": 1,
+    "to": 10,
+    "games": 3803
+   },
+   {
+    "from": 10,
+    "to": 50,
+    "games": 562
+   },
+   {
+    "from": 50,
+    "to": 100,
+    "games": 116
+   },
+   {
+    "from": 100,
+    "to": 500,
+    "games": 142
+   },
+   {
+    "from": 500,
+    "to": 1000,
+    "games": 21
+   },
+   {
+    "from": 1000,
+    "to": 5000,
+    "games": 20
+   },
+   {
+    "from": 5000,
+    "to": null,
+    "games": 6
+   }
+  ],
+  "top": [
+   {
+    "name": "Probably Stolen - Cyberpunk Shopkeeper Sim",
+    "appid": 4348910,
+    "demo": 4349200,
+    "peak": 39811,
+    "now": 14198,
+    "wlEst": 706828,
+    "wlRankNow": 78,
+    "wlRankBefore": 120,
+    "rank": 1,
+    "tags": [
+     "Shop Keeper",
+     "Simulation",
+     "Trading",
+     "Management",
+     "Cyberpunk",
+     "Crafting"
+    ]
+   },
+   {
+    "name": "Worst Class Ever",
+    "appid": 5175310,
+    "demo": 5354030,
+    "peak": 27832,
+    "now": 2181,
+    "wlEst": 24701,
+    "wlRankNow": 1879,
+    "wlRankBefore": null,
+    "rank": 2,
+    "tags": [
+     "Online Co-Op",
+     "Co-op",
+     "Multiplayer",
+     "Team-Based",
+     "Social Deduction",
+     "Party Game"
+    ]
+   },
+   {
+    "name": "Character House -Desktop Companion-",
+    "appid": 4868310,
+    "demo": 5166840,
+    "peak": 17550,
+    "now": 10893,
+    "wlEst": 164587,
+    "wlRankNow": 383,
+    "wlRankBefore": 416,
+    "rank": 3,
+    "tags": [
+     "Desktop Companion",
+     "Casual",
+     "Character Customization",
+     "Simulation",
+     "Idler",
+     "Anime"
+    ]
+   },
+   {
+    "name": "Find The Needle",
+    "appid": 5160800,
+    "demo": 5165210,
+    "peak": 9778,
+    "now": 3839,
+    "wlEst": 385889,
+    "wlRankNow": 151,
+    "wlRankBefore": 175,
+    "rank": 4,
+    "tags": [
+     "Simulation",
+     "Automation",
+     "Incremental",
+     "Multiplayer",
+     "Physics",
+     "Base Building"
+    ]
+   },
+   {
+    "name": "just volleyball",
+    "appid": 5037200,
+    "demo": 5401090,
+    "peak": 9669,
+    "now": 2121,
+    "wlEst": 107614,
+    "wlRankNow": 598,
+    "wlRankBefore": 829,
+    "rank": 5,
+    "tags": [
+     "Sports",
+     "Action",
+     "Multiplayer",
+     "Arcade",
+     "Volleyball",
+     "Casual"
+    ]
+   },
+   {
+    "name": "Frostrail",
+    "appid": 3517740,
+    "demo": 5090080,
+    "peak": 8845,
+    "now": 1057,
+    "wlEst": 835338,
+    "wlRankNow": 65,
+    "wlRankBefore": 76,
+    "rank": 6,
+    "tags": [
+     "Open World Survival Craft",
+     "Survival",
+     "FPS",
+     "Crafting",
+     "Open World",
+     "Adventure"
+    ]
+   },
+   {
+    "name": "Fart Together",
+    "appid": 5117550,
+    "demo": 5208630,
+    "peak": 4513,
+    "now": 797,
+    "wlEst": 41083,
+    "wlRankNow": 1264,
+    "wlRankBefore": 2241,
+    "rank": 7,
+    "tags": [
+     "Online Co-Op",
+     "Physics",
+     "Multiplayer",
+     "Party Game",
+     "Funny",
+     "Team-Based"
+    ]
+   },
+   {
+    "name": "Abyssal Lapidary",
+    "appid": 3797790,
+    "demo": 4736580,
+    "peak": 4805,
+    "now": 2296,
+    "wlEst": 164979,
+    "wlRankNow": 382,
+    "wlRankBefore": 1785,
+    "rank": 8,
+    "tags": [
+     "Immersive Sim",
+     "Job Simulator",
+     "Lovecraftian",
+     "Crafting",
+     "RPG",
+     "Shop Keeper"
+    ]
+   },
+   {
+    "name": "Loftia",
+    "appid": 2320980,
+    "demo": 5315310,
+    "peak": 7557,
+    "now": 1658,
+    "wlEst": 421870,
+    "wlRankNow": 137,
+    "wlRankBefore": 162,
+    "rank": 9,
+    "tags": [
+     "Life Sim",
+     "Cozy",
+     "Farming Sim",
+     "Massively Multiplayer",
+     "Character Customization",
+     "Decorating"
+    ]
+   },
+   {
+    "name": "Among Shadows",
+    "appid": 2923810,
+    "demo": 4818160,
+    "peak": 3063,
+    "now": 1305,
+    "wlEst": 12730,
+    "wlRankNow": 3151,
+    "wlRankBefore": 3349,
+    "rank": 10,
+    "tags": [
+     "PvP",
+     "Multiplayer",
+     "Third Person",
+     "Hack and Slash",
+     "Party Game",
+     "Strategy"
+    ]
+   },
+   {
+    "name": "Grr Grr Gnomes",
+    "appid": 4900890,
+    "demo": 5214090,
+    "peak": 2617,
+    "now": 430,
+    "wlEst": 40466,
+    "wlRankNow": 1279,
+    "wlRankBefore": 1410,
+    "rank": 11,
+    "tags": [
+     "Action",
+     "Simulation",
+     "Action-Adventure",
+     "Exploration",
+     "Choose Your Own Adventure",
+     "3D"
+    ]
+   },
+   {
+    "name": "Meltdown Crew",
+    "appid": 4824220,
+    "demo": 5324440,
+    "peak": 2434,
+    "now": 210,
+    "wlEst": 119407,
+    "wlRankNow": 545,
+    "wlRankBefore": 665,
+    "rank": 12,
+    "tags": [
+     "Action",
+     "Simulation",
+     "Strategy",
+     "Party Game",
+     "Puzzle",
+     "Online Co-Op"
+    ]
+   }
+  ]
+ },
+ "conversion": {
+  "n": 465,
+  "wishlists_median": 21419,
+  "per_1k": {
+   "p10": 1.71,
+   "p25": 2.93,
+   "p50": 6.13,
+   "p75": 12.35,
+   "p90": 22.45
+  },
+  "high_wishlists": 5.02,
+  "low_wishlists": 8.06,
+  "age_days": 30
+ },
+ "cozy": {
+  "released": 2802,
+  "released_last_12m": 1528,
+  "by_year": [
+   {
+    "year": 2019,
+    "releases": 19,
+    "median_reviews": 658,
+    "share_under_10": 0.15789473684210525,
+    "too_fresh": 0
+   },
+   {
+    "year": 2020,
+    "releases": 28,
+    "median_reviews": 437.5,
+    "share_under_10": 0.03571428571428571,
+    "too_fresh": 0
+   },
+   {
+    "year": 2021,
+    "releases": 45,
+    "median_reviews": 140,
+    "share_under_10": 0.13333333333333333,
+    "too_fresh": 0
+   },
+   {
+    "year": 2022,
+    "releases": 101,
+    "median_reviews": 139,
+    "share_under_10": 0.1188118811881188,
+    "too_fresh": 0
+   },
+   {
+    "year": 2023,
+    "releases": 159,
+    "median_reviews": 83,
+    "share_under_10": 0.1509433962264151,
+    "too_fresh": 0
+   },
+   {
+    "year": 2024,
+    "releases": 391,
+    "median_reviews": 62,
+    "share_under_10": 0.16624040920716113,
+    "too_fresh": 0
+   },
+   {
+    "year": 2025,
+    "releases": 649,
+    "median_reviews": 38,
+    "share_under_10": 0.24191063174114022,
+    "too_fresh": 0
+   },
+   {
+    "year": 2026,
+    "releases": 1377,
+    "median_reviews": 17,
+    "share_under_10": 0.3310696095076401,
+    "too_fresh": 788
+   }
+  ],
+  "share_under_10": 0.2529832935560859
+ },
+ "attribution": [
+  {
+   "name": "PlayRecon",
+   "what": "wishlist estimates, demo board, niche statistics, wishlist-to-reviews conversion",
+   "url": "https://app.playrecon.com",
+   "note": "MCP API; wishlist model is marked experimental; numbers as of 2026-10-26"
+  },
+  {
+   "name": "Gamalytic",
+   "what": "copies sold, review score, release dates, tags",
+   "url": "https://gamalytic.com",
+   "note": "estimate, not Valve's data"
+  },
+  {
+   "name": "Internet Archive",
+   "what": "historical Next Fest lineups",
+   "url": "https://web.archive.org",
+   "note": "Wayback snapshots of the festival page"
+  },
+  {
+   "name": "Steam",
+   "what": "demo concurrent players, current lineups",
+   "url": "https://store.steampowered.com",
+   "note": "public API, own polling"
+  }
+ ]
+}

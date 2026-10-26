@@ -41,6 +41,15 @@ def main() -> int:
             ("составы из Wayback (XHR, 2024+)", ["scripts/backfill_lineup_ajax.py", "--fetch"]),
             # appid-срезы: страницы 2021–2024 отдавали в HTML только часть списка
             ("appid-срезы Wayback (2021–2024)", ["scripts/backfill_ids.py"]),
+            # варианты URL той же страницы (?tab=, ?facets=, языки, press preview):
+            # каждый даёт свой срез состава
+            ("варианты URL страницы фестиваля", ["scripts/harvest_lineup_urls.py",
+                                                "--only", "oct2021", "--only", "feb2022",
+                                                "--only", "jun2022", "--only", "oct2022",
+                                                "--only", "feb2023", "--only", "jun2023",
+                                                "--only", "oct2023", "--only", "feb2024",
+                                                "--only", "jun2024", "--only", "feb2025",
+                                                "--per-url", "1"]),
         ]
     steps += [
         ("состав текущего издания", ["scripts/ingest_nextfest_lineup.py", args.slug]),

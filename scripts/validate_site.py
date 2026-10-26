@@ -37,7 +37,11 @@ TARGET = sys.argv[1] if len(sys.argv) > 1 else None
 
 
 def serve() -> None:
-    handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(SITE))
+    class Quiet(http.server.SimpleHTTPRequestHandler):
+        def log_message(self, *args):  # без шума в консоли
+            pass
+
+    handler = functools.partial(Quiet, directory=str(SITE))
     socketserver.TCPServer.allow_reuse_address = True
     with socketserver.TCPServer(("127.0.0.1", PORT), handler) as httpd:
         httpd.serve_forever()

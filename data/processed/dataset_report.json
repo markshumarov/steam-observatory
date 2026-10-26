@@ -7,7 +7,7 @@
   "year": 2022,
   "chosen_source": "wayback_html_ids+gamalytic",
   "snapshot": null,
-  "n_appids": 324,
+  "n_appids": 402,
   "expected": null,
   "status": "ok",
   "quality": "reconstructed",
@@ -16,7 +16,7 @@
   "candidates": [
    {
     "source": "wayback_html_ids+gamalytic",
-    "n": 324,
+    "n": 402,
     "snapshot": null
    }
   ]
@@ -29,7 +29,7 @@
   "year": 2023,
   "chosen_source": "wayback_html_ids+gamalytic",
   "snapshot": null,
-  "n_appids": 335,
+  "n_appids": 336,
   "expected": null,
   "status": "ok",
   "quality": "reconstructed",
@@ -38,7 +38,7 @@
   "candidates": [
    {
     "source": "wayback_html_ids+gamalytic",
-    "n": 335,
+    "n": 336,
     "snapshot": null
    }
   ]
@@ -71,15 +71,20 @@
   "label_en": "February 2025",
   "season": "winter",
   "year": 2025,
-  "chosen_source": "wayback_xhr:1352159",
-  "snapshot": "2024-12-21T16:46:02Z",
-  "n_appids": 12,
+  "chosen_source": "wayback_html_ids+gamalytic",
+  "snapshot": null,
+  "n_appids": 300,
   "expected": 2337,
-  "status": "unreliable",
-  "quality": "full",
-  "facets_from": "xhr",
-  "diff_pct": -99.5,
+  "status": "ok",
+  "quality": "partial",
+  "facets_from": "games",
+  "diff_pct": -87.2,
   "candidates": [
+   {
+    "source": "wayback_html_ids+gamalytic",
+    "n": 300,
+    "snapshot": null
+   },
    {
     "source": "wayback_xhr:1352159",
     "n": 12,
@@ -171,16 +176,16 @@
   "year": 2023,
   "chosen_source": "wayback_html_ids+gamalytic",
   "snapshot": null,
-  "n_appids": 392,
+  "n_appids": 393,
   "expected": 887,
   "status": "ok",
   "quality": "partial",
   "facets_from": "games",
-  "diff_pct": -55.8,
+  "diff_pct": -55.7,
   "candidates": [
    {
     "source": "wayback_html_ids+gamalytic",
-    "n": 392,
+    "n": 393,
     "snapshot": null
    }
   ]
@@ -279,7 +284,7 @@
   "year": 2021,
   "chosen_source": "wayback_html_ids+gamalytic",
   "snapshot": null,
-  "n_appids": 598,
+  "n_appids": 708,
   "expected": null,
   "status": "ok",
   "quality": "reconstructed",
@@ -288,7 +293,7 @@
   "candidates": [
    {
     "source": "wayback_html_ids+gamalytic",
-    "n": 598,
+    "n": 708,
     "snapshot": null
    }
   ]
@@ -301,7 +306,7 @@
   "year": 2022,
   "chosen_source": "wayback_html_ids+gamalytic",
   "snapshot": null,
-  "n_appids": 301,
+  "n_appids": 328,
   "expected": null,
   "status": "ok",
   "quality": "reconstructed",
@@ -310,7 +315,7 @@
   "candidates": [
    {
     "source": "wayback_html_ids+gamalytic",
-    "n": 301,
+    "n": 328,
     "snapshot": null
    }
   ]
@@ -323,16 +328,16 @@
   "year": 2023,
   "chosen_source": "wayback_html_ids+gamalytic",
   "snapshot": null,
-  "n_appids": 301,
+  "n_appids": 308,
   "expected": 972,
   "status": "ok",
   "quality": "partial",
   "facets_from": "games",
-  "diff_pct": -69.0,
+  "diff_pct": -68.3,
   "candidates": [
    {
     "source": "wayback_html_ids+gamalytic",
-    "n": 301,
+    "n": 308,
     "snapshot": null
    }
   ]

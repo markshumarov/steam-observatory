@@ -22,7 +22,7 @@
   "label_en": "October 2021",
   "season": "autumn",
   "year": 2021,
-  "n_final": 598,
+  "n_final": 708,
   "n_preview": null,
   "expected": null,
   "diff_pct": null,
@@ -31,7 +31,7 @@
   "facets_from": "games",
   "note_ru": "состав восстановлен по срезам архивной страницы; полнота неизвестна",
   "note_en": "rebuilt from archived page slices; completeness unknown",
-  "tag_basis": 472
+  "tag_basis": 559
  },
  {
   "slug": "feb2022",
@@ -39,7 +39,7 @@
   "label_en": "February 2022",
   "season": "winter",
   "year": 2022,
-  "n_final": 324,
+  "n_final": 402,
   "n_preview": null,
   "expected": null,
   "diff_pct": null,
@@ -48,7 +48,7 @@
   "facets_from": "games",
   "note_ru": "состав восстановлен по срезам архивной страницы; полнота неизвестна",
   "note_en": "rebuilt from archived page slices; completeness unknown",
-  "tag_basis": 265
+  "tag_basis": 328
  },
  {
   "slug": "jun2022",
@@ -73,7 +73,7 @@
   "label_en": "October 2022",
   "season": "autumn",
   "year": 2022,
-  "n_final": 301,
+  "n_final": 328,
   "n_preview": null,
   "expected": null,
   "diff_pct": null,
@@ -82,7 +82,7 @@
   "facets_from": "games",
   "note_ru": "состав восстановлен по срезам архивной страницы; полнота неизвестна",
   "note_en": "rebuilt from archived page slices; completeness unknown",
-  "tag_basis": 230
+  "tag_basis": 242
  },
  {
   "slug": "feb2023",
@@ -90,7 +90,7 @@
   "label_en": "February 2023",
   "season": "winter",
   "year": 2023,
-  "n_final": 335,
+  "n_final": 336,
   "n_preview": null,
   "expected": null,
   "diff_pct": null,
@@ -99,7 +99,7 @@
   "facets_from": "games",
   "note_ru": "состав восстановлен по срезам архивной страницы; полнота неизвестна",
   "note_en": "rebuilt from archived page slices; completeness unknown",
-  "tag_basis": 257
+  "tag_basis": 258
  },
  {
   "slug": "jun2023",
@@ -107,10 +107,10 @@
   "label_en": "June 2023",
   "season": "summer",
   "year": 2023,
-  "n_final": 392,
+  "n_final": 393,
   "n_preview": null,
   "expected": 887,
-  "diff_pct": -55.8,
+  "diff_pct": -55.7,
   "source": "wayback_html_ids+gamalytic",
   "quality": "partial",
   "facets_from": "games",
@@ -124,16 +124,16 @@
   "label_en": "October 2023",
   "season": "autumn",
   "year": 2023,
-  "n_final": 301,
+  "n_final": 308,
   "n_preview": null,
   "expected": 972,
-  "diff_pct": -69.0,
+  "diff_pct": -68.3,
   "source": "wayback_html_ids+gamalytic",
   "quality": "partial",
   "facets_from": "games",
   "note_ru": "частичный состав: архивная страница отдавала только первую часть списка",
   "note_en": "partial lineup: the archived page served only the first slice",
-  "tag_basis": 230
+  "tag_basis": 234
  },
  {
   "slug": "feb2024",
@@ -185,6 +185,23 @@
   "note_ru": "расхождение с контролем +6.3%",
   "note_en": "+6.3% off control",
   "tag_basis": null
+ },
+ {
+  "slug": "feb2025",
+  "label_ru": "Февраль 2025",
+  "label_en": "February 2025",
+  "season": "winter",
+  "year": 2025,
+  "n_final": 300,
+  "n_preview": null,
+  "expected": 2337,
+  "diff_pct": -87.2,
+  "source": "wayback_html_ids+gamalytic",
+  "quality": "partial",
+  "facets_from": "games",
+  "note_ru": "частичный состав: архивная страница отдавала только первую часть списка",
+  "note_en": "partial lineup: the archived page served only the first slice",
+  "tag_basis": 243
  },
  {
   "slug": "jun2025",
