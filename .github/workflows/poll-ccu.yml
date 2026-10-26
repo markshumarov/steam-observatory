@@ -2,7 +2,9 @@ name: poll-ccu
 
 # Непрерывный опрос игроков в демо во время фестиваля.
 # Репозиторий публичный, поэтому минуты GitHub Actions не расходуются.
-# Каждый запуск работает ~1.5 часа, следующая смена стартует каждые 2 часа.
+# Каждый запуск работает ~1.9 часа, следующая смена стартует каждые 2 часа.
+# Обход идёт от самых недосчитанных демо, поэтому длинная смена не оставляет
+# хвост списка без замеров.
 
 on:
   schedule:
@@ -19,7 +21,7 @@ concurrency:
 jobs:
   poll:
     runs-on: ubuntu-latest
-    timeout-minutes: 115
+    timeout-minutes: 125
     steps:
       - uses: actions/checkout@v4
 
@@ -31,7 +33,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Опрос CCU демо
-        run: python scripts/poll_ccu_loop.py --slug oct2026 --source demo --hours 1.4 --interval 1.1
+        run: python scripts/poll_ccu_loop.py --slug oct2026 --source demo --hours 1.9 --interval 1.1
 
       - name: Коммит замеров
         run: |

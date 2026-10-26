@@ -14,6 +14,7 @@
 from __future__ import annotations
 
 import argparse
+import collections
 import json
 import sys
 import time
@@ -52,6 +53,36 @@ def load_ids(slug: str, source: str) -> list[int]:
     return list(lineup["appids"])
 
 
+def load_counts(out_path: Path) -> collections.Counter:
+    """Сколько замеров уже накоплено по каждому appid."""
+    counts: collections.Counter = collections.Counter()
+    if not out_path.exists():
+        return counts
+    for line in out_path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            rec = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        counts[int(rec["appid"])] += 1
+    return counts
+
+
+def order_ids(ids: list[int], out_path: Path) -> list[int]:
+    """Порядок обхода: сначала те, у кого меньше замеров.
+
+    Проход по 7 тысячам демо занимает больше двух часов, а смена в CI короче,
+    поэтому обход «с начала списка» оставлял бы хвост без замеров навсегда.
+    Сортировка по числу уже сделанных замеров выравнивает покрытие: каждый
+    следующий проход начинается там, где данных меньше всего.
+    """
+    counts = load_counts(out_path)
+    if not counts:
+        return ids
+    return sorted(ids, key=lambda a: (counts.get(a, 0), a))
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--slug", default="oct2026")
@@ -81,6 +112,7 @@ def main() -> int:
             continue
 
         pass_no += 1
+        ids = order_ids(ids, out_path)
         done = no_stats = throttled = err = 0
         pass_started = time.time()
         print(f"=== проход {pass_no}: {len(ids)} appid", flush=True)
