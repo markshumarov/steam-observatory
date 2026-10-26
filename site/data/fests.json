@@ -31,7 +31,7 @@
   "facets_from": "games",
   "note_ru": "состав восстановлен по срезам архивной страницы; полнота неизвестна",
   "note_en": "rebuilt from archived page slices; completeness unknown",
-  "tag_basis": 418
+  "tag_basis": 472
  },
  {
   "slug": "feb2022",
@@ -48,7 +48,7 @@
   "facets_from": "games",
   "note_ru": "состав восстановлен по срезам архивной страницы; полнота неизвестна",
   "note_en": "rebuilt from archived page slices; completeness unknown",
-  "tag_basis": 252
+  "tag_basis": 265
  },
  {
   "slug": "jun2022",
@@ -65,7 +65,7 @@
   "facets_from": "games",
   "note_ru": "состав восстановлен по срезам архивной страницы; полнота неизвестна",
   "note_en": "rebuilt from archived page slices; completeness unknown",
-  "tag_basis": 239
+  "tag_basis": 262
  },
  {
   "slug": "oct2022",
@@ -82,7 +82,7 @@
   "facets_from": "games",
   "note_ru": "состав восстановлен по срезам архивной страницы; полнота неизвестна",
   "note_en": "rebuilt from archived page slices; completeness unknown",
-  "tag_basis": 214
+  "tag_basis": 230
  },
  {
   "slug": "feb2023",
@@ -99,7 +99,7 @@
   "facets_from": "games",
   "note_ru": "состав восстановлен по срезам архивной страницы; полнота неизвестна",
   "note_en": "rebuilt from archived page slices; completeness unknown",
-  "tag_basis": 233
+  "tag_basis": 257
  },
  {
   "slug": "jun2023",
@@ -116,7 +116,7 @@
   "facets_from": "games",
   "note_ru": "частичный состав: архивная страница отдавала только первую часть списка",
   "note_en": "partial lineup: the archived page served only the first slice",
-  "tag_basis": 268
+  "tag_basis": 284
  },
  {
   "slug": "oct2023",
@@ -133,7 +133,41 @@
   "facets_from": "games",
   "note_ru": "частичный состав: архивная страница отдавала только первую часть списка",
   "note_en": "partial lineup: the archived page served only the first slice",
-  "tag_basis": 213
+  "tag_basis": 230
+ },
+ {
+  "slug": "feb2024",
+  "label_ru": "Февраль 2024",
+  "label_en": "February 2024",
+  "season": "winter",
+  "year": 2024,
+  "n_final": 302,
+  "n_preview": null,
+  "expected": 1123,
+  "diff_pct": -73.1,
+  "source": "wayback_html_ids+gamalytic",
+  "quality": "partial",
+  "facets_from": "games",
+  "note_ru": "частичный состав: архивная страница отдавала только первую часть списка",
+  "note_en": "partial lineup: the archived page served only the first slice",
+  "tag_basis": 242
+ },
+ {
+  "slug": "jun2024",
+  "label_ru": "Июнь 2024",
+  "label_en": "June 2024",
+  "season": "summer",
+  "year": 2024,
+  "n_final": 323,
+  "n_preview": null,
+  "expected": 1805,
+  "diff_pct": -82.1,
+  "source": "wayback_html_ids+gamalytic",
+  "quality": "partial",
+  "facets_from": "games",
+  "note_ru": "частичный состав: архивная страница отдавала только первую часть списка",
+  "note_en": "partial lineup: the archived page served only the first slice",
+  "tag_basis": 261
  },
  {
   "slug": "oct2024",

@@ -44,6 +44,28 @@
   ]
  },
  {
+  "fest": "feb2024",
+  "label_ru": "Февраль 2024",
+  "label_en": "February 2024",
+  "season": "winter",
+  "year": 2024,
+  "chosen_source": "wayback_html_ids+gamalytic",
+  "snapshot": null,
+  "n_appids": 302,
+  "expected": 1123,
+  "status": "ok",
+  "quality": "partial",
+  "facets_from": "games",
+  "diff_pct": -73.1,
+  "candidates": [
+   {
+    "source": "wayback_html_ids+gamalytic",
+    "n": 302,
+    "snapshot": null
+   }
+  ]
+ },
+ {
   "fest": "feb2025",
   "label_ru": "Февраль 2025",
   "label_en": "February 2025",
@@ -159,6 +181,28 @@
    {
     "source": "wayback_html_ids+gamalytic",
     "n": 392,
+    "snapshot": null
+   }
+  ]
+ },
+ {
+  "fest": "jun2024",
+  "label_ru": "Июнь 2024",
+  "label_en": "June 2024",
+  "season": "summer",
+  "year": 2024,
+  "chosen_source": "wayback_html_ids+gamalytic",
+  "snapshot": null,
+  "n_appids": 323,
+  "expected": 1805,
+  "status": "ok",
+  "quality": "partial",
+  "facets_from": "games",
+  "diff_pct": -82.1,
+  "candidates": [
+   {
+    "source": "wayback_html_ids+gamalytic",
+    "n": 323,
     "snapshot": null
    }
   ]
