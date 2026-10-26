@@ -113,6 +113,20 @@ GET https://store.steampowered.com/actions/ajaxgetdynamicsaleitems
 * `GetNumberOfCurrentPlayers` режет частоту: 200 запросов подряд при 4 потоках
   дали 429. Рабочий режим — **~1 запрос в секунду** (полный проход 7 304 игр ≈ 2 часа).
 * `api/appdetails` **не принимает список appid** — только по одному за запрос.
+* Локальный поллер держит `oct2026_demo_ccu.jsonl` открытым, поэтому `git pull --rebase`
+  на Windows падает с «unable to unlink» — рабочий рецепт синхронизации без
+  перезаписи файла:
+
+  ```
+  git fetch origin
+  git reset --soft origin/main
+  git add -A
+  git commit -m "..."
+  git push
+  ```
+
+  Замеры из Actions и локального поллера объединяются по паре (appid, ts):
+  одна ветка дала 63 422 строки, вторая 28 063, объединение — 81 702.
 * Страница магазина ~200 КБ; мэппинг демо для 7 304 игр ≈ 1,5 ГБ трафика
   (кэшируется на диске).
 
