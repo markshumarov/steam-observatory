@@ -96,8 +96,10 @@
   }
 
   /** Кривая «место в топе → вишлисты» по самой таблице (лог-лог, кусочно-линейно).
-      Значение берём из Gamalytic, если оно уже пришло, иначе — из оценки PlayRecon. */
-  function buildCurve(rows, pick = (r) => r.gal ?? (r.wl && r.wl.est)) {
+      Строится только на числах PlayRecon: она задаёт ФОРМУ (во сколько раз на месте
+      до фестиваля было меньше), а уровень берём из Gamalytic отдельно. Смешивать
+      две модели в одной кривой нельзя — шкалы разные. */
+  function buildCurve(rows, pick = (r) => r.wl && r.wl.est) {
     const pts = rows
       .map((r) => (r.wl && r.wl.rank ? [r.wl.rank, pick(r)] : null))
       .filter((p) => p && p[1])
@@ -247,18 +249,26 @@
       if (row.tr.dataset.prOrder === undefined) row.tr.dataset.prOrder = String(index);
       if (row.wl && row.wl.jump && row.wl.rank) {
         const rankBefore = row.wl.rank + row.wl.jump;
-        const before = at(rankBefore);
-        // «сейчас» — из Gamalytic, если он ответил; иначе оценка PlayRecon
-        const now = row.gal ?? row.wl.est;
-        row.gain = before == null ? null : Math.round(now - before);
-        row.rankBefore = rankBefore;
-        row.estBefore = before == null ? null : Math.round(before);
-        // доля прироста от текущего числа вишлистов — метрика «насколько фест разогнал игру»
-        row.pct = row.gain != null && now
-          ? Math.round((1000 * row.gain) / now) / 10
-          : null;
+        // «сейчас» и «до» по шкале PlayRecon: если у игры своей оценки нет
+        // (топ выше калибровки модели), берём значение кривой на её месте
+        const nowPr = row.wl.est ?? at(row.wl.rank);
+        const beforePr = at(rankBefore);
+        if (nowPr && beforePr) {
+          const ratio = beforePr / nowPr; // во сколько раз «до» меньше «сейчас»
+          // уровень — Gamalytic, если он ответил, иначе шкала PlayRecon
+          const level = row.gal ?? nowPr;
+          row.nowValue = level;
+          row.estBefore = Math.round(level * ratio);
+          row.gain = Math.round(level * (1 - ratio));
+          row.pct = Math.round(1000 * (1 - ratio)) / 10;
+          row.rankBefore = rankBefore;
+        } else {
+          row.gain = null;
+          row.pct = null;
+        }
       } else {
         row.gain = null;
+        row.pct = null;
       }
     });
 
@@ -327,7 +337,7 @@
         td.dataset.gain = String(row.gain);
         td.dataset.tier = tier.key;
         td.dataset.jump = String(row.wl.jump);
-        const now = row.gal ?? row.wl.est;
+        const now = row.nowValue ?? row.gal ?? row.wl.est;
         const ratio = row.estBefore && now ? now / row.estBefore : null;
         if (ratio) td.dataset.ratio = String(ratio);
         td.title =
@@ -361,7 +371,7 @@
         td.classList.add(row.pct >= 0 ? "pr-pos" : "pr-neg");
         td.title =
           `За фестиваль набрано ${row.pct.toFixed(1)}% текущего числа вишлистов\n` +
-          `прирост ≈${fmtFull(row.gain)} из ≈${fmtFull(row.wl.est)} (±20–30%)\n` +
+          `прирост ≈${fmtFull(row.gain)} из ≈${fmtFull(row.nowValue ?? row.gal ?? row.wl.est ?? 0)} (±20–30%)\n` +
           `медиана по фестивалю — 12%, p90 — 29%`;
       }
       row.tr.appendChild(td);
