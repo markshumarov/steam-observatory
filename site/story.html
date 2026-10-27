@@ -21,6 +21,7 @@
   <p class="lede" data-i18n="lede"></p>
   <nav class="tabs">
     <a href="#tiers" data-i18n="nav_tiers"></a>
+    <a href="#gains" data-i18n="nav_gains"></a>
     <a href="#supply" data-i18n="nav_supply"></a>
     <a href="#attention" data-i18n="nav_attention"></a>
     <a href="#wishlists" data-i18n="nav_wishlists"></a>
@@ -34,9 +35,26 @@
   <section id="tiers">
     <p class="kicker" id="k-tiers"></p>
     <h2 data-i18n="tiers_title"></h2>
-    <p class="hint" data-i18n="tiers_hint"></p>
+    <p class="hint" id="hint-tiers"></p>
+    <div class="segmented" id="sample-switch">
+      <button type="button" data-sample="measured"></button>
+      <button type="button" data-sample="all"></button>
+    </div>
     <div id="chart-tiers" class="chart"><div class="skel skel-chart-sm"></div></div>
     <ul class="takeaways" id="take-tiers"></ul>
+  </section>
+  <section id="gains">
+    <p class="kicker" id="k-gains"></p>
+    <h2 data-i18n="gains_title"></h2>
+    <p class="hint" id="hint-gains"></p>
+    <div id="chart-gains" class="chart"><div class="skel skel-chart-sm"></div></div>
+    <ul class="takeaways" id="take-gains"></ul>
+  </section>
+  <section id="wl">
+    <h2 data-i18n="wl_title"></h2>
+    <p class="hint" data-i18n="wl_hint"></p>
+    <div id="chart-wl" class="chart"><div class="skel skel-chart-sm"></div></div>
+    <ul class="takeaways" id="take-wl"></ul>
   </section>
   <section id="supply">
     <p class="kicker" id="k-supply"></p>

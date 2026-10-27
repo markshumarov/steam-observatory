@@ -187,8 +187,10 @@ if gains_file.exists():
 # составов висели старые числа (598 вместо 708) и не было февраля 2025
 fests_file = SITE / "fests.json"
 fests_final: dict[str, int] = {}
+fests_rows: dict[str, dict] = {}
 if fests_file.exists():
     for row in json.loads(fests_file.read_text(encoding="utf-8")):
+        fests_rows[row["slug"]] = row
         if row.get("n_final"):
             fests_final[row["slug"]] = row["n_final"]
     stale = [
@@ -224,10 +226,37 @@ if tiers_block is not None:
         if rows_all else None,
     }
 
+# результат случайной выборки вне борда (scripts/aggregate_outside_sample.py)
+outside_report = CACHE / "outside_sample_report.json"
+outside_block = None
+if outside_report.exists():
+    rep = json.loads(outside_report.read_text(encoding="utf-8"))
+    outside_block = {
+        "sampled": rep.get("sampled"),
+        "with_rank": rep.get("with_wishlist_rank"),
+        "share_with_rank": rep.get("share_with_rank"),
+        "projected": rep.get("projected_with_rank"),
+        "no_trace": rep.get("no_wishlist_trace"),
+        "outside_board": rep.get("outside_board"),
+        "peaks_sample": rep.get("peaks_sample"),
+        "peaks_board": rep.get("peaks_board"),
+        "gains": [m.get("gain") for m in (rep.get("measured") or [])],
+    }
+
 publish = {
     "as_of": "2026-10-26",
     "tiers": tiers_block,
-    "supply": [{"slug": slug, "games": fest_games(slug)} for slug in supply_slugs],
+    "outside": outside_block,
+    "supply": [
+        {
+            "slug": slug,
+            "games": fest_games(slug),
+            # внешнее число (GameDiscoverCo / How To Market A Game) — ему и доверяем
+            "theirs": (fests_rows.get(slug) or {}).get("expected"),
+            "quality": (fests_rows.get(slug) or {}).get("quality"),
+        }
+        for slug in supply_slugs
+    ],
     "editions": [
         {
             "slug": slug,

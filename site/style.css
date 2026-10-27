@@ -118,6 +118,30 @@ h3 { font-size: 15px; margin: 24px 0 10px; color: var(--text); font-weight: 600;
 /* Всплывающая подсказка Plot: пузырь заливается переменной --plot-background
    (по умолчанию белой), а текст берёт currentColor. Задаём оба явно, иначе
    на тёмной теме получается светлый текст на белом фоне. */
+.segmented {
+  display: inline-flex;
+  gap: 2px;
+  margin: 0 0 14px;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel-2);
+}
+.segmented button {
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 14px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.segmented button.on {
+  background: var(--accent);
+  color: #0b1220;
+  font-weight: 600;
+}
 .chart svg [aria-label="tip"] path { fill: var(--panel-2); stroke: var(--line); }
 .chart svg [aria-label="tip"] text,
 .chart svg [aria-label="tip"] tspan { fill: var(--text); }

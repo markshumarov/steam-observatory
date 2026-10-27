@@ -113,6 +113,25 @@ with sync_playwright() as pw:
     check("в графике составов полоса на каждое издание", supply_bars == editions_in_fests,
           f"полос={supply_bars}, изданий={editions_in_fests}")
 
+    # переключатель выборки: в режиме «все демо» появляется полоса «вне борда»
+    gains_bars = page.eval_on_selector_all("#chart-gains svg rect", "els => els.length")
+    check("в графике долей прироста шесть бакетов", gains_bars >= 6, f"полос={gains_bars}")
+    wl_bars = page.eval_on_selector_all("#chart-wl svg rect", "els => els.length")
+    check("в графике до/после две полосы на бакет", wl_bars >= 10, f"полос={wl_bars}")
+
+    page.click('#sample-switch button[data-sample="all"]')
+    page.wait_for_timeout(400)
+    bars_all = page.eval_on_selector_all("#chart-tiers svg rect", "els => els.length")
+    gains_all = page.eval_on_selector_all("#chart-gains svg rect", "els => els.length")
+    check("режим «все демо» добавляет полосу вне борда", bars_all >= 5, f"полос={bars_all}")
+    check("в режиме «все демо» долей стало больше", gains_all > gains_bars,
+          f"{gains_bars} -> {gains_all}")
+
+    page.click('#sample-switch button[data-sample="measured"]')
+    page.wait_for_timeout(400)
+    bars_back = page.eval_on_selector_all("#chart-tiers svg rect", "els => els.length")
+    check("возврат к измеримой выборке", bars_back == tier_bars, f"полос={bars_back}")
+
     tiers_text = page.text_content("#take-tiers") or ""
     check("тиры описаны в выводах", "Diamond" in tiers_text and "Silver" in tiers_text,
           tiers_text[:70])

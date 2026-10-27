@@ -14,7 +14,27 @@ export const S = {
 
     tiers_title: "Every fifth demo earns 10,000+ wishlists",
     tiers_hint:
-      "How many wishlists each demo earned during the festival, split into the tiers used by How To Market A Game (💎 10,000+, 🥇 7,000–9,999, 🥈 1,000–6,999, 🥉 0–999). Source: PlayRecon festival board, {total} games with a recorded wishlist-chart jump. The board is the top 1,000 demos by players, so successful games are over-represented here.",
+      "Wishlists each demo earned during the festival, in the tiers used by How To Market A Game (💎 10,000+, 🥇 7,000–9,999, 🥈 1,000–6,999, 🥉 0–999). Source: the PlayRecon festival board — the top 1,000 demos by players, and only {total} of them have a measurable wishlist-chart jump. The other {outside} demos of the lineup never entered the board.",
+    nav_gains: "Gains",
+    sample_measured: "Measurable ({n})",
+    sample_all: "All demos ({n})",
+    outside_bar: "outside the board",
+    gains_title: "Half of the measurable demos grew by 10% or more",
+    gains_hint:
+      "Share of a demo's current wishlists that was earned during the festival. Measurable sample only: {measured} of {lineup} lineup demos; the model sees games from about 6,900 wishlists upward.",
+    gains_axis: "demos",
+    gains_legend: "share of wishlists earned during the festival",
+    gains_b1: "Median demo earned <b>{median}%</b> of its wishlists in one week (p10 <b>{p10}%</b>, p90 <b>{p90}%</b>).",
+    gains_b2: "<b>{over_half}</b> demos earned more than half of their total during the festival.",
+    gains_b3: "Outside the board it is a different story: of {sampled} randomly sampled demos, only <b>{with_rank}</b> ({trace}%) have any wishlist trace at all, and their median peak was <b>{median} concurrent player</b>.",
+    wl_title: "Where the measurable demos stood before and after",
+    wl_hint:
+      "Wishlist estimates before and after the festival. The model starts at about 6,900 wishlists, so smaller games are outside its range entirely.",
+    wl_before: "before",
+    wl_after: "after",
+    wl_b1: "The median measurable demo entered the festival with <b>{median_before}</b> wishlists: this sample is already-successful games, not the festival average.",
+    wl_b2: "The 6,000–9,999 bucket shrank <b>{b1} → {b2}</b>, while 100,000+ grew <b>{a1} → {a2}</b>.",
+    wl_axis: "demos",
     tiers_kicker: "{share}%",
     tiers_b1: "<b>{diamond}</b> demos earned 10,000+ wishlists (💎 Diamond) — {diamond_share}% of those we could measure.",
     tiers_b2: "The middle is crowded: <b>{silver}</b> demos ({silver_share}%) landed in Silver with 1,000–6,999 wishlists.",
@@ -25,7 +45,8 @@ export const S = {
 
     supply_title: "The lineup is twelve times bigger than in 2021",
     supply_hint:
-      "Participants per edition: archived festival pages for 2021–2024, the live endpoint for October 2026. Amber bars are partial reconstructions — the archived page only served part of the list.",
+      "Participants per edition. Bars use the external count (GameDiscoverCo via How To Market A Game) wherever it exists; amber bars are editions without one — our own partial reconstruction from archived pages, 32–49% of the real lineup.",
+    supply_b4: "Where both numbers exist, our own parse of the same pages lands within <b>{lo}%…{hi}%</b> of theirs ({n} editions compared).",
     supply_kicker: "{n}×",
     supply_games: "games",
     supply_b1: "<b>611 → {now}</b> participants in five years: the festival grew faster than the audience for demos.",
@@ -105,7 +126,27 @@ export const S = {
 
     tiers_title: "Каждое пятое демо набирает 10 000+ вишлистов",
     tiers_hint:
-      "Сколько вишлистов каждая игра набрала за фестиваль — в тирах How To Market A Game (💎 10 000+, 🥇 7 000–9 999, 🥈 1 000–6 999, 🥉 0–999). Источник: таблица фестиваля PlayRecon, {total} игр с зафиксированным прыжком в топе вишлистов. Это топ-1000 демо по игрокам, поэтому успешные игры здесь представлены с избытком.",
+      "Сколько вишлистов каждая игра набрала за фестиваль — в тирах How To Market A Game (💎 10 000+, 🥇 7 000–9 999, 🥈 1 000–6 999, 🥉 0–999). Источник: таблица фестиваля PlayRecon — это топ-1000 демо по игрокам, и только у {total} из них есть измеримый прыжок в топе вишлистов. Остальные {outside} демо состава в борд не попали вовсе.",
+    nav_gains: "Прирост",
+    sample_measured: "Измеримые ({n})",
+    sample_all: "Все демо ({n})",
+    outside_bar: "вне борда",
+    gains_title: "Половина измеримых демо выросла на 10% и больше",
+    gains_hint:
+      "Какая доля текущих вишлистов игры набрана за фестиваль. Только измеримая выборка: {measured} из {lineup} демо состава; модель видит игры примерно от 6 900 вишлистов.",
+    gains_axis: "демо",
+    gains_legend: "доля вишлистов, набранных за фестиваль",
+    gains_b1: "Медианное демо набрало за неделю <b>{median}%</b> своих вишлистов (p10 <b>{p10}%</b>, p90 <b>{p90}%</b>).",
+    gains_b2: "<b>{over_half}</b> демо набрали за фестиваль больше половины своего итога.",
+    gains_b3: "Вне борда картина другая: из {sampled} случайно отобранных демо вишлист-след есть только у <b>{with_rank}</b> ({trace}%), а медианный пик у них — <b>{median} одновременный игрок</b>.",
+    wl_title: "С какими вишлистами измеримые демо входили и выходили",
+    wl_hint:
+      "Оценки вишлистов до и после фестиваля. Модель начинается примерно с 6 900 вишлистов, поэтому более мелкие игры в неё не попадают вовсе.",
+    wl_before: "до",
+    wl_after: "после",
+    wl_b1: "Медианное измеримое демо входило в фестиваль с <b>{median_before}</b> вишлистами: это выборка уже успешных игр, а не среднее по фестивалю.",
+    wl_b2: "Бакет 6 000–9 999 сжался <b>{b1} → {b2}</b>, а 100 000+ вырос <b>{a1} → {a2}</b>.",
+    wl_axis: "демо",
     tiers_kicker: "{share}%",
     tiers_b1: "<b>{diamond}</b> демо набрали 10 000+ вишлистов (💎 Diamond) — {diamond_share}% от тех, где получилось измерить.",
     tiers_b2: "Середина переполнена: <b>{silver}</b> демо ({silver_share}%) попали в Silver — это 1 000–6 999 вишлистов.",
@@ -116,7 +157,8 @@ export const S = {
 
     supply_title: "Состав в двенадцать раз больше, чем в 2021-м",
     supply_hint:
-      "Участники по изданиям: архивные страницы фестиваля за 2021–2024 и живой эндпоинт для октября 2026. Янтарные столбцы — частичная реконструкция: архивная страница отдавала только часть списка.",
+      "Число участников по изданиям. Столбики — внешний счёт (GameDiscoverCo в пересказе How To Market A Game) там, где он есть; янтарные — издания без внешнего числа, наша частичная реконструкция из архивных страниц (32–49% реального состава).",
+    supply_b4: "Там, где есть оба числа, наш собственный разбор тех же страниц укладывается в <b>{lo}%…{hi}%</b> от их цифр (сравнили {n} изданий).",
     supply_kicker: "{n}×",
     supply_games: "игр",
     supply_b1: "<b>611 → {now}</b> участников за пять лет: фестиваль рос быстрее, чем аудитория демо.",

@@ -13,6 +13,8 @@ const t = (key, vars) => {
 };
 const fmt = (n) => new Intl.NumberFormat(lang === "ru" ? "ru-RU" : "en-US").format(n ?? 0);
 const el = (sel) => document.querySelector(sel);
+// «measured» — только демо с измеримым приростом; «all» — весь состав фестиваля
+let sampleMode = "measured";
 
 const T = {
   text: "#e8edf7",
@@ -100,6 +102,15 @@ function renderTiers() {
     color: COLORS[x.key] || T.accent,
   }));
 
+  const outside = block.coverage?.outside || 0;
+  if (sampleMode === "all" && outside) {
+    rows.push({ label: t("outside_bar"), games: outside, share: 0, color: "#55607a" });
+  }
+  el("#hint-tiers").innerHTML = t("tiers_hint", {
+    total: fmt(total),
+    outside: fmt(outside),
+  });
+
   el("#chart-tiers").replaceChildren(
     plot({
       height: 250,
@@ -143,13 +154,29 @@ function renderTiers() {
 
 // --- 1. Предложение -----------------------------------------------------
 function renderSupply() {
+  // Внешнее число (GameDiscoverCo / How To Market A Game) считаем основным:
+  // свой пересчёт показываем в подсказке и в выводах, где он расходится.
   const rows = (story.supply || []).map((s) => {
     const f = festOf(s.slug);
-    return { label: short(f), games: s.games, quality: f.quality || "full" };
+    const external = s.theirs ?? null;
+    return {
+      label: short(f),
+      games: external ?? s.games,
+      ours: s.games,
+      external,
+      quality: s.quality || f.quality || "full",
+    };
   });
   const first = rows[0]?.games ?? 1;
   const last = rows.at(-1)?.games ?? 1;
   el("#k-supply").textContent = t("supply_kicker", { n: Math.round(last / first) });
+
+  const diffs = rows
+    .filter((d) => d.external && d.quality === "full")
+    .map((d) => (d.ours / d.external - 1) * 100);
+  const lo = diffs.length ? Math.min(...diffs) : null;
+  const hi = diffs.length ? Math.max(...diffs) : null;
+
   el("#chart-supply").replaceChildren(
     plot({
       height: 340,
@@ -162,7 +189,7 @@ function renderSupply() {
         Plot.barY(rows, {
           x: "label",
           y: "games",
-          fill: (d) => (d.quality === "full" ? T.accent : T.warn),
+          fill: (d) => (d.external ? T.accent : T.warn),
           tip: true,
         }),
         Plot.text(rows, {
@@ -177,7 +204,17 @@ function renderSupply() {
       ],
     })
   );
-  el("#take-supply").innerHTML = [t("supply_b1", { now: fmt(last) }), t("supply_b2", { now: fmt(last) }), t("supply_b3")]
+  el("#take-supply").innerHTML = [
+    t("supply_b1", { now: fmt(last) }),
+    t("supply_b2", { now: fmt(last) }),
+    t("supply_b4", {
+      n: String(rows.filter((d) => d.external).length),
+      lo: lo == null ? "—" : `${lo > 0 ? "+" : ""}${lo.toFixed(1)}`,
+      hi: hi == null ? "—" : `${hi > 0 ? "+" : ""}${hi.toFixed(1)}`,
+      ours: fmt(rows.at(-1)?.ours ?? 0),
+    }),
+    t("supply_b3"),
+  ]
     .map((x) => `<li>${x}</li>`)
     .join("");
 }
@@ -359,6 +396,134 @@ function renderCozy() {
 }
 
 // --- 5. Выводы ----------------------------------------------------------
+// --- 1b. Какая доля вишлистов набрана за фестиваль ----------------------
+function renderGains() {
+  const b = story.tiers || {};
+  const buckets = b.pct_buckets || [];
+  if (!buckets.length) return;
+  const out = story.outside || {};
+  const cov = b.coverage || {};
+  const rows = buckets.map((x) => ({ label: x.label, games: x.games }));
+  if (sampleMode === "all" && cov.outside) {
+    rows.push({ label: t("outside_bar"), games: cov.outside, outside: true });
+  }
+  const shown = rows.reduce((sum, r) => sum + r.games, 0);
+  el("#k-gains").textContent = t(
+    sampleMode === "all" ? "sample_all" : "sample_measured",
+    { n: fmt(shown) }
+  );
+  el("#hint-gains").innerHTML = t("gains_hint", {
+    measured: fmt(cov.measured),
+    lineup: fmt(cov.lineup),
+  });
+  el("#chart-gains").replaceChildren(
+    plot({
+      height: 300,
+      marginTop: 16,
+      marginLeft: 70,
+      marginBottom: 52,
+      x: { label: t("gains_legend"), domain: rows.map((d) => d.label), tickRotate: -20 },
+      y: { grid: true, label: t("gains_axis") },
+      marks: [
+        Plot.barY(rows, {
+          x: "label",
+          y: "games",
+          fill: (d) => (d.outside ? "#55607a" : T.accent),
+          tip: true,
+        }),
+        Plot.text(rows, {
+          x: "label",
+          y: "games",
+          text: (d) => fmt(d.games),
+          dy: -6,
+          fontSize: 9.5,
+          fill: T.muted,
+        }),
+        Plot.ruleY([0], { stroke: T.grid }),
+      ],
+    })
+  );
+  el("#take-gains").innerHTML = [
+    t("gains_b1", { median: b.share_median, p10: b.share_p10, p90: b.share_p90 }),
+    t("gains_b2", { over_half: fmt(b.share_over_half) }),
+    t("gains_b3", {
+      sampled: fmt(out.sampled),
+      with_rank: fmt(out.with_rank),
+      trace: ((out.share_with_rank || 0) * 100).toFixed(1),
+      median: fmt(out.peaks_sample?.median),
+    }),
+  ]
+    .map((x) => `<li>${x}</li>`)
+    .join("");
+}
+
+// --- 1c. С какими вишлистами входили и выходили -------------------------
+function renderWl() {
+  const b = story.tiers || {};
+  const hist = b.wl_hist || [];
+  if (!hist.length) return;
+  const long = [];
+  for (const r of hist) {
+    long.push({ bucket: r.label, when: t("wl_before"), value: r.before });
+    long.push({ bucket: r.label, when: t("wl_after"), value: r.after });
+  }
+  el("#chart-wl").replaceChildren(
+    plot({
+      height: 300,
+      marginTop: 16,
+      marginLeft: 70,
+      marginBottom: 46,
+      fx: { label: null },
+      x: { label: null },
+      y: { grid: true, label: t("wl_axis") },
+      color: {
+        domain: [t("wl_before"), t("wl_after")],
+        range: ["#55607a", T.accent],
+        legend: true,
+      },
+      marks: [
+        Plot.barY(long, { fx: "bucket", x: "when", y: "value", fill: "when", tip: true }),
+        Plot.ruleY([0], { stroke: T.grid }),
+      ],
+    })
+  );
+  const first = hist[0] || {};
+  const last = hist[hist.length - 1] || {};
+  el("#take-wl").innerHTML = [
+    t("wl_b1", { median_before: fmt(b.coverage?.median_before) }),
+    t("wl_b2", {
+      b1: fmt(first.before),
+      b2: fmt(first.after),
+      a1: fmt(last.before),
+      a2: fmt(last.after),
+    }),
+  ]
+    .map((x) => `<li>${x}</li>`)
+    .join("");
+}
+
+// --- переключатель выборки ---------------------------------------------
+function setupSwitch() {
+  const box = el("#sample-switch");
+  if (!box) return;
+  const cov = story.tiers?.coverage || {};
+  box.querySelector('[data-sample="measured"]').textContent = t("sample_measured", {
+    n: fmt(cov.measured ?? story.tiers?.total ?? 0),
+  });
+  box.querySelector('[data-sample="all"]').textContent = t("sample_all", {
+    n: fmt(cov.lineup ?? 0),
+  });
+  for (const b of box.querySelectorAll("button")) {
+    b.classList.toggle("on", b.dataset.sample === sampleMode);
+    b.onclick = () => {
+      sampleMode = b.dataset.sample;
+      renderTiers();
+      renderGains();
+      setupSwitch();
+    };
+  }
+}
+
 function renderTakeaways() {
   const sup = story.supply || [];
   const g = (slug) => sup.find((s) => s.slug === slug)?.games;
@@ -376,6 +541,9 @@ function renderTakeaways() {
 function renderAll() {
   applyStatic();
   renderTiers();
+  renderGains();
+  renderWl();
+  setupSwitch();
   renderSupply();
   renderAttention();
   renderWishlists();

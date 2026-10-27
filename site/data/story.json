@@ -105,74 +105,141 @@
    "median_before": 18307
   }
  },
+ "outside": {
+  "sampled": 300,
+  "with_rank": 5,
+  "share_with_rank": 0.0167,
+  "projected": 105,
+  "no_trace": 295,
+  "outside_board": 6295,
+  "peaks_sample": {
+   "n": 280,
+   "median": 1,
+   "p90": 4,
+   "max": 80,
+   "share_le1": 0.6857,
+   "share_ge10": 0.0036,
+   "share_ge100": 0.0
+  },
+  "peaks_board": {
+   "n": 994,
+   "median": 19,
+   "p90": 195,
+   "max": 30235,
+   "share_le1": 0.0,
+   "share_ge10": 0.7817,
+   "share_ge100": 0.1771
+  },
+  "gains": [
+   150,
+   184,
+   2130,
+   900,
+   800
+  ]
+ },
  "supply": [
   {
    "slug": "jun2021",
-   "games": 611
+   "games": 611,
+   "theirs": null,
+   "quality": "full"
   },
   {
    "slug": "oct2021",
-   "games": 708
+   "games": 708,
+   "theirs": null,
+   "quality": "reconstructed"
   },
   {
    "slug": "feb2022",
-   "games": 402
+   "games": 402,
+   "theirs": null,
+   "quality": "reconstructed"
   },
   {
    "slug": "jun2022",
-   "games": 343
+   "games": 343,
+   "theirs": null,
+   "quality": "reconstructed"
   },
   {
    "slug": "oct2022",
-   "games": 328
+   "games": 328,
+   "theirs": null,
+   "quality": "reconstructed"
   },
   {
    "slug": "feb2023",
-   "games": 336
+   "games": 336,
+   "theirs": null,
+   "quality": "reconstructed"
   },
   {
    "slug": "jun2023",
-   "games": 393
+   "games": 393,
+   "theirs": 887,
+   "quality": "partial"
   },
   {
    "slug": "oct2023",
-   "games": 308
+   "games": 308,
+   "theirs": 972,
+   "quality": "partial"
   },
   {
    "slug": "feb2024",
-   "games": 302
+   "games": 302,
+   "theirs": 1123,
+   "quality": "partial"
   },
   {
    "slug": "jun2024",
-   "games": 323
+   "games": 323,
+   "theirs": 1805,
+   "quality": "partial"
   },
   {
    "slug": "oct2024",
-   "games": 3197
+   "games": 3197,
+   "theirs": 3008,
+   "quality": "full"
   },
   {
    "slug": "feb2025",
-   "games": 300
+   "games": 300,
+   "theirs": 2337,
+   "quality": "partial"
   },
   {
    "slug": "jun2025",
-   "games": 2635
+   "games": 2635,
+   "theirs": 2645,
+   "quality": "full"
   },
   {
    "slug": "oct2025",
-   "games": 2956
+   "games": 2956,
+   "theirs": 2963,
+   "quality": "full"
   },
   {
    "slug": "feb2026",
-   "games": 3892
+   "games": 3892,
+   "theirs": 3536,
+   "quality": "full"
   },
   {
    "slug": "jun2026",
-   "games": 4401
+   "games": 4401,
+   "theirs": 4382,
+   "quality": "full"
   },
   {
    "slug": "oct2026",
-   "games": 7304
+   "games": 7304,
+   "theirs": 7240,
+   "quality": "full"
   }
  ],
  "editions": [
