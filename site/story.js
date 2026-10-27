@@ -1,7 +1,7 @@
 import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm";
-import { S } from "./story-i18n.js";
+import { S } from "./story-i18n.js?v=20261027b";
 
-const load = (name) => fetch(`data/${name}`).then((r) => (r.ok ? r.json() : null));
+const load = (name) => fetch(`data/${name}?v=20261027b`).then((r) => (r.ok ? r.json() : null));
 const [story, fests] = await Promise.all([load("story.json"), load("fests.json")]);
 
 const saved = localStorage.getItem("sobs-lang");
