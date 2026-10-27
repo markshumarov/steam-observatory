@@ -479,45 +479,88 @@ function renderGains() {
 }
 
 // --- 1c. РЎ РєР°РєРёРјРё РІРёС€Р»РёСЃС‚Р°РјРё РІС…РѕРґРёР»Рё Рё РІС‹С…РѕРґРёР»Рё -------------------------
+// цвета долей: серый — вне топа, дальше бронза/серебро/золото/бриллиант
+const WL_COLORS = {
+  no_rank: "#55607a",
+  in_under8k: "#d97706",
+  in_8k_50k: "#cbd5e1",
+  in_50k_90k: "#fbbf24",
+  in_90k_plus: "#7dd3fc",
+};
+
 function renderWl() {
   const b = story.tiers || {};
-  const hist = b.wl_hist || [];
-  if (!hist.length) return;
-  const long = [];
-  for (const r of hist) {
-    long.push({ bucket: r.label, when: t("wl_before"), value: r.before });
-    long.push({ bucket: r.label, when: t("wl_after"), value: r.after });
+  const data = b.wl_now;
+  if (!data || !data.buckets) return;
+  const total = data.total || data.buckets.reduce((sum, r) => sum + r.games, 0);
+  const rows = data.buckets.map((r) => ({
+    key: r.key,
+    label: t(`wl_${r.key}`),
+    games: r.games,
+    share: (100 * r.games) / total,
+  }));
+  el("#hint-wl").innerHTML = t("wl_hint", {
+    total: fmt(total),
+    in_chart: fmt(data.in_chart),
+  });
+  try {
+    el("#chart-wl").replaceChildren(
+      plot({
+        height: 140,
+        marginTop: 10,
+        marginBottom: 10,
+        marginLeft: 10,
+        marginRight: 10,
+        y: { axis: null },
+        x: { label: t("wl_axis"), grid: true },
+        color: {
+          domain: rows.map((d) => d.label),
+          range: rows.map((d) => WL_COLORS[d.key]),
+          legend: true,
+        },
+        marks: [
+          Plot.barX(rows, {
+            x: "games",
+            y: () => "",
+            fill: "label",
+            insetTop: 8,
+            insetBottom: 8,
+          }),
+          Plot.text(
+            rows.filter((d) => d.share >= 4),
+            {
+              x: "games",
+              y: () => "",
+              text: (d) => `${fmt(d.games)} · ${d.share.toFixed(1)}%`,
+              dx: -6,
+              textAnchor: "end",
+              fill: "#0a0d13",
+              fontSize: 11,
+              fontWeight: 600,
+            }
+          ),
+          Plot.ruleX([0], { stroke: T.grid }),
+        ],
+      })
+    );
+  } catch (err) {
+    // график не должен ломать остальную страницу
+    console.error("[story] график вишлистов не нарисован:", err);
+    el("#chart-wl").textContent = rows
+      .map((d) => `${d.label}: ${fmt(d.games)} (${d.share.toFixed(1)}%)`)
+      .join(" · ");
   }
-  el("#chart-wl").replaceChildren(
-    plot({
-      height: 300,
-      marginTop: 16,
-      marginLeft: 70,
-      marginBottom: 46,
-      fx: { label: null },
-      x: { label: null },
-      y: { grid: true, label: t("wl_axis") },
-      color: {
-        domain: [t("wl_before"), t("wl_after")],
-        range: ["#55607a", T.accent],
-        legend: true,
-      },
-      marks: [
-        Plot.barY(long, { fx: "bucket", x: "when", y: "value", fill: "when", tip: true }),
-        Plot.ruleY([0], { stroke: T.grid }),
-      ],
-    })
-  );
-  const first = hist[0] || {};
-  const last = hist[hist.length - 1] || {};
+  const pick = (key) => rows.find((r) => r.key === key) || { games: 0, share: 0 };
+  const pro = pick("in_50k_90k").games + pick("in_90k_plus").games;
   el("#take-wl").innerHTML = [
-    t("wl_b1", { median_before: fmt(b.coverage?.median_before) }),
+    t("wl_b1", { n: fmt(pick("no_rank").games), share: pick("no_rank").share.toFixed(1) }),
     t("wl_b2", {
-      b1: fmt(first.before),
-      b2: fmt(first.after),
-      a1: fmt(last.before),
-      a2: fmt(last.after),
+      u8: fmt(pick("in_under8k").games),
+      mid: fmt(pick("in_8k_50k").games),
+      gold: fmt(pick("in_50k_90k").games),
+      pro: fmt(pick("in_90k_plus").games),
     }),
+    t("wl_b3", { pro: fmt(pro), pro_share: ((100 * pro) / total).toFixed(1) }),
   ]
     .map((x) => `<li>${x}</li>`)
     .join("");

@@ -106,6 +106,32 @@
    "median_before": 18307,
    "no_jump": 67,
    "no_rank": 6776
+  },
+  "wl_now": {
+   "buckets": [
+    {
+     "key": "no_rank",
+     "games": 6776
+    },
+    {
+     "key": "in_under8k",
+     "games": 49
+    },
+    {
+     "key": "in_8k_50k",
+     "games": 351
+    },
+    {
+     "key": "in_50k_90k",
+     "games": 51
+    },
+    {
+     "key": "in_90k_plus",
+     "games": 77
+    }
+   ],
+   "total": 7304,
+   "in_chart": 528
   }
  },
  "outside": {

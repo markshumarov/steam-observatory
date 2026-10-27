@@ -117,8 +117,14 @@ with sync_playwright() as pw:
     gains_bars = page.eval_on_selector_all("#chart-gains svg rect", "els => els.length")
     check("в графике долей шесть бакетов плюс две серые полосы", gains_bars >= 8,
           f"полос={gains_bars}")
-    wl_bars = page.eval_on_selector_all("#chart-wl svg rect", "els => els.length")
-    check("в графике до/после две полосы на бакет", wl_bars >= 10, f"полос={wl_bars}")
+    wl_slices = page.eval_on_selector_all("#chart-wl svg rect", "els => els.length")
+    check("в графике вишлистов пять долей", wl_slices >= 5, f"долей={wl_slices}")
+    wl_texts = page.eval_on_selector_all("#chart-wl svg text", "els => els.map(e => e.textContent)")
+    check("подписи долей содержат проценты",
+          any("%" in x for x in wl_texts), str(wl_texts[:4]))
+    wl_hint = page.text_content("#hint-wl") or ""
+    check("в подписи пай-чарта есть пороги и число участников",
+          "8,000" in wl_hint and "7,304" in wl_hint, wl_hint[:70])
 
     gains_labels = page.eval_on_selector_all(
         "#chart-gains svg text", "els => els.map(e => e.textContent)")

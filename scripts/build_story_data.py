@@ -9,6 +9,7 @@
 from __future__ import annotations
 
 import glob
+import importlib.util
 import json
 from pathlib import Path
 
@@ -230,6 +231,49 @@ if tiers_block is not None:
     in_chart = (gains_data or {}).get("rows_with_wishlists") or measured
     tiers_block["coverage"]["no_jump"] = max(0, in_chart - measured)
     tiers_block["coverage"]["no_rank"] = max(0, (lineup or 0) - in_chart)
+
+# Текущие вишлисты участников по бакетам запуска (бенчмарк How To Market A Game:
+# 🥉 5 000, 🥈 8 000, 🥇 50 000, 💎 90 000 вишлистов к запуску).
+# Первый бакет — те, кого вообще нет в топе вишлистов: их уровень неизвестен,
+# но именно они и есть любительская часть фестиваля.
+wl_now = None
+try:
+    spec = importlib.util.spec_from_file_location(
+        "prwg", ROOT / "scripts" / "playrecon_wishlist_gain.py"
+    )
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    board_rows = [r for r in mod.load_rows() if r.get("wl_est")]
+
+    def _bucket(est: int) -> str:
+        if est < 8_000:
+            return "in_under8k"
+        if est < 50_000:
+            return "in_8k_50k"
+        if est < 90_000:
+            return "in_50k_90k"
+        return "in_90k_plus"
+
+    counts: dict[str, int] = {}
+    for r in board_rows:
+        key = _bucket(r["wl_est"])
+        counts[key] = counts.get(key, 0) + 1
+    lineup_n = fests_final.get("oct2026") or 0
+    wl_now = {
+        "buckets": [
+            {"key": "no_rank", "games": max(0, lineup_n - len(board_rows))},
+            {"key": "in_under8k", "games": counts.get("in_under8k", 0)},
+            {"key": "in_8k_50k", "games": counts.get("in_8k_50k", 0)},
+            {"key": "in_50k_90k", "games": counts.get("in_50k_90k", 0)},
+            {"key": "in_90k_plus", "games": counts.get("in_90k_plus", 0)},
+        ],
+        "total": lineup_n,
+        "in_chart": len(board_rows),
+    }
+    if tiers_block is not None:
+        tiers_block["wl_now"] = wl_now
+except Exception as exc:  # noqa: BLE001
+    print("ВНИМАНИЕ: не удалось посчитать текущие вишлисты:", exc)
 
 # результат случайной выборки вне борда (scripts/aggregate_outside_sample.py)
 outside_report = CACHE / "outside_sample_report.json"
