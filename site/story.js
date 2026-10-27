@@ -1,7 +1,7 @@
-import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm";
-import { S } from "./story-i18n.js?v=20261027b";
+﻿import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm";
+import { S } from "./story-i18n.js?v=20261027c";
 
-const load = (name) => fetch(`data/${name}?v=20261027b`).then((r) => (r.ok ? r.json() : null));
+const load = (name) => fetch(`data/${name}?v=20261027c`).then((r) => (r.ok ? r.json() : null));
 const [story, fests] = await Promise.all([load("story.json"), load("fests.json")]);
 
 const saved = localStorage.getItem("sobs-lang");
@@ -13,8 +13,8 @@ const t = (key, vars) => {
 };
 const fmt = (n) => new Intl.NumberFormat(lang === "ru" ? "ru-RU" : "en-US").format(n ?? 0);
 const el = (sel) => document.querySelector(sel);
-// «не посчитать» бывает двух видов: демо вообще нет в топе вишлистов, либо оно
-// там есть, но изменения позиции нет — эти категории можно скрыть по отдельности
+// В«РЅРµ РїРѕСЃС‡РёС‚Р°С‚СЊВ» Р±С‹РІР°РµС‚ РґРІСѓС… РІРёРґРѕРІ: РґРµРјРѕ РІРѕРѕР±С‰Рµ РЅРµС‚ РІ С‚РѕРїРµ РІРёС€Р»РёСЃС‚РѕРІ, Р»РёР±Рѕ РѕРЅРѕ
+// С‚Р°Рј РµСЃС‚СЊ, РЅРѕ РёР·РјРµРЅРµРЅРёСЏ РїРѕР·РёС†РёРё РЅРµС‚ вЂ” СЌС‚Рё РєР°С‚РµРіРѕСЂРёРё РјРѕР¶РЅРѕ СЃРєСЂС‹С‚СЊ РїРѕ РѕС‚РґРµР»СЊРЅРѕСЃС‚Рё
 let showNoRank = true;
 let showNoJump = true;
 
@@ -48,8 +48,8 @@ const festOf = (slug) => (fests || []).find((f) => f.slug === slug) || { slug, y
 function applyStatic() {
   document.documentElement.lang = lang;
   document.title = lang === "ru"
-    ? "Steam Observatory — что говорят цифры Next Fest"
-    : "Steam Observatory — what the Next Fest numbers say";
+    ? "Steam Observatory вЂ” С‡С‚Рѕ РіРѕРІРѕСЂСЏС‚ С†РёС„СЂС‹ Next Fest"
+    : "Steam Observatory вЂ” what the Next Fest numbers say";
   for (const node of document.querySelectorAll("[data-i18n]")) {
     node.innerHTML = t(node.dataset.i18n);
   }
@@ -59,7 +59,7 @@ function applyStatic() {
   }
 }
 
-// --- источники ----------------------------------------------------------
+// --- РёСЃС‚РѕС‡РЅРёРєРё ----------------------------------------------------------
 function renderSources() {
   el("#sources").innerHTML = `
   <table>
@@ -78,15 +78,15 @@ function renderSources() {
   </table>`;
 }
 
-// --- 0. Тиры вишлистов --------------------------------------------------
+// --- 0. РўРёСЂС‹ РІРёС€Р»РёСЃС‚РѕРІ --------------------------------------------------
 function renderTiers() {
   const block = story.tiers || {};
   const tiers = block.tiers || [];
   if (!tiers.length) return;
   const total = block.total || tiers.reduce((sum, x) => sum + x.games, 0);
   const pick = (key) => tiers.find((x) => x.key === key) || { games: 0 };
-  // Доли считаем от того, что видно на графике: скрывая категории «не посчитать»,
-  // пользователь меняет знаменатель — проценты всегда складываются в 100%
+  // Р”РѕР»Рё СЃС‡РёС‚Р°РµРј РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ РІРёРґРЅРѕ РЅР° РіСЂР°С„РёРєРµ: СЃРєСЂС‹РІР°СЏ РєР°С‚РµРіРѕСЂРёРё В«РЅРµ РїРѕСЃС‡РёС‚Р°С‚СЊВ»,
+  // РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РјРµРЅСЏРµС‚ Р·РЅР°РјРµРЅР°С‚РµР»СЊ вЂ” РїСЂРѕС†РµРЅС‚С‹ РІСЃРµРіРґР° СЃРєР»Р°РґС‹РІР°СЋС‚СЃСЏ РІ 100%
   const cov = block.coverage || {};
   const lineup = cov.lineup || total;
   const inChart = cov.in_chart || total;
@@ -99,11 +99,11 @@ function renderTiers() {
     x.to == null
       ? `${fmt(x.from)}+`
       : x.from == null
-        ? `0–${fmt(x.to)}`
-        : `${fmt(x.from)}–${fmt(x.to)}`;
+        ? `0вЂ“${fmt(x.to)}`
+        : `${fmt(x.from)}вЂ“${fmt(x.to)}`;
 
   const rows = tiers.map((x) => ({
-    label: `${x.medal} ${x.key[0].toUpperCase()}${x.key.slice(1)} · ${rangeLabel(x)}`,
+    label: `${x.medal} ${x.key[0].toUpperCase()}${x.key.slice(1)} В· ${rangeLabel(x)}`,
     games: x.games,
     share: (100 * x.games) / total,
     color: COLORS[x.key] || T.accent,
@@ -116,7 +116,7 @@ function renderTiers() {
     rows.push({ label: t("norank_bar"), games: noRank, share: 0, color: "#55607a" });
   }
   const shown = rows.reduce((sum, r) => sum + r.games, 0);
-  // пересчитываем долю у КАЖДОЙ полосы: иначе в подсказке висит старое значение
+  // РїРµСЂРµСЃС‡РёС‚С‹РІР°РµРј РґРѕР»СЋ Сѓ РљРђР–Р”РћР™ РїРѕР»РѕСЃС‹: РёРЅР°С‡Рµ РІ РїРѕРґСЃРєР°Р·РєРµ РІРёСЃРёС‚ СЃС‚Р°СЂРѕРµ Р·РЅР°С‡РµРЅРёРµ
   for (const r of rows) r.share = Number(((100 * r.games) / shown).toFixed(1));
   share = (key) => ((100 * pick(key).games) / shown).toFixed(1);
   el("#k-tiers").textContent = t("tiers_kicker", { share: share("diamond") });
@@ -139,7 +139,7 @@ function renderTiers() {
         Plot.text(rows, {
           x: "games",
           y: "label",
-          text: (d) => `${fmt(d.games)} · ${d.share.toFixed(1)}%`,
+          text: (d) => `${fmt(d.games)} В· ${d.share.toFixed(1)}%`,
           dx: 6,
           textAnchor: "start",
           fill: T.muted,
@@ -168,10 +168,10 @@ function renderTiers() {
     .join("");
 }
 
-// --- 1. Предложение -----------------------------------------------------
+// --- 1. РџСЂРµРґР»РѕР¶РµРЅРёРµ -----------------------------------------------------
 function renderSupply() {
-  // Внешнее число (GameDiscoverCo / How To Market A Game) считаем основным:
-  // свой пересчёт показываем в подсказке и в выводах, где он расходится.
+  // Р’РЅРµС€РЅРµРµ С‡РёСЃР»Рѕ (GameDiscoverCo / How To Market A Game) СЃС‡РёС‚Р°РµРј РѕСЃРЅРѕРІРЅС‹Рј:
+  // СЃРІРѕР№ РїРµСЂРµСЃС‡С‘С‚ РїРѕРєР°Р·С‹РІР°РµРј РІ РїРѕРґСЃРєР°Р·РєРµ Рё РІ РІС‹РІРѕРґР°С…, РіРґРµ РѕРЅ СЂР°СЃС…РѕРґРёС‚СЃСЏ.
   const rows = (story.supply || []).map((s) => {
     const f = festOf(s.slug);
     const external = s.theirs ?? null;
@@ -225,8 +225,8 @@ function renderSupply() {
     t("supply_b2", { now: fmt(last) }),
     t("supply_b4", {
       n: String(rows.filter((d) => d.external).length),
-      lo: lo == null ? "—" : `${lo > 0 ? "+" : ""}${lo.toFixed(1)}`,
-      hi: hi == null ? "—" : `${hi > 0 ? "+" : ""}${hi.toFixed(1)}`,
+      lo: lo == null ? "вЂ”" : `${lo > 0 ? "+" : ""}${lo.toFixed(1)}`,
+      hi: hi == null ? "вЂ”" : `${hi > 0 ? "+" : ""}${hi.toFixed(1)}`,
       ours: fmt(rows.at(-1)?.ours ?? 0),
     }),
     t("supply_b3"),
@@ -235,10 +235,10 @@ function renderSupply() {
     .join("");
 }
 
-// --- 2. Внимание --------------------------------------------------------
+// --- 2. Р’РЅРёРјР°РЅРёРµ --------------------------------------------------------
 function renderAttention() {
   const a = story.attention || {};
-  el("#k-attention").textContent = t("attention_kicker", { share: a.top10_share ?? "—" });
+  el("#k-attention").textContent = t("attention_kicker", { share: a.top10_share ?? "вЂ”" });
 
   const total = a.sum_all || 1;
   const shares = [
@@ -277,7 +277,7 @@ function renderAttention() {
 
   const hist = (a.our_hist || []).map((b) => ({
     label:
-      b.to == null ? `${fmt(b.from)}+` : b.from === 0 ? "0" : `${fmt(b.from)}–${fmt(b.to)}`,
+      b.to == null ? `${fmt(b.from)}+` : b.from === 0 ? "0" : `${fmt(b.from)}вЂ“${fmt(b.to)}`,
     games: b.games,
   }));
   if (hist.length) {
@@ -313,7 +313,7 @@ function renderAttention() {
     .join("");
 }
 
-// --- 3. Вишлисты --------------------------------------------------------
+// --- 3. Р’РёС€Р»РёСЃС‚С‹ --------------------------------------------------------
 function renderWishlists() {
   const c = story.conversion || {};
   const qs = ["p10", "p25", "p50", "p75", "p90"].map((k) => ({
@@ -411,8 +411,8 @@ function renderCozy() {
     .join("");
 }
 
-// --- 5. Выводы ----------------------------------------------------------
-// --- 1b. Какая доля вишлистов набрана за фестиваль ----------------------
+// --- 5. Р’С‹РІРѕРґС‹ ----------------------------------------------------------
+// --- 1b. РљР°РєР°СЏ РґРѕР»СЏ РІРёС€Р»РёСЃС‚РѕРІ РЅР°Р±СЂР°РЅР° Р·Р° С„РµСЃС‚РёРІР°Р»СЊ ----------------------
 function renderGains() {
   const b = story.tiers || {};
   const buckets = b.pct_buckets || [];
@@ -470,7 +470,7 @@ function renderGains() {
     .join("");
 }
 
-// --- 1c. С какими вишлистами входили и выходили -------------------------
+// --- 1c. РЎ РєР°РєРёРјРё РІРёС€Р»РёСЃС‚Р°РјРё РІС…РѕРґРёР»Рё Рё РІС‹С…РѕРґРёР»Рё -------------------------
 function renderWl() {
   const b = story.tiers || {};
   const hist = b.wl_hist || [];
@@ -515,7 +515,7 @@ function renderWl() {
     .join("");
 }
 
-// --- переключатель выборки ---------------------------------------------
+// --- РїРµСЂРµРєР»СЋС‡Р°С‚РµР»СЊ РІС‹Р±РѕСЂРєРё ---------------------------------------------
 function setupSwitch() {
   const rank = el("#show-no-rank");
   const jump = el("#show-no-jump");
