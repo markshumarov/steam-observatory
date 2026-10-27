@@ -100,7 +100,8 @@ with sync_playwright() as pw:
     check("первый блок — тиры вишлистов", kickers and kickers[0].endswith("%"), f"первое={kickers[:1]}")
 
     tier_bars = page.eval_on_selector_all("#chart-tiers svg rect", "els => els.length")
-    check("в графике тиров четыре полосы", tier_bars >= 4, f"полос={tier_bars}")
+    check("в графике тиров четыре тира плюс «не смогли померить»", tier_bars == 5,
+          f"полос={tier_bars}")
 
     # число полос в графике составов = число изданий в fests.json: пропажа
     # издания (как февраль 2025) раньше проходила незамеченной
@@ -113,24 +114,18 @@ with sync_playwright() as pw:
     check("в графике составов полоса на каждое издание", supply_bars == editions_in_fests,
           f"полос={supply_bars}, изданий={editions_in_fests}")
 
-    # переключатель выборки: в режиме «все демо» появляется полоса «вне борда»
     gains_bars = page.eval_on_selector_all("#chart-gains svg rect", "els => els.length")
-    check("в графике долей прироста шесть бакетов", gains_bars >= 6, f"полос={gains_bars}")
+    check("в графике долей шесть бакетов плюс «не смогли померить»", gains_bars >= 7,
+          f"полос={gains_bars}")
     wl_bars = page.eval_on_selector_all("#chart-wl svg rect", "els => els.length")
     check("в графике до/после две полосы на бакет", wl_bars >= 10, f"полос={wl_bars}")
 
-    page.click('#sample-switch button[data-sample="all"]')
-    page.wait_for_timeout(400)
-    bars_all = page.eval_on_selector_all("#chart-tiers svg rect", "els => els.length")
-    gains_all = page.eval_on_selector_all("#chart-gains svg rect", "els => els.length")
-    check("режим «все демо» добавляет полосу вне борда", bars_all >= 5, f"полос={bars_all}")
-    check("в режиме «все демо» долей стало больше", gains_all > gains_bars,
-          f"{gains_bars} -> {gains_all}")
-
-    page.click('#sample-switch button[data-sample="measured"]')
-    page.wait_for_timeout(400)
-    bars_back = page.eval_on_selector_all("#chart-tiers svg rect", "els => els.length")
-    check("возврат к измеримой выборке", bars_back == tier_bars, f"полос={bars_back}")
+    tiers_hint = page.text_content("#hint-tiers") or ""
+    check("в подписи тиров прямо сказано, сколько не смогли померить",
+          "could not measure" in tiers_hint and "461" in tiers_hint, tiers_hint[:70])
+    kicker_tiers = (page.text_content("#k-tiers") or "").strip()
+    check("доля бриллиантов считается от всего состава", kicker_tiers.startswith("1.2"),
+          f"кикер={kicker_tiers}")
 
     tiers_text = page.text_content("#take-tiers") or ""
     check("тиры описаны в выводах", "Diamond" in tiers_text and "Silver" in tiers_text,

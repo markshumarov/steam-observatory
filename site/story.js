@@ -83,7 +83,11 @@ function renderTiers() {
   if (!tiers.length) return;
   const total = block.total || tiers.reduce((sum, x) => sum + x.games, 0);
   const pick = (key) => tiers.find((x) => x.key === key) || { games: 0 };
-  const share = (key) => ((100 * pick(key).games) / total).toFixed(1);
+  // Доли считаем от ВСЕГО состава фестиваля: 461 — это не выборка, а те демо,
+  // где вишлисты вообще получилось померить
+  const outside = block.coverage?.outside || 0;
+  const lineup = block.coverage?.lineup || total + outside;
+  const share = (key) => ((100 * pick(key).games) / lineup).toFixed(1);
 
   el("#k-tiers").textContent = t("tiers_kicker", { share: share("diamond") });
 
@@ -102,13 +106,19 @@ function renderTiers() {
     color: COLORS[x.key] || T.accent,
   }));
 
-  const outside = block.coverage?.outside || 0;
-  if (sampleMode === "all" && outside) {
-    rows.push({ label: t("outside_bar"), games: outside, share: 0, color: "#55607a" });
+  if (outside) {
+    rows.push({
+      label: t("outside_bar"),
+      games: outside,
+      share: (100 * outside) / lineup,
+      color: "#55607a",
+    });
   }
   el("#hint-tiers").innerHTML = t("tiers_hint", {
     total: fmt(total),
     outside: fmt(outside),
+    lineup: fmt(lineup),
+    share: ((100 * total) / lineup).toFixed(1),
   });
 
   el("#chart-tiers").replaceChildren(
@@ -404,17 +414,14 @@ function renderGains() {
   const out = story.outside || {};
   const cov = b.coverage || {};
   const rows = buckets.map((x) => ({ label: x.label, games: x.games }));
-  if (sampleMode === "all" && cov.outside) {
+  if (cov.outside) {
     rows.push({ label: t("outside_bar"), games: cov.outside, outside: true });
   }
-  const shown = rows.reduce((sum, r) => sum + r.games, 0);
-  el("#k-gains").textContent = t(
-    sampleMode === "all" ? "sample_all" : "sample_measured",
-    { n: fmt(shown) }
-  );
+  el("#k-gains").textContent = t("sample_measured", { n: fmt(cov.measured) });
   el("#hint-gains").innerHTML = t("gains_hint", {
     measured: fmt(cov.measured),
     lineup: fmt(cov.lineup),
+    outside: fmt(cov.outside),
   });
   el("#chart-gains").replaceChildren(
     plot({
