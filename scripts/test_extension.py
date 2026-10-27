@@ -100,21 +100,61 @@ try:
               bool(comma_row) and (comma_row.get("gain") or 0) > 20000,
               str(comma_row))
 
-        # сортировка: клик по заголовку поднимает наверх максимальный прирост
-        # (page.click может перехватываться липкой шапкой — жмём через JS)
-        page.eval_on_selector("th[data-pr-gain]", "el => el.click()")
-        page.wait_for_timeout(500)
-        top = page.eval_on_selector("tbody tr td.pr-gain", "e => e.dataset.gain")
-        best = page.eval_on_selector_all(
-            "tbody tr td.pr-gain",
-            "els => els.reduce((m, e) => Math.max(m, Number(e.dataset.gain) || -1), -1)")
-        check("сортировка по убыванию работает", int(top) == best, f"верх={top}, максимум={best}")
+        # сортировка: клик по заголовку перебирает режимы
+        # (обычный page.click может перехватываться липкой шапкой — жмём через JS)
+        def click_header():
+            page.eval_on_selector("th[data-pr-gain]", "el => el.click()")
+            page.wait_for_timeout(500)
 
-        page.eval_on_selector("th[data-pr-gain]", "el => el.click()")
-        page.wait_for_timeout(500)
-        worst = page.eval_on_selector("tbody tr td.pr-gain", "e => e.dataset.gain")
-        check("повторный клик сортирует по возрастанию", int(worst) < best,
-              f"низ={worst}, максимум={best}")
+        def gains(limit=12):
+            return page.eval_on_selector_all(
+                "tbody tr td.pr-gain",
+                f"els => els.slice(0, {limit}).map(e => e.dataset.gain ? Number(e.dataset.gain) : null)")
+
+        initial = page.eval_on_selector_all(
+            "tbody tr", "els => els.slice(0, 5).map(r => r.textContent.slice(0, 24))")
+
+        def monotone(seq, descending=True):
+            vals = [x for x in seq if x is not None]
+            return all(
+                (vals[i] >= vals[i + 1]) if descending else (vals[i] <= vals[i + 1])
+                for i in range(len(vals) - 1))
+
+        click_header()
+        desc = gains()
+        check("режим 1: по приросту по убыванию",
+              desc[0] == max(v for v in desc if v is not None) and monotone(desc, True),
+              f"первые={desc[:6]}")
+
+        click_header()
+        asc = gains()
+        check("режим 2: по приросту по возрастанию", monotone(asc, False), f"первые={asc[:6]}")
+        check("в режиме «возрастание» строки без данных тоже в конце",
+              all(v is not None for v in asc), f"первые={asc[:4]}")
+
+        click_header()
+        ratios = page.eval_on_selector_all(
+            "tbody tr td.pr-gain",
+            "els => els.slice(0, 10).map(e => e.dataset.ratio ? Number(e.dataset.ratio) : null)")
+        check("режим 3: по росту в разах",
+              ratios[0] is not None and monotone(ratios, True),
+              f"первые={[round(r, 2) if r else r for r in ratios[:6]]}")
+
+        click_header()
+        jumps = page.eval_on_selector_all(
+            "tbody tr td.pr-gain",
+            "els => els.slice(0, 10).map(e => e.dataset.jump ? Number(e.dataset.jump) : null)")
+        check("режим 4: по прыжку в топе",
+              jumps[0] is not None and monotone(jumps, True), f"первые={jumps[:6]}")
+
+        click_header()
+        after = page.eval_on_selector_all(
+            "tbody tr", "els => els.slice(0, 5).map(r => r.textContent.slice(0, 24))")
+        check("режим 0: исходный порядок восстановлен", initial == after, str(after[:2]))
+
+        last_has_data = page.eval_on_selector(
+            "tbody tr:last-child td.pr-gain", "e => Boolean(e.dataset.gain)")
+        check("строки без данных уходят в конец", last_has_data is False)
 
         shot = config.OUT_DIR / "extension_check.png"
         page.screenshot(path=str(shot))

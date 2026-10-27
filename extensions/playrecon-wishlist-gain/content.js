@@ -14,7 +14,10 @@
     /#([\d\s,]+)(?:([\u25b2\u25bc])\s*([\d\s,]+))?\s*\u2248\s*([\d.,]+)\s*([KM]?)/;
   const MULT = { K: 1e3, M: 1e6, "": 1 };
   const COL = "Δ вишлисты";
-  const STATE = { dir: 0 }; // 0 — как на странице, 1 — по убыванию, -1 — по возрастанию
+  // режимы сортировки: 0 — исходный порядок, 1/2 — абсолютный прирост ↓/↑,
+  // 3 — рост в разах ↓, 4 — прыжок в топе (▲) ↓
+  const MODES = ["", "↓", "↑", "×↓", "▲↓"];
+  const STATE = { mode: 0 };
 
   const toInt = (text) => {
     const n = parseInt(String(text ?? "").replace(/[^\d]/g, ""), 10);
@@ -79,7 +82,11 @@
 
   function readRows(table) {
     return Array.from(table.querySelectorAll("tbody tr")).map((tr) => {
-      const cells = Array.from(tr.querySelectorAll("td,th"));
+      // свою колонку исключаем: иначе при повторном прогоне последней ячейкой
+      // окажется она сама и данные строки потеряются
+      const cells = Array.from(tr.querySelectorAll("td,th")).filter(
+        (c) => !c.classList.contains("pr-gain")
+      );
       return { tr, cells, wl: cells.length ? parseWishlists(cells[cells.length - 1]) : null };
     });
   }
@@ -92,10 +99,44 @@
     const body = table.querySelector("tbody");
     if (!body) return;
     const list = rows.slice();
-    if (STATE.dir === 1) list.sort((a, b) => (b.gain ?? -Infinity) - (a.gain ?? -Infinity));
-    else if (STATE.dir === -1) list.sort((a, b) => (a.gain ?? Infinity) - (b.gain ?? Infinity));
-    else list.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+
+    if (STATE.mode === 0) {
+      list.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+    } else {
+      // «нет данных» — это не «мало», поэтому такие строки всегда в конце,
+      // независимо от направления сортировки
+      const value = (row) => {
+        if (STATE.mode === 1 || STATE.mode === 2) return Number.isFinite(row.gain) ? row.gain : null;
+        if (STATE.mode === 3) return Number.isFinite(row.ratio) ? row.ratio : null;
+        return Number.isFinite(row.jump) ? row.jump : null;
+      };
+      const asc = STATE.mode === 2;
+      list.sort((a, b) => {
+        const av = value(a);
+        const bv = value(b);
+        if (av === null && bv === null) return (a.order ?? 0) - (b.order ?? 0);
+        if (av === null) return 1;
+        if (bv === null) return -1;
+        return asc ? av - bv : bv - av;
+      });
+    }
     for (const row of list) body.appendChild(row.tr);
+  }
+
+  function collectForSort(table) {
+    return readRows(table).map((r) => {
+      const cell = r.tr.querySelector("td.pr-gain");
+      const gain = cell && cell.dataset.gain ? Number(cell.dataset.gain) : NaN;
+      const ratio = cell && cell.dataset.ratio ? Number(cell.dataset.ratio) : NaN;
+      const jump = cell && cell.dataset.jump ? Number(cell.dataset.jump) : NaN;
+      return {
+        tr: r.tr,
+        gain,
+        ratio,
+        jump,
+        order: Number(r.tr.dataset.prOrder || 0),
+      };
+    });
   }
 
   function decorate() {
@@ -123,22 +164,14 @@
     if (head && !head.querySelector("th[data-pr-gain]")) {
       const th = document.createElement("th");
       th.dataset.prGain = "1";
-      th.title = "Оценка прироста вишлистов за фестиваль. Клик — сортировка.";
+      th.title =
+        "Оценка прироста вишлистов за фестиваль. Клик переключает сортировку: " +
+        "по приросту ↓ → ↑ → рост в разах → прыжок в топе → исходный порядок.";
       th.innerHTML = `${COL}<span class="pr-sort"></span>`;
       th.addEventListener("click", () => {
-        STATE.dir = STATE.dir === 1 ? -1 : 1;
-        th.querySelector(".pr-sort").textContent = STATE.dir === 1 ? "↓" : "↑";
-        sortRows(
-          table,
-          readRows(table).map((r) => {
-            const cell = r.tr.querySelector("td.pr-gain");
-            return {
-              tr: r.tr,
-              gain: cell ? Number(cell.dataset.gain) : null,
-              order: Number(r.tr.dataset.prOrder || 0),
-            };
-          })
-        );
+        STATE.mode = (STATE.mode + 1) % MODES.length;
+        th.querySelector(".pr-sort").textContent = MODES[STATE.mode];
+        sortRows(table, collectForSort(table));
       });
       head.appendChild(th);
     }
@@ -156,10 +189,14 @@
         td.textContent = fmtShort(row.gain);
         td.classList.add(row.gain >= 0 ? "pr-pos" : "pr-neg");
         td.dataset.gain = String(row.gain);
+        td.dataset.jump = String(row.wl.jump);
+        const ratio = row.estBefore ? row.wl.est / row.estBefore : null;
+        if (ratio) td.dataset.ratio = String(ratio);
         td.title =
           `#${row.wl.rank}▲${row.wl.jump} ≈${fmtFull(row.wl.est)} вишлистов сейчас\n` +
           `было на #${row.rankBefore}: ≈${fmtFull(row.estBefore)}\n` +
-          `оценка прироста: ${fmtFull(row.gain)} (±20–30%)`;
+          `оценка прироста: ${fmtFull(row.gain)} (±20–30%)` +
+          (ratio ? `\nрост: ×${ratio.toFixed(2)} за фестиваль` : "");
       }
       row.tr.appendChild(td);
       added += 1;
