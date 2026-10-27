@@ -114,24 +114,33 @@
      "games": 6776
     },
     {
-     "key": "in_under8k",
-     "games": 49
+     "key": "in_b0",
+     "label": "до 15 500",
+     "games": 211
     },
     {
-     "key": "in_8k_50k",
-     "games": 351
+     "key": "in_b1",
+     "label": "15 500–30 900",
+     "games": 132
     },
     {
-     "key": "in_50k_90k",
-     "games": 51
+     "key": "in_b2",
+     "label": "30 900–86 400",
+     "games": 105
     },
     {
-     "key": "in_90k_plus",
-     "games": 77
+     "key": "in_b3",
+     "label": "86 400+",
+     "games": 80
     }
    ],
    "total": 7304,
-   "in_chart": 528
+   "in_chart": 528,
+   "bounds": [
+    15500,
+    30900,
+    86400
+   ]
   }
  },
  "outside": {

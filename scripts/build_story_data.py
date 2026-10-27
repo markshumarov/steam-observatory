@@ -245,30 +245,43 @@ try:
     spec.loader.exec_module(mod)
     board_rows = [r for r in mod.load_rows() if r.get("wl_est")]
 
-    def _bucket(est: int) -> str:
-        if est < 8_000:
-            return "in_under8k"
-        if est < 50_000:
-            return "in_8k_50k"
-        if est < 90_000:
-            return "in_50k_90k"
-        return "in_90k_plus"
+    ests = sorted(r["wl_est"] for r in board_rows)
+    n_est = len(ests)
 
-    counts: dict[str, int] = {}
-    for r in board_rows:
-        key = _bucket(r["wl_est"])
-        counts[key] = counts.get(key, 0) + 1
+    def cut(q: float) -> int:
+        return ests[min(n_est - 1, int(q * n_est))]
+
+    # границы берём как квантили, чтобы корзины шли строго от большего к меньшему
+    bounds = [cut(0.40), cut(0.65), cut(0.85)]
+
+    def _bucket(est: int) -> int:
+        for i, edge in enumerate(bounds):
+            if est < edge:
+                return i
+        return len(bounds)
+
+    def num(value: int) -> str:
+        return f"{value:,}".replace(",", " ")
+
+    bucket_labels = [
+        f"до {num(bounds[0])}",
+        f"{num(bounds[0])}–{num(bounds[1])}",
+        f"{num(bounds[1])}–{num(bounds[2])}",
+        f"{num(bounds[2])}+",
+    ]
+    counts = [0] * (len(bounds) + 1)
+    for est in ests:
+        counts[_bucket(est)] += 1
     lineup_n = fests_final.get("oct2026") or 0
     wl_now = {
-        "buckets": [
-            {"key": "no_rank", "games": max(0, lineup_n - len(board_rows))},
-            {"key": "in_under8k", "games": counts.get("in_under8k", 0)},
-            {"key": "in_8k_50k", "games": counts.get("in_8k_50k", 0)},
-            {"key": "in_50k_90k", "games": counts.get("in_50k_90k", 0)},
-            {"key": "in_90k_plus", "games": counts.get("in_90k_plus", 0)},
+        "buckets": [{"key": "no_rank", "games": max(0, lineup_n - n_est)}]
+        + [
+            {"key": f"in_b{i}", "label": bucket_labels[i], "games": counts[i]}
+            for i in range(len(bounds) + 1)
         ],
         "total": lineup_n,
-        "in_chart": len(board_rows),
+        "in_chart": n_est,
+        "bounds": bounds,
     }
     if tiers_block is not None:
         tiers_block["wl_now"] = wl_now

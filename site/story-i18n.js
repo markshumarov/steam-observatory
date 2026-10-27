@@ -33,7 +33,7 @@ export const S = {
     gains_b3: "Outside the board it is a different story: of {sampled} randomly sampled demos, only <b>{with_rank}</b> ({trace}%) have any wishlist trace at all, and their median peak was <b>{median} concurrent player</b>.",
     wl_title: "Who actually took part: hobby projects vs professional ones",
     wl_hint:
-      "Current wishlists of all {total} lineup demos, split by the launch benchmarks of How To Market A Game (🥈 8,000, 🥇 50,000, 💎 90,000 wishlists at launch). Only {in_chart} demos appear in PlayRecon's wishlist chart at all — for the rest no wishlists are measurable.",
+      "Current wishlists of all {total} lineup demos. Cut points are quantiles of the wishlist distribution, chosen so the groups run from the largest to the smallest (for reference, How To Market A Game puts a decent launch at 8,000, a good one at 50,000 and a strong one at 90,000 wishlists). Only {in_chart} demos appear in PlayRecon's wishlist chart at all — the rest have no measurable wishlists and can be hidden with the checkbox above.",
     wl_no_rank: "outside the wishlist top",
     wl_in_under8k: "🥉 in the top, under 8,000",
     wl_in_8k_50k: "🥈 8,000–49,999",
@@ -153,7 +153,7 @@ export const S = {
     gains_b3: "Вне борда картина другая: из {sampled} случайно отобранных демо вишлист-след есть только у <b>{with_rank}</b> ({trace}%), а медианный пик у них — <b>{median} одновременный игрок</b>.",
     wl_title: "Кто вообще участвовал: любители против профессионалов",
     wl_hint:
-      "Текущие вишлисты всех {total} демо состава по бенчмарку запуска How To Market A Game (🥈 8 000, 🥇 50 000, 💎 90 000 вишлистов к запуску). В таблице вишлистов PlayRecon есть только {in_chart} демо — у остальных вишлисты вообще не измеряются.",
+      "Текущие вишлисты всех {total} демо состава. Точки отсечения — квантили распределения, подобранные так, чтобы группы шли от большего к меньшему (для ориентира: How To Market A Game считает 8 000 вишлистов нормальным запуском, 50 000 — хорошим, 90 000 — сильным). В таблице вишлистов PlayRecon есть только {in_chart} демо — у остальных вишлисты не измеряются, и их можно скрыть галочкой выше.",
     wl_no_rank: "вне топа вишлистов",
     wl_in_under8k: "🥉 в топе, до 8 000",
     wl_in_8k_50k: "🥈 8 000–49 999",

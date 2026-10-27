@@ -152,6 +152,15 @@ h3 { font-size: 15px; margin: 24px 0 10px; color: var(--text); font-weight: 600;
 }
 .toggles label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
 .toggles input { accent-color: var(--accent); }
+
+/* пай-чарт «кто участвовал»: рисуем вручную, поэтому и легенду верстаем сами */
+.pie-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; }
+.pie-legend { display: flex; flex-direction: column; gap: 6px; min-width: 260px; }
+.pie-row { display: grid; grid-template-columns: 14px 1fr auto auto; gap: 8px; align-items: center;
+  font-size: 13px; color: var(--muted); }
+.pie-row b { color: var(--text); font-variant-numeric: tabular-nums; }
+.pie-row i { color: var(--muted); font-style: normal; font-variant-numeric: tabular-nums; }
+.pie-dot { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
 .chart svg [aria-label="tip"] path { fill: var(--panel-2); stroke: var(--line); }
 
 .chart svg [aria-label="tip"] text,

@@ -482,10 +482,10 @@ function renderGains() {
 // цвета долей: серый — вне топа, дальше бронза/серебро/золото/бриллиант
 const WL_COLORS = {
   no_rank: "#55607a",
-  in_under8k: "#d97706",
-  in_8k_50k: "#cbd5e1",
-  in_50k_90k: "#fbbf24",
-  in_90k_plus: "#7dd3fc",
+  in_b0: "#d97706",
+  in_b1: "#cbd5e1",
+  in_b2: "#fbbf24",
+  in_b3: "#7dd3fc",
 };
 
 function renderWl() {
@@ -493,56 +493,68 @@ function renderWl() {
   const data = b.wl_now;
   if (!data || !data.buckets) return;
   const total = data.total || data.buckets.reduce((sum, r) => sum + r.games, 0);
-  const rows = data.buckets.map((r) => ({
+  // «вне топа» можно скрыть той же галочкой, что и в графике тиров
+  const shown = data.buckets.filter((r) => r.key !== "no_rank" || showNoRank);
+  const shownTotal = shown.reduce((sum, r) => sum + r.games, 0) || 1;
+  const rows = shown.map((r) => ({
     key: r.key,
-    label: t(`wl_${r.key}`),
+    label: r.label || t(`wl_${r.key}`),
     games: r.games,
-    share: (100 * r.games) / total,
+    share: (100 * r.games) / shownTotal,
   }));
   el("#hint-wl").innerHTML = t("wl_hint", {
     total: fmt(total),
     in_chart: fmt(data.in_chart),
   });
   try {
-    el("#chart-wl").replaceChildren(
-      plot({
-        height: 140,
-        marginTop: 10,
-        marginBottom: 10,
-        marginLeft: 10,
-        marginRight: 10,
-        y: { axis: null },
-        x: { label: t("wl_axis"), grid: true },
-        color: {
-          domain: rows.map((d) => d.label),
-          range: rows.map((d) => WL_COLORS[d.key]),
-          legend: true,
-        },
-        marks: [
-          Plot.barX(rows, {
-            x: "games",
-            y: () => "",
-            fill: "label",
-            insetTop: 8,
-            insetBottom: 8,
-          }),
-          Plot.text(
-            rows.filter((d) => d.share >= 4),
-            {
-              x: "games",
-              y: () => "",
-              text: (d) => `${fmt(d.games)} · ${d.share.toFixed(1)}%`,
-              dx: -6,
-              textAnchor: "end",
-              fill: "#0a0d13",
-              fontSize: 11,
-              fontWeight: 600,
-            }
-          ),
-          Plot.ruleX([0], { stroke: T.grid }),
-        ],
-      })
-    );
+    // пай-чарт рисуем сами: Plot.pie в этой сборке Plot бросает исключение
+    const R = 108;
+    const cx = 150;
+    const cy = 140;
+    let angle = -Math.PI / 2;
+    const parts = [];
+    for (const r of rows) {
+      const frac = r.games / shownTotal;
+      const next = angle + frac * 2 * Math.PI;
+      const x1 = cx + R * Math.cos(angle);
+      const y1 = cy + R * Math.sin(angle);
+      const x2 = cx + R * Math.cos(next);
+      const y2 = cy + R * Math.sin(next);
+      const large = frac > 0.5 ? 1 : 0;
+      const d = [
+        `M${cx},${cy}`,
+        `L${x1.toFixed(1)},${y1.toFixed(1)}`,
+        `A${R},${R} 0 ${large} 1 ${x2.toFixed(1)},${y2.toFixed(1)}`,
+        "Z",
+      ].join(" ");
+      parts.push(
+        `<path d="${d}" fill="${WL_COLORS[r.key] || "#55607a"}" stroke="#0a0d13" stroke-width="1.5">` +
+          `<title>${r.label}: ${fmt(r.games)} (${r.share.toFixed(1)}%)</title></path>`
+      );
+      if (frac >= 0.06) {
+        const mid = (angle + next) / 2;
+        const lx = cx + R * 0.6 * Math.cos(mid);
+        const ly = cy + R * 0.6 * Math.sin(mid);
+        const ink = r.key === "no_rank" ? T.text : "#0a0d13";
+        parts.push(
+          `<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="middle" ` +
+            `fill="${ink}" font-size="11.5" font-weight="600">${r.share.toFixed(1)}%</text>`
+        );
+      }
+      angle = next;
+    }
+    const legend = rows
+      .map(
+        (r) =>
+          `<div class="pie-row"><span class="pie-dot" style="background:${
+            WL_COLORS[r.key] || "#55607a"
+          }"></span><span>${r.label}</span><b>${fmt(r.games)}</b><i>${r.share.toFixed(1)}%</i></div>`
+      )
+      .join("");
+    el("#chart-wl").innerHTML =
+      `<div class="pie-wrap">` +
+      `<svg width="300" height="280" viewBox="0 0 300 280" role="img">${parts.join("")}</svg>` +
+      `<div class="pie-legend">${legend}</div></div>`;
   } catch (err) {
     // график не должен ломать остальную страницу
     console.error("[story] график вишлистов не нарисован:", err);
@@ -577,6 +589,7 @@ function setupSwitch() {
         else showNoJump = box.checked;
         renderTiers();
         renderGains();
+        renderWl();
         setupSwitch();
       };
     }
