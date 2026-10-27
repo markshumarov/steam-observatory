@@ -116,6 +116,8 @@ function renderTiers() {
     rows.push({ label: t("norank_bar"), games: noRank, share: 0, color: "#55607a" });
   }
   const shown = rows.reduce((sum, r) => sum + r.games, 0);
+  // пересчитываем долю у КАЖДОЙ полосы: иначе в подсказке висит старое значение
+  for (const r of rows) r.share = Number(((100 * r.games) / shown).toFixed(1));
   share = (key) => ((100 * pick(key).games) / shown).toFixed(1);
   el("#k-tiers").textContent = t("tiers_kicker", { share: share("diamond") });
   el("#hint-tiers").innerHTML = t("tiers_hint", {
