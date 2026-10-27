@@ -1,8 +1,10 @@
 {
   "manifest_version": 3,
   "name": "PlayRecon wishlist gain",
-  "version": "1.2.2",
-  "description": "Adds an estimated wishlist gain column to the PlayRecon Next Fest table, with sorting.",
+  "version": "1.3.0",
+  "description": "Adds estimated wishlist gain, percentage change and Gamalytic wishlist columns to the PlayRecon Next Fest table, with sorting.",
+  "host_permissions": ["https://gamalytic.com/*"],
+  "background": { "service_worker": "background.js" },
   "content_scripts": [
     {
       "matches": ["https://app.playrecon.com/fests/nextfest/*"],

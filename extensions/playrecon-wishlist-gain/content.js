@@ -18,6 +18,11 @@
   // (медиана по фестивалю — 12%, p90 — 29%)
   const PCT_COL = "Change %";
   const PCT_MODES = ["", "↓", "↑"];
+  // третья колонка: текущее число вишлистов из Gamalytic (внешний источник,
+  // независимый от модели PlayRecon) — для сверки оценок
+  const GCOL = "Wishlists (Gamalytic)";
+  const GAL_MODES = ["", "↓", "↑"];
+  const HAS_WORKER = typeof chrome !== "undefined" && chrome.runtime && chrome.runtime.id;
   // тиры по числу вишлистов, набранных за фестиваль (бенчмарк How To Market A Game):
   // Diamond 10 000+, Gold 7 000–9 999, Silver 1 000–6 999, Bronze 0–999
   const TIERS = [
@@ -31,7 +36,7 @@
   // режимы сортировки: 0 — исходный порядок, 1/2 — абсолютный прирост ↓/↑,
   // 3 — рост в разах ↓, 4 — прыжок в топе (▲) ↓
   const MODES = ["", "↓", "↑", "×↓", "▲↓"];
-  const STATE = { mode: 0, modePct: 0 };
+  const STATE = { mode: 0, modePct: 0, modeGal: 0 };
 
   const toInt = (text) => {
     const n = parseInt(String(text ?? "").replace(/[^\d]/g, ""), 10);
@@ -96,12 +101,16 @@
 
   function readRows(table) {
     return Array.from(table.querySelectorAll("tbody tr")).map((tr) => {
-      // свою колонку исключаем: иначе при повторном прогоне последней ячейкой
+      // appid игры берём из картинки строки: .../apps/5133900/...
+      const img = tr.querySelector("img");
+      const m = img && /\/apps\/(\d+)\//.exec(img.src || "");
+      const appid = m ? Number(m[1]) : null;
+      // свои колонки исключаем: иначе при повторном прогоне последней ячейкой
       // окажется она сама и данные строки потеряются
       const cells = Array.from(tr.querySelectorAll("td,th")).filter(
-        (c) => !c.classList.contains("pr-gain")
+        (c) => !["pr-gain", "pr-pct", "pr-gal"].some((x) => c.classList.contains(x))
       );
-      return { tr, cells, wl: cells.length ? parseWishlists(cells[cells.length - 1]) : null };
+      return { tr, cells, appid, wl: cells.length ? parseWishlists(cells[cells.length - 1]) : null };
     });
   }
 
@@ -149,6 +158,33 @@
         return cell && cell.dataset.pct ? Number(cell.dataset.pct) : null;
       };
       const asc = STATE.modePct === 2;
+      list.sort((a, b) => {
+        const av = value(a);
+        const bv = value(b);
+        if (av === null && bv === null) return (a.order ?? 0) - (b.order ?? 0);
+        if (av === null) return 1;
+        if (bv === null) return -1;
+        return asc ? av - bv : bv - av;
+      });
+    }
+    for (const row of list) body.appendChild(row.tr);
+  }
+
+  const fmtCompact = (value) =>
+    value >= 1e6 ? `${(value / 1e6).toFixed(1)}M` : value >= 1e3 ? `${Math.round(value / 1e3)}K` : String(value);
+
+  function sortByGal(table, rows) {
+    const body = table.querySelector("tbody");
+    if (!body) return;
+    const list = rows.slice();
+    if (STATE.modeGal === 0) {
+      list.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+    } else {
+      const value = (row) => {
+        const cell = row.tr.querySelector("td.pr-gal");
+        return cell && cell.dataset.gal ? Number(cell.dataset.gal) : null;
+      };
+      const asc = STATE.modeGal === 2;
       list.sort((a, b) => {
         const av = value(a);
         const bv = value(b);
@@ -235,6 +271,22 @@
       head.appendChild(th);
     }
 
+    if (HAS_WORKER && head && !head.querySelector("th[data-pr-gal]")) {
+      const th = document.createElement("th");
+      th.dataset.prGal = "1";
+      th.title =
+        "Текущее число вишлистов по оценке Gamalytic — независимый источник, с которым " +
+        "можно сверить нашу оценку из рангов PlayRecon. Клик переключает сортировку: " +
+        "по убыванию → по возрастанию → исходный порядок.";
+      th.innerHTML = `${GCOL}<span class="pr-sort"></span>`;
+      th.addEventListener("click", () => {
+        STATE.modeGal = (STATE.modeGal + 1) % GAL_MODES.length;
+        th.querySelector(".pr-sort").textContent = GAL_MODES[STATE.modeGal];
+        sortByGal(table, readRows(table));
+      });
+      head.appendChild(th);
+    }
+
     let added = 0;
     for (const row of rows) {
       if (row.tr.querySelector("td.pr-gain")) continue;
@@ -287,6 +339,41 @@
       row.tr.appendChild(td);
       added += 1;
     }
+    // третья колонка: вишлисты Gamalytic — приходят асинхронно из воркера
+    if (HAS_WORKER) {
+      for (const row of rows) {
+        if (row.tr.querySelector("td.pr-gal") || !row.appid) continue;
+        const td = document.createElement("td");
+        td.className = "pr-gal pr-none";
+        td.textContent = "…";
+        td.title = "Запрашиваем текущее число вишлистов у Gamalytic";
+        row.tr.appendChild(td);
+        added += 1;
+        const ours = row.wl && row.wl.est ? row.wl.est : null;
+        chrome.runtime.sendMessage(
+          { type: "gamalytic-wishlists", appid: row.appid },
+          (res) => {
+            if (!res || !res.wishlists) {
+              td.textContent = "—";
+              td.title = "Gamalytic не отдал число вишлистов для этой игры";
+              return;
+            }
+            td.classList.remove("pr-none");
+            td.textContent = fmtCompact(res.wishlists);
+            td.dataset.gal = String(res.wishlists);
+            const diff = ours ? 100 * (res.wishlists / ours - 1) : null;
+            td.title =
+              `Gamalytic: ≈${fmtFull(res.wishlists)} вишлистов сейчас` +
+              (res.topWish ? `\nместо в топе вишлистов: #${fmtFull(res.topWish)}` : "") +
+              (diff == null
+                ? "\nнаша оценка PlayRecon для этой игры недоступна"
+                : `\nнаш PlayRecon: ≈${fmtFull(ours)} — расхождение ` +
+                  `${diff > 0 ? "+" : ""}${diff.toFixed(1)}%`);
+          }
+        );
+      }
+    }
+
     return added > 0;
   }
 

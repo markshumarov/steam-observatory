@@ -219,6 +219,14 @@ try:
         check("лишней линии-разделителя нет", pct_border in ("0px", "0"),
               f"border={pct_border}")
 
+        # третья колонка появляется только когда есть фоновый воркер расширения:
+        # в тесте его нет, поэтому проверяем мягкую деградацию
+        gal_cells = page.eval_on_selector_all("tbody tr td.pr-gal", "els => els.length")
+        check("без воркера колонка Gamalytic не добавляется", gal_cells == 0,
+              f"ячеек={gal_cells}")
+        gal_head = page.eval_on_selector_all("th[data-pr-gal]", "els => els.length")
+        check("и заголовка Gamalytic тоже нет", gal_head == 0, f"заголовков={gal_head}")
+
         last_has_data = page.eval_on_selector(
             "tbody tr:last-child td.pr-gain", "e => Boolean(e.dataset.gain)")
         check("строки без данных уходят в конец", last_has_data is False)

@@ -53,3 +53,29 @@ td.pr-pct.pr-pos { color: #4ade80; }
 td.pr-pct.pr-neg { color: #f87171; }
 td.pr-pct.pr-none { opacity: 0.45; }
 
+/* Третья колонка: вишлисты Gamalytic — справа от наших оценок, с отступом */
+th[data-pr-gal] {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap !important;
+  padding-left: 22px !important;
+}
+
+th[data-pr-gal]:hover { color: var(--pr-you, #6b9bff); }
+
+th[data-pr-gal] .pr-sort {
+  margin-left: 6px;
+  opacity: 0.55;
+  font-size: 0.85em;
+}
+
+td.pr-gal {
+  text-align: right !important;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap !important;
+  padding-left: 22px !important;
+  color: var(--pr-muted, #9aa7bd);
+}
+
+td.pr-gal.pr-none { opacity: 0.45; }
+
