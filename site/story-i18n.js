@@ -25,7 +25,7 @@ export const S = {
     toggle_no_jump: "show demos we couldn't measure",
     gains_title: "Half of the demos we could measure grew by 10% or more",
     gains_hint:
-      "Share of a demo's current wishlists that was earned during the festival. We could measure only {measured} of {lineup} lineup demos — the model sees games from about 6,900 wishlists upward, so the grey bar is the {outside} demos where measurement was impossible.",
+      "Share of a demo's current wishlists that was earned during the festival. We could measure only {measured} of {lineup} lineup demos — the model sees games from about 6,900 wishlists upward. The grey bars are the {outside} demos where measurement was impossible: those outside the wishlist top and those whose position did not change. Every share is of what is shown on the chart ({shown} demos).",
     gains_axis: "demos",
     gains_legend: "share of wishlists earned during the festival",
     gains_b1: "Median demo earned <b>{median}%</b> of its wishlists in one week (p10 <b>{p10}%</b>, p90 <b>{p90}%</b>).",
@@ -141,7 +141,7 @@ export const S = {
     toggle_no_jump: "показывать тех, кого не удалось посчитать",
     gains_title: "Половина измеренных демо выросла на 10% и больше",
     gains_hint:
-      "Какая доля текущих вишлистов игры набрана за фестиваль. Померить получилось только {measured} демо из {lineup}: модель видит игры примерно от 6 900 вишлистов, поэтому серая полоса — это {outside} демо, где измерение невозможно.",
+      "Какая доля текущих вишлистов игры набрана за фестиваль. Померить получилось только {measured} демо из {lineup}: модель видит игры примерно от 6 900 вишлистов. Серые полосы — это {outside} демо, где измерение невозможно: их нет в топе вишлистов либо их позиция не изменилась. Все доли считаются от того, что показано на графике ({shown} демо).",
     gains_axis: "демо",
     gains_legend: "доля вишлистов, набранных за фестиваль",
     gains_b1: "Медианное демо набрало за неделю <b>{median}%</b> своих вишлистов (p10 <b>{p10}%</b>, p90 <b>{p90}%</b>).",

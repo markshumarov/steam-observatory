@@ -211,7 +211,7 @@ function renderSupply() {
         Plot.text(rows, {
           x: "label",
           y: "games",
-          text: (d) => fmt(d.games),
+          text: (d) => `${fmt(d.games)} · ${d.share}%`,
           dy: -6,
           fontSize: 9.5,
           fill: T.muted,
@@ -419,15 +419,23 @@ function renderGains() {
   if (!buckets.length) return;
   const out = story.outside || {};
   const cov = b.coverage || {};
+  const noRank = cov.no_rank ?? 0;
+  const noJump = cov.no_jump ?? 0;
   const rows = buckets.map((x) => ({ label: x.label, games: x.games }));
-  if (cov.outside) {
-    rows.push({ label: t("outside_bar"), games: cov.outside, outside: true });
+  if (showNoJump && noJump) {
+    rows.push({ label: t("nojump_bar"), games: noJump, grey: true });
   }
+  if (showNoRank && noRank) {
+    rows.push({ label: t("norank_bar"), games: noRank, grey: true });
+  }
+  const shown = rows.reduce((sum, r) => sum + r.games, 0);
+  for (const r of rows) r.share = Number(((100 * r.games) / shown).toFixed(1));
   el("#k-gains").textContent = t("sample_measured", { n: fmt(cov.measured) });
   el("#hint-gains").innerHTML = t("gains_hint", {
     measured: fmt(cov.measured),
     lineup: fmt(cov.lineup),
-    outside: fmt(cov.outside),
+    outside: fmt(noRank + noJump),
+    shown: fmt(shown),
   });
   el("#chart-gains").replaceChildren(
     plot({
@@ -435,19 +443,19 @@ function renderGains() {
       marginTop: 16,
       marginLeft: 70,
       marginBottom: 52,
-      x: { label: t("gains_legend"), domain: rows.map((d) => d.label), tickRotate: -20 },
+      x: { label: t("gains_legend"), domain: rows.map((d) => d.label), tickRotate: -30 },
       y: { grid: true, label: t("gains_axis") },
       marks: [
         Plot.barY(rows, {
           x: "label",
           y: "games",
-          fill: (d) => (d.outside ? "#55607a" : T.accent),
+          fill: (d) => (d.grey ? "#55607a" : T.accent),
           tip: true,
         }),
         Plot.text(rows, {
           x: "label",
           y: "games",
-          text: (d) => fmt(d.games),
+          text: (d) => `${fmt(d.games)} · ${d.share}%`,
           dy: -6,
           fontSize: 9.5,
           fill: T.muted,
@@ -517,18 +525,21 @@ function renderWl() {
 
 // --- РїРµСЂРµРєР»СЋС‡Р°С‚РµР»СЊ РІС‹Р±РѕСЂРєРё ---------------------------------------------
 function setupSwitch() {
-  const rank = el("#show-no-rank");
-  const jump = el("#show-no-jump");
-  if (!rank || !jump) return;
-  rank.checked = showNoRank;
-  jump.checked = showNoJump;
-  const rerender = () => {
-    showNoRank = rank.checked;
-    showNoJump = jump.checked;
-    renderTiers();
+  // галочки стоят у двух графиков и управляют общим состоянием
+  const sync = (attr, value) => {
+    for (const box of document.querySelectorAll(`input[data-toggle="${attr}"]`)) {
+      box.checked = value;
+      box.onchange = () => {
+        if (attr === "no-rank") showNoRank = box.checked;
+        else showNoJump = box.checked;
+        renderTiers();
+        renderGains();
+        setupSwitch();
+      };
+    }
   };
-  rank.onchange = rerender;
-  jump.onchange = rerender;
+  sync("no-rank", showNoRank);
+  sync("no-jump", showNoJump);
 }
 
 function renderTakeaways() {

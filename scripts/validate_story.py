@@ -115,10 +115,15 @@ with sync_playwright() as pw:
           f"полос={supply_bars}, изданий={editions_in_fests}")
 
     gains_bars = page.eval_on_selector_all("#chart-gains svg rect", "els => els.length")
-    check("в графике долей шесть бакетов плюс «не смогли померить»", gains_bars >= 7,
+    check("в графике долей шесть бакетов плюс две серые полосы", gains_bars >= 8,
           f"полос={gains_bars}")
     wl_bars = page.eval_on_selector_all("#chart-wl svg rect", "els => els.length")
     check("в графике до/после две полосы на бакет", wl_bars >= 10, f"полос={wl_bars}")
+
+    gains_labels = page.eval_on_selector_all(
+        "#chart-gains svg text", "els => els.map(e => e.textContent)")
+    check("подписи полос прироста содержат проценты",
+          any("·" in x and "%" in x for x in gains_labels), str(gains_labels[:3]))
 
     tiers_hint = page.text_content("#hint-tiers") or ""
     check("в подписи тиров сказано, сколько демо не удалось посчитать",
@@ -141,6 +146,17 @@ with sync_playwright() as pw:
     page.wait_for_timeout(400)
     bars_back2 = page.eval_on_selector_all("#chart-tiers svg rect", "els => els.length")
     check("категории возвращаются", bars_back2 == 6, f"полос={bars_back2}")
+
+    # вторая пара галочек (у графика прироста) управляет тем же состоянием
+    check("галочки у второго графика синхронизированы",
+          page.is_checked("#show-no-rank-2") and page.is_checked("#show-no-jump-2"))
+    page.uncheck("#show-no-jump-2")
+    page.wait_for_timeout(400)
+    check("вторая пара прячет полосу и у первого графика",
+          (not page.is_checked("#show-no-jump"))
+          and page.eval_on_selector_all("#chart-tiers svg rect", "els => els.length") == 5)
+    page.check("#show-no-jump-2")
+    page.wait_for_timeout(300)
 
     tiers_text = page.text_content("#take-tiers") or ""
     check("тиры описаны в выводах", "Diamond" in tiers_text and "Silver" in tiers_text,
