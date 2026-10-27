@@ -25,6 +25,7 @@ from sobs import config  # noqa: E402
 ROOT = config.ROOT
 SNAPSHOT = ROOT / "data" / "cache" / "playrecon_fest_dom.html"
 EXT = ROOT / "extensions" / "playrecon-wishlist-gain" / "content.js"
+STYLES = ROOT / "extensions" / "playrecon-wishlist-gain" / "styles.css"
 PORT = 8797
 REPORT = ROOT / "data" / "cache" / "ext_test.txt"
 
@@ -70,6 +71,9 @@ try:
                   wait_until="domcontentloaded", timeout=120000)
         page.wait_for_selector("table tbody tr", timeout=60000)
         page.add_script_tag(path=str(EXT))
+        # стили расширения подключает манифест; в тесте добавляем их руками,
+        # иначе проверки оформления (отступы, разделители) ничего не значат
+        page.add_style_tag(path=str(STYLES))
         page.wait_for_timeout(1500)
 
         check("колонка в шапке появилась",
@@ -207,6 +211,13 @@ try:
             "tbody tr", "els => els.slice(0, 5).map(r => r.textContent.slice(0, 24))")
         check("после сортировки по проценту порядок восстановлен", initial == pct_order,
               str(pct_order[:2]))
+
+        pct_pad = page.eval_on_selector("td.pr-pct", "e => getComputedStyle(e).paddingLeft")
+        check("у колонки процента есть отступ слева", pct_pad not in ("0px", "0"),
+              f"padding={pct_pad}")
+        pct_border = page.eval_on_selector("td.pr-pct", "e => getComputedStyle(e).borderLeftWidth")
+        check("колонка процента отделена линией", pct_border not in ("0px", "0"),
+              f"border={pct_border}")
 
         last_has_data = page.eval_on_selector(
             "tbody tr:last-child td.pr-gain", "e => Boolean(e.dataset.gain)")

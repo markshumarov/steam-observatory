@@ -24,3 +24,34 @@ td.pr-gain {
 td.pr-gain.pr-pos { color: #4ade80; }
 td.pr-gain.pr-neg { color: #f87171; }
 td.pr-gain.pr-none { opacity: 0.45; }
+
+/* Вторая колонка: отделяем её от «Wishlist change» отступом и вертикальной
+   чертой, иначе числа прироста и проценты сливаются в одно. */
+th[data-pr-pct] {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap !important;
+  padding-left: 24px !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.16) !important;
+}
+
+th[data-pr-pct]:hover { color: var(--pr-you, #6b9bff); }
+
+th[data-pr-pct] .pr-sort {
+  margin-left: 6px;
+  opacity: 0.55;
+  font-size: 0.85em;
+}
+
+td.pr-pct {
+  text-align: right !important;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap !important;
+  padding-left: 24px !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.16) !important;
+}
+
+td.pr-pct.pr-pos { color: #4ade80; }
+td.pr-pct.pr-neg { color: #f87171; }
+td.pr-pct.pr-none { opacity: 0.45; }
+
