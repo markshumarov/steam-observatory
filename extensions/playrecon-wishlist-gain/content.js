@@ -457,6 +457,16 @@
         if (pct) pct.remove();
       }
       decorate();
+      // decorate() дописывает ячейки в конец строки — возвращаем их на место,
+      // перед колонкой Gamalytic, иначе столбцы разъезжаются с заголовками
+      for (const row of lastRows) {
+        const gal = row.tr.querySelector("td.pr-gal");
+        if (!gal) continue;
+        for (const cls of ["pr-gain", "pr-pct"]) {
+          const cell = row.tr.querySelector(`td.${cls}`);
+          if (cell) row.tr.insertBefore(cell, gal);
+        }
+      }
     } catch (err) {
       console.warn("[playrecon-gain] пересчёт не удался", err);
     }
