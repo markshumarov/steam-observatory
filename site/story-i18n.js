@@ -21,8 +21,8 @@ export const S = {
     outside_bar: "couldn't measure",
     norank_bar: "not in the wishlist top",
     nojump_bar: "in the top, no change",
-    toggle_no_rank: "hide demos outside the wishlist top",
-    toggle_no_jump: "hide demos we couldn't measure",
+    toggle_no_rank: "show demos outside the wishlist top",
+    toggle_no_jump: "show demos we couldn't measure",
     gains_title: "Half of the demos we could measure grew by 10% or more",
     gains_hint:
       "Share of a demo's current wishlists that was earned during the festival. We could measure only {measured} of {lineup} lineup demos — the model sees games from about 6,900 wishlists upward, so the grey bar is the {outside} demos where measurement was impossible.",
@@ -137,8 +137,8 @@ export const S = {
     outside_bar: "не смогли померить",
     norank_bar: "нет в топе вишлистов",
     nojump_bar: "в топе, но без изменения",
-    toggle_no_rank: "скрыть тех, кого нет в топе вишлистов",
-    toggle_no_jump: "скрыть тех, кого не удалось посчитать",
+    toggle_no_rank: "показывать тех, кого нет в топе вишлистов",
+    toggle_no_jump: "показывать тех, кого не удалось посчитать",
     gains_title: "Половина измеренных демо выросла на 10% и больше",
     gains_hint:
       "Какая доля текущих вишлистов игры набрана за фестиваль. Померить получилось только {measured} демо из {lineup}: модель видит игры примерно от 6 900 вишлистов, поэтому серая полоса — это {outside} демо, где измерение невозможно.",
