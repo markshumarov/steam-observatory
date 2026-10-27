@@ -84,6 +84,22 @@ try:
         check("в подсказке есть оговорка о погрешности", "±20–30%" in title,
               title.splitlines()[0][:60])
 
+        # строка с оценкой через запятую (≈53,800) раньше читалась как «53» — проверяем отдельно
+        comma_row = page.evaluate(
+            """() => {
+                const tr = Array.from(document.querySelectorAll('tbody tr'))
+                    .find(r => (r.textContent || '').includes('Rip It!'));
+                if (!tr) return null;
+                const cell = tr.querySelector('td.pr-gain');
+                return { text: cell ? cell.textContent.trim() : null,
+                         gain: cell ? Number(cell.dataset.gain) : null,
+                         wl: Array.from(tr.querySelectorAll('td,th')).slice(-2, -1)[0]?.textContent.trim() };
+            }"""
+        )
+        check("строка с запятой в оценке посчитана верно",
+              bool(comma_row) and (comma_row.get("gain") or 0) > 20000,
+              str(comma_row))
+
         # сортировка: клик по заголовку поднимает наверх максимальный прирост
         # (page.click может перехватываться липкой шапкой — жмём через JS)
         page.eval_on_selector("th[data-pr-gain]", "el => el.click()")

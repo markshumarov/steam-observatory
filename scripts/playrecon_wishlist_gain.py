@@ -27,12 +27,16 @@ TABLE = CACHE / "playrecon_fest_table.jsonl"
 OUT_JSON = CACHE / "wishlist_gains.json"
 OUT_MD = CACHE / "wishlist_gains.md"
 
-WL_RE = re.compile(r"#([\d,]+)(?:([\u25b2\u25bc])\s*([\d,]+))?\u2248([\d.]+)([KM]?)")
+WL_RE = re.compile(
+    r"#([\d\s,]+)"                       # место в топе вишлистов
+    r"(?:([\u25b2\u25bc])\s*([\d\s,]+))?"  # прыжок за фестиваль (▲/▼)
+    r"\s*\u2248\s*([\d.,]+)\s*([KM]?)"     # оценка: 9,503 / 53,800 / 29K / 1.2M
+)
 
 
 def num(text: str) -> int | None:
     try:
-        return int(text.replace(",", "").strip())
+        return int(text.replace(",", "").replace("\u00a0", "").strip())
     except (ValueError, AttributeError):
         return None
 
@@ -42,13 +46,16 @@ def parse_wishlists(cell: str) -> dict | None:
     if not m:
         return None
     rank = num(m.group(1))
-    arrow, jump, est, suffix = m.group(2), num(m.group(3)), float(m.group(4)), m.group(5)
+    arrow, jump, raw_est, suffix = m.group(2), num(m.group(3)), m.group(4), m.group(5) or ""
+    # запятая — разделитель тысяч, поэтому её надо убрать до преобразования
+    est_value = float(raw_est.replace(",", ""))
     mult = {"K": 1_000, "M": 1_000_000}.get(suffix, 1)
     return {
         "wl_rank": rank,
         "wl_jump": (jump or 0) * (1 if arrow == "\u25b2" else -1) if arrow else 0,
-        "wl_est": int(est * mult),
+        "wl_est": int(est_value * mult),
     }
+
 
 
 def load_rows() -> list[dict]:

@@ -10,7 +10,8 @@
    а места в топе относительные. */
 
 (() => {
-  const WL_RE = /#([\d\s,]+)(?:([\u25b2\u25bc])\s*([\d\s,]+))?\s*\u2248\s*([\d.]+)\s*([KM]?)/;
+  const WL_RE =
+    /#([\d\s,]+)(?:([\u25b2\u25bc])\s*([\d\s,]+))?\s*\u2248\s*([\d.,]+)\s*([KM]?)/;
   const MULT = { K: 1e3, M: 1e6, "": 1 };
   const COL = "Δ вишлисты";
   const STATE = { dir: 0 }; // 0 — как на странице, 1 — по убыванию, -1 — по возрастанию
@@ -34,10 +35,13 @@
     const m = WL_RE.exec(cell?.textContent || "");
     if (!m) return null;
     const arrow = m[2];
+    // запятая — разделитель тысяч: 9,503 и 53,800 надо читать как 9503 и 53800
+    const raw = parseFloat(String(m[4]).replace(/,/g, ""));
+    if (!Number.isFinite(raw)) return null;
     return {
       rank: toInt(m[1]),
       jump: arrow ? (toInt(m[3]) || 0) * (arrow === "\u25b2" ? 1 : -1) : 0,
-      est: Math.round(parseFloat(m[4]) * MULT[m[5] || ""]),
+      est: Math.round(raw * MULT[m[5] || ""]),
     };
   }
 
