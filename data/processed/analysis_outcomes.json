@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T07:49:50Z",
+ "generated": "2026-10-27T13:11:42Z",
  "editions": {
   "jun2021": {
    "n": 611,
@@ -15,39 +15,39 @@
    "share_no_reviews": 0.193,
    "share_mixed_or_worse": 0.164,
    "share_unreleased": 0.0,
-   "months_since_release_median": 57.4
+   "months_since_release_median": 57.5
   },
   "oct2021": {
-   "n": 598,
-   "with_copies": 472,
-   "copies_median": 3222,
-   "copies_p25": 645,
-   "copies_p75": 23858,
-   "share_copies_under_1000": 0.335,
-   "share_copies_over_100k": 0.125,
-   "copies_median_mature": 3179,
-   "with_score": 472,
+   "n": 708,
+   "with_copies": 559,
+   "copies_median": 2592,
+   "copies_p25": 541,
+   "copies_p75": 17584,
+   "share_copies_under_1000": 0.352,
+   "share_copies_over_100k": 0.109,
+   "copies_median_mature": 2554,
+   "with_score": 559,
    "score_median": 86,
-   "share_no_reviews": 0.211,
-   "share_mixed_or_worse": 0.163,
+   "share_no_reviews": 0.21,
+   "share_mixed_or_worse": 0.166,
    "share_unreleased": 0.0,
    "months_since_release_median": 53.5
   },
   "feb2022": {
-   "n": 324,
-   "with_copies": 265,
-   "copies_median": 8001,
-   "copies_p25": 1657,
-   "copies_p75": 44523,
-   "share_copies_under_1000": 0.177,
-   "share_copies_over_100k": 0.14,
-   "copies_median_mature": 8482,
-   "with_score": 265,
+   "n": 402,
+   "with_copies": 328,
+   "copies_median": 6466,
+   "copies_p25": 1545,
+   "copies_p75": 31740,
+   "share_copies_under_1000": 0.21,
+   "share_copies_over_100k": 0.125,
+   "copies_median_mature": 6466,
+   "with_score": 328,
    "score_median": 80,
-   "share_no_reviews": 0.182,
-   "share_mixed_or_worse": 0.294,
+   "share_no_reviews": 0.184,
+   "share_mixed_or_worse": 0.305,
    "share_unreleased": 0.0,
-   "months_since_release_median": 47.5
+   "months_since_release_median": 48.0
   },
   "jun2022": {
    "n": 343,
@@ -63,42 +63,42 @@
    "share_no_reviews": 0.236,
    "share_mixed_or_worse": 0.206,
    "share_unreleased": 0.0,
-   "months_since_release_median": 42.8
+   "months_since_release_median": 42.9
   },
   "oct2022": {
-   "n": 301,
-   "with_copies": 230,
-   "copies_median": 2605,
-   "copies_p25": 626,
-   "copies_p75": 28658,
-   "share_copies_under_1000": 0.33,
-   "share_copies_over_100k": 0.135,
-   "copies_median_mature": 3111,
-   "with_score": 230,
+   "n": 328,
+   "with_copies": 242,
+   "copies_median": 2528,
+   "copies_p25": 624,
+   "copies_p75": 28385,
+   "share_copies_under_1000": 0.343,
+   "share_copies_over_100k": 0.136,
+   "copies_median_mature": 2788,
+   "with_score": 242,
    "score_median": 88,
-   "share_no_reviews": 0.236,
-   "share_mixed_or_worse": 0.143,
+   "share_no_reviews": 0.262,
+   "share_mixed_or_worse": 0.145,
    "share_unreleased": 0.0,
-   "months_since_release_median": 40.8
+   "months_since_release_median": 40.9
   },
   "feb2023": {
-   "n": 335,
-   "with_copies": 257,
-   "copies_median": 5694,
-   "copies_p25": 761,
+   "n": 336,
+   "with_copies": 258,
+   "copies_median": 5682,
+   "copies_p25": 743,
    "copies_p75": 31398,
-   "share_copies_under_1000": 0.28,
+   "share_copies_under_1000": 0.283,
    "share_copies_over_100k": 0.132,
    "copies_median_mature": 5497,
-   "with_score": 257,
+   "with_score": 258,
    "score_median": 83,
-   "share_no_reviews": 0.233,
-   "share_mixed_or_worse": 0.226,
+   "share_no_reviews": 0.232,
+   "share_mixed_or_worse": 0.225,
    "share_unreleased": 0.0,
    "months_since_release_median": 37.4
   },
   "jun2023": {
-   "n": 392,
+   "n": 393,
    "with_copies": 284,
    "copies_median": 5472,
    "copies_p25": 678,
@@ -108,26 +108,26 @@
    "copies_median_mature": 6580,
    "with_score": 284,
    "score_median": 84,
-   "share_no_reviews": 0.276,
+   "share_no_reviews": 0.277,
    "share_mixed_or_worse": 0.19,
    "share_unreleased": 0.0,
    "months_since_release_median": 32.7
   },
   "oct2023": {
-   "n": 301,
-   "with_copies": 230,
-   "copies_median": 4683,
+   "n": 308,
+   "with_copies": 234,
+   "copies_median": 4590,
    "copies_p25": 631,
-   "copies_p75": 28996,
-   "share_copies_under_1000": 0.3,
-   "share_copies_over_100k": 0.126,
-   "copies_median_mature": 4738,
-   "with_score": 230,
-   "score_median": 87,
-   "share_no_reviews": 0.236,
-   "share_mixed_or_worse": 0.126,
+   "copies_p75": 28392,
+   "share_copies_under_1000": 0.299,
+   "share_copies_over_100k": 0.124,
+   "copies_median_mature": 4683,
+   "with_score": 234,
+   "score_median": 86,
+   "share_no_reviews": 0.24,
+   "share_mixed_or_worse": 0.124,
    "share_unreleased": 0.0,
-   "months_since_release_median": 30.9
+   "months_since_release_median": 31.0
   },
   "feb2024": {
    "n": 302,
@@ -143,7 +143,7 @@
    "share_no_reviews": 0.199,
    "share_mixed_or_worse": 0.182,
    "share_unreleased": 0.0,
-   "months_since_release_median": 27.1
+   "months_since_release_median": 27.2
   },
   "jun2024": {
    "n": 323,
@@ -159,7 +159,7 @@
    "share_no_reviews": 0.192,
    "share_mixed_or_worse": 0.161,
    "share_unreleased": 0.0,
-   "months_since_release_median": 23.8
+   "months_since_release_median": 23.9
   },
   "oct2024": {
    "n": 3197,
@@ -169,13 +169,29 @@
    "copies_p75": 3617,
    "share_copies_under_1000": 0.581,
    "share_copies_over_100k": 0.029,
-   "copies_median_mature": 580,
+   "copies_median_mature": 586,
    "with_score": 2189,
    "score_median": 88,
    "share_no_reviews": 0.315,
    "share_mixed_or_worse": 0.206,
    "share_unreleased": 0.0,
    "months_since_release_median": 20.8
+  },
+  "feb2025": {
+   "n": 300,
+   "with_copies": 243,
+   "copies_median": 3345,
+   "copies_p25": 515,
+   "copies_p75": 19196,
+   "share_copies_under_1000": 0.333,
+   "share_copies_over_100k": 0.082,
+   "copies_median_mature": 3322,
+   "with_score": 243,
+   "score_median": 87,
+   "share_no_reviews": 0.19,
+   "share_mixed_or_worse": 0.152,
+   "share_unreleased": 0.0,
+   "months_since_release_median": 16.2
   },
   "jun2025": {
    "n": 2635,
@@ -185,13 +201,13 @@
    "copies_p75": 4710,
    "share_copies_under_1000": 0.569,
    "share_copies_over_100k": 0.043,
-   "copies_median_mature": 518,
+   "copies_median_mature": 523,
    "with_score": 1929,
    "score_median": 88,
    "share_no_reviews": 0.268,
    "share_mixed_or_worse": 0.186,
    "share_unreleased": 0.0,
-   "months_since_release_median": 13.3
+   "months_since_release_median": 13.4
   },
   "oct2025": {
    "n": 2956,
@@ -201,13 +217,13 @@
    "copies_p75": 3700,
    "share_copies_under_1000": 0.581,
    "share_copies_over_100k": 0.033,
-   "copies_median_mature": 314,
+   "copies_median_mature": 318,
    "with_score": 2147,
    "score_median": 89,
    "share_no_reviews": 0.274,
    "share_mixed_or_worse": 0.185,
    "share_unreleased": 0.0,
-   "months_since_release_median": 10.3
+   "months_since_release_median": 10.4
   },
   "feb2026": {
    "n": 3892,
@@ -223,7 +239,7 @@
    "share_no_reviews": 0.387,
    "share_mixed_or_worse": 0.201,
    "share_unreleased": 0.0,
-   "months_since_release_median": 5.9
+   "months_since_release_median": 6.0
   },
   "jun2026": {
    "n": 4401,
@@ -239,7 +255,7 @@
    "share_no_reviews": 0.45,
    "share_mixed_or_worse": 0.27,
    "share_unreleased": 0.0,
-   "months_since_release_median": 2.6
+   "months_since_release_median": 2.7
   },
   "oct2026": {
    "n": 7304,
@@ -260,1718 +276,1739 @@
  },
  "tags": [
   {
-   "tag": "Moddable",
-   "n": 158,
-   "copies_median": 5555,
-   "copies_p90": 127256,
-   "share_no_reviews": 0.006
-  },
-  {
    "tag": "Hentai",
-   "n": 481,
-   "copies_median": 5502,
-   "copies_p90": 33331,
+   "n": 487,
+   "copies_median": 5604,
+   "copies_p90": 37635,
    "share_no_reviews": 0.002
   },
   {
    "tag": "Sexual Content",
-   "n": 727,
-   "copies_median": 4906,
-   "copies_p90": 40685,
+   "n": 736,
+   "copies_median": 4985,
+   "copies_p90": 46132,
    "share_no_reviews": 0.001
   },
   {
+   "tag": "Moddable",
+   "n": 168,
+   "copies_median": 4923,
+   "copies_p90": 122506,
+   "share_no_reviews": 0.006
+  },
+  {
    "tag": "Colony Sim",
-   "n": 289,
+   "n": 305,
    "copies_median": 4613,
-   "copies_p90": 127256,
+   "copies_p90": 122728,
    "share_no_reviews": 0.01
   },
   {
    "tag": "Nudity",
-   "n": 620,
-   "copies_median": 4232,
-   "copies_p90": 34431,
+   "n": 627,
+   "copies_median": 4512,
+   "copies_p90": 37635,
    "share_no_reviews": 0.003
   },
   {
    "tag": "Job Simulator",
-   "n": 226,
-   "copies_median": 3702,
+   "n": 229,
+   "copies_median": 4192,
    "copies_p90": 81530,
    "share_no_reviews": 0.0
   },
   {
-   "tag": "Fishing",
-   "n": 202,
-   "copies_median": 3223,
-   "copies_p90": 73841,
-   "share_no_reviews": 0.01
+   "tag": "Base Building",
+   "n": 956,
+   "copies_median": 3470,
+   "copies_p90": 124636,
+   "share_no_reviews": 0.004
   },
   {
    "tag": "Life Sim",
-   "n": 894,
-   "copies_median": 3187,
-   "copies_p90": 78776,
+   "n": 918,
+   "copies_median": 3319,
+   "copies_p90": 80676,
    "share_no_reviews": 0.004
   },
   {
    "tag": "City Builder",
-   "n": 481,
-   "copies_median": 3131,
-   "copies_p90": 122728,
+   "n": 502,
+   "copies_median": 3261,
+   "copies_p90": 122506,
    "share_no_reviews": 0.014
   },
   {
-   "tag": "Base Building",
-   "n": 915,
-   "copies_median": 3120,
-   "copies_p90": 124198,
-   "share_no_reviews": 0.004
+   "tag": "Fishing",
+   "n": 210,
+   "copies_median": 3238,
+   "copies_p90": 103787,
+   "share_no_reviews": 0.009
   },
   {
    "tag": "Dating Sim",
-   "n": 591,
-   "copies_median": 2904,
-   "copies_p90": 46132,
+   "n": 601,
+   "copies_median": 3016,
+   "copies_p90": 46868,
    "share_no_reviews": 0.007
   },
   {
-   "tag": "Soundtrack",
-   "n": 170,
-   "copies_median": 2749,
-   "copies_p90": 87306,
-   "share_no_reviews": 0.0
-  },
-  {
    "tag": "Sandbox",
-   "n": 1283,
-   "copies_median": 2698,
+   "n": 1335,
+   "copies_median": 2912,
    "copies_p90": 118402,
    "share_no_reviews": 0.006
   },
   {
+   "tag": "Soundtrack",
+   "n": 176,
+   "copies_median": 2755,
+   "copies_p90": 80264,
+   "share_no_reviews": 0.0
+  },
+  {
    "tag": "Immersive Sim",
-   "n": 1120,
-   "copies_median": 2526,
-   "copies_p90": 67928,
+   "n": 1147,
+   "copies_median": 2679,
+   "copies_p90": 69101,
    "share_no_reviews": 0.005
   },
   {
    "tag": "Online Co-Op",
-   "n": 1051,
-   "copies_median": 2481,
-   "copies_p90": 155647,
+   "n": 1085,
+   "copies_median": 2580,
+   "copies_p90": 163304,
    "share_no_reviews": 0.002
   },
   {
    "tag": "Building",
-   "n": 1299,
-   "copies_median": 2417,
-   "copies_p90": 108478,
+   "n": 1353,
+   "copies_median": 2564,
+   "copies_p90": 108536,
    "share_no_reviews": 0.007
   },
   {
-   "tag": "Turn-Based",
-   "n": 357,
-   "copies_median": 2406,
-   "copies_p90": 91438,
-   "share_no_reviews": 0.008
-  },
-  {
-   "tag": "Trading",
-   "n": 240,
-   "copies_median": 2405,
-   "copies_p90": 75845,
+   "tag": "Open World",
+   "n": 1171,
+   "copies_median": 2435,
+   "copies_p90": 122506,
    "share_no_reviews": 0.008
   },
   {
    "tag": "Farming Sim",
-   "n": 375,
-   "copies_median": 2365,
-   "copies_p90": 57210,
-   "share_no_reviews": 0.016
+   "n": 386,
+   "copies_median": 2435,
+   "copies_p90": 72135,
+   "share_no_reviews": 0.015
   },
   {
-   "tag": "Open World",
-   "n": 1120,
-   "copies_median": 2351,
-   "copies_p90": 124153,
+   "tag": "Trading",
+   "n": 243,
+   "copies_median": 2417,
+   "copies_p90": 75745,
    "share_no_reviews": 0.008
   },
   {
-   "tag": "Economy",
-   "n": 936,
-   "copies_median": 2330,
-   "copies_p90": 80676,
-   "share_no_reviews": 0.001
+   "tag": "Wholesome",
+   "n": 378,
+   "copies_median": 2375,
+   "copies_p90": 43887,
+   "share_no_reviews": 0.0
   },
   {
    "tag": "Automation",
-   "n": 564,
-   "copies_median": 2281,
-   "copies_p90": 56862,
-   "share_no_reviews": 0.004
+   "n": 573,
+   "copies_median": 2370,
+   "copies_p90": 64057,
+   "share_no_reviews": 0.003
   },
   {
-   "tag": "Wholesome",
-   "n": 364,
-   "copies_median": 2260,
-   "copies_p90": 44270,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "JRPG",
-   "n": 455,
-   "copies_median": 2187,
-   "copies_p90": 39851,
-   "share_no_reviews": 0.007
+   "tag": "Economy",
+   "n": 954,
+   "copies_median": 2359,
+   "copies_p90": 81253,
+   "share_no_reviews": 0.001
   },
   {
    "tag": "Crafting",
-   "n": 1077,
-   "copies_median": 2181,
-   "copies_p90": 99032,
+   "n": 1126,
+   "copies_median": 2301,
+   "copies_p90": 101192,
    "share_no_reviews": 0.01
   },
   {
+   "tag": "Turn-Based",
+   "n": 376,
+   "copies_median": 2268,
+   "copies_p90": 87893,
+   "share_no_reviews": 0.008
+  },
+  {
+   "tag": "JRPG",
+   "n": 469,
+   "copies_median": 2194,
+   "copies_p90": 42799,
+   "share_no_reviews": 0.006
+  },
+  {
    "tag": "Management",
-   "n": 1798,
-   "copies_median": 2158,
-   "copies_p90": 80237,
-   "share_no_reviews": 0.004
-  },
-  {
-   "tag": "Lovecraftian",
-   "n": 243,
-   "copies_median": 2157,
-   "copies_p90": 70465,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "Mining",
-   "n": 266,
-   "copies_median": 2074,
-   "copies_p90": 70202,
+   "n": 1845,
+   "copies_median": 2191,
+   "copies_p90": 81530,
    "share_no_reviews": 0.004
   },
   {
    "tag": "Military",
-   "n": 354,
-   "copies_median": 2046,
-   "copies_p90": 89938,
+   "n": 367,
+   "copies_median": 2149,
+   "copies_p90": 96463,
    "share_no_reviews": 0.0
   },
   {
+   "tag": "Lovecraftian",
+   "n": 249,
+   "copies_median": 2147,
+   "copies_p90": 75508,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Mining",
+   "n": 271,
+   "copies_median": 2109,
+   "copies_p90": 70202,
+   "share_no_reviews": 0.004
+  },
+  {
+   "tag": "Narrative",
+   "n": 277,
+   "copies_median": 2090,
+   "copies_p90": 41266,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Co-op",
+   "n": 1253,
+   "copies_median": 2044,
+   "copies_p90": 129822,
+   "share_no_reviews": 0.007
+  },
+  {
    "tag": "Loot",
-   "n": 501,
-   "copies_median": 2041,
+   "n": 522,
+   "copies_median": 2020,
    "copies_p90": 87062,
    "share_no_reviews": 0.006
   },
   {
    "tag": "Free to Play",
-   "n": 375,
-   "copies_median": 1991,
-   "copies_p90": 75200,
+   "n": 384,
+   "copies_median": 1965,
+   "copies_p90": 76038,
    "share_no_reviews": 0.013
   },
   {
-   "tag": "Narrative",
-   "n": 271,
-   "copies_median": 1967,
-   "copies_p90": 40400,
+   "tag": "Agriculture",
+   "n": 193,
+   "copies_median": 1948,
+   "copies_p90": 92005,
    "share_no_reviews": 0.0
   },
   {
+   "tag": "Cooking",
+   "n": 359,
+   "copies_median": 1939,
+   "copies_p90": 93811,
+   "share_no_reviews": 0.003
+  },
+  {
    "tag": "Co-op Campaign",
-   "n": 163,
-   "copies_median": 1965,
+   "n": 168,
+   "copies_median": 1910,
    "copies_p90": 86946,
    "share_no_reviews": 0.0
   },
   {
-   "tag": "Co-op",
-   "n": 1202,
-   "copies_median": 1951,
-   "copies_p90": 127740,
-   "share_no_reviews": 0.007
-  },
-  {
-   "tag": "Agriculture",
-   "n": 184,
-   "copies_median": 1894,
-   "copies_p90": 81530,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "Tactical RPG",
-   "n": 385,
-   "copies_median": 1838,
-   "copies_p90": 34719,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Anime",
-   "n": 1510,
-   "copies_median": 1809,
-   "copies_p90": 33795,
-   "share_no_reviews": 0.003
-  },
-  {
    "tag": "Historical",
-   "n": 492,
-   "copies_median": 1784,
-   "copies_p90": 79358,
+   "n": 512,
+   "copies_median": 1906,
+   "copies_p90": 78095,
    "share_no_reviews": 0.002
   },
   {
-   "tag": "Cooking",
-   "n": 349,
-   "copies_median": 1766,
-   "copies_p90": 90240,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Shop Keeper",
-   "n": 305,
-   "copies_median": 1766,
-   "copies_p90": 47913,
-   "share_no_reviews": 0.0
-  },
-  {
    "tag": "Cozy",
-   "n": 825,
-   "copies_median": 1760,
-   "copies_p90": 42977,
+   "n": 843,
+   "copies_median": 1867,
+   "copies_p90": 46025,
    "share_no_reviews": 0.0
   },
   {
    "tag": "Wargame",
-   "n": 270,
-   "copies_median": 1736,
+   "n": 282,
+   "copies_median": 1842,
    "copies_p90": 45620,
    "share_no_reviews": 0.0
   },
   {
-   "tag": "Cinematic",
-   "n": 486,
-   "copies_median": 1735,
-   "copies_p90": 48520,
+   "tag": "Tactical RPG",
+   "n": 404,
+   "copies_median": 1839,
+   "copies_p90": 36733,
    "share_no_reviews": 0.002
   },
   {
-   "tag": "Romance",
-   "n": 714,
-   "copies_median": 1715,
-   "copies_p90": 28050,
-   "share_no_reviews": 0.006
-  },
-  {
-   "tag": "Isometric",
-   "n": 695,
-   "copies_median": 1692,
-   "copies_p90": 65590,
+   "tag": "Anime",
+   "n": 1543,
+   "copies_median": 1822,
+   "copies_p90": 34592,
    "share_no_reviews": 0.003
   },
   {
-   "tag": "Simulation",
-   "n": 3863,
-   "copies_median": 1690,
-   "copies_p90": 58567,
-   "share_no_reviews": 0.004
+   "tag": "Cinematic",
+   "n": 502,
+   "copies_median": 1798,
+   "copies_p90": 48162,
+   "share_no_reviews": 0.002
+  },
+  {
+   "tag": "Artificial Intelligence",
+   "n": 333,
+   "copies_median": 1795,
+   "copies_p90": 57168,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Alternate History",
+   "n": 241,
+   "copies_median": 1775,
+   "copies_p90": 45087,
+   "share_no_reviews": 0.008
   },
   {
    "tag": "LGBTQ+",
-   "n": 465,
-   "copies_median": 1671,
-   "copies_p90": 39385,
-   "share_no_reviews": 0.009
+   "n": 475,
+   "copies_median": 1770,
+   "copies_p90": 43271,
+   "share_no_reviews": 0.008
+  },
+  {
+   "tag": "Isometric",
+   "n": 723,
+   "copies_median": 1766,
+   "copies_p90": 65841,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Shop Keeper",
+   "n": 307,
+   "copies_median": 1766,
+   "copies_p90": 48573,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Simulation",
+   "n": 3953,
+   "copies_median": 1748,
+   "copies_p90": 60756,
+   "share_no_reviews": 0.004
+  },
+  {
+   "tag": "Strategy RPG",
+   "n": 542,
+   "copies_median": 1742,
+   "copies_p90": 49766,
+   "share_no_reviews": 0.006
+  },
+  {
+   "tag": "Romance",
+   "n": 725,
+   "copies_median": 1739,
+   "copies_p90": 28423,
+   "share_no_reviews": 0.005
   },
   {
    "tag": "RPG",
-   "n": 3081,
-   "copies_median": 1665,
-   "copies_p90": 61814,
+   "n": 3189,
+   "copies_median": 1721,
+   "copies_p90": 64369,
    "share_no_reviews": 0.007
   },
   {
-   "tag": "Souls-like",
-   "n": 387,
-   "copies_median": 1665,
-   "copies_p90": 75548,
+   "tag": "RTS",
+   "n": 412,
+   "copies_median": 1703,
+   "copies_p90": 65253,
+   "share_no_reviews": 0.007
+  },
+  {
+   "tag": "Realistic",
+   "n": 1351,
+   "copies_median": 1669,
+   "copies_p90": 50879,
+   "share_no_reviews": 0.001
+  },
+  {
+   "tag": "Gothic",
+   "n": 164,
+   "copies_median": 1666,
+   "copies_p90": 89630,
    "share_no_reviews": 0.0
   },
   {
    "tag": "Looter Shooter",
-   "n": 152,
+   "n": 158,
    "copies_median": 1659,
    "copies_p90": 223395,
-   "share_no_reviews": 0.007
-  },
-  {
-   "tag": "Artificial Intelligence",
-   "n": 329,
-   "copies_median": 1646,
-   "copies_p90": 60437,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "Strategy RPG",
-   "n": 515,
-   "copies_median": 1628,
-   "copies_p90": 49140,
    "share_no_reviews": 0.006
   },
   {
-   "tag": "Alternate History",
-   "n": 227,
-   "copies_median": 1583,
-   "copies_p90": 52224,
-   "share_no_reviews": 0.009
-  },
-  {
-   "tag": "Realistic",
-   "n": 1315,
-   "copies_median": 1580,
-   "copies_p90": 49680,
-   "share_no_reviews": 0.001
-  },
-  {
-   "tag": "RTS",
-   "n": 393,
-   "copies_median": 1557,
-   "copies_p90": 69334,
-   "share_no_reviews": 0.008
-  },
-  {
-   "tag": "Gothic",
-   "n": 161,
-   "copies_median": 1552,
-   "copies_p90": 85173,
+   "tag": "Souls-like",
+   "n": 405,
+   "copies_median": 1652,
+   "copies_p90": 73226,
    "share_no_reviews": 0.0
   },
   {
    "tag": "Resource Management",
-   "n": 1562,
-   "copies_median": 1539,
-   "copies_p90": 57210,
+   "n": 1591,
+   "copies_median": 1632,
+   "copies_p90": 60318,
    "share_no_reviews": 0.004
   },
   {
    "tag": "Party-Based RPG",
-   "n": 339,
+   "n": 351,
    "copies_median": 1532,
-   "copies_p90": 60914,
+   "copies_p90": 65944,
    "share_no_reviews": 0.003
   },
   {
    "tag": "CRPG",
-   "n": 238,
+   "n": 246,
    "copies_median": 1531,
    "copies_p90": 55339,
    "share_no_reviews": 0.0
   },
   {
    "tag": "Visual Novel",
-   "n": 1314,
-   "copies_median": 1530,
-   "copies_p90": 28149,
+   "n": 1335,
+   "copies_median": 1524,
+   "copies_p90": 28134,
    "share_no_reviews": 0.005
   },
   {
    "tag": "Female Protagonist",
-   "n": 1552,
-   "copies_median": 1477,
-   "copies_p90": 32830,
+   "n": 1601,
+   "copies_median": 1492,
+   "copies_p90": 32977,
    "share_no_reviews": 0.003
   },
   {
    "tag": "Story Rich",
-   "n": 3352,
-   "copies_median": 1465,
-   "copies_p90": 38590,
+   "n": 3461,
+   "copies_median": 1478,
+   "copies_p90": 38320,
    "share_no_reviews": 0.006
   },
   {
    "tag": "Grand Strategy",
-   "n": 167,
+   "n": 173,
    "copies_median": 1410,
    "copies_p90": 73346,
    "share_no_reviews": 0.0
   },
   {
    "tag": "Automobile Sim",
-   "n": 174,
-   "copies_median": 1364,
-   "copies_p90": 64057,
-   "share_no_reviews": 0.006
-  },
-  {
-   "tag": "Inventory Management",
-   "n": 550,
-   "copies_median": 1341,
-   "copies_p90": 43156,
-   "share_no_reviews": 0.004
-  },
-  {
-   "tag": "Emotional",
-   "n": 858,
-   "copies_median": 1340,
-   "copies_p90": 28050,
-   "share_no_reviews": 0.001
-  },
-  {
-   "tag": "Crime",
-   "n": 279,
-   "copies_median": 1336,
-   "copies_p90": 60616,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "Multiplayer",
-   "n": 1871,
-   "copies_median": 1301,
-   "copies_p90": 91493,
+   "n": 183,
+   "copies_median": 1407,
+   "copies_p90": 75565,
    "share_no_reviews": 0.005
   },
   {
+   "tag": "War",
+   "n": 447,
+   "copies_median": 1381,
+   "copies_p90": 84364,
+   "share_no_reviews": 0.002
+  },
+  {
+   "tag": "Emotional",
+   "n": 882,
+   "copies_median": 1371,
+   "copies_p90": 27896,
+   "share_no_reviews": 0.001
+  },
+  {
+   "tag": "Inventory Management",
+   "n": 558,
+   "copies_median": 1349,
+   "copies_p90": 46128,
+   "share_no_reviews": 0.004
+  },
+  {
+   "tag": "Crime",
+   "n": 285,
+   "copies_median": 1346,
+   "copies_p90": 67282,
+   "share_no_reviews": 0.0
+  },
+  {
    "tag": "Auto Battler",
-   "n": 407,
-   "copies_median": 1286,
-   "copies_p90": 54936,
+   "n": 417,
+   "copies_median": 1343,
+   "copies_p90": 54480,
    "share_no_reviews": 0.002
   },
   {
    "tag": "Lore-Rich",
-   "n": 632,
-   "copies_median": 1285,
+   "n": 657,
+   "copies_median": 1336,
    "copies_p90": 42977,
    "share_no_reviews": 0.003
   },
   {
-   "tag": "Capitalism",
-   "n": 457,
+   "tag": "Multiplayer",
+   "n": 1939,
+   "copies_median": 1335,
+   "copies_p90": 95529,
+   "share_no_reviews": 0.005
+  },
+  {
+   "tag": "Character Customization",
+   "n": 1274,
+   "copies_median": 1313,
+   "copies_p90": 65590,
+   "share_no_reviews": 0.005
+  },
+  {
+   "tag": "Noir",
+   "n": 214,
    "copies_median": 1273,
-   "copies_p90": 46446,
+   "copies_p90": 41245,
    "share_no_reviews": 0.0
   },
   {
+   "tag": "Capitalism",
+   "n": 466,
+   "copies_median": 1255,
+   "copies_p90": 47862,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Dark Fantasy",
+   "n": 984,
+   "copies_median": 1251,
+   "copies_p90": 47575,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Gore",
+   "n": 543,
+   "copies_median": 1246,
+   "copies_p90": 51395,
+   "share_no_reviews": 0.002
+  },
+  {
+   "tag": "Exploration",
+   "n": 3669,
+   "copies_median": 1244,
+   "copies_p90": 47839,
+   "share_no_reviews": 0.008
+  },
+  {
    "tag": "Interactive Fiction",
-   "n": 887,
+   "n": 901,
    "copies_median": 1230,
    "copies_p90": 28598,
    "share_no_reviews": 0.002
   },
   {
-   "tag": "Gore",
-   "n": 526,
-   "copies_median": 1227,
-   "copies_p90": 51721,
-   "share_no_reviews": 0.002
-  },
-  {
-   "tag": "Noir",
-   "n": 206,
-   "copies_median": 1209,
-   "copies_p90": 41245,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "War",
-   "n": 432,
-   "copies_median": 1205,
-   "copies_p90": 75845,
-   "share_no_reviews": 0.002
-  },
-  {
-   "tag": "Violent",
-   "n": 525,
-   "copies_median": 1185,
-   "copies_p90": 34431,
-   "share_no_reviews": 0.004
-  },
-  {
-   "tag": "Exploration",
-   "n": 3533,
-   "copies_median": 1183,
-   "copies_p90": 46351,
-   "share_no_reviews": 0.008
-  },
-  {
-   "tag": "Idler",
-   "n": 893,
-   "copies_median": 1183,
-   "copies_p90": 39105,
-   "share_no_reviews": 0.001
-  },
-  {
-   "tag": "Character Customization",
-   "n": 1218,
-   "copies_median": 1180,
-   "copies_p90": 61915,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "Dark Fantasy",
-   "n": 944,
-   "copies_median": 1179,
-   "copies_p90": 45262,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Investigation",
-   "n": 605,
-   "copies_median": 1152,
-   "copies_p90": 38178,
-   "share_no_reviews": 0.002
-  },
-  {
-   "tag": "Detective",
-   "n": 516,
-   "copies_median": 1138,
-   "copies_p90": 40433,
-   "share_no_reviews": 0.002
-  },
-  {
    "tag": "Replay Value",
-   "n": 670,
-   "copies_median": 1125,
-   "copies_p90": 71318,
+   "n": 695,
+   "copies_median": 1209,
+   "copies_p90": 70772,
    "share_no_reviews": 0.004
-  },
-  {
-   "tag": "Mythology",
-   "n": 292,
-   "copies_median": 1123,
-   "copies_p90": 50947,
-   "share_no_reviews": 0.007
-  },
-  {
-   "tag": "Driving",
-   "n": 363,
-   "copies_median": 1112,
-   "copies_p90": 74511,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Action RPG",
-   "n": 970,
-   "copies_median": 1105,
-   "copies_p90": 69798,
-   "share_no_reviews": 0.006
-  },
-  {
-   "tag": "Boomer Shooter",
-   "n": 173,
-   "copies_median": 1083,
-   "copies_p90": 38885,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "Bullet Heaven",
-   "n": 249,
-   "copies_median": 1082,
-   "copies_p90": 47200,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "Choose Your Own Adventure",
-   "n": 792,
-   "copies_median": 1073,
-   "copies_p90": 31380,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "Metroidvania",
-   "n": 382,
-   "copies_median": 1066,
-   "copies_p90": 46795,
-   "share_no_reviews": 0.01
   },
   {
    "tag": "Class-Based",
-   "n": 229,
-   "copies_median": 1061,
+   "n": 236,
+   "copies_median": 1204,
    "copies_p90": 33514,
    "share_no_reviews": 0.0
   },
   {
-   "tag": "Comic Book",
-   "n": 335,
-   "copies_median": 1058,
-   "copies_p90": 17403,
-   "share_no_reviews": 0.003
+   "tag": "Idler",
+   "n": 899,
+   "copies_median": 1197,
+   "copies_p90": 39105,
+   "share_no_reviews": 0.001
   },
   {
-   "tag": "Music",
-   "n": 167,
-   "copies_median": 1058,
-   "copies_p90": 40533,
-   "share_no_reviews": 0.006
-  },
-  {
-   "tag": "Choices Matter",
-   "n": 1798,
-   "copies_median": 1052,
-   "copies_p90": 30648,
+   "tag": "Violent",
+   "n": 537,
+   "copies_median": 1190,
+   "copies_p90": 34431,
    "share_no_reviews": 0.004
   },
   {
+   "tag": "Mythology",
+   "n": 308,
+   "copies_median": 1180,
+   "copies_p90": 50947,
+   "share_no_reviews": 0.006
+  },
+  {
+   "tag": "Detective",
+   "n": 526,
+   "copies_median": 1165,
+   "copies_p90": 39071,
+   "share_no_reviews": 0.002
+  },
+  {
+   "tag": "Investigation",
+   "n": 615,
+   "copies_median": 1165,
+   "copies_p90": 38178,
+   "share_no_reviews": 0.002
+  },
+  {
+   "tag": "Music",
+   "n": 175,
+   "copies_median": 1156,
+   "copies_p90": 42464,
+   "share_no_reviews": 0.006
+  },
+  {
+   "tag": "Boomer Shooter",
+   "n": 179,
+   "copies_median": 1151,
+   "copies_p90": 40074,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Action RPG",
+   "n": 1014,
+   "copies_median": 1128,
+   "copies_p90": 69798,
+   "share_no_reviews": 0.006
+  },
+  {
+   "tag": "Driving",
+   "n": 378,
+   "copies_median": 1117,
+   "copies_p90": 76692,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "First-Person",
+   "n": 2640,
+   "copies_median": 1109,
+   "copies_p90": 46858,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Metroidvania",
+   "n": 398,
+   "copies_median": 1106,
+   "copies_p90": 45575,
+   "share_no_reviews": 0.01
+  },
+  {
+   "tag": "Choose Your Own Adventure",
+   "n": 811,
+   "copies_median": 1081,
+   "copies_p90": 31380,
+   "share_no_reviews": 0.005
+  },
+  {
+   "tag": "Bullet Heaven",
+   "n": 250,
+   "copies_median": 1079,
+   "copies_p90": 47200,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Choices Matter",
+   "n": 1848,
+   "copies_median": 1077,
+   "copies_p90": 30756,
+   "share_no_reviews": 0.004
+  },
+  {
+   "tag": "Hack and Slash",
+   "n": 802,
+   "copies_median": 1073,
+   "copies_p90": 65590,
+   "share_no_reviews": 0.002
+  },
+  {
    "tag": "Roguelike Deckbuilder",
-   "n": 393,
-   "copies_median": 1045,
+   "n": 403,
+   "copies_median": 1071,
    "copies_p90": 36950,
    "share_no_reviews": 0.0
   },
   {
-   "tag": "First-Person",
-   "n": 2578,
-   "copies_median": 1044,
-   "copies_p90": 46269,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Swordplay",
-   "n": 159,
-   "copies_median": 1032,
-   "copies_p90": 96281,
-   "share_no_reviews": 0.006
-  },
-  {
-   "tag": "Hack and Slash",
-   "n": 769,
-   "copies_median": 1029,
-   "copies_p90": 63089,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Point & Click",
-   "n": 1092,
-   "copies_median": 1027,
-   "copies_p90": 29099,
-   "share_no_reviews": 0.005
-  },
-  {
    "tag": "Creature Collector",
-   "n": 442,
-   "copies_median": 1015,
-   "copies_p90": 36510,
+   "n": 457,
+   "copies_median": 1069,
+   "copies_p90": 36737,
    "share_no_reviews": 0.002
   },
   {
    "tag": "Survival",
-   "n": 1276,
-   "copies_median": 1014,
-   "copies_p90": 69110,
+   "n": 1319,
+   "copies_median": 1066,
+   "copies_p90": 70102,
    "share_no_reviews": 0.01
   },
   {
-   "tag": "Dystopian",
-   "n": 361,
-   "copies_median": 1012,
-   "copies_p90": 44506,
-   "share_no_reviews": 0.0
+   "tag": "Point & Click",
+   "n": 1108,
+   "copies_median": 1062,
+   "copies_p90": 29099,
+   "share_no_reviews": 0.004
   },
   {
-   "tag": "Turn-Based Combat",
-   "n": 930,
-   "copies_median": 1005,
-   "copies_p90": 28115,
-   "share_no_reviews": 0.007
-  },
-  {
-   "tag": "Conspiracy",
-   "n": 160,
-   "copies_median": 1001,
-   "copies_p90": 30961,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "Adventure",
-   "n": 5478,
-   "copies_median": 998,
-   "copies_p90": 36165,
-   "share_no_reviews": 0.007
-  },
-  {
-   "tag": "Multiple Endings",
-   "n": 1522,
-   "copies_median": 994,
-   "copies_p90": 27994,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "Atmospheric",
-   "n": 3747,
-   "copies_median": 993,
-   "copies_p90": 40433,
+   "tag": "Comic Book",
+   "n": 345,
+   "copies_median": 1058,
+   "copies_p90": 17411,
    "share_no_reviews": 0.003
   },
   {
-   "tag": "Incremental",
-   "n": 919,
-   "copies_median": 991,
-   "copies_p90": 33008,
+   "tag": "Turn-Based Combat",
+   "n": 968,
+   "copies_median": 1053,
+   "copies_p90": 28385,
+   "share_no_reviews": 0.007
+  },
+  {
+   "tag": "Adventure",
+   "n": 5661,
+   "copies_median": 1034,
+   "copies_p90": 36233,
+   "share_no_reviews": 0.007
+  },
+  {
+   "tag": "Swordplay",
+   "n": 167,
+   "copies_median": 1032,
+   "copies_p90": 71707,
+   "share_no_reviews": 0.006
+  },
+  {
+   "tag": "Atmospheric",
+   "n": 3856,
+   "copies_median": 1016,
+   "copies_p90": 40619,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Multiple Endings",
+   "n": 1553,
+   "copies_median": 1012,
+   "copies_p90": 28149,
+   "share_no_reviews": 0.005
+  },
+  {
+   "tag": "Dystopian",
+   "n": 369,
+   "copies_median": 1012,
+   "copies_p90": 46795,
    "share_no_reviews": 0.0
   },
   {
    "tag": "Dark Humor",
-   "n": 540,
-   "copies_median": 990,
-   "copies_p90": 32830,
+   "n": 555,
+   "copies_median": 1004,
+   "copies_p90": 33223,
    "share_no_reviews": 0.004
   },
   {
-   "tag": "Relaxing",
-   "n": 2633,
-   "copies_median": 964,
-   "copies_p90": 40092,
-   "share_no_reviews": 0.004
-  },
-  {
-   "tag": "Hand-drawn",
-   "n": 1404,
-   "copies_median": 950,
-   "copies_p90": 25359,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "Dialogue Heavy",
-   "n": 522,
-   "copies_median": 927,
-   "copies_p90": 25847,
+   "tag": "Conspiracy",
+   "n": 168,
+   "copies_median": 1001,
+   "copies_p90": 32977,
    "share_no_reviews": 0.0
   },
   {
-   "tag": "Comedy",
-   "n": 1273,
-   "copies_median": 925,
-   "copies_p90": 33324,
-   "share_no_reviews": 0.002
+   "tag": "Incremental",
+   "n": 924,
+   "copies_median": 992,
+   "copies_p90": 33008,
+   "share_no_reviews": 0.0
   },
   {
    "tag": "Post-apocalyptic",
-   "n": 641,
-   "copies_median": 919,
-   "copies_p90": 41678,
-   "share_no_reviews": 0.008
+   "n": 668,
+   "copies_median": 983,
+   "copies_p90": 47626,
+   "share_no_reviews": 0.007
   },
   {
-   "tag": "Action RTS",
-   "n": 166,
-   "copies_median": 906,
-   "copies_p90": 48802,
-   "share_no_reviews": 0.006
+   "tag": "Relaxing",
+   "n": 2706,
+   "copies_median": 980,
+   "copies_p90": 40362,
+   "share_no_reviews": 0.004
   },
   {
-   "tag": "Dark Comedy",
-   "n": 201,
-   "copies_median": 903,
-   "copies_p90": 27241,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "Horror",
-   "n": 1831,
-   "copies_median": 901,
-   "copies_p90": 33475,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Thriller",
-   "n": 561,
-   "copies_median": 889,
-   "copies_p90": 20346,
+   "tag": "Comedy",
+   "n": 1307,
+   "copies_median": 958,
+   "copies_p90": 33547,
    "share_no_reviews": 0.002
   },
   {
-   "tag": "Dungeon Crawler",
-   "n": 808,
-   "copies_median": 879,
-   "copies_p90": 48275,
+   "tag": "Hand-drawn",
+   "n": 1453,
+   "copies_median": 951,
+   "copies_p90": 24406,
    "share_no_reviews": 0.005
   },
   {
    "tag": "Modern",
-   "n": 319,
-   "copies_median": 879,
-   "copies_p90": 33349,
+   "n": 327,
+   "copies_median": 946,
+   "copies_p90": 35586,
    "share_no_reviews": 0.003
   },
   {
+   "tag": "Dungeon Crawler",
+   "n": 839,
+   "copies_median": 936,
+   "copies_p90": 52699,
+   "share_no_reviews": 0.005
+  },
+  {
+   "tag": "Dialogue Heavy",
+   "n": 534,
+   "copies_median": 927,
+   "copies_p90": 25043,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Action RTS",
+   "n": 173,
+   "copies_median": 919,
+   "copies_p90": 48802,
+   "share_no_reviews": 0.006
+  },
+  {
+   "tag": "Horror",
+   "n": 1868,
+   "copies_median": 902,
+   "copies_p90": 34558,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Early Access",
+   "n": 2191,
+   "copies_median": 899,
+   "copies_p90": 43716,
+   "share_no_reviews": 0.005
+  },
+  {
+   "tag": "Turn-Based Tactics",
+   "n": 964,
+   "copies_median": 893,
+   "copies_p90": 27891,
+   "share_no_reviews": 0.005
+  },
+  {
+   "tag": "Thriller",
+   "n": 570,
+   "copies_median": 890,
+   "copies_p90": 21474,
+   "share_no_reviews": 0.002
+  },
+  {
    "tag": "Destruction",
-   "n": 247,
-   "copies_median": 864,
+   "n": 261,
+   "copies_median": 887,
    "copies_p90": 56818,
    "share_no_reviews": 0.0
   },
   {
-   "tag": "Early Access",
-   "n": 2112,
-   "copies_median": 850,
-   "copies_p90": 43155,
-   "share_no_reviews": 0.006
+   "tag": "Turn-Based Strategy",
+   "n": 1094,
+   "copies_median": 883,
+   "copies_p90": 40127,
+   "share_no_reviews": 0.005
   },
   {
-   "tag": "Short",
-   "n": 264,
-   "copies_median": 846,
-   "copies_p90": 18300,
+   "tag": "Dark Comedy",
+   "n": 208,
+   "copies_median": 881,
+   "copies_p90": 27430,
    "share_no_reviews": 0.0
+  },
+  {
+   "tag": "FPS",
+   "n": 805,
+   "copies_median": 866,
+   "copies_p90": 53625,
+   "share_no_reviews": 0.005
   },
   {
    "tag": "Mystery",
-   "n": 1583,
-   "copies_median": 843,
-   "copies_p90": 26322,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Surreal",
-   "n": 774,
-   "copies_median": 839,
-   "copies_p90": 26595,
-   "share_no_reviews": 0.006
-  },
-  {
-   "tag": "Survival Horror",
-   "n": 707,
-   "copies_median": 837,
-   "copies_p90": 27271,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Turn-Based Strategy",
-   "n": 1048,
-   "copies_median": 833,
-   "copies_p90": 40092,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "Psychedelic",
-   "n": 308,
-   "copies_median": 832,
-   "copies_p90": 21771,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Underground",
-   "n": 160,
-   "copies_median": 832,
-   "copies_p90": 46830,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "Turn-Based Tactics",
-   "n": 919,
-   "copies_median": 831,
-   "copies_p90": 27351,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "Cute",
-   "n": 3322,
-   "copies_median": 824,
-   "copies_p90": 27395,
-   "share_no_reviews": 0.003
+   "n": 1618,
+   "copies_median": 859,
+   "copies_p90": 26758,
+   "share_no_reviews": 0.002
   },
   {
    "tag": "Rhythm",
-   "n": 200,
-   "copies_median": 820,
+   "n": 205,
+   "copies_median": 859,
    "copies_p90": 32830,
    "share_no_reviews": 0.005
   },
   {
+   "tag": "Short",
+   "n": 267,
+   "copies_median": 854,
+   "copies_p90": 18343,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Medieval",
+   "n": 1027,
+   "copies_median": 845,
+   "copies_p90": 38267,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Cute",
+   "n": 3417,
+   "copies_median": 844,
+   "copies_p90": 27736,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Surreal",
+   "n": 795,
+   "copies_median": 841,
+   "copies_p90": 26723,
+   "share_no_reviews": 0.006
+  },
+  {
+   "tag": "Survival Horror",
+   "n": 721,
+   "copies_median": 838,
+   "copies_p90": 29350,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Underground",
+   "n": 163,
+   "copies_median": 832,
+   "copies_p90": 36296,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Strategy",
+   "n": 3961,
+   "copies_median": 830,
+   "copies_p90": 41274,
+   "share_no_reviews": 0.005
+  },
+  {
+   "tag": "Psychedelic",
+   "n": 313,
+   "copies_median": 827,
+   "copies_p90": 21771,
+   "share_no_reviews": 0.003
+  },
+  {
    "tag": "Psychological Horror",
-   "n": 1383,
-   "copies_median": 818,
-   "copies_p90": 26818,
+   "n": 1410,
+   "copies_median": 826,
+   "copies_p90": 28460,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Tactical",
+   "n": 1077,
+   "copies_median": 823,
+   "copies_p90": 36878,
    "share_no_reviews": 0.003
   },
   {
    "tag": "Memes",
-   "n": 163,
+   "n": 165,
    "copies_median": 816,
    "copies_p90": 37185,
    "share_no_reviews": 0.006
   },
   {
-   "tag": "Cats",
-   "n": 411,
-   "copies_median": 815,
-   "copies_p90": 27336,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "FPS",
-   "n": 781,
-   "copies_median": 811,
-   "copies_p90": 53284,
-   "share_no_reviews": 0.005
-  },
-  {
    "tag": "Stealth",
-   "n": 465,
-   "copies_median": 796,
-   "copies_p90": 35330,
+   "n": 484,
+   "copies_median": 815,
+   "copies_p90": 36240,
    "share_no_reviews": 0.006
   },
   {
-   "tag": "Medieval",
-   "n": 988,
-   "copies_median": 792,
-   "copies_p90": 34719,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Collectathon",
-   "n": 579,
-   "copies_median": 792,
-   "copies_p90": 26834,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "Strategy",
-   "n": 3833,
-   "copies_median": 781,
-   "copies_p90": 41198,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "2.5D",
-   "n": 549,
-   "copies_median": 780,
-   "copies_p90": 33472,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "Funny",
-   "n": 2346,
-   "copies_median": 778,
-   "copies_p90": 38002,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Beat 'em up",
-   "n": 261,
-   "copies_median": 778,
-   "copies_p90": 44472,
-   "share_no_reviews": 0.004
-  },
-  {
    "tag": "Fantasy",
-   "n": 2727,
-   "copies_median": 773,
-   "copies_p90": 29884,
+   "n": 2836,
+   "copies_median": 814,
+   "copies_p90": 30533,
    "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Nonlinear",
-   "n": 459,
-   "copies_median": 772,
-   "copies_p90": 31752,
-   "share_no_reviews": 0.004
-  },
-  {
-   "tag": "Action-Adventure",
-   "n": 2170,
-   "copies_median": 765,
-   "copies_p90": 35275,
-   "share_no_reviews": 0.007
-  },
-  {
-   "tag": "Card Battler",
-   "n": 604,
-   "copies_median": 763,
-   "copies_p90": 26099,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Word Game",
-   "n": 204,
-   "copies_median": 762,
-   "copies_p90": 25743,
-   "share_no_reviews": 0.01
-  },
-  {
-   "tag": "Tactical",
-   "n": 1034,
-   "copies_median": 761,
-   "copies_p90": 33514,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Team-Based",
-   "n": 324,
-   "copies_median": 736,
-   "copies_p90": 41053,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Third-Person Shooter",
-   "n": 300,
-   "copies_median": 727,
-   "copies_p90": 35663,
-   "share_no_reviews": 0.01
-  },
-  {
-   "tag": "1990's",
-   "n": 634,
-   "copies_median": 727,
-   "copies_p90": 27728,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "Dark",
-   "n": 1440,
-   "copies_median": 726,
-   "copies_p90": 27426,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Singleplayer",
-   "n": 10433,
-   "copies_median": 718,
-   "copies_p90": 30648,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Zombies",
-   "n": 397,
-   "copies_median": 716,
-   "copies_p90": 27154,
-   "share_no_reviews": 0.005
   },
   {
    "tag": "Real Time Tactics",
-   "n": 396,
-   "copies_median": 708,
+   "n": 411,
+   "copies_median": 813,
    "copies_p90": 26265,
    "share_no_reviews": 0.005
   },
   {
+   "tag": "Third-Person Shooter",
+   "n": 310,
+   "copies_median": 812,
+   "copies_p90": 43528,
+   "share_no_reviews": 0.01
+  },
+  {
+   "tag": "Nonlinear",
+   "n": 478,
+   "copies_median": 807,
+   "copies_p90": 31752,
+   "share_no_reviews": 0.004
+  },
+  {
+   "tag": "Funny",
+   "n": 2422,
+   "copies_median": 806,
+   "copies_p90": 38320,
+   "share_no_reviews": 0.002
+  },
+  {
+   "tag": "Cats",
+   "n": 416,
+   "copies_median": 806,
+   "copies_p90": 27345,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Collectathon",
+   "n": 594,
+   "copies_median": 805,
+   "copies_p90": 26834,
+   "share_no_reviews": 0.005
+  },
+  {
+   "tag": "Card Battler",
+   "n": 621,
+   "copies_median": 794,
+   "copies_p90": 25932,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "2.5D",
+   "n": 565,
+   "copies_median": 789,
+   "copies_p90": 33472,
+   "share_no_reviews": 0.005
+  },
+  {
+   "tag": "Action-Adventure",
+   "n": 2251,
+   "copies_median": 784,
+   "copies_p90": 34592,
+   "share_no_reviews": 0.007
+  },
+  {
+   "tag": "Beat 'em up",
+   "n": 269,
+   "copies_median": 780,
+   "copies_p90": 46346,
+   "share_no_reviews": 0.004
+  },
+  {
+   "tag": "Word Game",
+   "n": 206,
+   "copies_median": 776,
+   "copies_p90": 25743,
+   "share_no_reviews": 0.01
+  },
+  {
+   "tag": "Team-Based",
+   "n": 343,
+   "copies_median": 764,
+   "copies_p90": 44030,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Singleplayer",
+   "n": 10739,
+   "copies_median": 744,
+   "copies_p90": 31122,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Dark",
+   "n": 1487,
+   "copies_median": 733,
+   "copies_p90": 27426,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Gambling",
+   "n": 150,
+   "copies_median": 732,
+   "copies_p90": 113000,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Zombies",
+   "n": 414,
+   "copies_median": 729,
+   "copies_p90": 28598,
+   "share_no_reviews": 0.005
+  },
+  {
    "tag": "Walking Simulator",
-   "n": 650,
-   "copies_median": 706,
+   "n": 667,
+   "copies_median": 728,
    "copies_p90": 17842,
-   "share_no_reviews": 0.008
+   "share_no_reviews": 0.007
+  },
+  {
+   "tag": "Third Person",
+   "n": 1497,
+   "copies_median": 727,
+   "copies_p90": 45461,
+   "share_no_reviews": 0.004
   },
   {
    "tag": "Local Co-Op",
-   "n": 481,
-   "copies_median": 704,
-   "copies_p90": 46234,
+   "n": 503,
+   "copies_median": 726,
+   "copies_p90": 47119,
    "share_no_reviews": 0.008
   },
   {
+   "tag": "1990's",
+   "n": 649,
+   "copies_median": 726,
+   "copies_p90": 27728,
+   "share_no_reviews": 0.0
+  },
+  {
    "tag": "Deckbuilding",
-   "n": 933,
-   "copies_median": 702,
+   "n": 947,
+   "copies_median": 724,
    "copies_p90": 29721,
    "share_no_reviews": 0.001
   },
   {
    "tag": "Time Management",
-   "n": 643,
-   "copies_median": 685,
-   "copies_p90": 33383,
+   "n": 657,
+   "copies_median": 713,
+   "copies_p90": 35308,
    "share_no_reviews": 0.008
   },
   {
-   "tag": "Supernatural",
-   "n": 506,
-   "copies_median": 684,
-   "copies_p90": 21474,
-   "share_no_reviews": 0.002
-  },
-  {
    "tag": "Card Game",
-   "n": 870,
-   "copies_median": 671,
-   "copies_p90": 25148,
+   "n": 891,
+   "copies_median": 701,
+   "copies_p90": 24861,
    "share_no_reviews": 0.002
   },
   {
    "tag": "Space Sim",
-   "n": 185,
-   "copies_median": 667,
+   "n": 190,
+   "copies_median": 694,
    "copies_p90": 19148,
    "share_no_reviews": 0.005
   },
   {
    "tag": "Nature",
-   "n": 810,
-   "copies_median": 662,
-   "copies_p90": 33336,
+   "n": 833,
+   "copies_median": 688,
+   "copies_p90": 33349,
    "share_no_reviews": 0.005
   },
   {
-   "tag": "Roguelite",
-   "n": 2238,
-   "copies_median": 660,
-   "copies_p90": 38059,
+   "tag": "Supernatural",
+   "n": 523,
+   "copies_median": 688,
+   "copies_p90": 21861,
    "share_no_reviews": 0.002
   },
   {
-   "tag": "3D",
-   "n": 4472,
-   "copies_median": 656,
-   "copies_p90": 35275,
-   "share_no_reviews": 0.004
+   "tag": "Roguelite",
+   "n": 2306,
+   "copies_median": 682,
+   "copies_p90": 38442,
+   "share_no_reviews": 0.002
   },
   {
    "tag": "Procedural Generation",
-   "n": 1136,
-   "copies_median": 654,
-   "copies_p90": 39192,
+   "n": 1182,
+   "copies_median": 682,
+   "copies_p90": 38885,
    "share_no_reviews": 0.003
   },
   {
-   "tag": "Third Person",
-   "n": 1430,
-   "copies_median": 654,
-   "copies_p90": 41488,
-   "share_no_reviews": 0.004
+   "tag": "3D",
+   "n": 4607,
+   "copies_median": 679,
+   "copies_p90": 36240,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Roguelike",
+   "n": 2257,
+   "copies_median": 669,
+   "copies_p90": 34986,
+   "share_no_reviews": 0.002
+  },
+  {
+   "tag": "Gun Customization",
+   "n": 181,
+   "copies_median": 661,
+   "copies_p90": 47626,
+   "share_no_reviews": 0.0
   },
   {
    "tag": "Text-Based",
-   "n": 490,
-   "copies_median": 653,
-   "copies_p90": 15846,
+   "n": 495,
+   "copies_median": 660,
+   "copies_p90": 15800,
    "share_no_reviews": 0.002
   },
   {
    "tag": "VR",
-   "n": 241,
+   "n": 247,
    "copies_median": 647,
-   "copies_p90": 16941,
+   "copies_p90": 17866,
    "share_no_reviews": 0.012
   },
   {
-   "tag": "Roguelike",
-   "n": 2188,
-   "copies_median": 647,
-   "copies_p90": 35204,
-   "share_no_reviews": 0.002
+   "tag": "Difficult",
+   "n": 1171,
+   "copies_median": 645,
+   "copies_p90": 47575,
+   "share_no_reviews": 0.004
   },
   {
    "tag": "Psychological",
-   "n": 559,
+   "n": 569,
    "copies_median": 644,
    "copies_p90": 16394,
    "share_no_reviews": 0.002
   },
   {
+   "tag": "Level Editor",
+   "n": 265,
+   "copies_median": 639,
+   "copies_p90": 32751,
+   "share_no_reviews": 0.011
+  },
+  {
    "tag": "Demons",
-   "n": 395,
-   "copies_median": 634,
-   "copies_p90": 23875,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Time Manipulation",
-   "n": 160,
-   "copies_median": 625,
-   "copies_p90": 20567,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "Cyberpunk",
-   "n": 447,
-   "copies_median": 615,
-   "copies_p90": 18827,
-   "share_no_reviews": 0.007
+   "n": 411,
+   "copies_median": 638,
+   "copies_p90": 21700,
+   "share_no_reviews": 0.002
   },
   {
    "tag": "Magic",
-   "n": 1122,
-   "copies_median": 613,
+   "n": 1173,
+   "copies_median": 630,
    "copies_p90": 20417,
    "share_no_reviews": 0.002
   },
   {
-   "tag": "Difficult",
-   "n": 1130,
-   "copies_median": 612,
-   "copies_p90": 49451,
-   "share_no_reviews": 0.004
-  },
-  {
-   "tag": "Gun Customization",
-   "n": 178,
-   "copies_median": 602,
-   "copies_p90": 47626,
-   "share_no_reviews": 0.0
-  },
-  {
-   "tag": "Level Editor",
-   "n": 255,
-   "copies_median": 590,
-   "copies_p90": 31982,
-   "share_no_reviews": 0.012
+   "tag": "Cyberpunk",
+   "n": 463,
+   "copies_median": 620,
+   "copies_p90": 18827,
+   "share_no_reviews": 0.006
   },
   {
    "tag": "Vehicular Combat",
+   "n": 178,
+   "copies_median": 619,
+   "copies_p90": 48907,
+   "share_no_reviews": 0.011
+  },
+  {
+   "tag": "PvP",
+   "n": 1207,
+   "copies_median": 596,
+   "copies_p90": 41053,
+   "share_no_reviews": 0.009
+  },
+  {
+   "tag": "Time Manipulation",
    "n": 168,
-   "copies_median": 587,
-   "copies_p90": 40494,
-   "share_no_reviews": 0.012
+   "copies_median": 589,
+   "copies_p90": 20567,
+   "share_no_reviews": 0.0
   },
   {
    "tag": "Stylized",
-   "n": 2451,
-   "copies_median": 578,
-   "copies_p90": 23907,
+   "n": 2516,
+   "copies_median": 586,
+   "copies_p90": 24288,
    "share_no_reviews": 0.001
   },
   {
    "tag": "Casual",
-   "n": 5921,
-   "copies_median": 568,
-   "copies_p90": 24851,
-   "share_no_reviews": 0.004
-  },
-  {
-   "tag": "Family Friendly",
-   "n": 1672,
-   "copies_median": 568,
-   "copies_p90": 27933,
-   "share_no_reviews": 0.004
-  },
-  {
-   "tag": "PvP",
-   "n": 1156,
-   "copies_median": 567,
-   "copies_p90": 40202,
-   "share_no_reviews": 0.009
+   "n": 6051,
+   "copies_median": 584,
+   "copies_p90": 25331,
+   "share_no_reviews": 0.003
   },
   {
    "tag": "Colorful",
-   "n": 3691,
-   "copies_median": 566,
+   "n": 3814,
+   "copies_median": 583,
    "copies_p90": 27345,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "Puzzle",
-   "n": 2779,
-   "copies_median": 562,
-   "copies_p90": 19744,
-   "share_no_reviews": 0.007
+   "share_no_reviews": 0.004
   },
   {
    "tag": "Pixel Graphics",
-   "n": 3298,
-   "copies_median": 558,
-   "copies_p90": 26452,
+   "n": 3385,
+   "copies_median": 581,
+   "copies_p90": 27336,
    "share_no_reviews": 0.005
   },
   {
-   "tag": "Education",
-   "n": 285,
-   "copies_median": 548,
-   "copies_p90": 40533,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Perma Death",
-   "n": 441,
-   "copies_median": 546,
-   "copies_p90": 27271,
-   "share_no_reviews": 0.007
+   "tag": "Family Friendly",
+   "n": 1734,
+   "copies_median": 581,
+   "copies_p90": 27234,
+   "share_no_reviews": 0.004
   },
   {
    "tag": "Combat",
-   "n": 2141,
-   "copies_median": 544,
-   "copies_p90": 27302,
+   "n": 2207,
+   "copies_median": 578,
+   "copies_p90": 30536,
    "share_no_reviews": 0.001
   },
   {
-   "tag": "2D",
-   "n": 5982,
-   "copies_median": 543,
-   "copies_p90": 21531,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "Sci-fi",
-   "n": 1837,
-   "copies_median": 528,
-   "copies_p90": 25629,
-   "share_no_reviews": 0.008
-  },
-  {
-   "tag": "Old School",
-   "n": 815,
-   "copies_median": 518,
-   "copies_p90": 18322,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "Cartoon",
-   "n": 798,
-   "copies_median": 516,
-   "copies_p90": 21531,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Action",
-   "n": 5575,
-   "copies_median": 509,
-   "copies_p90": 29726,
+   "tag": "Puzzle",
+   "n": 2846,
+   "copies_median": 572,
+   "copies_p90": 19444,
    "share_no_reviews": 0.007
   },
   {
-   "tag": "Shooter",
-   "n": 1448,
-   "copies_median": 506,
-   "copies_p90": 29889,
+   "tag": "2D",
+   "n": 6134,
+   "copies_median": 559,
+   "copies_p90": 21700,
+   "share_no_reviews": 0.005
+  },
+  {
+   "tag": "Side Scroller",
+   "n": 774,
+   "copies_median": 557,
+   "copies_p90": 21756,
    "share_no_reviews": 0.01
   },
   {
+   "tag": "Education",
+   "n": 293,
+   "copies_median": 555,
+   "copies_p90": 40970,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Dogs",
+   "n": 152,
+   "copies_median": 552,
+   "copies_p90": 28658,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Perma Death",
+   "n": 462,
+   "copies_median": 549,
+   "copies_p90": 27271,
+   "share_no_reviews": 0.006
+  },
+  {
+   "tag": "Cartoon",
+   "n": 823,
+   "copies_median": 547,
+   "copies_p90": 21205,
+   "share_no_reviews": 0.002
+  },
+  {
+   "tag": "Sci-fi",
+   "n": 1888,
+   "copies_median": 546,
+   "copies_p90": 25331,
+   "share_no_reviews": 0.008
+  },
+  {
+   "tag": "Action",
+   "n": 5760,
+   "copies_median": 542,
+   "copies_p90": 31273,
+   "share_no_reviews": 0.006
+  },
+  {
+   "tag": "Sports",
+   "n": 430,
+   "copies_median": 541,
+   "copies_p90": 26524,
+   "share_no_reviews": 0.005
+  },
+  {
+   "tag": "Shooter",
+   "n": 1490,
+   "copies_median": 540,
+   "copies_p90": 32658,
+   "share_no_reviews": 0.009
+  },
+  {
+   "tag": "Old School",
+   "n": 834,
+   "copies_median": 540,
+   "copies_p90": 18635,
+   "share_no_reviews": 0.005
+  },
+  {
+   "tag": "Action Roguelike",
+   "n": 1341,
+   "copies_median": 536,
+   "copies_p90": 38442,
+   "share_no_reviews": 0.004
+  },
+  {
    "tag": "Retro",
-   "n": 1777,
-   "copies_median": 506,
+   "n": 1821,
+   "copies_median": 530,
    "copies_p90": 18342,
    "share_no_reviews": 0.002
   },
   {
-   "tag": "Hidden Object",
-   "n": 628,
-   "copies_median": 506,
-   "copies_p90": 16394,
-   "share_no_reviews": 0.006
-  },
-  {
-   "tag": "Action Roguelike",
-   "n": 1300,
-   "copies_median": 501,
-   "copies_p90": 37185,
-   "share_no_reviews": 0.004
-  },
-  {
-   "tag": "Indie",
-   "n": 6823,
-   "copies_median": 496,
-   "copies_p90": 23122,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "Tower Defense",
-   "n": 545,
-   "copies_median": 493,
-   "copies_p90": 21029,
-   "share_no_reviews": 0.002
-  },
-  {
    "tag": "Robots",
-   "n": 398,
-   "copies_median": 491,
-   "copies_p90": 23575,
+   "n": 414,
+   "copies_median": 525,
+   "copies_p90": 25649,
    "share_no_reviews": 0.007
   },
   {
-   "tag": "Cartoony",
-   "n": 1482,
-   "copies_median": 488,
-   "copies_p90": 22754,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "Side Scroller",
-   "n": 742,
-   "copies_median": 486,
-   "copies_p90": 21756,
-   "share_no_reviews": 0.011
-  },
-  {
-   "tag": "Flight",
-   "n": 206,
-   "copies_median": 484,
-   "copies_p90": 20850,
-   "share_no_reviews": 0.01
-  },
-  {
-   "tag": "Sports",
-   "n": 410,
-   "copies_median": 464,
-   "copies_p90": 29583,
-   "share_no_reviews": 0.005
-  },
-  {
-   "tag": "Local Multiplayer",
-   "n": 536,
-   "copies_median": 461,
-   "copies_p90": 19643,
+   "tag": "Indie",
+   "n": 6999,
+   "copies_median": 521,
+   "copies_p90": 23575,
    "share_no_reviews": 0.004
   },
   {
-   "tag": "1980s",
-   "n": 372,
-   "copies_median": 456,
-   "copies_p90": 14493,
-   "share_no_reviews": 0.005
+   "tag": "Tower Defense",
+   "n": 562,
+   "copies_median": 520,
+   "copies_p90": 21200,
+   "share_no_reviews": 0.002
+  },
+  {
+   "tag": "Hidden Object",
+   "n": 639,
+   "copies_median": 520,
+   "copies_p90": 16293,
+   "share_no_reviews": 0.006
+  },
+  {
+   "tag": "Cartoony",
+   "n": 1527,
+   "copies_median": 513,
+   "copies_p90": 23122,
+   "share_no_reviews": 0.003
+  },
+  {
+   "tag": "Party",
+   "n": 150,
+   "copies_median": 502,
+   "copies_p90": 24259,
+   "share_no_reviews": 0.0
+  },
+  {
+   "tag": "Local Multiplayer",
+   "n": 564,
+   "copies_median": 480,
+   "copies_p90": 18615,
+   "share_no_reviews": 0.004
+  },
+  {
+   "tag": "Flight",
+   "n": 215,
+   "copies_median": 479,
+   "copies_p90": 20850,
+   "share_no_reviews": 0.009
   },
   {
    "tag": "Competitive",
-   "n": 190,
-   "copies_median": 450,
-   "copies_p90": 17234,
+   "n": 195,
+   "copies_median": 475,
+   "copies_p90": 17786,
    "share_no_reviews": 0.01
   },
   {
-   "tag": "Physics",
-   "n": 1403,
-   "copies_median": 440,
-   "copies_p90": 29412,
-   "share_no_reviews": 0.001
-  },
-  {
    "tag": "Board Game",
-   "n": 408,
-   "copies_median": 429,
-   "copies_p90": 24259,
+   "n": 418,
+   "copies_median": 471,
+   "copies_p90": 21347,
    "share_no_reviews": 0.007
   },
   {
    "tag": "Science",
-   "n": 170,
-   "copies_median": 429,
+   "n": 174,
+   "copies_median": 460,
    "copies_p90": 39007,
    "share_no_reviews": 0.0
   },
   {
+   "tag": "Physics",
+   "n": 1443,
+   "copies_median": 459,
+   "copies_p90": 30152,
+   "share_no_reviews": 0.001
+  },
+  {
+   "tag": "3D Platformer",
+   "n": 740,
+   "copies_median": 456,
+   "copies_p90": 21669,
+   "share_no_reviews": 0.007
+  },
+  {
    "tag": "Racing",
-   "n": 388,
-   "copies_median": 428,
-   "copies_p90": 28385,
+   "n": 409,
+   "copies_median": 448,
+   "copies_p90": 33984,
    "share_no_reviews": 0.005
   },
   {
    "tag": "Space",
-   "n": 836,
-   "copies_median": 422,
-   "copies_p90": 18874,
+   "n": 859,
+   "copies_median": 439,
+   "copies_p90": 18843,
    "share_no_reviews": 0.006
   },
   {
-   "tag": "Parkour",
-   "n": 276,
-   "copies_median": 422,
-   "copies_p90": 28293,
-   "share_no_reviews": 0.004
+   "tag": "Aliens",
+   "n": 368,
+   "copies_median": 438,
+   "copies_p90": 23717,
+   "share_no_reviews": 0.013
   },
   {
-   "tag": "3D Platformer",
-   "n": 714,
-   "copies_median": 421,
-   "copies_p90": 21184,
-   "share_no_reviews": 0.007
+   "tag": "PvE",
+   "n": 1559,
+   "copies_median": 437,
+   "copies_p90": 35308,
+   "share_no_reviews": 0.001
+  },
+  {
+   "tag": "Parkour",
+   "n": 288,
+   "copies_median": 434,
+   "copies_p90": 29024,
+   "share_no_reviews": 0.003
   },
   {
    "tag": "Philosophical",
-   "n": 237,
-   "copies_median": 421,
+   "n": 243,
+   "copies_median": 433,
    "copies_p90": 19103,
    "share_no_reviews": 0.0
   },
   {
-   "tag": "Aliens",
-   "n": 354,
-   "copies_median": 419,
-   "copies_p90": 25043,
-   "share_no_reviews": 0.014
+   "tag": "1980s",
+   "n": 381,
+   "copies_median": 433,
+   "copies_p90": 13911,
+   "share_no_reviews": 0.005
   },
   {
    "tag": "Controller",
-   "n": 2086,
-   "copies_median": 415,
+   "n": 2167,
+   "copies_median": 425,
    "copies_p90": 20772,
    "share_no_reviews": 0.0
   },
   {
-   "tag": "Twin Stick Shooter",
-   "n": 285,
-   "copies_median": 410,
-   "copies_p90": 13398,
-   "share_no_reviews": 0.003
-  },
-  {
-   "tag": "PvE",
-   "n": 1507,
-   "copies_median": 408,
-   "copies_p90": 33288,
-   "share_no_reviews": 0.001
+   "tag": "Fast-Paced",
+   "n": 344,
+   "copies_median": 418,
+   "copies_p90": 25784,
+   "share_no_reviews": 0.006
   },
   {
    "tag": "Futuristic",
-   "n": 778,
-   "copies_median": 400,
+   "n": 802,
+   "copies_median": 413,
    "copies_p90": 17390,
    "share_no_reviews": 0.004
   },
   {
-   "tag": "Abstract",
-   "n": 359,
-   "copies_median": 400,
-   "copies_p90": 21771,
-   "share_no_reviews": 0.006
-  },
-  {
    "tag": "Top-Down",
-   "n": 1996,
-   "copies_median": 391,
-   "copies_p90": 18912,
+   "n": 2058,
+   "copies_median": 410,
+   "copies_p90": 19264,
    "share_no_reviews": 0.004
   },
   {
-   "tag": "Fast-Paced",
-   "n": 327,
-   "copies_median": 387,
-   "copies_p90": 28059,
-   "share_no_reviews": 0.006
+   "tag": "Abstract",
+   "n": 370,
+   "copies_median": 410,
+   "copies_p90": 21474,
+   "share_no_reviews": 0.005
   },
   {
    "tag": "Tabletop",
-   "n": 391,
-   "copies_median": 375,
-   "copies_p90": 21531,
+   "n": 402,
+   "copies_median": 406,
+   "copies_p90": 20268,
    "share_no_reviews": 0.0
   },
   {
-   "tag": "Party Game",
-   "n": 337,
-   "copies_median": 367,
-   "copies_p90": 15751,
+   "tag": "Twin Stick Shooter",
+   "n": 291,
+   "copies_median": 398,
+   "copies_p90": 13172,
    "share_no_reviews": 0.003
   },
   {
-   "tag": "4 Player Local",
-   "n": 266,
-   "copies_median": 365,
-   "copies_p90": 16619,
-   "share_no_reviews": 0.004
+   "tag": "Puzzle Platformer",
+   "n": 742,
+   "copies_median": 390,
+   "copies_p90": 11344,
+   "share_no_reviews": 0.011
   },
   {
    "tag": "Minimalist",
-   "n": 1067,
-   "copies_median": 364,
+   "n": 1095,
+   "copies_median": 373,
    "copies_p90": 13275,
    "share_no_reviews": 0.004
   },
   {
-   "tag": "Bullet Hell",
-   "n": 943,
-   "copies_median": 363,
-   "copies_p90": 17233,
-   "share_no_reviews": 0.006
+   "tag": "4 Player Local",
+   "n": 281,
+   "copies_median": 371,
+   "copies_p90": 15291,
+   "share_no_reviews": 0.004
   },
   {
-   "tag": "Puzzle Platformer",
-   "n": 713,
-   "copies_median": 358,
-   "copies_p90": 11355,
-   "share_no_reviews": 0.011
+   "tag": "Party Game",
+   "n": 347,
+   "copies_median": 371,
+   "copies_p90": 15751,
+   "share_no_reviews": 0.003
   },
   {
    "tag": "Platformer",
-   "n": 1497,
-   "copies_median": 352,
+   "n": 1564,
+   "copies_median": 370,
    "copies_p90": 18199,
-   "share_no_reviews": 0.013
+   "share_no_reviews": 0.012
+  },
+  {
+   "tag": "Bullet Hell",
+   "n": 963,
+   "copies_median": 369,
+   "copies_p90": 17053,
+   "share_no_reviews": 0.006
   },
   {
    "tag": "Logic",
-   "n": 854,
-   "copies_median": 345,
-   "copies_p90": 13921,
+   "n": 878,
+   "copies_median": 361,
+   "copies_p90": 14713,
    "share_no_reviews": 0.001
   },
   {
    "tag": "Arena Shooter",
-   "n": 342,
-   "copies_median": 344,
-   "copies_p90": 22415,
-   "share_no_reviews": 0.009
+   "n": 350,
+   "copies_median": 357,
+   "copies_p90": 26900,
+   "share_no_reviews": 0.008
   },
   {
    "tag": "Arcade",
-   "n": 2140,
-   "copies_median": 343,
-   "copies_p90": 16118,
+   "n": 2196,
+   "copies_median": 351,
+   "copies_p90": 16134,
    "share_no_reviews": 0.005
   },
   {
    "tag": "2D Fighter",
-   "n": 181,
-   "copies_median": 340,
-   "copies_p90": 14017,
+   "n": 187,
+   "copies_median": 343,
+   "copies_p90": 14493,
    "share_no_reviews": 0.005
   },
   {
    "tag": "Linear",
-   "n": 1309,
-   "copies_median": 337,
+   "n": 1343,
+   "copies_median": 340,
    "copies_p90": 10746,
    "share_no_reviews": 0.0
   },
   {
    "tag": "2D Platformer",
-   "n": 1237,
-   "copies_median": 330,
-   "copies_p90": 14699,
-   "share_no_reviews": 0.006
-  },
-  {
-   "tag": "Top-Down Shooter",
-   "n": 561,
-   "copies_median": 328,
-   "copies_p90": 16221,
+   "n": 1283,
+   "copies_median": 340,
+   "copies_p90": 14073,
    "share_no_reviews": 0.005
   },
   {
    "tag": "Grid-Based Movement",
-   "n": 338,
-   "copies_median": 323,
-   "copies_p90": 6484,
+   "n": 350,
+   "copies_median": 329,
+   "copies_p90": 6135,
    "share_no_reviews": 0.006
   },
   {
+   "tag": "Top-Down Shooter",
+   "n": 574,
+   "copies_median": 326,
+   "copies_p90": 18573,
+   "share_no_reviews": 0.005
+  },
+  {
    "tag": "Tutorial",
-   "n": 332,
-   "copies_median": 319,
-   "copies_p90": 13933,
+   "n": 343,
+   "copies_median": 323,
+   "copies_p90": 13952,
    "share_no_reviews": 0.0
   },
   {
    "tag": "Shoot 'Em Up",
-   "n": 502,
-   "copies_median": 291,
-   "copies_p90": 9846,
+   "n": 515,
+   "copies_median": 296,
+   "copies_p90": 9907,
    "share_no_reviews": 0.006
   },
   {
-   "tag": "Score Attack",
-   "n": 635,
-   "copies_median": 266,
-   "copies_p90": 9408,
-   "share_no_reviews": 0.002
-  },
-  {
    "tag": "Precision Platformer",
-   "n": 550,
-   "copies_median": 266,
-   "copies_p90": 4076,
+   "n": 565,
+   "copies_median": 269,
+   "copies_p90": 4070,
    "share_no_reviews": 0.009
   },
   {
+   "tag": "Score Attack",
+   "n": 643,
+   "copies_median": 266,
+   "copies_p90": 9291,
+   "share_no_reviews": 0.002
+  },
+  {
    "tag": "Runner",
-   "n": 196,
-   "copies_median": 246,
-   "copies_p90": 5976,
+   "n": 203,
+   "copies_median": 255,
+   "copies_p90": 6331,
    "share_no_reviews": 0.0
   }
  ],
@@ -2001,15 +2038,15 @@
    "delta": 3.66
   },
   {
-   "tag": "Linear",
-   "before": 1.47,
-   "after": 4.61,
-   "delta": 3.13
-  },
-  {
    "tag": "Fantasy",
    "before": 5.56,
    "after": 8.7,
+   "delta": 3.13
+  },
+  {
+   "tag": "Linear",
+   "before": 1.47,
+   "after": 4.61,
    "delta": 3.13
   },
   {
@@ -2085,15 +2122,15 @@
    "delta": 1.79
   },
   {
-   "tag": "Dialogue Heavy",
-   "before": 0.0,
-   "after": 1.7,
-   "delta": 1.7
-  },
-  {
    "tag": "Funny",
    "before": 5.89,
    "after": 7.59,
+   "delta": 1.7
+  },
+  {
+   "tag": "Dialogue Heavy",
+   "before": 0.0,
+   "after": 1.7,
    "delta": 1.7
   },
   {
@@ -2169,15 +2206,15 @@
    "delta": 1.19
   },
   {
-   "tag": "Psychological",
-   "before": 0.82,
-   "after": 1.97,
-   "delta": 1.15
-  },
-  {
    "tag": "Minimalist",
    "before": 2.62,
    "after": 3.76,
+   "delta": 1.15
+  },
+  {
+   "tag": "Psychological",
+   "before": 0.82,
+   "after": 1.97,
    "delta": 1.15
   },
   {
@@ -2193,15 +2230,15 @@
    "delta": 1.12
   },
   {
-   "tag": "Score Attack",
-   "before": 1.15,
-   "after": 2.24,
-   "delta": 1.09
-  },
-  {
    "tag": "Sexual Content",
    "before": 1.47,
    "after": 2.56,
+   "delta": 1.09
+  },
+  {
+   "tag": "Score Attack",
+   "before": 1.15,
+   "after": 2.24,
    "delta": 1.09
   },
   {
@@ -2217,15 +2254,15 @@
    "delta": 0.95
   },
   {
-   "tag": "Card Game",
-   "before": 2.13,
-   "after": 3.06,
-   "delta": 0.94
-  },
-  {
    "tag": "Bullet Heaven",
    "before": 0.0,
    "after": 0.94,
+   "delta": 0.94
+  },
+  {
+   "tag": "Card Game",
+   "before": 2.13,
+   "after": 3.06,
    "delta": 0.94
   },
   {
@@ -2301,15 +2338,15 @@
    "delta": 0.63
   },
   {
-   "tag": "Cute",
-   "before": 10.47,
-   "after": 11.09,
-   "delta": 0.62
-  },
-  {
    "tag": "Cartoony",
    "before": 4.26,
    "after": 4.87,
+   "delta": 0.62
+  },
+  {
+   "tag": "Cute",
+   "before": 10.47,
+   "after": 11.09,
    "delta": 0.62
   },
   {
@@ -2319,15 +2356,15 @@
    "delta": 0.61
   },
   {
-   "tag": "Gun Customization",
-   "before": 0.0,
-   "after": 0.59,
-   "delta": 0.59
-  },
-  {
    "tag": "Top-Down",
    "before": 6.06,
    "after": 6.65,
+   "delta": 0.59
+  },
+  {
+   "tag": "Gun Customization",
+   "before": 0.0,
+   "after": 0.59,
    "delta": 0.59
   },
   {
@@ -2349,15 +2386,15 @@
    "delta": 0.57
   },
   {
-   "tag": "Wargame",
-   "before": 0.33,
-   "after": 0.89,
-   "delta": 0.56
-  },
-  {
    "tag": "Class-Based",
    "before": 0.16,
    "after": 0.73,
+   "delta": 0.56
+  },
+  {
+   "tag": "Wargame",
+   "before": 0.33,
+   "after": 0.89,
    "delta": 0.56
   },
   {
@@ -2367,15 +2404,15 @@
    "delta": 0.55
   },
   {
-   "tag": "Boomer Shooter",
-   "before": 0.0,
-   "after": 0.54,
-   "delta": 0.54
-  },
-  {
    "tag": "Tutorial",
    "before": 0.65,
    "after": 1.2,
+   "delta": 0.54
+  },
+  {
+   "tag": "Boomer Shooter",
+   "before": 0.0,
+   "after": 0.54,
    "delta": 0.54
   },
   {
@@ -2397,15 +2434,15 @@
    "delta": 0.49
   },
   {
-   "tag": "Dogs",
-   "before": 0.0,
-   "after": 0.48,
-   "delta": 0.48
-  },
-  {
    "tag": "Immersive Sim",
    "before": 3.27,
    "after": 3.76,
+   "delta": 0.48
+  },
+  {
+   "tag": "Dogs",
+   "before": 0.0,
+   "after": 0.48,
    "delta": 0.48
   },
   {
@@ -2415,33 +2452,21 @@
    "delta": 0.46
   },
   {
-   "tag": "Parody",
-   "before": 0.0,
-   "after": 0.45,
-   "delta": 0.45
-  },
-  {
    "tag": "Animals",
    "before": 0.0,
    "after": 0.45,
    "delta": 0.45
   },
   {
-   "tag": "3D",
-   "before": 14.57,
-   "after": 15.01,
-   "delta": 0.44
+   "tag": "Parody",
+   "before": 0.0,
+   "after": 0.45,
+   "delta": 0.45
   },
   {
    "tag": "Casual",
    "before": 20.46,
    "after": 20.9,
-   "delta": 0.44
-  },
-  {
-   "tag": "Retro",
-   "before": 5.4,
-   "after": 5.84,
    "delta": 0.44
   },
   {
@@ -2451,10 +2476,28 @@
    "delta": 0.44
   },
   {
+   "tag": "Retro",
+   "before": 5.4,
+   "after": 5.84,
+   "delta": 0.44
+  },
+  {
+   "tag": "3D",
+   "before": 14.57,
+   "after": 15.01,
+   "delta": 0.44
+  },
+  {
    "tag": "Agriculture",
    "before": 0.16,
    "after": 0.55,
    "delta": 0.39
+  },
+  {
+   "tag": "Escape Room",
+   "before": 0.0,
+   "after": 0.38,
+   "delta": 0.38
   },
   {
    "tag": "Loot",
@@ -2469,27 +2512,21 @@
    "delta": 0.38
   },
   {
-   "tag": "Escape Room",
-   "before": 0.0,
-   "after": 0.38,
-   "delta": 0.38
-  },
-  {
    "tag": "3D Fighter",
    "before": 0.0,
    "after": 0.38,
    "delta": 0.38
   },
   {
-   "tag": "Political Sim",
-   "before": 0.0,
-   "after": 0.37,
-   "delta": 0.37
-  },
-  {
    "tag": "1990's",
    "before": 1.8,
    "after": 2.17,
+   "delta": 0.37
+  },
+  {
+   "tag": "Political Sim",
+   "before": 0.0,
+   "after": 0.37,
    "delta": 0.37
   },
   {
@@ -2529,9 +2566,9 @@
    "delta": 0.34
   },
   {
-   "tag": "Life Sim",
-   "before": 2.62,
-   "after": 2.95,
+   "tag": "War",
+   "before": 0.98,
+   "after": 1.31,
    "delta": 0.33
   },
   {
@@ -2541,9 +2578,9 @@
    "delta": 0.33
   },
   {
-   "tag": "War",
-   "before": 0.98,
-   "after": 1.31,
+   "tag": "Life Sim",
+   "before": 2.62,
+   "after": 2.95,
    "delta": 0.33
   },
   {
@@ -2551,12 +2588,6 @@
    "before": 0.0,
    "after": 0.32,
    "delta": 0.32
-  },
-  {
-   "tag": "Replay Value",
-   "before": 1.8,
-   "after": 2.11,
-   "delta": 0.31
   },
   {
    "tag": "Utilities",
@@ -2571,21 +2602,27 @@
    "delta": 0.31
   },
   {
+   "tag": "Replay Value",
+   "before": 1.8,
+   "after": 2.11,
+   "delta": 0.31
+  },
+  {
    "tag": "Mouse Only",
    "before": 0.0,
    "after": 0.3,
    "delta": 0.3
   },
   {
-   "tag": "Decorating",
-   "before": 0.0,
-   "after": 0.29,
-   "delta": 0.29
-  },
-  {
    "tag": "Narrative",
    "before": 0.49,
    "after": 0.78,
+   "delta": 0.29
+  },
+  {
+   "tag": "Decorating",
+   "before": 0.0,
+   "after": 0.29,
    "delta": 0.29
   },
   {
@@ -2595,15 +2632,15 @@
    "delta": 0.28
   },
   {
-   "tag": "1980s",
-   "before": 0.98,
-   "after": 1.25,
-   "delta": 0.27
-  },
-  {
    "tag": "Organizing",
    "before": 0.0,
    "after": 0.27,
+   "delta": 0.27
+  },
+  {
+   "tag": "1980s",
+   "before": 0.98,
+   "after": 1.25,
    "delta": 0.27
   },
   {
@@ -2619,6 +2656,12 @@
    "delta": 0.25
   },
   {
+   "tag": "Traditional Roguelike",
+   "before": 0.16,
+   "after": 0.4,
+   "delta": 0.24
+  },
+  {
    "tag": "Cleaning",
    "before": 0.0,
    "after": 0.24,
@@ -2628,12 +2671,6 @@
    "tag": "Lovecraftian",
    "before": 0.49,
    "after": 0.73,
-   "delta": 0.24
-  },
-  {
-   "tag": "Traditional Roguelike",
-   "before": 0.16,
-   "after": 0.4,
    "delta": 0.24
   },
   {
@@ -2655,16 +2692,22 @@
    "delta": 0.21
   },
   {
+   "tag": "Dating Sim",
+   "before": 1.8,
+   "after": 2.0,
+   "delta": 0.2
+  },
+  {
    "tag": "Roguelike",
    "before": 7.36,
    "after": 7.57,
    "delta": 0.2
   },
   {
-   "tag": "Dating Sim",
-   "before": 1.8,
-   "after": 2.0,
-   "delta": 0.2
+   "tag": "Roguelite",
+   "before": 7.53,
+   "after": 7.71,
+   "delta": 0.19
   },
   {
    "tag": "Fast-Paced",
@@ -2673,9 +2716,9 @@
    "delta": 0.19
   },
   {
-   "tag": "Roguelite",
-   "before": 7.53,
-   "after": 7.71,
+   "tag": "Nostalgia",
+   "before": 0.0,
+   "after": 0.19,
    "delta": 0.19
   },
   {
@@ -2691,12 +2734,6 @@
    "delta": 0.19
   },
   {
-   "tag": "Nostalgia",
-   "before": 0.0,
-   "after": 0.19,
-   "delta": 0.19
-  },
-  {
    "tag": "Football (Soccer)",
    "before": 0.0,
    "after": 0.19,
@@ -2709,22 +2746,16 @@
    "delta": 0.19
   },
   {
-   "tag": "Boss Rush",
-   "before": 0.0,
-   "after": 0.18,
-   "delta": 0.18
-  },
-  {
    "tag": "Quick-Time Events",
    "before": 0.33,
    "after": 0.5,
    "delta": 0.18
   },
   {
-   "tag": "Extraction Shooter",
+   "tag": "Boss Rush",
    "before": 0.0,
-   "after": 0.17,
-   "delta": 0.17
+   "after": 0.18,
+   "delta": 0.18
   },
   {
    "tag": "Trading",
@@ -2733,13 +2764,19 @@
    "delta": 0.17
   },
   {
-   "tag": "Jump Scare",
+   "tag": "Extraction Shooter",
+   "before": 0.0,
+   "after": 0.17,
+   "delta": 0.17
+  },
+  {
+   "tag": "Offroad",
    "before": 0.0,
    "after": 0.16,
    "delta": 0.16
   },
   {
-   "tag": "Offroad",
+   "tag": "Jump Scare",
    "before": 0.0,
    "after": 0.16,
    "delta": 0.16
@@ -2751,21 +2788,21 @@
    "delta": 0.15
   },
   {
-   "tag": "Satire",
-   "before": 0.33,
-   "after": 0.48,
-   "delta": 0.15
-  },
-  {
    "tag": "Otome",
    "before": 0.16,
    "after": 0.32,
    "delta": 0.15
   },
   {
-   "tag": "Mystery Dungeon",
+   "tag": "Satire",
    "before": 0.33,
-   "after": 0.46,
+   "after": 0.48,
+   "delta": 0.15
+  },
+  {
+   "tag": "Grid-Based Movement",
+   "before": 0.98,
+   "after": 1.12,
    "delta": 0.14
   },
   {
@@ -2775,13 +2812,13 @@
    "delta": 0.14
   },
   {
-   "tag": "Grid-Based Movement",
-   "before": 0.98,
-   "after": 1.12,
+   "tag": "Mystery Dungeon",
+   "before": 0.33,
+   "after": 0.46,
    "delta": 0.14
   },
   {
-   "tag": "Espionage",
+   "tag": "Outbreak Sim",
    "before": 0.0,
    "after": 0.12,
    "delta": 0.12
@@ -2793,28 +2830,10 @@
    "delta": 0.12
   },
   {
-   "tag": "Outbreak Sim",
+   "tag": "Espionage",
    "before": 0.0,
    "after": 0.12,
    "delta": 0.12
-  },
-  {
-   "tag": "Boxing",
-   "before": 0.0,
-   "after": 0.11,
-   "delta": 0.11
-  },
-  {
-   "tag": "Party",
-   "before": 0.33,
-   "after": 0.43,
-   "delta": 0.11
-  },
-  {
-   "tag": "Dwarves",
-   "before": 0.0,
-   "after": 0.11,
-   "delta": 0.11
   },
   {
    "tag": "4 Player Local",
@@ -2829,9 +2848,21 @@
    "delta": 0.11
   },
   {
-   "tag": "Xianxia",
+   "tag": "Boxing",
    "before": 0.0,
    "after": 0.11,
+   "delta": 0.11
+  },
+  {
+   "tag": "Dwarves",
+   "before": 0.0,
+   "after": 0.11,
+   "delta": 0.11
+  },
+  {
+   "tag": "Party",
+   "before": 0.33,
+   "after": 0.43,
    "delta": 0.11
   },
   {
@@ -2841,7 +2872,19 @@
    "delta": 0.11
   },
   {
-   "tag": "Birds",
+   "tag": "Xianxia",
+   "before": 0.0,
+   "after": 0.11,
+   "delta": 0.11
+  },
+  {
+   "tag": "Philosophical",
+   "before": 0.65,
+   "after": 0.76,
+   "delta": 0.1
+  },
+  {
+   "tag": "Wuxia",
    "before": 0.0,
    "after": 0.1,
    "delta": 0.1
@@ -2853,33 +2896,21 @@
    "delta": 0.1
   },
   {
-   "tag": "Philosophical",
-   "before": 0.65,
-   "after": 0.76,
-   "delta": 0.1
-  },
-  {
    "tag": "Werewolves",
    "before": 0.0,
    "after": 0.1,
    "delta": 0.1
   },
   {
-   "tag": "Wuxia",
+   "tag": "Birds",
    "before": 0.0,
    "after": 0.1,
    "delta": 0.1
   },
   {
-   "tag": "Western",
-   "before": 0.16,
-   "after": 0.25,
-   "delta": 0.09
-  },
-  {
-   "tag": "Real Time Tactics",
-   "before": 1.15,
-   "after": 1.23,
+   "tag": "Hobby Sim",
+   "before": 0.0,
+   "after": 0.09,
    "delta": 0.09
   },
   {
@@ -2889,16 +2920,28 @@
    "delta": 0.09
   },
   {
+   "tag": "Western",
+   "before": 0.16,
+   "after": 0.25,
+   "delta": 0.09
+  },
+  {
    "tag": "Medical Sim",
    "before": 0.0,
    "after": 0.09,
    "delta": 0.09
   },
   {
-   "tag": "Hobby Sim",
-   "before": 0.0,
-   "after": 0.09,
+   "tag": "Real Time Tactics",
+   "before": 1.15,
+   "after": 1.23,
    "delta": 0.09
+  },
+  {
+   "tag": "Remake",
+   "before": 0.0,
+   "after": 0.08,
+   "delta": 0.08
   },
   {
    "tag": "Tower Defense",
@@ -2913,24 +2956,6 @@
    "delta": 0.08
   },
   {
-   "tag": "Remake",
-   "before": 0.0,
-   "after": 0.08,
-   "delta": 0.08
-  },
-  {
-   "tag": "Poker",
-   "before": 0.0,
-   "after": 0.07,
-   "delta": 0.07
-  },
-  {
-   "tag": "Foxes",
-   "before": 0.0,
-   "after": 0.07,
-   "delta": 0.07
-  },
-  {
    "tag": "Capybaras",
    "before": 0.0,
    "after": 0.07,
@@ -2943,13 +2968,7 @@
    "delta": 0.07
   },
   {
-   "tag": "Sniper",
-   "before": 0.0,
-   "after": 0.07,
-   "delta": 0.07
-  },
-  {
-   "tag": "Mahjong",
+   "tag": "Foxes",
    "before": 0.0,
    "after": 0.07,
    "delta": 0.07
@@ -2961,25 +2980,31 @@
    "delta": 0.07
   },
   {
+   "tag": "Poker",
+   "before": 0.0,
+   "after": 0.07,
+   "delta": 0.07
+  },
+  {
+   "tag": "Mahjong",
+   "before": 0.0,
+   "after": 0.07,
+   "delta": 0.07
+  },
+  {
+   "tag": "Sniper",
+   "before": 0.0,
+   "after": 0.07,
+   "delta": 0.07
+  },
+  {
    "tag": "Intentionally Awkward Controls",
    "before": 0.0,
    "after": 0.06,
    "delta": 0.06
   },
   {
-   "tag": "Sequel",
-   "before": 0.0,
-   "after": 0.05,
-   "delta": 0.05
-  },
-  {
    "tag": "Tennis",
-   "before": 0.0,
-   "after": 0.05,
-   "delta": 0.05
-  },
-  {
-   "tag": "Zoo",
    "before": 0.0,
    "after": 0.05,
    "delta": 0.05
@@ -2997,13 +3022,19 @@
    "delta": 0.05
   },
   {
-   "tag": "Football (American)",
+   "tag": "Zoo",
    "before": 0.0,
-   "after": 0.04,
-   "delta": 0.04
+   "after": 0.05,
+   "delta": 0.05
   },
   {
-   "tag": "Animation & Modeling",
+   "tag": "Sequel",
+   "before": 0.0,
+   "after": 0.05,
+   "delta": 0.05
+  },
+  {
+   "tag": "Instrumental Music",
    "before": 0.0,
    "after": 0.04,
    "delta": 0.04
@@ -3015,13 +3046,7 @@
    "delta": 0.04
   },
   {
-   "tag": "Spelling",
-   "before": 0.16,
-   "after": 0.21,
-   "delta": 0.04
-  },
-  {
-   "tag": "Language Learning",
+   "tag": "Baseball",
    "before": 0.0,
    "after": 0.04,
    "delta": 0.04
@@ -3033,28 +3058,34 @@
    "delta": 0.04
   },
   {
+   "tag": "Language Learning",
+   "before": 0.0,
+   "after": 0.04,
+   "delta": 0.04
+  },
+  {
    "tag": "Rock Music",
    "before": 0.0,
    "after": 0.04,
    "delta": 0.04
   },
   {
-   "tag": "Instrumental Music",
+   "tag": "Animation & Modeling",
    "before": 0.0,
    "after": 0.04,
    "delta": 0.04
   },
   {
-   "tag": "Baseball",
+   "tag": "Football (American)",
    "before": 0.0,
    "after": 0.04,
    "delta": 0.04
   },
   {
-   "tag": "8-bit Music",
-   "before": 0.0,
-   "after": 0.03,
-   "delta": 0.03
+   "tag": "Spelling",
+   "before": 0.16,
+   "after": 0.21,
+   "delta": 0.04
   },
   {
    "tag": "Dinosaurs",
@@ -3063,19 +3094,13 @@
    "delta": 0.03
   },
   {
-   "tag": "Audio Production",
-   "before": 0.0,
-   "after": 0.03,
-   "delta": 0.03
-  },
-  {
-   "tag": "Voice Control",
-   "before": 0.0,
-   "after": 0.03,
-   "delta": 0.03
-  },
-  {
    "tag": "Mod",
+   "before": 0.0,
+   "after": 0.03,
+   "delta": 0.03
+  },
+  {
+   "tag": "8-bit Music",
    "before": 0.0,
    "after": 0.03,
    "delta": 0.03
@@ -3087,19 +3112,13 @@
    "delta": 0.03
   },
   {
-   "tag": "Bowling",
+   "tag": "Voice Control",
    "before": 0.0,
    "after": 0.03,
    "delta": 0.03
   },
   {
-   "tag": "Typing",
-   "before": 0.49,
-   "after": 0.52,
-   "delta": 0.03
-  },
-  {
-   "tag": "Cycling",
+   "tag": "Bowling",
    "before": 0.0,
    "after": 0.03,
    "delta": 0.03
@@ -3111,25 +3130,37 @@
    "delta": 0.03
   },
   {
+   "tag": "Cycling",
+   "before": 0.0,
+   "after": 0.03,
+   "delta": 0.03
+  },
+  {
+   "tag": "Audio Production",
+   "before": 0.0,
+   "after": 0.03,
+   "delta": 0.03
+  },
+  {
    "tag": "Snowboarding",
    "before": 0.0,
    "after": 0.03,
    "delta": 0.03
   },
   {
-   "tag": "Volleyball",
-   "before": 0.0,
-   "after": 0.02,
+   "tag": "Typing",
+   "before": 0.49,
+   "after": 0.52,
+   "delta": 0.03
+  },
+  {
+   "tag": "Pinball",
+   "before": 0.16,
+   "after": 0.19,
    "delta": 0.02
   },
   {
-   "tag": "360 Video",
-   "before": 0.0,
-   "after": 0.02,
-   "delta": 0.02
-  },
-  {
-   "tag": "Hardware",
+   "tag": "Skiing",
    "before": 0.0,
    "after": 0.02,
    "delta": 0.02
@@ -3141,19 +3172,7 @@
    "delta": 0.02
   },
   {
-   "tag": "Pinball",
-   "before": 0.16,
-   "after": 0.19,
-   "delta": 0.02
-  },
-  {
-   "tag": "BMX",
-   "before": 0.0,
-   "after": 0.02,
-   "delta": 0.02
-  },
-  {
-   "tag": "Skiing",
+   "tag": "360 Video",
    "before": 0.0,
    "after": 0.02,
    "delta": 0.02
@@ -3165,22 +3184,34 @@
    "delta": 0.02
   },
   {
-   "tag": "Video Production",
-   "before": 0.0,
-   "after": 0.02,
-   "delta": 0.02
-  },
-  {
    "tag": "Musou",
    "before": 0.0,
    "after": 0.02,
    "delta": 0.02
   },
   {
-   "tag": "Classic",
+   "tag": "Hardware",
    "before": 0.0,
-   "after": 0.01,
-   "delta": 0.01
+   "after": 0.02,
+   "delta": 0.02
+  },
+  {
+   "tag": "BMX",
+   "before": 0.0,
+   "after": 0.02,
+   "delta": 0.02
+  },
+  {
+   "tag": "Video Production",
+   "before": 0.0,
+   "after": 0.02,
+   "delta": 0.02
+  },
+  {
+   "tag": "Volleyball",
+   "before": 0.0,
+   "after": 0.02,
+   "delta": 0.02
   },
   {
    "tag": "ATV",
@@ -3189,33 +3220,9 @@
    "delta": 0.01
   },
   {
-   "tag": "Trivia",
-   "before": 0.16,
-   "after": 0.18,
-   "delta": 0.01
-  },
-  {
-   "tag": "Action RTS",
-   "before": 0.49,
-   "after": 0.5,
-   "delta": 0.01
-  },
-  {
-   "tag": "TrackIR",
+   "tag": "Classic",
    "before": 0.0,
    "after": 0.01,
-   "delta": 0.01
-  },
-  {
-   "tag": "Immersive",
-   "before": 0.33,
-   "after": 0.34,
-   "delta": 0.01
-  },
-  {
-   "tag": "Looter Shooter",
-   "before": 0.49,
-   "after": 0.5,
    "delta": 0.01
   },
   {
@@ -3225,13 +3232,37 @@
    "delta": 0.01
   },
   {
-   "tag": "Violent",
-   "before": 1.64,
-   "after": 1.63,
-   "delta": -0.0
+   "tag": "Action RTS",
+   "before": 0.49,
+   "after": 0.5,
+   "delta": 0.01
   },
   {
-   "tag": "Reboot",
+   "tag": "Immersive",
+   "before": 0.33,
+   "after": 0.34,
+   "delta": 0.01
+  },
+  {
+   "tag": "TrackIR",
+   "before": 0.0,
+   "after": 0.01,
+   "delta": 0.01
+  },
+  {
+   "tag": "Looter Shooter",
+   "before": 0.49,
+   "after": 0.5,
+   "delta": 0.01
+  },
+  {
+   "tag": "Trivia",
+   "before": 0.16,
+   "after": 0.18,
+   "delta": 0.01
+  },
+  {
+   "tag": "Cricket",
    "before": 0.0,
    "after": 0.0,
    "delta": 0.0
@@ -3243,10 +3274,16 @@
    "delta": 0.0
   },
   {
-   "tag": "Cricket",
+   "tag": "Reboot",
    "before": 0.0,
    "after": 0.0,
    "delta": 0.0
+  },
+  {
+   "tag": "Violent",
+   "before": 1.64,
+   "after": 1.63,
+   "delta": -0.0
   },
   {
    "tag": "Conspiracy",
@@ -3267,27 +3304,27 @@
    "delta": -0.02
   },
   {
-   "tag": "Third Person",
-   "before": 4.58,
-   "after": 4.56,
-   "delta": -0.03
-  },
-  {
-   "tag": "Fishing",
-   "before": 0.65,
-   "after": 0.62,
-   "delta": -0.03
-  },
-  {
    "tag": "Cold War",
    "before": 0.16,
    "after": 0.13,
    "delta": -0.03
   },
   {
+   "tag": "Third Person",
+   "before": 4.58,
+   "after": 4.56,
+   "delta": -0.03
+  },
+  {
    "tag": "Game Development",
    "before": 0.16,
    "after": 0.14,
+   "delta": -0.03
+  },
+  {
+   "tag": "Fishing",
+   "before": 0.65,
+   "after": 0.62,
    "delta": -0.03
   },
   {
@@ -3315,15 +3352,15 @@
    "delta": -0.05
   },
   {
-   "tag": "Hex Grid",
-   "before": 0.49,
-   "after": 0.43,
-   "delta": -0.06
-  },
-  {
    "tag": "Card Battler",
    "before": 2.13,
    "after": 2.06,
+   "delta": -0.06
+  },
+  {
+   "tag": "Hex Grid",
+   "before": 0.49,
+   "after": 0.43,
    "delta": -0.06
   },
   {
@@ -3333,13 +3370,13 @@
    "delta": -0.07
   },
   {
-   "tag": "Archery",
+   "tag": "Horses",
    "before": 0.16,
    "after": 0.1,
    "delta": -0.07
   },
   {
-   "tag": "Horses",
+   "tag": "Archery",
    "before": 0.16,
    "after": 0.1,
    "delta": -0.07
@@ -3363,9 +3400,15 @@
    "delta": -0.08
   },
   {
-   "tag": "Mars",
+   "tag": "Skating",
    "before": 0.16,
-   "after": 0.08,
+   "after": 0.07,
+   "delta": -0.09
+  },
+  {
+   "tag": "World War I",
+   "before": 0.16,
+   "after": 0.07,
    "delta": -0.09
   },
   {
@@ -3375,7 +3418,7 @@
    "delta": -0.09
   },
   {
-   "tag": "World War I",
+   "tag": "Basketball",
    "before": 0.16,
    "after": 0.07,
    "delta": -0.09
@@ -3387,21 +3430,15 @@
    "delta": -0.09
   },
   {
-   "tag": "Skating",
+   "tag": "Mars",
    "before": 0.16,
-   "after": 0.07,
+   "after": 0.08,
    "delta": -0.09
   },
   {
    "tag": "Dragons",
    "before": 0.49,
    "after": 0.41,
-   "delta": -0.09
-  },
-  {
-   "tag": "Basketball",
-   "before": 0.16,
-   "after": 0.07,
    "delta": -0.09
   },
   {
@@ -3429,18 +3466,6 @@
    "delta": -0.11
   },
   {
-   "tag": "Photo Editing",
-   "before": 0.16,
-   "after": 0.05,
-   "delta": -0.11
-  },
-  {
-   "tag": "RTS",
-   "before": 1.31,
-   "after": 1.2,
-   "delta": -0.11
-  },
-  {
    "tag": "Local Multiplayer",
    "before": 1.64,
    "after": 1.53,
@@ -3450,6 +3475,18 @@
    "tag": "Naval",
    "before": 0.33,
    "after": 0.22,
+   "delta": -0.11
+  },
+  {
+   "tag": "RTS",
+   "before": 1.31,
+   "after": 1.2,
+   "delta": -0.11
+  },
+  {
+   "tag": "Photo Editing",
+   "before": 0.16,
+   "after": 0.05,
    "delta": -0.11
   },
   {
@@ -3465,7 +3502,19 @@
    "delta": -0.12
   },
   {
+   "tag": "Asymmetric VR",
+   "before": 0.16,
+   "after": 0.03,
+   "delta": -0.13
+  },
+  {
    "tag": "Asynchronous Multiplayer",
+   "before": 0.49,
+   "after": 0.36,
+   "delta": -0.13
+  },
+  {
+   "tag": "FMV",
    "before": 0.49,
    "after": 0.36,
    "delta": -0.13
@@ -3477,57 +3526,21 @@
    "delta": -0.13
   },
   {
-   "tag": "Tanks",
-   "before": 0.33,
-   "after": 0.2,
-   "delta": -0.13
-  },
-  {
-   "tag": "Asymmetric VR",
-   "before": 0.16,
-   "after": 0.03,
-   "delta": -0.13
-  },
-  {
    "tag": "Hockey",
    "before": 0.16,
    "after": 0.03,
    "delta": -0.13
   },
   {
-   "tag": "FMV",
-   "before": 0.49,
-   "after": 0.36,
-   "delta": -0.13
-  },
-  {
-   "tag": "Team-Based",
-   "before": 1.15,
-   "after": 1.01,
-   "delta": -0.14
-  },
-  {
-   "tag": "World War II",
+   "tag": "Tanks",
    "before": 0.33,
-   "after": 0.19,
-   "delta": -0.14
+   "after": 0.2,
+   "delta": -0.13
   },
   {
    "tag": "Science",
    "before": 0.65,
    "after": 0.51,
-   "delta": -0.14
-  },
-  {
-   "tag": "Heist",
-   "before": 0.33,
-   "after": 0.18,
-   "delta": -0.14
-  },
-  {
-   "tag": "Spectacle fighter",
-   "before": 0.49,
-   "after": 0.35,
    "delta": -0.14
   },
   {
@@ -3543,9 +3556,33 @@
    "delta": -0.14
   },
   {
+   "tag": "Team-Based",
+   "before": 1.15,
+   "after": 1.01,
+   "delta": -0.14
+  },
+  {
+   "tag": "Heist",
+   "before": 0.33,
+   "after": 0.18,
+   "delta": -0.14
+  },
+  {
    "tag": "Social Deduction",
    "before": 0.33,
    "after": 0.18,
+   "delta": -0.14
+  },
+  {
+   "tag": "World War II",
+   "before": 0.33,
+   "after": 0.19,
+   "delta": -0.14
+  },
+  {
+   "tag": "Spectacle fighter",
+   "before": 0.49,
+   "after": 0.35,
    "delta": -0.14
   },
   {
@@ -3567,6 +3604,12 @@
    "delta": -0.16
   },
   {
+   "tag": "Alternate History",
+   "before": 0.82,
+   "after": 0.65,
+   "delta": -0.17
+  },
+  {
    "tag": "On-Rails Shooter",
    "before": 0.33,
    "after": 0.16,
@@ -3579,10 +3622,10 @@
    "delta": -0.17
   },
   {
-   "tag": "Alternate History",
-   "before": 0.82,
-   "after": 0.65,
-   "delta": -0.17
+   "tag": "Zombies",
+   "before": 1.47,
+   "after": 1.29,
+   "delta": -0.18
   },
   {
    "tag": "Survival Horror",
@@ -3591,21 +3634,15 @@
    "delta": -0.18
   },
   {
-   "tag": "Dynamic Narration",
-   "before": 0.49,
-   "after": 0.31,
-   "delta": -0.18
-  },
-  {
-   "tag": "Zombies",
-   "before": 1.47,
-   "after": 1.29,
-   "delta": -0.18
-  },
-  {
    "tag": "Spaceships",
    "before": 0.33,
    "after": 0.14,
+   "delta": -0.18
+  },
+  {
+   "tag": "Dynamic Narration",
+   "before": 0.49,
+   "after": 0.31,
    "delta": -0.18
   },
   {
@@ -3627,12 +3664,6 @@
    "delta": -0.19
   },
   {
-   "tag": "MMORPG",
-   "before": 0.33,
-   "after": 0.12,
-   "delta": -0.2
-  },
-  {
    "tag": "4X",
    "before": 0.49,
    "after": 0.29,
@@ -3642,6 +3673,12 @@
    "tag": "Villain Protagonist",
    "before": 0.33,
    "after": 0.13,
+   "delta": -0.2
+  },
+  {
+   "tag": "MMORPG",
+   "before": 0.33,
+   "after": 0.12,
    "delta": -0.2
   },
   {
@@ -3705,15 +3742,15 @@
    "delta": -0.28
   },
   {
-   "tag": "Fighting",
-   "before": 0.65,
-   "after": 0.37,
-   "delta": -0.28
-  },
-  {
    "tag": "Moddable",
    "before": 0.65,
    "after": 0.38,
+   "delta": -0.28
+  },
+  {
+   "tag": "Fighting",
+   "before": 0.65,
+   "after": 0.37,
    "delta": -0.28
   },
   {
@@ -3747,13 +3784,13 @@
    "delta": -0.31
   },
   {
-   "tag": "Match 3",
-   "before": 0.65,
-   "after": 0.32,
+   "tag": "Romance",
+   "before": 2.78,
+   "after": 2.46,
    "delta": -0.33
   },
   {
-   "tag": "Pirates",
+   "tag": "Match 3",
    "before": 0.65,
    "after": 0.32,
    "delta": -0.33
@@ -3765,9 +3802,9 @@
    "delta": -0.33
   },
   {
-   "tag": "Romance",
-   "before": 2.78,
-   "after": 2.46,
+   "tag": "Pirates",
+   "before": 0.65,
+   "after": 0.32,
    "delta": -0.33
   },
   {
@@ -3789,6 +3826,12 @@
    "delta": -0.36
   },
   {
+   "tag": "Time Manipulation",
+   "before": 0.82,
+   "after": 0.45,
+   "delta": -0.37
+  },
+  {
    "tag": "MOBA",
    "before": 0.49,
    "after": 0.12,
@@ -3798,12 +3841,6 @@
    "tag": "Music-Based Procedural Generation",
    "before": 0.49,
    "after": 0.12,
-   "delta": -0.37
-  },
-  {
-   "tag": "Time Manipulation",
-   "before": 0.82,
-   "after": 0.45,
    "delta": -0.37
   },
   {
@@ -3819,19 +3856,13 @@
    "delta": -0.42
   },
   {
-   "tag": "Time Travel",
-   "before": 0.82,
-   "after": 0.38,
-   "delta": -0.44
-  },
-  {
    "tag": "Old School",
    "before": 2.95,
    "after": 2.51,
    "delta": -0.44
   },
   {
-   "tag": "Combat Racing",
+   "tag": "Time Travel",
    "before": 0.82,
    "after": 0.38,
    "delta": -0.44
@@ -3840,6 +3871,12 @@
    "tag": "Competitive",
    "before": 0.98,
    "after": 0.54,
+   "delta": -0.44
+  },
+  {
+   "tag": "Combat Racing",
+   "before": 0.82,
+   "after": 0.38,
    "delta": -0.44
   },
   {
@@ -3855,21 +3892,21 @@
    "delta": -0.46
   },
   {
-   "tag": "Transportation",
-   "before": 0.82,
-   "after": 0.36,
-   "delta": -0.46
-  },
-  {
    "tag": "Local Co-Op",
    "before": 1.8,
    "after": 1.34,
    "delta": -0.46
   },
   {
-   "tag": "Music",
-   "before": 0.98,
-   "after": 0.51,
+   "tag": "Transportation",
+   "before": 0.82,
+   "after": 0.36,
+   "delta": -0.46
+  },
+  {
+   "tag": "Lemmings",
+   "before": 0.49,
+   "after": 0.02,
    "delta": -0.47
   },
   {
@@ -3879,9 +3916,9 @@
    "delta": -0.47
   },
   {
-   "tag": "Lemmings",
-   "before": 0.49,
-   "after": 0.02,
+   "tag": "Music",
+   "before": 0.98,
+   "after": 0.51,
    "delta": -0.47
   },
   {
@@ -3957,27 +3994,27 @@
    "delta": -0.64
   },
   {
-   "tag": "Investigation",
-   "before": 2.62,
-   "after": 1.96,
-   "delta": -0.65
-  },
-  {
    "tag": "Ninja",
    "before": 0.82,
    "after": 0.17,
    "delta": -0.65
   },
   {
-   "tag": "Massively Multiplayer",
-   "before": 0.98,
-   "after": 0.32,
-   "delta": -0.67
+   "tag": "Investigation",
+   "before": 2.62,
+   "after": 1.96,
+   "delta": -0.65
   },
   {
    "tag": "Multiplayer",
    "before": 6.55,
    "after": 5.88,
+   "delta": -0.67
+  },
+  {
+   "tag": "Massively Multiplayer",
+   "before": 0.98,
+   "after": 0.32,
    "delta": -0.67
   },
   {
@@ -4023,15 +4060,15 @@
    "delta": -0.76
   },
   {
-   "tag": "Pixel Graphics",
-   "before": 11.78,
-   "after": 11.01,
-   "delta": -0.77
-  },
-  {
    "tag": "Horror",
    "before": 7.04,
    "after": 6.27,
+   "delta": -0.77
+  },
+  {
+   "tag": "Pixel Graphics",
+   "before": 11.78,
+   "after": 11.01,
    "delta": -0.77
   },
   {
@@ -4041,15 +4078,15 @@
    "delta": -0.78
   },
   {
-   "tag": "Soundtrack",
-   "before": 1.15,
-   "after": 0.34,
-   "delta": -0.81
-  },
-  {
    "tag": "Party-Based RPG",
    "before": 1.8,
    "after": 0.99,
+   "delta": -0.81
+  },
+  {
+   "tag": "Soundtrack",
+   "before": 1.15,
+   "after": 0.34,
    "delta": -0.81
   },
   {
@@ -4071,15 +4108,15 @@
    "delta": -0.86
   },
   {
-   "tag": "Space Sim",
-   "before": 1.47,
-   "after": 0.56,
-   "delta": -0.91
-  },
-  {
    "tag": "Abstract",
    "before": 2.13,
    "after": 1.21,
+   "delta": -0.91
+  },
+  {
+   "tag": "Space Sim",
+   "before": 1.47,
+   "after": 0.56,
    "delta": -0.91
   },
   {
@@ -4095,15 +4132,15 @@
    "delta": -0.94
   },
   {
-   "tag": "Multiple Endings",
-   "before": 5.89,
-   "after": 4.92,
-   "delta": -0.97
-  },
-  {
    "tag": "God Game",
    "before": 1.31,
    "after": 0.34,
+   "delta": -0.97
+  },
+  {
+   "tag": "Multiple Endings",
+   "before": 5.89,
+   "after": 4.92,
    "delta": -0.97
   },
   {
@@ -4245,15 +4282,15 @@
    "delta": -1.5
   },
   {
-   "tag": "Character Action Game",
-   "before": 1.64,
-   "after": 0.12,
-   "delta": -1.51
-  },
-  {
    "tag": "Bullet Hell",
    "before": 4.75,
    "after": 3.24,
+   "delta": -1.51
+  },
+  {
+   "tag": "Character Action Game",
+   "before": 1.64,
+   "after": 0.12,
    "delta": -1.51
   },
   {

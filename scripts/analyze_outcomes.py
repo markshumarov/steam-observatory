@@ -25,6 +25,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from sobs import config  # noqa: E402
+from sobs.fests import FESTS  # noqa: E402
 
 GAMES = config.OUT_DIR / "nextfest_games.jsonl"
 OUT_JSON = config.OUT_DIR / "analysis_outcomes.json"
@@ -135,11 +136,13 @@ def tag_trend(by_fest: dict[str, list[dict]], recent: list[str], base: str) -> l
 
 def main() -> int:
     by_fest = load()
-    order = ["jun2021", "oct2021", "feb2022", "jun2022", "oct2022", "feb2023", "jun2023",
-             "oct2023", "feb2024", "jun2024", "oct2024", "jun2025", "oct2025", "feb2026",
-             "jun2026", "oct2026"]
+    # список изданий — из единого календаря (src/sobs/fests.py): жёсткий список
+    # уже приводил к пропаже февраля 2025 на графике составов
+    order = [f.slug for f in FESTS]
     editions = {f: edition_stats(by_fest[f]) for f in order if f in by_fest}
     tags_out = tag_outcomes(by_fest)
+    # базовая линия для тренда тегов: только издания с полным составом
+    # (совпадает с quality == "full" в site/data/fests.json)
     full = [f for f in ("oct2024", "jun2025", "oct2025", "feb2026", "jun2026", "oct2026")
             if f in by_fest]
     trend = tag_trend(by_fest, full, "jun2021")

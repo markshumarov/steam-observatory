@@ -50,11 +50,11 @@
   },
   {
    "slug": "oct2021",
-   "games": 598
+   "games": 708
   },
   {
    "slug": "feb2022",
-   "games": 324
+   "games": 402
   },
   {
    "slug": "jun2022",
@@ -62,19 +62,19 @@
   },
   {
    "slug": "oct2022",
-   "games": 301
+   "games": 328
   },
   {
    "slug": "feb2023",
-   "games": 335
+   "games": 336
   },
   {
    "slug": "jun2023",
-   "games": 392
+   "games": 393
   },
   {
    "slug": "oct2023",
-   "games": 301
+   "games": 308
   },
   {
    "slug": "feb2024",
@@ -87,6 +87,10 @@
   {
    "slug": "oct2024",
    "games": 3197
+  },
+  {
+   "slug": "feb2025",
+   "games": 300
   },
   {
    "slug": "jun2025",
@@ -116,7 +120,7 @@
    "median_copies": 3178,
    "share_under_1000": 0.327,
    "share_no_reviews": 0.193,
-   "months": 57.4
+   "months": 57.5
   },
   {
    "slug": "oct2024",
@@ -132,7 +136,7 @@
    "median_copies": 622,
    "share_under_1000": 0.569,
    "share_no_reviews": 0.268,
-   "months": 13.3
+   "months": 13.4
   },
   {
    "slug": "oct2025",
@@ -140,7 +144,7 @@
    "median_copies": 591,
    "share_under_1000": 0.581,
    "share_no_reviews": 0.274,
-   "months": 10.3
+   "months": 10.4
   },
   {
    "slug": "feb2026",
@@ -148,7 +152,7 @@
    "median_copies": 462,
    "share_under_1000": 0.614,
    "share_no_reviews": 0.387,
-   "months": 5.9
+   "months": 6.0
   },
   {
    "slug": "jun2026",
@@ -156,7 +160,7 @@
    "median_copies": 304,
    "share_under_1000": 0.666,
    "share_no_reviews": 0.45,
-   "months": 2.6
+   "months": 2.7
   }
  ],
  "attention": {

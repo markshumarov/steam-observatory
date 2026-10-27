@@ -57,6 +57,10 @@ def main() -> int:
         ("обогащение восстановленных составов", ["scripts/enrich_lineup_ids.py"]),
         ("единый датасет", ["scripts/build_dataset.py"]),
         ("данные сайта", ["scripts/build_site_data.py"]),
+        # исходы по изданиям (тираж, отзывы) и данные страницы-разбора зависят
+        # от свежего датасета: без них на графике составов остаются старые числа
+        ("исходы по изданиям", ["scripts/analyze_outcomes.py"]),
+        ("данные страницы-разбора", ["scripts/build_story_data.py"]),
         ("отчёт по тегам", ["scripts/report_tags.py", args.slug, "--top", "15"]),
     ]
 

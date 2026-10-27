@@ -144,17 +144,42 @@ if gains_file.exists():
         "source": "PlayRecon fest board; tier thresholds from How To Market A Game",
     }
 
+# составы берём из site/data/fests.json: его пишет build_site_data.py из свежего
+# датасета, а analysis_outcomes.json может отставать — из-за этого на графике
+# составов висели старые числа (598 вместо 708) и не было февраля 2025
+fests_file = SITE / "fests.json"
+fests_final: dict[str, int] = {}
+if fests_file.exists():
+    for row in json.loads(fests_file.read_text(encoding="utf-8")):
+        if row.get("n_final"):
+            fests_final[row["slug"]] = row["n_final"]
+    stale = [
+        f"{s}: fests.json {n}, outcomes {(outcomes['editions'].get(s) or {}).get('n')}"
+        for s, n in fests_final.items()
+        if (outcomes["editions"].get(s) or {}).get("n") not in (None, n)
+    ]
+    if stale:
+        print("ВНИМАНИЕ: analysis_outcomes.json отстал от fests.json, пересоберите его:")
+        for line in stale:
+            print("  " + line)
+
+
+def fest_games(slug: str) -> int | None:
+    if slug in fests_final:
+        return fests_final[slug]
+    return (outcomes["editions"].get(slug) or {}).get("n")
+
+
+supply_slugs = list(fests_final) or list(outcomes.get("editions", {}))
+
 publish = {
     "as_of": "2026-10-26",
     "tiers": tiers_block,
-    "supply": [
-        {"slug": slug, "games": (outcomes["editions"].get(slug) or {}).get("n")}
-        for slug in outcomes.get("editions", {})
-    ],
+    "supply": [{"slug": slug, "games": fest_games(slug)} for slug in supply_slugs],
     "editions": [
         {
             "slug": slug,
-            "games": (outcomes["editions"].get(slug) or {}).get("n"),
+            "games": fest_games(slug),
             "median_copies": (outcomes["editions"].get(slug) or {}).get("copies_median"),
             "share_under_1000": (outcomes["editions"].get(slug) or {}).get("share_copies_under_1000"),
             "share_no_reviews": (outcomes["editions"].get(slug) or {}).get("share_no_reviews"),

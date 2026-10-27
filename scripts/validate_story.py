@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import functools
 import http.server
+import json
 import socketserver
 import sys
 import threading
@@ -53,6 +54,35 @@ def check(name: str, ok: bool, detail: str = "") -> None:
         failures.append(name)
 
 
+def static_supply_check() -> None:
+    """Составы на странице не должны расходиться с site/data/fests.json."""
+    story_file = SITE / "data" / "story.json"
+    fests_file = SITE / "data" / "fests.json"
+    if not (story_file.exists() and fests_file.exists()):
+        check("составы совпадают с fests.json", False, "нет файлов данных")
+        return
+    supply = {
+        r["slug"]: r["games"]
+        for r in (json.loads(story_file.read_text(encoding="utf-8")).get("supply") or [])
+    }
+    fresh = {
+        r["slug"]: r["n_final"]
+        for r in json.loads(fests_file.read_text(encoding="utf-8"))
+        if r.get("n_final")
+    }
+    diff = {s: (supply.get(s), fresh[s]) for s in fresh if supply.get(s) != fresh[s]}
+    check(
+        "составы совпадают с fests.json",
+        not diff,
+        "; ".join(f"{s}: {a} вместо {b}" for s, (a, b) in diff.items())
+        if diff
+        else f"изданий={len(fresh)}",
+    )
+
+
+static_supply_check()
+
+
 with sync_playwright() as pw:
     browser = pw.chromium.launch(channel="msedge", headless=True)
     page = browser.new_page(viewport={"width": 1280, "height": 1000})
@@ -71,6 +101,17 @@ with sync_playwright() as pw:
 
     tier_bars = page.eval_on_selector_all("#chart-tiers svg rect", "els => els.length")
     check("в графике тиров четыре полосы", tier_bars >= 4, f"полос={tier_bars}")
+
+    # число полос в графике составов = число изданий в fests.json: пропажа
+    # издания (как февраль 2025) раньше проходила незамеченной
+    supply_bars = page.eval_on_selector_all("#chart-supply svg rect", "els => els.length")
+    editions_in_fests = len({
+        r["slug"]
+        for r in json.loads((SITE / "data" / "fests.json").read_text(encoding="utf-8"))
+        if r.get("n_final")
+    })
+    check("в графике составов полоса на каждое издание", supply_bars == editions_in_fests,
+          f"полос={supply_bars}, изданий={editions_in_fests}")
 
     tiers_text = page.text_content("#take-tiers") or ""
     check("тиры описаны в выводах", "Diamond" in tiers_text and "Silver" in tiers_text,
