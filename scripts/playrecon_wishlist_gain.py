@@ -189,7 +189,29 @@ def main() -> int:
         "over_50k": sum(1 for v in values if v >= 50_000),
         "tiers": tiers,
         "tier_negatives": negatives,
+        "edge_below": sum(1 for v in values if 9_000 <= v < 10_000),
+        "edge_above": sum(1 for v in values if 10_000 <= v < 11_000),
+        "share_median": (
+            int(round(100 * st.median([g["gain"] / g["wl_est"] for g in gains
+                                       if g.get("wl_est") and g["gain"] > 0])))
+            if gains else None
+        ),
+        "share_over_half": sum(1 for g in gains
+                               if g.get("wl_est") and g["gain"] / g["wl_est"] > 0.5),
         "top": gains[:25],
+        "all": [
+            {
+                "name": g["name"],
+                "gain": g["gain"],
+                "wl_rank": g["wl_rank"],
+                "wl_jump": g["wl_jump"],
+                "wl_est": g["wl_est"],
+                "wl_est_before": g["wl_est_before"],
+                "wl_rank_before": g["wl_rank_before"],
+                "peak": g["peak"],
+            }
+            for g in gains
+        ],
         "notes": [
             "прирост = текущая оценка минус оценка на месте до фестиваля (по кривой из этой же таблицы)",
             "оценки вишлистов PlayRecon — модельные, погрешность ±20–30%",

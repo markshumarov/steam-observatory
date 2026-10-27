@@ -19,6 +19,7 @@ export const S = {
     tiers_b1: "<b>{diamond}</b> demos earned 10,000+ wishlists (💎 Diamond) — {diamond_share}% of those we could measure.",
     tiers_b2: "The middle is crowded: <b>{silver}</b> demos ({silver_share}%) landed in Silver with 1,000–6,999 wishlists.",
     tiers_b3: "<b>{bronze}</b> demos ({bronze_share}%) stayed under 1,000 — including <b>{negatives}</b> whose wishlist estimate fell during the festival.",
+    tiers_b4: "More Diamonds than Golds looks like a bug, but it is arithmetic: Gold is a 3,000-wide band while Diamond runs unbounded upward, and the count decays smoothly across the 10,000 line ({edge_below} demos landed in 9,000–9,999, {edge_above} in 10,000–10,999). An independent developer survey by How To Market A Game (February 2026, n≈170) implies the same ~2:1 ratio, and no demo here earned more than its current wishlist total — the median festival gain is {share_median}% of a demo's total.",
     tiers_axis: "demos",
     tiers_legend: "wishlists earned during the festival",
 
@@ -109,6 +110,7 @@ export const S = {
     tiers_b1: "<b>{diamond}</b> демо набрали 10 000+ вишлистов (💎 Diamond) — {diamond_share}% от тех, где получилось измерить.",
     tiers_b2: "Середина переполнена: <b>{silver}</b> демо ({silver_share}%) попали в Silver — это 1 000–6 999 вишлистов.",
     tiers_b3: "<b>{bronze}</b> демо ({bronze_share}%) не добрали и 1 000 — включая <b>{negatives}</b>, у которых оценка вишлистов за фестиваль упала.",
+    tiers_b4: "Бриллиантов больше, чем золота, — похоже на ошибку, но это арифметика: Gold — полоса шириной 3 000, а Diamond тянется без верхней границы, и число игр убывает плавно через отметку 10 000 ({edge_below} демо попало в 9 000–9 999, {edge_above} — в 10 000–10 999). Независимый опрос разработчиков How To Market A Game (февраль 2026, n≈170) даёт то же соотношение ~2:1, и ни одно демо здесь не набрало больше, чем у него вишлистов сейчас: медианный прирост за фестиваль — {share_median}% от общего числа.",
     tiers_axis: "демо",
     tiers_legend: "вишлистов набрано за фестиваль",
 

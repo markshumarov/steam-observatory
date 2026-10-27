@@ -131,6 +131,11 @@ function renderTiers() {
       bronze_share: share("bronze"),
       negatives: fmt(block.negatives),
     }),
+    t("tiers_b4", {
+      edge_below: fmt(block.edge_below),
+      edge_above: fmt(block.edge_above),
+      share_median: block.share_median,
+    }),
   ]
     .map((x) => `<li>${x}</li>`)
     .join("");

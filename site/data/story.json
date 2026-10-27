@@ -32,6 +32,10 @@
    }
   ],
   "negatives": 15,
+  "edge_below": 5,
+  "edge_above": 7,
+  "share_median": 12,
+  "share_over_half": 12,
   "total": 461,
   "median_gain": 2983,
   "total_gain": 3708958,

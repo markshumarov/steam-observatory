@@ -132,6 +132,10 @@ if gains_file.exists():
     tiers_block = {
         "tiers": gains_data.get("tiers"),
         "negatives": gains_data.get("tier_negatives"),
+        "edge_below": gains_data.get("edge_below"),
+        "edge_above": gains_data.get("edge_above"),
+        "share_median": gains_data.get("share_median"),
+        "share_over_half": gains_data.get("share_over_half"),
         "total": gains_data.get("rows_with_jump"),
         "median_gain": gains_data.get("median_gain"),
         "total_gain": gains_data.get("total_gain_top1000"),
