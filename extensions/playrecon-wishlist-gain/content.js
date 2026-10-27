@@ -12,6 +12,9 @@
 (() => {
   const WL_RE =
     /#([\d\s,]+)(?:([\u25b2\u25bc])\s*([\d\s,]+))?\s*\u2248\s*([\d.,]+)\s*([KM]?)/;
+  // у топовых игр PlayRecon показывает только место и прыжок (#34▲12), без ≈N:
+  // такие строки тоже нужны — число вишлистов для них берём из Gamalytic
+  const WL_RE_RANK = /#([\d\s,]+)(?:([\u25b2\u25bc])\s*([\d\s,]+))?/;
   const MULT = { K: 1e3, M: 1e6, "": 1 };
   const COL = "Wishlist change";
   // вторая колонка: тот же прирост, но в процентах от текущего числа вишлистов
@@ -62,8 +65,18 @@
   const fmtFull = (value) => value.toLocaleString("ru-RU");
 
   function parseWishlists(cell) {
-    const m = WL_RE.exec(cell?.textContent || "");
-    if (!m) return null;
+    const text = cell?.textContent || "";
+    const m = WL_RE.exec(text);
+    if (!m) {
+      const loose = WL_RE_RANK.exec(text);
+      if (!loose) return null;
+      const arrow = loose[2];
+      return {
+        rank: toInt(loose[1]),
+        jump: arrow ? (toInt(loose[3]) || 0) * (arrow === "\u25b2" ? 1 : -1) : 0,
+        est: null, // оценки нет: подставим данные Gamalytic
+      };
+    }
     const arrow = m[2];
     // запятая — разделитель тысяч: 9,503 и 53,800 надо читать как 9503 и 53800
     const raw = parseFloat(String(m[4]).replace(/,/g, ""));
@@ -314,15 +327,18 @@
         td.dataset.gain = String(row.gain);
         td.dataset.tier = tier.key;
         td.dataset.jump = String(row.wl.jump);
-        const ratio = row.estBefore ? row.wl.est / row.estBefore : null;
+        const now = row.gal ?? row.wl.est;
+        const ratio = row.estBefore && now ? now / row.estBefore : null;
         if (ratio) td.dataset.ratio = String(ratio);
         td.title =
           `${tier.medal} ${tier.key} (${tier.from === null ? `0–${tier.to.toLocaleString("ru-RU")}`
             : tier.to === null ? `${tier.from.toLocaleString("ru-RU")}+`
             : `${tier.from.toLocaleString("ru-RU")}–${tier.to.toLocaleString("ru-RU")}`} вишлистов за фестиваль)\n` +
-          `#${row.wl.rank}▲${row.wl.jump} ≈${fmtFull(row.gal ?? row.wl.est)} вишлистов сейчас` +
-          (row.gal ? " (Gamalytic)" : " (PlayRecon)") + "\n" +
-          `было на #${row.rankBefore}: ≈${fmtFull(row.estBefore)}\n` +
+          `#${row.wl.rank}▲${row.wl.jump} ` +
+          (now
+            ? `≈${fmtFull(now)} вишлистов сейчас (${row.gal ? "Gamalytic" : "PlayRecon"})`
+            : "вишлисты сейчас: нет данных") + "\n" +
+          (row.estBefore ? `было на #${row.rankBefore}: ≈${fmtFull(row.estBefore)}\n` : "") +
           `оценка прироста: ${fmtFull(row.gain)} (±20–30%)` +
           (ratio ? `\nрост: ×${ratio.toFixed(2)} за фестиваль` : "");
       }
