@@ -216,7 +216,7 @@ try:
         check("у колонки процента есть отступ слева", pct_pad not in ("0px", "0"),
               f"padding={pct_pad}")
         pct_border = page.eval_on_selector("td.pr-pct", "e => getComputedStyle(e).borderLeftWidth")
-        check("колонка процента отделена линией", pct_border not in ("0px", "0"),
+        check("лишней линии-разделителя нет", pct_border in ("0px", "0"),
               f"border={pct_border}")
 
         last_has_data = page.eval_on_selector(
