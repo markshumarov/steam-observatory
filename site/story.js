@@ -74,6 +74,68 @@ function renderSources() {
   </table>`;
 }
 
+// --- 0. Тиры вишлистов --------------------------------------------------
+function renderTiers() {
+  const block = story.tiers || {};
+  const tiers = block.tiers || [];
+  if (!tiers.length) return;
+  const total = block.total || tiers.reduce((sum, x) => sum + x.games, 0);
+  const pick = (key) => tiers.find((x) => x.key === key) || { games: 0 };
+  const share = (key) => ((100 * pick(key).games) / total).toFixed(1);
+
+  el("#k-tiers").textContent = t("tiers_kicker", { share: share("diamond") });
+
+  const COLORS = { diamond: "#7dd3fc", gold: "#fbbf24", silver: "#cbd5e1", bronze: "#d97706" };
+  const rangeLabel = (x) =>
+    x.to == null
+      ? `${fmt(x.from)}+`
+      : x.from == null
+        ? `0–${fmt(x.to)}`
+        : `${fmt(x.from)}–${fmt(x.to)}`;
+
+  const rows = tiers.map((x) => ({
+    label: `${x.medal} ${x.key[0].toUpperCase()}${x.key.slice(1)} · ${rangeLabel(x)}`,
+    games: x.games,
+    share: (100 * x.games) / total,
+    color: COLORS[x.key] || T.accent,
+  }));
+
+  el("#chart-tiers").replaceChildren(
+    plot({
+      height: 250,
+      marginLeft: 210,
+      marginRight: 96,
+      x: { grid: true, label: t("tiers_axis") },
+      y: { label: null, domain: rows.map((r) => r.label) },
+      marks: [
+        Plot.barX(rows, { x: "games", y: "label", fill: "color", tip: true }),
+        Plot.text(rows, {
+          x: "games",
+          y: "label",
+          text: (d) => `${fmt(d.games)} · ${d.share.toFixed(1)}%`,
+          dx: 6,
+          textAnchor: "start",
+          fill: T.muted,
+          fontSize: 11,
+        }),
+        Plot.ruleX([0], { stroke: T.grid }),
+      ],
+    })
+  );
+
+  el("#take-tiers").innerHTML = [
+    t("tiers_b1", { diamond: fmt(pick("diamond").games), diamond_share: share("diamond") }),
+    t("tiers_b2", { silver: fmt(pick("silver").games), silver_share: share("silver") }),
+    t("tiers_b3", {
+      bronze: fmt(pick("bronze").games),
+      bronze_share: share("bronze"),
+      negatives: fmt(block.negatives),
+    }),
+  ]
+    .map((x) => `<li>${x}</li>`)
+    .join("");
+}
+
 // --- 1. Предложение -----------------------------------------------------
 function renderSupply() {
   const rows = (story.supply || []).map((s) => {
@@ -308,6 +370,7 @@ function renderTakeaways() {
 
 function renderAll() {
   applyStatic();
+  renderTiers();
   renderSupply();
   renderAttention();
   renderWishlists();

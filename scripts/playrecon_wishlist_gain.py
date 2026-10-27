@@ -136,6 +136,32 @@ def main() -> int:
     values = [g["gain"] for g in gains if g["gain"] > 0]
     total = sum(values)
 
+    # тиры из бенчмарка How To Market A Game: сколько вишлистов игра набирает за фестиваль
+    TIERS = [
+        ("diamond", "\U0001f48e", 10_000, None),
+        ("gold", "\U0001f947", 7_000, 9_999),
+        ("silver", "\U0001f948", 1_000, 6_999),
+        ("bronze", "\U0001f949", None, 999),
+    ]
+
+    def tier_of(value: int) -> str:
+        if value >= 10_000:
+            return "diamond"
+        if value >= 7_000:
+            return "gold"
+        if value >= 1_000:
+            return "silver"
+        return "bronze"
+
+    tier_counts = {name: 0 for name, _e, _lo, _hi in TIERS}
+    for g in gains:
+        tier_counts[tier_of(g["gain"])] += 1
+    tiers = [
+        {"key": key, "medal": medal, "from": lo, "to": hi, "games": tier_counts[key]}
+        for key, medal, lo, hi in TIERS
+    ]
+    negatives = sum(1 for g in gains if g["gain"] < 0)
+
     # связан ли прирост вишлистов с игроками в демо
     pairs = [(g["gain"], g["peak"]) for g in gains if g["gain"] > 0 and g["peak"]]
     corr = None
@@ -161,6 +187,8 @@ def main() -> int:
         "top25_quiet": len(quiet),
         "over_10k": sum(1 for v in values if v >= 10_000),
         "over_50k": sum(1 for v in values if v >= 50_000),
+        "tiers": tiers,
+        "tier_negatives": negatives,
         "top": gains[:25],
         "notes": [
             "прирост = текущая оценка минус оценка на месте до фестиваля (по кривой из этой же таблицы)",
@@ -178,6 +206,20 @@ def main() -> int:
                   f"суммарно по таблице ≈ **{total:,}**".replace(",", " "))
     md.append("")
     md.append(f"Прирост ≥10 000 вишлистов: {report['over_10k']} игр; ≥50 000: {report['over_50k']} игр.")
+    total_games = len(gains)
+    md.append("")
+    md.append("## Тиры (бенчмарк How To Market A Game)")
+    md.append("")
+    md.append("| Тир | Вишлистов за фестиваль | Игр | Доля |")
+    md.append("|---|---|---|---|")
+    for row in tiers:
+        rng = (f"{row['from']:,}+" if row["to"] is None else
+               f"{row['from']:,}–{row['to']:,}" if row["from"] else f"0–{row['to']:,}")
+        md.append(f"| {row['medal']} {row['key'].title()} | {rng.replace(',', ' ')} | {row['games']} | "
+                  f"{100 * row['games'] / total_games:.1f}% |")
+    md.append("")
+    md.append(f"Всего игр с данными о прыжке: {total_games}; "
+              f"из них с отрицательной оценкой прироста: {negatives} (отнесены к Bronze).")
     md.append(f"Корреляция «прирост вишлистов ↔ пик игроков в демо»: **{corr}** "
               f"(n={len(pairs)}). Из 25 крупнейших приростов у {len(quiet)} игр пик демо ниже 1 000 игроков.")
     md.append("")

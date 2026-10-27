@@ -78,7 +78,30 @@ try:
         check("ячейки добавлены в строки", cells > 500, f"ячеек={cells}")
 
         first = page.eval_on_selector("td.pr-gain", "e => e.textContent.trim()")
-        check("первая строка посчитана", first.startswith("+"), f"значение={first}")
+        check("первая строка посчитана", first.startswith("\U0001f48e"), f"значение={first}")
+
+        header_text = page.eval_on_selector("th[data-pr-gain]", "e => e.textContent.trim()")
+        check("колонка называется Wishlist change", header_text.startswith("Wishlist change"),
+              header_text)
+
+        tier_first = page.eval_on_selector("td.pr-gain", "e => e.dataset.tier")
+        check("медалька соответствует тиру", tier_first == "diamond", f"тир={tier_first}")
+
+        bronze = page.evaluate(
+            """() => {
+                const cell = Array.from(document.querySelectorAll('td.pr-gain'))
+                    .find(c => c.dataset.tier === 'bronze');
+                return cell ? { text: cell.textContent.trim(), tier: cell.dataset.tier } : null;
+            }"""
+        )
+        check("у бронзового тира медалька 🥉",
+              bool(bronze) and bronze["text"].startswith("\U0001f949"), str(bronze))
+
+        tiers_seen = page.evaluate(
+            """() => Array.from(new Set(Array.from(document.querySelectorAll('td.pr-gain'))
+                .map(c => c.dataset.tier).filter(Boolean))).sort()"""
+        )
+        check("в таблице есть все четыре тира", len(tiers_seen) == 4, str(tiers_seen))
 
         title = page.eval_on_selector("td.pr-gain", "e => e.title")
         check("в подсказке есть оговорка о погрешности", "±20–30%" in title,

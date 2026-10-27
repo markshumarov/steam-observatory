@@ -1,5 +1,44 @@
 {
  "as_of": "2026-10-26",
+ "tiers": {
+  "tiers": [
+   {
+    "key": "diamond",
+    "medal": "💎",
+    "from": 10000,
+    "to": null,
+    "games": 85
+   },
+   {
+    "key": "gold",
+    "medal": "🥇",
+    "from": 7000,
+    "to": 9999,
+    "games": 29
+   },
+   {
+    "key": "silver",
+    "medal": "🥈",
+    "from": 1000,
+    "to": 6999,
+    "games": 241
+   },
+   {
+    "key": "bronze",
+    "medal": "🥉",
+    "from": null,
+    "to": 999,
+    "games": 106
+   }
+  ],
+  "negatives": 15,
+  "total": 461,
+  "median_gain": 2983,
+  "total_gain": 3708958,
+  "corr_players": 0.692,
+  "quiet_top25": 11,
+  "source": "PlayRecon fest board; tier thresholds from How To Market A Game"
+ },
  "supply": [
   {
    "slug": "jun2021",

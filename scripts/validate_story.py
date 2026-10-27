@@ -63,13 +63,21 @@ with sync_playwright() as pw:
     page.wait_for_timeout(1200)
 
     svg = page.eval_on_selector_all(".chart svg", "els => els.length")
-    check("графики нарисованы", svg >= 5, f"svg={svg}")
+    check("графики нарисованы", svg >= 6, f"svg={svg}")
 
     kickers = page.eval_on_selector_all(".kicker", "els => els.map(e => e.textContent.trim())")
     check("крупные числа заполнены", all(k and k not in ("—",) for k in kickers), str(kickers))
+    check("первый блок — тиры вишлистов", kickers and kickers[0].endswith("%"), f"первое={kickers[:1]}")
+
+    tier_bars = page.eval_on_selector_all("#chart-tiers svg rect", "els => els.length")
+    check("в графике тиров четыре полосы", tier_bars >= 4, f"полос={tier_bars}")
+
+    tiers_text = page.text_content("#take-tiers") or ""
+    check("тиры описаны в выводах", "Diamond" in tiers_text and "Silver" in tiers_text,
+          tiers_text[:70])
 
     takes = page.eval_on_selector_all(".takeaways li", "els => els.length")
-    check("выводы под блоками есть", takes >= 9, f"пунктов={takes}")
+    check("выводы под блоками есть", takes >= 12, f"пунктов={takes}")
 
     items = page.eval_on_selector_all("#checklist li", "els => els.length")
     check("список «что делать» из 5 пунктов", items == 5, f"пунктов={items}")

@@ -4,12 +4,23 @@ export const S = {
     h1: "Next Fest grew 12× in five years. Attention did not.",
     lede:
       "What the October 2026 lineup, the demo board and wishlist conversion say about shipping a demo today. Everything is dated 26 October 2026 and lists its source.",
+    nav_tiers: "Tiers",
     nav_supply: "Supply",
     nav_attention: "Attention",
     nav_wishlists: "Wishlists",
     nav_cozy: "Cozy",
     nav_takeaways: "Takeaways",
     nav_data: "All data",
+
+    tiers_title: "Every fifth demo earns 10,000+ wishlists",
+    tiers_hint:
+      "How many wishlists each demo earned during the festival, split into the tiers used by How To Market A Game (💎 10,000+, 🥇 7,000–9,999, 🥈 1,000–6,999, 🥉 0–999). Source: PlayRecon festival board, {total} games with a recorded wishlist-chart jump. The board is the top 1,000 demos by players, so successful games are over-represented here.",
+    tiers_kicker: "{share}%",
+    tiers_b1: "<b>{diamond}</b> demos earned 10,000+ wishlists (💎 Diamond) — {diamond_share}% of those we could measure.",
+    tiers_b2: "The middle is crowded: <b>{silver}</b> demos ({silver_share}%) landed in Silver with 1,000–6,999 wishlists.",
+    tiers_b3: "<b>{bronze}</b> demos ({bronze_share}%) stayed under 1,000 — including <b>{negatives}</b> whose wishlist estimate fell during the festival.",
+    tiers_axis: "demos",
+    tiers_legend: "wishlists earned during the festival",
 
     supply_title: "The lineup is twelve times bigger than in 2021",
     supply_hint:
@@ -83,12 +94,23 @@ export const S = {
     h1: "Next Fest вырос в 12 раз за пять лет. Внимание — нет.",
     lede:
       "Что состав октября 2026, таблица демо и конверсия вишлистов говорят о выпуске демо сегодня. Все данные на 26 октября 2026, у каждой цифры указан источник.",
+    nav_tiers: "Тиры",
     nav_supply: "Предложение",
     nav_attention: "Внимание",
     nav_wishlists: "Вишлисты",
     nav_cozy: "Cozy",
     nav_takeaways: "Выводы",
     nav_data: "Все данные",
+
+    tiers_title: "Каждое пятое демо набирает 10 000+ вишлистов",
+    tiers_hint:
+      "Сколько вишлистов каждая игра набрала за фестиваль — в тирах How To Market A Game (💎 10 000+, 🥇 7 000–9 999, 🥈 1 000–6 999, 🥉 0–999). Источник: таблица фестиваля PlayRecon, {total} игр с зафиксированным прыжком в топе вишлистов. Это топ-1000 демо по игрокам, поэтому успешные игры здесь представлены с избытком.",
+    tiers_kicker: "{share}%",
+    tiers_b1: "<b>{diamond}</b> демо набрали 10 000+ вишлистов (💎 Diamond) — {diamond_share}% от тех, где получилось измерить.",
+    tiers_b2: "Середина переполнена: <b>{silver}</b> демо ({silver_share}%) попали в Silver — это 1 000–6 999 вишлистов.",
+    tiers_b3: "<b>{bronze}</b> демо ({bronze_share}%) не добрали и 1 000 — включая <b>{negatives}</b>, у которых оценка вишлистов за фестиваль упала.",
+    tiers_axis: "демо",
+    tiers_legend: "вишлистов набрано за фестиваль",
 
     supply_title: "Состав в двенадцать раз больше, чем в 2021-м",
     supply_hint:

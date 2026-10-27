@@ -124,8 +124,25 @@ board = story.get("blocks", {}).get("board", {})
 our_ccu = story.get("blocks", {}).get("our_ccu", {})
 board_peaks = sorted([(r.get("peak") or 0) for r in board.get("games") or []], reverse=True)
 
+# тиры How To Market A Game по вишлистам, набранным за фестиваль
+gains_file = CACHE / "wishlist_gains.json"
+tiers_block = None
+if gains_file.exists():
+    gains_data = json.loads(gains_file.read_text(encoding="utf-8"))
+    tiers_block = {
+        "tiers": gains_data.get("tiers"),
+        "negatives": gains_data.get("tier_negatives"),
+        "total": gains_data.get("rows_with_jump"),
+        "median_gain": gains_data.get("median_gain"),
+        "total_gain": gains_data.get("total_gain_top1000"),
+        "corr_players": gains_data.get("corr_gain_vs_players"),
+        "quiet_top25": gains_data.get("top25_quiet"),
+        "source": "PlayRecon fest board; tier thresholds from How To Market A Game",
+    }
+
 publish = {
     "as_of": "2026-10-26",
+    "tiers": tiers_block,
     "supply": [
         {"slug": slug, "games": (outcomes["editions"].get(slug) or {}).get("n")}
         for slug in outcomes.get("editions", {})

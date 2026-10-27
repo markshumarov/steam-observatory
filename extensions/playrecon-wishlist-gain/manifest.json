@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PlayRecon wishlist gain",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Adds an estimated wishlist gain column to the PlayRecon Next Fest table, with sorting.",
   "content_scripts": [
     {

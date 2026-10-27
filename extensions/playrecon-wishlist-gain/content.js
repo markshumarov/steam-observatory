@@ -13,7 +13,17 @@
   const WL_RE =
     /#([\d\s,]+)(?:([\u25b2\u25bc])\s*([\d\s,]+))?\s*\u2248\s*([\d.,]+)\s*([KM]?)/;
   const MULT = { K: 1e3, M: 1e6, "": 1 };
-  const COL = "Δ вишлисты";
+  const COL = "Wishlist change";
+  // тиры по числу вишлистов, набранных за фестиваль (бенчмарк How To Market A Game):
+  // Diamond 10 000+, Gold 7 000–9 999, Silver 1 000–6 999, Bronze 0–999
+  const TIERS = [
+    { key: "diamond", medal: "\u{1F48E}", from: 10_000, to: null },
+    { key: "gold", medal: "\u{1F947}", from: 7_000, to: 9_999 },
+    { key: "silver", medal: "\u{1F948}", from: 1_000, to: 6_999 },
+    { key: "bronze", medal: "\u{1F949}", from: null, to: 999 },
+  ];
+  const tierOf = (gain) =>
+    TIERS.find((t) => gain >= (t.from ?? -Infinity) && gain <= (t.to ?? Infinity)) || TIERS[3];
   // режимы сортировки: 0 — исходный порядок, 1/2 — абсолютный прирост ↓/↑,
   // 3 — рост в разах ↓, 4 — прыжок в топе (▲) ↓
   const MODES = ["", "↓", "↑", "×↓", "▲↓"];
@@ -165,8 +175,9 @@
       const th = document.createElement("th");
       th.dataset.prGain = "1";
       th.title =
-        "Оценка прироста вишлистов за фестиваль. Клик переключает сортировку: " +
-        "по приросту ↓ → ↑ → рост в разах → прыжок в топе → исходный порядок.";
+        "Оценка вишлистов, набранных за фестиваль. Медали — тиры How To Market A Game: " +
+        "💎 10 000+, 🥇 7 000–9 999, 🥈 1 000–6 999, 🥉 0–999. " +
+        "Клик переключает сортировку: по приросту ↓ → ↑ → рост в разах → прыжок в топе → исходный порядок.";
       th.innerHTML = `${COL}<span class="pr-sort"></span>`;
       th.addEventListener("click", () => {
         STATE.mode = (STATE.mode + 1) % MODES.length;
@@ -186,13 +197,18 @@
         td.textContent = "—";
         td.title = row.wl ? "Прыжка в топе нет — считать нечего" : "Нет данных о вишлистах";
       } else {
-        td.textContent = fmtShort(row.gain);
+        const tier = tierOf(row.gain);
+        td.textContent = `${tier.medal} ${fmtShort(row.gain)}`;
         td.classList.add(row.gain >= 0 ? "pr-pos" : "pr-neg");
         td.dataset.gain = String(row.gain);
+        td.dataset.tier = tier.key;
         td.dataset.jump = String(row.wl.jump);
         const ratio = row.estBefore ? row.wl.est / row.estBefore : null;
         if (ratio) td.dataset.ratio = String(ratio);
         td.title =
+          `${tier.medal} ${tier.key} (${tier.from === null ? `0–${tier.to.toLocaleString("ru-RU")}`
+            : tier.to === null ? `${tier.from.toLocaleString("ru-RU")}+`
+            : `${tier.from.toLocaleString("ru-RU")}–${tier.to.toLocaleString("ru-RU")}`} вишлистов за фестиваль)\n` +
           `#${row.wl.rank}▲${row.wl.jump} ≈${fmtFull(row.wl.est)} вишлистов сейчас\n` +
           `было на #${row.rankBefore}: ≈${fmtFull(row.estBefore)}\n` +
           `оценка прироста: ${fmtFull(row.gain)} (±20–30%)` +
