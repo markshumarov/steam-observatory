@@ -14,6 +14,8 @@
   --warn: #f2a33c;
   --danger: #ef6a6a;
   --radius: 16px;
+  /* фон подсказок Plot: по умолчанию он белый и не читается на тёмной теме */
+  --plot-background: #1b2233;
 }
 
 * { box-sizing: border-box; }
@@ -112,6 +114,13 @@ h3 { font-size: 15px; margin: 24px 0 10px; color: var(--text); font-weight: 600;
 
 .chart svg { background: transparent !important; overflow: visible; }
 .chart svg text { fill: currentColor; }
+
+/* Всплывающая подсказка Plot: пузырь заливается переменной --plot-background
+   (по умолчанию белой), а текст берёт currentColor. Задаём оба явно, иначе
+   на тёмной теме получается светлый текст на белом фоне. */
+.chart svg [aria-label="tip"] path { fill: var(--panel-2); stroke: var(--line); }
+.chart svg [aria-label="tip"] text,
+.chart svg [aria-label="tip"] tspan { fill: var(--text); }
 
 /* ---------- состояние загрузки ---------- */
 /* Скелетоны видны сразу после открытия страницы: данные грузятся двумя

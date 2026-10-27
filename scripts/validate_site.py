@@ -129,6 +129,34 @@ with sync_playwright() as pw:
     overflow = page.evaluate("document.documentElement.scrollWidth - window.innerWidth")
     check("нет горизонтальной прокрутки страницы", overflow <= 2, f"перелив={overflow}px")
 
+    # --- подсказки: тёмный пузырь и светлый текст -------------------------
+    page.hover("#chart-editions svg rect")
+    page.wait_for_timeout(500)
+    tip = page.evaluate(
+        """() => {
+            const g = Array.from(document.querySelectorAll('[aria-label="tip"]'))
+                .find(el => el.querySelector('path'));
+            if (!g) return null;
+            const path = g.querySelector('path');
+            const text = g.querySelector('text');
+            const toRgb = (v) => v;
+            return {
+                bubble: toRgb(getComputedStyle(path).fill),
+                stroke: toRgb(getComputedStyle(path).stroke),
+                text: text ? toRgb(getComputedStyle(text).fill) : null,
+                lines: text ? text.textContent.trim().slice(0, 40) : null,
+            };
+        }"""
+    )
+    def rgb_sum(value):
+        nums = [int(x) for x in re.findall(r"\d+", value or "")]
+        return sum(nums[:3]) if len(nums) >= 3 else None
+
+    check("подсказка: пузырь тёмный",
+          bool(tip) and (rgb_sum(tip["bubble"]) or 765) < 380, str(tip))
+    check("подсказка: текст светлый",
+          bool(tip) and (rgb_sum(tip["text"]) or 0) > 450, str(tip))
+
     # --- 3. данные -------------------------------------------------------
     rows_ed = page.eval_on_selector_all("#table-editions tbody tr", "els => els.length")
     check("таблица изданий заполнена", rows_ed >= 8, f"строк={rows_ed}")
