@@ -37,6 +37,14 @@
   // 3 — рост в разах ↓, 4 — прыжок в топе (▲) ↓
   const MODES = ["", "↓", "↑", "×↓", "▲↓"];
   const STATE = { mode: 0, modePct: 0, modeGal: 0 };
+  // строки последнего прогона: нужны, чтобы пересчитать кривую, когда придут
+  // данные Gamalytic (они асинхронные и приходят уже после первой отрисовки)
+  let lastRows = [];
+  let refreshTimer = null;
+  const scheduleRefresh = () => {
+    clearTimeout(refreshTimer);
+    refreshTimer = setTimeout(refreshGainCells, 900);
+  };
 
   const toInt = (text) => {
     const n = parseInt(String(text ?? "").replace(/[^\d]/g, ""), 10);
@@ -74,12 +82,12 @@
     )[0];
   }
 
-  /** Кривая «место в топе → вишлисты» по самой таблице (лог-лог, кусочно-линейно). */
-  function buildCurve(rows) {
+  /** Кривая «место в топе → вишлисты» по самой таблице (лог-лог, кусочно-линейно).
+      Значение берём из Gamalytic, если оно уже пришло, иначе — из оценки PlayRecon. */
+  function buildCurve(rows, pick = (r) => r.gal ?? (r.wl && r.wl.est)) {
     const pts = rows
-      .map((r) => r.wl)
-      .filter((w) => w && w.rank && w.est)
-      .map((w) => [w.rank, w.est])
+      .map((r) => (r.wl && r.wl.rank ? [r.wl.rank, pick(r)] : null))
+      .filter((p) => p && p[1])
       .sort((a, b) => a[0] - b[0]);
     if (pts.length < 2) return () => null;
     return (rank) => {
@@ -219,6 +227,7 @@
 
     const rows = readRows(table);
     if (!rows.length || !rows.some((r) => r.wl)) return false;
+    lastRows = rows;
     const at = buildCurve(rows);
 
     rows.forEach((row, index) => {
@@ -226,12 +235,14 @@
       if (row.wl && row.wl.jump && row.wl.rank) {
         const rankBefore = row.wl.rank + row.wl.jump;
         const before = at(rankBefore);
-        row.gain = before == null ? null : Math.round(row.wl.est - before);
+        // «сейчас» — из Gamalytic, если он ответил; иначе оценка PlayRecon
+        const now = row.gal ?? row.wl.est;
+        row.gain = before == null ? null : Math.round(now - before);
         row.rankBefore = rankBefore;
         row.estBefore = before == null ? null : Math.round(before);
         // доля прироста от текущего числа вишлистов — метрика «насколько фест разогнал игру»
-        row.pct = row.gain != null && row.wl.est
-          ? Math.round((1000 * row.gain) / row.wl.est) / 10
+        row.pct = row.gain != null && now
+          ? Math.round((1000 * row.gain) / now) / 10
           : null;
       } else {
         row.gain = null;
@@ -309,7 +320,8 @@
           `${tier.medal} ${tier.key} (${tier.from === null ? `0–${tier.to.toLocaleString("ru-RU")}`
             : tier.to === null ? `${tier.from.toLocaleString("ru-RU")}+`
             : `${tier.from.toLocaleString("ru-RU")}–${tier.to.toLocaleString("ru-RU")}`} вишлистов за фестиваль)\n` +
-          `#${row.wl.rank}▲${row.wl.jump} ≈${fmtFull(row.wl.est)} вишлистов сейчас\n` +
+          `#${row.wl.rank}▲${row.wl.jump} ≈${fmtFull(row.gal ?? row.wl.est)} вишлистов сейчас` +
+          (row.gal ? " (Gamalytic)" : " (PlayRecon)") + "\n" +
           `было на #${row.rankBefore}: ≈${fmtFull(row.estBefore)}\n` +
           `оценка прироста: ${fmtFull(row.gain)} (±20–30%)` +
           (ratio ? `\nрост: ×${ratio.toFixed(2)} за фестиваль` : "");
@@ -361,6 +373,9 @@
             td.classList.remove("pr-none");
             td.textContent = fmtCompact(res.wishlists);
             td.dataset.gal = String(res.wishlists);
+            row.gal = res.wishlists;
+            // пересчитываем наши две колонки на данных Gamalytic
+            scheduleRefresh();
             const diff = ours ? 100 * (res.wishlists / ours - 1) : null;
             td.title =
               `Gamalytic: ≈${fmtFull(res.wishlists)} вишлистов сейчас` +
@@ -375,6 +390,23 @@
     }
 
     return added > 0;
+  }
+
+  /** Пересчёт наших двух колонок на данных Gamalytic: убираем ячейки, decorate()
+      строит их заново — уже по кривой, где «сейчас» берётся из Gamalytic. */
+  function refreshGainCells() {
+    if (!lastRows.length) return;
+    try {
+      for (const row of lastRows) {
+        const gain = row.tr.querySelector("td.pr-gain");
+        const pct = row.tr.querySelector("td.pr-pct");
+        if (gain) gain.remove();
+        if (pct) pct.remove();
+      }
+      decorate();
+    } catch (err) {
+      console.warn("[playrecon-gain] пересчёт не удался", err);
+    }
   }
 
   // страница дорисовывает таблицу и перерисовывает её при обновлении — следим за DOM
