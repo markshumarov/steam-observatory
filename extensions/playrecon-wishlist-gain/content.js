@@ -14,6 +14,10 @@
     /#([\d\s,]+)(?:([\u25b2\u25bc])\s*([\d\s,]+))?\s*\u2248\s*([\d.,]+)\s*([KM]?)/;
   const MULT = { K: 1e3, M: 1e6, "": 1 };
   const COL = "Wishlist change";
+  // вторая колонка: тот же прирост, но в процентах от текущего числа вишлистов
+  // (медиана по фестивалю — 12%, p90 — 29%)
+  const PCT_COL = "Change %";
+  const PCT_MODES = ["", "↓", "↑"];
   // тиры по числу вишлистов, набранных за фестиваль (бенчмарк How To Market A Game):
   // Diamond 10 000+, Gold 7 000–9 999, Silver 1 000–6 999, Bronze 0–999
   const TIERS = [
@@ -27,7 +31,7 @@
   // режимы сортировки: 0 — исходный порядок, 1/2 — абсолютный прирост ↓/↑,
   // 3 — рост в разах ↓, 4 — прыжок в топе (▲) ↓
   const MODES = ["", "↓", "↑", "×↓", "▲↓"];
-  const STATE = { mode: 0 };
+  const STATE = { mode: 0, modePct: 0 };
 
   const toInt = (text) => {
     const n = parseInt(String(text ?? "").replace(/[^\d]/g, ""), 10);
@@ -133,6 +137,30 @@
     for (const row of list) body.appendChild(row.tr);
   }
 
+  function sortByPct(table, rows) {
+    const body = table.querySelector("tbody");
+    if (!body) return;
+    const list = rows.slice();
+    if (STATE.modePct === 0) {
+      list.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+    } else {
+      const value = (row) => {
+        const cell = row.tr.querySelector("td.pr-pct");
+        return cell && cell.dataset.pct ? Number(cell.dataset.pct) : null;
+      };
+      const asc = STATE.modePct === 2;
+      list.sort((a, b) => {
+        const av = value(a);
+        const bv = value(b);
+        if (av === null && bv === null) return (a.order ?? 0) - (b.order ?? 0);
+        if (av === null) return 1;
+        if (bv === null) return -1;
+        return asc ? av - bv : bv - av;
+      });
+    }
+    for (const row of list) body.appendChild(row.tr);
+  }
+
   function collectForSort(table) {
     return readRows(table).map((r) => {
       const cell = r.tr.querySelector("td.pr-gain");
@@ -165,6 +193,10 @@
         row.gain = before == null ? null : Math.round(row.wl.est - before);
         row.rankBefore = rankBefore;
         row.estBefore = before == null ? null : Math.round(before);
+        // доля прироста от текущего числа вишлистов — метрика «насколько фест разогнал игру»
+        row.pct = row.gain != null && row.wl.est
+          ? Math.round((1000 * row.gain) / row.wl.est) / 10
+          : null;
       } else {
         row.gain = null;
       }
@@ -183,6 +215,22 @@
         STATE.mode = (STATE.mode + 1) % MODES.length;
         th.querySelector(".pr-sort").textContent = MODES[STATE.mode];
         sortRows(table, collectForSort(table));
+      });
+      head.appendChild(th);
+    }
+
+    if (head && !head.querySelector("th[data-pr-pct]")) {
+      const th = document.createElement("th");
+      th.dataset.prPct = "1";
+      th.title =
+        "Прирост вишлистов за фестиваль в процентах от текущего числа: " +
+        "сколько из нынешнего списка набрано за неделю фестиваля. Медиана по фестивалю — 12%, " +
+        "p90 — 29%. Клик переключает сортировку: по убыванию → по возрастанию → исходный порядок.";
+      th.innerHTML = `${PCT_COL}<span class="pr-sort"></span>`;
+      th.addEventListener("click", () => {
+        STATE.modePct = (STATE.modePct + 1) % PCT_MODES.length;
+        th.querySelector(".pr-sort").textContent = PCT_MODES[STATE.modePct];
+        sortByPct(table, readRows(table));
       });
       head.appendChild(th);
     }
@@ -213,6 +261,28 @@
           `было на #${row.rankBefore}: ≈${fmtFull(row.estBefore)}\n` +
           `оценка прироста: ${fmtFull(row.gain)} (±20–30%)` +
           (ratio ? `\nрост: ×${ratio.toFixed(2)} за фестиваль` : "");
+      }
+      row.tr.appendChild(td);
+      added += 1;
+    }
+
+    // вторая колонка: тот же прирост в процентах от текущего числа вишлистов
+    for (const row of rows) {
+      if (row.tr.querySelector("td.pr-pct")) continue;
+      const td = document.createElement("td");
+      td.className = "pr-pct";
+      if (row.pct == null) {
+        td.classList.add("pr-none");
+        td.textContent = "—";
+        td.title = row.wl ? "Прыжка в топе нет — считать нечего" : "Нет данных о вишлистах";
+      } else {
+        td.textContent = `${row.pct.toFixed(1)}%`;
+        td.dataset.pct = String(row.pct);
+        td.classList.add(row.pct >= 0 ? "pr-pos" : "pr-neg");
+        td.title =
+          `За фестиваль набрано ${row.pct.toFixed(1)}% текущего числа вишлистов\n` +
+          `прирост ≈${fmtFull(row.gain)} из ≈${fmtFull(row.wl.est)} (±20–30%)\n` +
+          `медиана по фестивалю — 12%, p90 — 29%`;
       }
       row.tr.appendChild(td);
       added += 1;

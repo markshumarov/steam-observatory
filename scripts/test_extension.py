@@ -175,6 +175,39 @@ try:
             "tbody tr", "els => els.slice(0, 5).map(r => r.textContent.slice(0, 24))")
         check("режим 0: исходный порядок восстановлен", initial == after, str(after[:2]))
 
+        # вторая колонка: прирост в процентах от текущего числа вишлистов
+        pct_cells = page.eval_on_selector_all("tbody tr td.pr-pct", "els => els.length")
+        check("колонка «% прироста» добавлена в строки", pct_cells > 500, f"ячеек={pct_cells}")
+        pct_head = page.text_content("th[data-pr-pct]") or ""
+        check("заголовок колонки «% прироста»", pct_head.startswith("Change %"), pct_head)
+        pct_first = page.eval_on_selector("tbody tr td.pr-pct", "e => e.textContent")
+        check("значение в ячейке — процент", pct_first.endswith("%"), f"значение={pct_first}")
+
+        def click_pct():
+            page.eval_on_selector("th[data-pr-pct]", "el => el.click()")
+            page.wait_for_timeout(500)
+
+        def pcts(limit=12):
+            return page.eval_on_selector_all(
+                "tbody tr td.pr-pct",
+                f"els => els.slice(0, {limit}).map(e => e.dataset.pct ? Number(e.dataset.pct) : None)")
+
+        click_pct()
+        pct_desc = pcts()
+        check("сортировка по проценту по убыванию",
+              pct_desc[0] is not None and monotone(pct_desc, True), f"первые={pct_desc[:6]}")
+
+        click_pct()
+        pct_asc = pcts()
+        check("сортировка по проценту по возрастанию", monotone(pct_asc, False),
+              f"первые={pct_asc[:6]}")
+
+        click_pct()
+        pct_order = page.eval_on_selector_all(
+            "tbody tr", "els => els.slice(0, 5).map(r => r.textContent.slice(0, 24))")
+        check("после сортировки по проценту порядок восстановлен", initial == pct_order,
+              str(pct_order[:2]))
+
         last_has_data = page.eval_on_selector(
             "tbody tr:last-child td.pr-gain", "e => Boolean(e.dataset.gain)")
         check("строки без данных уходят в конец", last_has_data is False)
