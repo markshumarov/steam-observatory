@@ -99,12 +99,15 @@
       Строится только на числах PlayRecon: она задаёт ФОРМУ (во сколько раз на месте
       до фестиваля было меньше), а уровень берём из Gamalytic отдельно. Смешивать
       две модели в одной кривой нельзя — шкалы разные. */
-  function buildCurve(rows, pick = (r) => r.wl && r.wl.est) {
+  function buildCurve(rows, pick = (r) => r.wl && r.wl.est, rankOf = (r) => r.wl && r.wl.rank) {
     const pts = rows
-      .map((r) => (r.wl && r.wl.rank ? [r.wl.rank, pick(r)] : null))
+      .map((r) => {
+        const rank = rankOf(r);
+        return rank ? [rank, pick(r)] : null;
+      })
       .filter((p) => p && p[1])
       .sort((a, b) => a[0] - b[0]);
-    if (pts.length < 2) return () => null;
+    if (pts.length < 2) return Object.assign(() => null, { range: [0, 0] });
     return (rank) => {
       if (rank <= pts[0][0]) return pts[0][1];
       if (rank >= pts[pts.length - 1][0]) return pts[pts.length - 1][1];
@@ -120,6 +123,8 @@
       const t = x1 === x0 ? 0 : (rank - x0) / (x1 - x0);
       return Math.exp(Math.log(y0) + t * (Math.log(y1) - Math.log(y0)));
     };
+    at.range = [pts[0][0], pts[pts.length - 1][0]];
+    return at;
   }
 
   function readRows(table) {
@@ -244,23 +249,42 @@
     if (!rows.length || !rows.some((r) => r.wl)) return false;
     lastRows = rows;
     const at = buildCurve(rows);
+    // кривая внутри Gamalytic: их место в топе → их же число вишлистов.
+    // Нужна для игр, которые стоят выше калиброванного диапазона PlayRecon.
+    const atGal = buildCurve(
+      rows,
+      (r) => (r.gal && r.galRank ? r.gal : null),
+      (r) => r.galRank
+    );
 
     rows.forEach((row, index) => {
       if (row.tr.dataset.prOrder === undefined) row.tr.dataset.prOrder = String(index);
       if (row.wl && row.wl.jump && row.wl.rank) {
         const rankBefore = row.wl.rank + row.wl.jump;
-        // «сейчас» и «до» по шкале PlayRecon: если у игры своей оценки нет
-        // (топ выше калибровки модели), берём значение кривой на её месте
-        const nowPr = row.wl.est ?? at(row.wl.rank);
-        const beforePr = at(rankBefore);
-        if (nowPr && beforePr) {
-          const ratio = beforePr / nowPr; // во сколько раз «до» меньше «сейчас»
-          // уровень — Gamalytic, если он ответил, иначе шкала PlayRecon
-          const level = row.gal ?? nowPr;
-          row.nowValue = level;
-          row.estBefore = Math.round(level * ratio);
-          row.gain = Math.round(level * (1 - ratio));
-          row.pct = Math.round(1000 * (1 - ratio)) / 10;
+        const rmin = at.range ? at.range[0] : 0;
+        // у игр выше калиброванного диапазона PlayRecon его кривая плоская,
+        // поэтому считаем внутри Gamalytic — по их месту в топе
+        const abovePlayRecon = rmin > 0 && row.wl.rank < rmin;
+        const galRankBefore = row.galRank ? row.galRank + row.wl.jump : null;
+        let nowValue = null;
+        let beforeValue = null;
+        if (abovePlayRecon && galRankBefore && atGal(galRankBefore)) {
+          nowValue = row.gal ?? at(row.wl.rank);
+          beforeValue = atGal(galRankBefore);
+        } else {
+          const nowPr = row.wl.est ?? at(row.wl.rank);
+          const beforePr = at(rankBefore);
+          if (nowPr && beforePr) {
+            // форма — из PlayRecon, уровень — из Gamalytic, если он ответил
+            nowValue = row.gal ?? nowPr;
+            beforeValue = nowValue * (beforePr / nowPr);
+          }
+        }
+        if (nowValue && beforeValue) {
+          row.nowValue = nowValue;
+          row.estBefore = Math.round(beforeValue);
+          row.gain = Math.round(nowValue - beforeValue);
+          row.pct = Math.round((1000 * (nowValue - beforeValue)) / nowValue) / 10;
           row.rankBefore = rankBefore;
         } else {
           row.gain = null;
@@ -400,6 +424,7 @@
             td.textContent = fmtCompact(res.wishlists);
             td.dataset.gal = String(res.wishlists);
             row.gal = res.wishlists;
+            row.galRank = res.topWish || null;
             // пересчитываем наши две колонки на данных Gamalytic
             scheduleRefresh();
             const diff = ours ? 100 * (res.wishlists / ours - 1) : null;
