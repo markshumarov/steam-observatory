@@ -481,11 +481,10 @@ function renderGains() {
 // --- 1c. РЎ РєР°РєРёРјРё РІРёС€Р»РёСЃС‚Р°РјРё РІС…РѕРґРёР»Рё Рё РІС‹С…РѕРґРёР»Рё -------------------------
 // цвета долей: серый — вне топа, дальше бронза/серебро/золото/бриллиант
 const WL_COLORS = {
-  no_rank: "#55607a",
-  in_b0: "#d97706",
-  in_b1: "#cbd5e1",
-  in_b2: "#fbbf24",
-  in_b3: "#7dd3fc",
+  b0: "#55607a",
+  b1: "#d97706",
+  b2: "#cbd5e1",
+  b3: "#7dd3fc",
 };
 
 function renderWl() {
@@ -493,8 +492,8 @@ function renderWl() {
   const data = b.wl_now;
   if (!data || !data.buckets) return;
   const total = data.total || data.buckets.reduce((sum, r) => sum + r.games, 0);
-  // «вне топа» можно скрыть той же галочкой, что и в графике тиров
-  const shown = data.buckets.filter((r) => r.key !== "no_rank" || showNoRank);
+  // Gamalytic видит все игры состава, поэтому скрывать тут нечего
+  const shown = data.buckets;
   const shownTotal = shown.reduce((sum, r) => sum + r.games, 0) || 1;
   const rows = shown.map((r) => ({
     key: r.key,
@@ -563,16 +562,15 @@ function renderWl() {
       .join(" · ");
   }
   const pick = (key) => rows.find((r) => r.key === key) || { games: 0, share: 0 };
-  const pro = pick("in_50k_90k").games + pick("in_90k_plus").games;
+  const pro = pick("b3").games;
   el("#take-wl").innerHTML = [
-    t("wl_b1", { n: fmt(pick("no_rank").games), share: pick("no_rank").share.toFixed(1) }),
-    t("wl_b2", {
-      u8: fmt(pick("in_under8k").games),
-      mid: fmt(pick("in_8k_50k").games),
-      gold: fmt(pick("in_50k_90k").games),
-      pro: fmt(pick("in_90k_plus").games),
+    t("wl_b1", {
+      median: fmt(data.median),
+      p90: fmt(data.p90),
+      max: fmt(data.max),
     }),
-    t("wl_b3", { pro: fmt(pro), pro_share: ((100 * pro) / total).toFixed(1) }),
+    t("wl_b2", { n: fmt(pick("b0").games), share: pick("b0").share.toFixed(1) }),
+    t("wl_b3", { pro: fmt(pro), pro_share: ((100 * pro) / shownTotal).toFixed(1) }),
   ]
     .map((x) => `<li>${x}</li>`)
     .join("");

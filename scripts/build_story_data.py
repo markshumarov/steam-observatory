@@ -236,57 +236,42 @@ if tiers_block is not None:
 # 🥉 5 000, 🥈 8 000, 🥇 50 000, 💎 90 000 вишлистов к запуску).
 # Первый бакет — те, кого вообще нет в топе вишлистов: их уровень неизвестен,
 # но именно они и есть любительская часть фестиваля.
+# Текущие вишлисты по всему составу — из Gamalytic (публичный эндпоинт, все игры).
+# Пороги — бенчмарк запуска How To Market A Game (1 000 / 8 000 / 50 000).
+# Последние две группы объединены в «50 000+», чтобы размеры шли по убыванию.
 wl_now = None
-try:
-    spec = importlib.util.spec_from_file_location(
-        "prwg", ROOT / "scripts" / "playrecon_wishlist_gain.py"
-    )
-    mod = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(mod)
-    board_rows = [r for r in mod.load_rows() if r.get("wl_est")]
+gam_file = CACHE / "gamalytic_wishlists.jsonl"
+if gam_file.exists():
+    gvals: list[int] = []
+    for line in gam_file.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            rec = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if rec.get("wishlists"):
+            gvals.append(int(rec["wishlists"]))
+    gvals.sort()
 
-    ests = sorted(r["wl_est"] for r in board_rows)
-    n_est = len(ests)
+    def gcnt(lo: int, hi: int | None) -> int:
+        return sum(1 for v in gvals if v >= lo and (hi is None or v < hi))
 
-    def cut(q: float) -> int:
-        return ests[min(n_est - 1, int(q * n_est))]
-
-    # границы берём как квантили, чтобы корзины шли строго от большего к меньшему
-    bounds = [cut(0.40), cut(0.65), cut(0.85)]
-
-    def _bucket(est: int) -> int:
-        for i, edge in enumerate(bounds):
-            if est < edge:
-                return i
-        return len(bounds)
-
-    def num(value: int) -> str:
-        return f"{value:,}".replace(",", " ")
-
-    bucket_labels = [
-        f"до {num(bounds[0])}",
-        f"{num(bounds[0])}–{num(bounds[1])}",
-        f"{num(bounds[1])}–{num(bounds[2])}",
-        f"{num(bounds[2])}+",
-    ]
-    counts = [0] * (len(bounds) + 1)
-    for est in ests:
-        counts[_bucket(est)] += 1
-    lineup_n = fests_final.get("oct2026") or 0
     wl_now = {
-        "buckets": [{"key": "no_rank", "games": max(0, lineup_n - n_est)}]
-        + [
-            {"key": f"in_b{i}", "label": bucket_labels[i], "games": counts[i]}
-            for i in range(len(bounds) + 1)
+        "buckets": [
+            {"key": "b0", "label": "до 1 000", "games": gcnt(0, 1_000)},
+            {"key": "b1", "label": "1 000–7 999", "games": gcnt(1_000, 8_000)},
+            {"key": "b2", "label": "8 000–49 999", "games": gcnt(8_000, 50_000)},
+            {"key": "b3", "label": "50 000+", "games": gcnt(50_000, None)},
         ],
-        "total": lineup_n,
-        "in_chart": n_est,
-        "bounds": bounds,
+        "total": len(gvals),
+        "median": int(gvals[len(gvals) // 2]) if gvals else None,
+        "p90": gvals[int(0.9 * (len(gvals) - 1))] if gvals else None,
+        "max": gvals[-1] if gvals else None,
+        "source": "Gamalytic",
     }
     if tiers_block is not None:
         tiers_block["wl_now"] = wl_now
-except Exception as exc:  # noqa: BLE001
-    print("ВНИМАНИЕ: не удалось посчитать текущие вишлисты:", exc)
 
 # результат случайной выборки вне борда (scripts/aggregate_outside_sample.py)
 outside_report = CACHE / "outside_sample_report.json"
@@ -379,7 +364,7 @@ publish = {
         {"name": "PlayRecon", "what": "wishlist estimates, demo board, niche statistics, "
                                               "wishlist-to-reviews conversion", "url": "https://app.playrecon.com",
          "note": "MCP API; wishlist model is marked experimental; numbers as of 2026-10-26"},
-        {"name": "Gamalytic", "what": "copies sold, review score, release dates, tags",
+        {"name": "Gamalytic", "what": "current wishlists for every lineup demo, copies sold, review score, release dates, tags",
          "url": "https://gamalytic.com", "note": "estimate, not Valve's data"},
         {"name": "Internet Archive", "what": "historical Next Fest lineups",
          "url": "https://web.archive.org", "note": "Wayback snapshots of the festival page"},

@@ -118,15 +118,15 @@ with sync_playwright() as pw:
     check("в графике долей шесть бакетов плюс две серые полосы", gains_bars >= 8,
           f"полос={gains_bars}")
     wl_slices = page.eval_on_selector_all("#chart-wl svg path", "els => els.length")
-    check("в пай-чарте пять долей", wl_slices >= 5, f"долей={wl_slices}")
+    check("в пай-чарте четыре доли по порогам запуска", wl_slices >= 4, f"долей={wl_slices}")
     wl_texts = page.eval_on_selector_all("#chart-wl svg text", "els => els.map(e => e.textContent)")
     check("подписи долей содержат проценты",
           any("%" in x for x in wl_texts), str(wl_texts[:4]))
     wl_hint = page.text_content("#hint-wl") or ""
     check("в подписи пай-чарта есть пороги и число участников",
-          "8,000" in wl_hint and "7,304" in wl_hint, wl_hint[:70])
+          "8,000" in wl_hint and "7,303" in wl_hint, wl_hint[:70])
     legend_rows = page.eval_on_selector_all("#chart-wl .pie-row", "els => els.length")
-    check("у пай-чарта своя легенда из пяти строк", legend_rows >= 5, f"строк={legend_rows}")
+    check("у пай-чарта своя легенда на каждую группу", legend_rows >= 4, f"строк={legend_rows}")
 
     gains_labels = page.eval_on_selector_all(
         "#chart-gains svg text", "els => els.map(e => e.textContent)")
