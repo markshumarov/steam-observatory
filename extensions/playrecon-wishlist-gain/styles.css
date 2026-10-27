@@ -1,0 +1,26 @@
+/* Колонка «Δ вишлисты» в таблице фестиваля PlayRecon.
+   Цвета наследуются от темы страницы, поэтому используем её переменные с запасными значениями. */
+
+th[data-pr-gain] {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+th[data-pr-gain]:hover { color: var(--pr-you, #6b9bff); }
+
+th[data-pr-gain] .pr-sort {
+  margin-left: 6px;
+  opacity: 0.55;
+  font-size: 0.85em;
+}
+
+td.pr-gain {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+td.pr-gain.pr-pos { color: #4ade80; }
+td.pr-gain.pr-neg { color: #f87171; }
+td.pr-gain.pr-none { opacity: 0.45; }

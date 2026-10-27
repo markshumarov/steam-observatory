@@ -1,0 +1,188 @@
+/* PlayRecon wishlist gain — добавляет колонку с оценкой прироста вишлистов
+   за фестиваль и сортировку по ней.
+
+   Как считается: в колонке Wishlists страница показывает место в топе вишлистов
+   сейчас (#75), прыжок за фестиваль (▲45) и оценку вишлистов (≈733K). Место до
+   фестиваля = 75 + 45; сколько вишлистов было на том месте — берём по кривой
+   «место → вишлисты», построенной по этой же таблице. Разница — оценка прироста.
+
+   Оценка приблизительная: у PlayRecon модели вишлистов погрешность ±20–30%,
+   а места в топе относительные. */
+
+(() => {
+  const WL_RE = /#([\d\s,]+)(?:([\u25b2\u25bc])\s*([\d\s,]+))?\s*\u2248\s*([\d.]+)\s*([KM]?)/;
+  const MULT = { K: 1e3, M: 1e6, "": 1 };
+  const COL = "Δ вишлисты";
+  const STATE = { dir: 0 }; // 0 — как на странице, 1 — по убыванию, -1 — по возрастанию
+
+  const toInt = (text) => {
+    const n = parseInt(String(text ?? "").replace(/[^\d]/g, ""), 10);
+    return Number.isFinite(n) ? n : null;
+  };
+
+  const fmtShort = (value) => {
+    const abs = Math.abs(value);
+    const sign = value < 0 ? "−" : "+";
+    if (abs >= 1e6) return `${sign}${(abs / 1e6).toFixed(2)}M`;
+    if (abs >= 1e3) return `${sign}${Math.round(abs / 1e3)}K`;
+    return `${sign}${abs}`;
+  };
+
+  const fmtFull = (value) => value.toLocaleString("ru-RU");
+
+  function parseWishlists(cell) {
+    const m = WL_RE.exec(cell?.textContent || "");
+    if (!m) return null;
+    const arrow = m[2];
+    return {
+      rank: toInt(m[1]),
+      jump: arrow ? (toInt(m[3]) || 0) * (arrow === "\u25b2" ? 1 : -1) : 0,
+      est: Math.round(parseFloat(m[4]) * MULT[m[5] || ""]),
+    };
+  }
+
+  function mainTable() {
+    const tables = Array.from(document.querySelectorAll("table"));
+    return tables.sort(
+      (a, b) => b.querySelectorAll("tbody tr").length - a.querySelectorAll("tbody tr").length
+    )[0];
+  }
+
+  /** Кривая «место в топе → вишлисты» по самой таблице (лог-лог, кусочно-линейно). */
+  function buildCurve(rows) {
+    const pts = rows
+      .map((r) => r.wl)
+      .filter((w) => w && w.rank && w.est)
+      .map((w) => [w.rank, w.est])
+      .sort((a, b) => a[0] - b[0]);
+    if (pts.length < 2) return () => null;
+    return (rank) => {
+      if (rank <= pts[0][0]) return pts[0][1];
+      if (rank >= pts[pts.length - 1][0]) return pts[pts.length - 1][1];
+      let lo = 0;
+      let hi = pts.length - 1;
+      while (hi - lo > 1) {
+        const mid = (lo + hi) >> 1;
+        if (pts[mid][0] <= rank) lo = mid;
+        else hi = mid;
+      }
+      const [x0, y0] = pts[lo];
+      const [x1, y1] = pts[hi];
+      const t = x1 === x0 ? 0 : (rank - x0) / (x1 - x0);
+      return Math.exp(Math.log(y0) + t * (Math.log(y1) - Math.log(y0)));
+    };
+  }
+
+  function readRows(table) {
+    return Array.from(table.querySelectorAll("tbody tr")).map((tr) => {
+      const cells = Array.from(tr.querySelectorAll("td,th"));
+      return { tr, cells, wl: cells.length ? parseWishlists(cells[cells.length - 1]) : null };
+    });
+  }
+
+  function headerRow(table) {
+    return table.querySelector("thead tr") || table.querySelector("tbody tr");
+  }
+
+  function sortRows(table, rows) {
+    const body = table.querySelector("tbody");
+    if (!body) return;
+    const list = rows.slice();
+    if (STATE.dir === 1) list.sort((a, b) => (b.gain ?? -Infinity) - (a.gain ?? -Infinity));
+    else if (STATE.dir === -1) list.sort((a, b) => (a.gain ?? Infinity) - (b.gain ?? Infinity));
+    else list.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+    for (const row of list) body.appendChild(row.tr);
+  }
+
+  function decorate() {
+    const table = mainTable();
+    if (!table) return false;
+
+    const rows = readRows(table);
+    if (!rows.length || !rows.some((r) => r.wl)) return false;
+    const at = buildCurve(rows);
+
+    rows.forEach((row, index) => {
+      if (row.tr.dataset.prOrder === undefined) row.tr.dataset.prOrder = String(index);
+      if (row.wl && row.wl.jump && row.wl.rank) {
+        const rankBefore = row.wl.rank + row.wl.jump;
+        const before = at(rankBefore);
+        row.gain = before == null ? null : Math.round(row.wl.est - before);
+        row.rankBefore = rankBefore;
+        row.estBefore = before == null ? null : Math.round(before);
+      } else {
+        row.gain = null;
+      }
+    });
+
+    const head = headerRow(table);
+    if (head && !head.querySelector("th[data-pr-gain]")) {
+      const th = document.createElement("th");
+      th.dataset.prGain = "1";
+      th.title = "Оценка прироста вишлистов за фестиваль. Клик — сортировка.";
+      th.innerHTML = `${COL}<span class="pr-sort"></span>`;
+      th.addEventListener("click", () => {
+        STATE.dir = STATE.dir === 1 ? -1 : 1;
+        th.querySelector(".pr-sort").textContent = STATE.dir === 1 ? "↓" : "↑";
+        sortRows(
+          table,
+          readRows(table).map((r) => {
+            const cell = r.tr.querySelector("td.pr-gain");
+            return {
+              tr: r.tr,
+              gain: cell ? Number(cell.dataset.gain) : null,
+              order: Number(r.tr.dataset.prOrder || 0),
+            };
+          })
+        );
+      });
+      head.appendChild(th);
+    }
+
+    let added = 0;
+    for (const row of rows) {
+      if (row.tr.querySelector("td.pr-gain")) continue;
+      const td = document.createElement("td");
+      td.className = "pr-gain";
+      if (row.gain == null) {
+        td.classList.add("pr-none");
+        td.textContent = "—";
+        td.title = row.wl ? "Прыжка в топе нет — считать нечего" : "Нет данных о вишлистах";
+      } else {
+        td.textContent = fmtShort(row.gain);
+        td.classList.add(row.gain >= 0 ? "pr-pos" : "pr-neg");
+        td.dataset.gain = String(row.gain);
+        td.title =
+          `#${row.wl.rank}▲${row.wl.jump} ≈${fmtFull(row.wl.est)} вишлистов сейчас\n` +
+          `было на #${row.rankBefore}: ≈${fmtFull(row.estBefore)}\n` +
+          `оценка прироста: ${fmtFull(row.gain)} (±20–30%)`;
+      }
+      row.tr.appendChild(td);
+      added += 1;
+    }
+    return added > 0;
+  }
+
+  // страница дорисовывает таблицу и перерисовывает её при обновлении — следим за DOM
+  let timer = null;
+  const schedule = () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      try {
+        decorate();
+      } catch (err) {
+        console.warn("[playrecon-gain]", err);
+      }
+    }, 400);
+  };
+
+  const start = () => {
+    if (decorate()) console.info("[playrecon-gain] колонка добавлена");
+    new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true });
+    schedule();
+  };
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+  else start();
+})();
+
