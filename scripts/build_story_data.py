@@ -129,6 +129,40 @@ gains_file = CACHE / "wishlist_gains.json"
 tiers_block = None
 if gains_file.exists():
     gains_data = json.loads(gains_file.read_text(encoding="utf-8"))
+    rows_all = gains_data.get("all") or []
+
+    # доля прироста от текущего числа вишлистов: сколько «съел» фестиваль
+    pct_defs = [(None, 0.0, "<0%"), (0.0, 5.0, "0–5%"), (5.0, 10.0, "5–10%"),
+                (10.0, 25.0, "10–25%"), (25.0, 50.0, "25–50%"), (50.0, None, "50%+")]
+    shares = sorted(g["gain"] / g["wl_est"] * 100 for g in rows_all if g.get("wl_est"))
+    pct_buckets = [
+        {
+            "label": label,
+            "games": sum(1 for s in shares
+                         if (lo is None or s >= lo) and (hi is None or s < hi)),
+        }
+        for lo, hi, label in pct_defs
+    ]
+
+    # распределение по числу вишлистов до и после фестиваля.
+    # Нижняя граница не 0: кривая «место → вишлисты» у PlayRecon начинается
+    # примерно с 6 700 вишлистов, ниже модель просто не видит игры
+    wl_defs = [(6_000, 10_000, "6 000–9 999"), (10_000, 25_000, "10 000–24 999"),
+               (25_000, 50_000, "25 000–49 999"), (50_000, 100_000, "50 000–99 999"),
+               (100_000, None, "100 000+")]
+
+    def _hit(value, lo, hi):
+        return value is not None and value >= lo and (hi is None or value < hi)
+
+    wl_hist = [
+        {
+            "label": label,
+            "before": sum(1 for g in rows_all if _hit(g.get("wl_est_before"), lo, hi)),
+            "after": sum(1 for g in rows_all if _hit(g.get("wl_est"), lo, hi)),
+        }
+        for lo, hi, label in wl_defs
+    ]
+
     tiers_block = {
         "tiers": gains_data.get("tiers"),
         "negatives": gains_data.get("tier_negatives"),
@@ -142,6 +176,10 @@ if gains_file.exists():
         "corr_players": gains_data.get("corr_gain_vs_players"),
         "quiet_top25": gains_data.get("top25_quiet"),
         "source": "PlayRecon fest board; tier thresholds from How To Market A Game",
+        "pct_buckets": pct_buckets,
+        "wl_hist": wl_hist,
+        "share_p10": int(round(shares[len(shares) // 10])) if shares else None,
+        "share_p90": int(round(shares[9 * len(shares) // 10])) if shares else None,
     }
 
 # составы берём из site/data/fests.json: его пишет build_site_data.py из свежего
@@ -171,6 +209,20 @@ def fest_games(slug: str) -> int | None:
 
 
 supply_slugs = list(fests_final) or list(outcomes.get("editions", {}))
+
+if tiers_block is not None:
+    # сколько демо фестиваля вообще попало в измеримую выборку
+    lineup = fests_final.get("oct2026")
+    measured = tiers_block.get("total") or 0
+    tiers_block["coverage"] = {
+        "lineup": lineup,
+        "measured": measured,
+        "outside": (lineup - measured) if lineup else None,
+        "floor": min((g.get("wl_est") or 0) for g in rows_all) if rows_all else None,
+        "median_before": sorted(g["wl_est_before"] for g in rows_all
+                                if g.get("wl_est_before"))[len(rows_all) // 2]
+        if rows_all else None,
+    }
 
 publish = {
     "as_of": "2026-10-26",
