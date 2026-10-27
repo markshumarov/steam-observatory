@@ -219,12 +219,17 @@ if tiers_block is not None:
     tiers_block["coverage"] = {
         "lineup": lineup,
         "measured": measured,
+        "in_chart": (gains_data or {}).get("rows_with_wishlists") or measured,
         "outside": (lineup - measured) if lineup else None,
         "floor": min((g.get("wl_est") or 0) for g in rows_all) if rows_all else None,
         "median_before": sorted(g["wl_est_before"] for g in rows_all
                                 if g.get("wl_est_before"))[len(rows_all) // 2]
         if rows_all else None,
     }
+
+    in_chart = (gains_data or {}).get("rows_with_wishlists") or measured
+    tiers_block["coverage"]["no_jump"] = max(0, in_chart - measured)
+    tiers_block["coverage"]["no_rank"] = max(0, (lineup or 0) - in_chart)
 
 # результат случайной выборки вне борда (scripts/aggregate_outside_sample.py)
 outside_report = CACHE / "outside_sample_report.json"

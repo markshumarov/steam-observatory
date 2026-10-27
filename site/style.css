@@ -142,7 +142,18 @@ h3 { font-size: 15px; margin: 24px 0 10px; color: var(--text); font-weight: 600;
   color: #0b1220;
   font-weight: 600;
 }
+.toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.toggles label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.toggles input { accent-color: var(--accent); }
 .chart svg [aria-label="tip"] path { fill: var(--panel-2); stroke: var(--line); }
+
 .chart svg [aria-label="tip"] text,
 .chart svg [aria-label="tip"] tspan { fill: var(--text); }
 

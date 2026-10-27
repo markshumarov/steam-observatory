@@ -100,8 +100,8 @@ with sync_playwright() as pw:
     check("первый блок — тиры вишлистов", kickers and kickers[0].endswith("%"), f"первое={kickers[:1]}")
 
     tier_bars = page.eval_on_selector_all("#chart-tiers svg rect", "els => els.length")
-    check("в графике тиров четыре тира плюс «не смогли померить»", tier_bars == 5,
-          f"полос={tier_bars}")
+    check("в графике тиров шесть полос (4 тира + две категории «не посчитать»)",
+          tier_bars == 6, f"полос={tier_bars}")
 
     # число полос в графике составов = число изданий в fests.json: пропажа
     # издания (как февраль 2025) раньше проходила незамеченной
@@ -121,11 +121,26 @@ with sync_playwright() as pw:
     check("в графике до/после две полосы на бакет", wl_bars >= 10, f"полос={wl_bars}")
 
     tiers_hint = page.text_content("#hint-tiers") or ""
-    check("в подписи тиров прямо сказано, сколько не смогли померить",
+    check("в подписи тиров сказано, сколько демо не удалось посчитать",
           "could not measure" in tiers_hint and "461" in tiers_hint, tiers_hint[:70])
-    kicker_tiers = (page.text_content("#k-tiers") or "").strip()
-    check("доля бриллиантов считается от всего состава", kicker_tiers.startswith("1.2"),
-          f"кикер={kicker_tiers}")
+    kicker_all = (page.text_content("#k-tiers") or "").strip()
+    check("доля считается от показанного: 1.2% при шести полосах", kicker_all.startswith("1.2"),
+          f"кикер={kicker_all}")
+
+    page.uncheck("#show-no-rank")
+    page.uncheck("#show-no-jump")
+    page.wait_for_timeout(400)
+    bars_meas = page.eval_on_selector_all("#chart-tiers svg rect", "els => els.length")
+    kicker_meas = (page.text_content("#k-tiers") or "").strip()
+    check("скрыв «не посчитать», остаётся четыре тира", bars_meas == 4, f"полос={bars_meas}")
+    check("и доля пересчитывается от показанного", kicker_meas.startswith("18.4"),
+          f"кикер={kicker_meas}")
+
+    page.check("#show-no-rank")
+    page.check("#show-no-jump")
+    page.wait_for_timeout(400)
+    bars_back2 = page.eval_on_selector_all("#chart-tiers svg rect", "els => els.length")
+    check("категории возвращаются", bars_back2 == 6, f"полос={bars_back2}")
 
     tiers_text = page.text_content("#take-tiers") or ""
     check("тиры описаны в выводах", "Diamond" in tiers_text and "Silver" in tiers_text,

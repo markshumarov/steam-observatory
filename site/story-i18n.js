@@ -14,11 +14,15 @@ export const S = {
 
     tiers_title: "1.2% of the lineup earned 10,000+ wishlists",
     tiers_hint:
-      "Wishlists each demo earned during the festival, in the tiers used by How To Market A Game (💎 10,000+, 🥇 7,000–9,999, 🥈 1,000–6,999, 🥉 0–999). Of the {lineup} demos in the lineup we could measure wishlists for {total} ({share}%); for the other {outside} we could not measure anything — they never entered the PlayRecon board. Every share below is of the full lineup.",
+      "Wishlists each demo earned during the festival, in the tiers used by How To Market A Game (💎 10,000+, 🥇 7,000–9,999, 🥈 1,000–6,999, 🥉 0–999). Of the {lineup} demos in the lineup we could measure wishlists for {total} ({share}%); for the other {outside} we could not measure anything — they never entered the PlayRecon board. Every share below is of what is shown on the chart.",
     nav_gains: "Gains",
     sample_measured: "Only where we could measure ({n})",
     sample_all: "All demos ({n})",
     outside_bar: "couldn't measure",
+    norank_bar: "not in the wishlist top",
+    nojump_bar: "in the top, no change",
+    toggle_no_rank: "hide demos outside the wishlist top",
+    toggle_no_jump: "hide demos we couldn't measure",
     gains_title: "Half of the demos we could measure grew by 10% or more",
     gains_hint:
       "Share of a demo's current wishlists that was earned during the festival. We could measure only {measured} of {lineup} lineup demos — the model sees games from about 6,900 wishlists upward, so the grey bar is the {outside} demos where measurement was impossible.",
@@ -126,11 +130,15 @@ export const S = {
 
     tiers_title: "10 000+ вишлистов набрали 1.2% состава",
     tiers_hint:
-      "Сколько вишлистов каждая игра набрала за фестиваль — в тирах How To Market A Game (💎 10 000+, 🥇 7 000–9 999, 🥈 1 000–6 999, 🥉 0–999). Из {lineup} демо состава померить вишлисты получилось у {total} ({share}%), а у остальных {outside} — не получилось: они вообще не попали в таблицу PlayRecon. Все доли ниже считаются от всего состава.",
+      "Сколько вишлистов каждая игра набрала за фестиваль — в тирах How To Market A Game (💎 10 000+, 🥇 7 000–9 999, 🥈 1 000–6 999, 🥉 0–999). Из {lineup} демо состава померить вишлисты получилось у {total} ({share}%), а у остальных {outside} — не получилось: они вообще не попали в таблицу PlayRecon. Все доли ниже считаются от того, что показано на графике.",
     nav_gains: "Прирост",
     sample_measured: "Только там, где получилось померить ({n})",
     sample_all: "Все демо ({n})",
     outside_bar: "не смогли померить",
+    norank_bar: "нет в топе вишлистов",
+    nojump_bar: "в топе, но без изменения",
+    toggle_no_rank: "скрыть тех, кого нет в топе вишлистов",
+    toggle_no_jump: "скрыть тех, кого не удалось посчитать",
     gains_title: "Половина измеренных демо выросла на 10% и больше",
     gains_hint:
       "Какая доля текущих вишлистов игры набрана за фестиваль. Померить получилось только {measured} демо из {lineup}: модель видит игры примерно от 6 900 вишлистов, поэтому серая полоса — это {outside} демо, где измерение невозможно.",

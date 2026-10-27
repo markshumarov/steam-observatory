@@ -100,9 +100,12 @@
   "coverage": {
    "lineup": 7304,
    "measured": 461,
+   "in_chart": 528,
    "outside": 6843,
    "floor": 6890,
-   "median_before": 18307
+   "median_before": 18307,
+   "no_jump": 67,
+   "no_rank": 6776
   }
  },
  "outside": {

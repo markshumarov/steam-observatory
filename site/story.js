@@ -13,8 +13,10 @@ const t = (key, vars) => {
 };
 const fmt = (n) => new Intl.NumberFormat(lang === "ru" ? "ru-RU" : "en-US").format(n ?? 0);
 const el = (sel) => document.querySelector(sel);
-// «measured» — только демо с измеримым приростом; «all» — весь состав фестиваля
-let sampleMode = "measured";
+// «не посчитать» бывает двух видов: демо вообще нет в топе вишлистов, либо оно
+// там есть, но изменения позиции нет — эти категории можно скрыть по отдельности
+let showNoRank = true;
+let showNoJump = true;
 
 const T = {
   text: "#e8edf7",
@@ -83,13 +85,14 @@ function renderTiers() {
   if (!tiers.length) return;
   const total = block.total || tiers.reduce((sum, x) => sum + x.games, 0);
   const pick = (key) => tiers.find((x) => x.key === key) || { games: 0 };
-  // Доли считаем от ВСЕГО состава фестиваля: 461 — это не выборка, а те демо,
-  // где вишлисты вообще получилось померить
-  const outside = block.coverage?.outside || 0;
-  const lineup = block.coverage?.lineup || total + outside;
-  const share = (key) => ((100 * pick(key).games) / lineup).toFixed(1);
-
-  el("#k-tiers").textContent = t("tiers_kicker", { share: share("diamond") });
+  // Доли считаем от того, что видно на графике: скрывая категории «не посчитать»,
+  // пользователь меняет знаменатель — проценты всегда складываются в 100%
+  const cov = block.coverage || {};
+  const lineup = cov.lineup || total;
+  const inChart = cov.in_chart || total;
+  const noRank = cov.no_rank ?? Math.max(0, lineup - inChart);
+  const noJump = cov.no_jump ?? Math.max(0, inChart - total);
+  let share = () => "0.0";
 
   const COLORS = { diamond: "#7dd3fc", gold: "#fbbf24", silver: "#cbd5e1", bronze: "#d97706" };
   const rangeLabel = (x) =>
@@ -106,19 +109,20 @@ function renderTiers() {
     color: COLORS[x.key] || T.accent,
   }));
 
-  if (outside) {
-    rows.push({
-      label: t("outside_bar"),
-      games: outside,
-      share: (100 * outside) / lineup,
-      color: "#55607a",
-    });
+  if (showNoJump && noJump) {
+    rows.push({ label: t("nojump_bar"), games: noJump, share: 0, color: "#3d4657" });
   }
+  if (showNoRank && noRank) {
+    rows.push({ label: t("norank_bar"), games: noRank, share: 0, color: "#55607a" });
+  }
+  const shown = rows.reduce((sum, r) => sum + r.games, 0);
+  share = (key) => ((100 * pick(key).games) / shown).toFixed(1);
+  el("#k-tiers").textContent = t("tiers_kicker", { share: share("diamond") });
   el("#hint-tiers").innerHTML = t("tiers_hint", {
     total: fmt(total),
-    outside: fmt(outside),
+    outside: fmt(noRank + noJump),
     lineup: fmt(lineup),
-    share: ((100 * total) / lineup).toFixed(1),
+    share: ((100 * total) / shown).toFixed(1),
   });
 
   el("#chart-tiers").replaceChildren(
@@ -511,24 +515,18 @@ function renderWl() {
 
 // --- переключатель выборки ---------------------------------------------
 function setupSwitch() {
-  const box = el("#sample-switch");
-  if (!box) return;
-  const cov = story.tiers?.coverage || {};
-  box.querySelector('[data-sample="measured"]').textContent = t("sample_measured", {
-    n: fmt(cov.measured ?? story.tiers?.total ?? 0),
-  });
-  box.querySelector('[data-sample="all"]').textContent = t("sample_all", {
-    n: fmt(cov.lineup ?? 0),
-  });
-  for (const b of box.querySelectorAll("button")) {
-    b.classList.toggle("on", b.dataset.sample === sampleMode);
-    b.onclick = () => {
-      sampleMode = b.dataset.sample;
-      renderTiers();
-      renderGains();
-      setupSwitch();
-    };
-  }
+  const rank = el("#show-no-rank");
+  const jump = el("#show-no-jump");
+  if (!rank || !jump) return;
+  rank.checked = showNoRank;
+  jump.checked = showNoJump;
+  const rerender = () => {
+    showNoRank = rank.checked;
+    showNoJump = jump.checked;
+    renderTiers();
+  };
+  rank.onchange = rerender;
+  jump.onchange = rerender;
 }
 
 function renderTakeaways() {
