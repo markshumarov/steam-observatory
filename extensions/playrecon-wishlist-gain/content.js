@@ -268,14 +268,16 @@
         const galRankBefore = row.galRank ? row.galRank + row.wl.jump : null;
         let nowValue = null;
         let beforeValue = null;
-        if (abovePlayRecon && galRankBefore && atGal(galRankBefore)) {
-          nowValue = row.gal ?? at(row.wl.rank);
+        // основной путь: считаем по Gamalytic — их число вишлистов и их место
+        // в топе; изменение места берём из таблицы (прыжок ▲/▼)
+        if (row.gal && galRankBefore && atGal(galRankBefore)) {
+          nowValue = row.gal;
           beforeValue = atGal(galRankBefore);
         } else {
           const nowPr = row.wl.est ?? at(row.wl.rank);
           const beforePr = at(rankBefore);
           if (nowPr && beforePr) {
-            // форма — из PlayRecon, уровень — из Gamalytic, если он ответил
+            // фолбэк без данных Gamalytic: считаем по шкале PlayRecon
             nowValue = row.gal ?? nowPr;
             beforeValue = nowValue * (beforePr / nowPr);
           }
@@ -373,7 +375,7 @@
             ? `≈${fmtFull(now)} вишлистов сейчас (${row.gal ? "Gamalytic" : "PlayRecon"})`
             : "вишлисты сейчас: нет данных") + "\n" +
           (row.estBefore ? `было на #${row.rankBefore}: ≈${fmtFull(row.estBefore)}\n` : "") +
-          `оценка прироста: ${fmtFull(row.gain)} (±20–30%)` +
+          `оценка прироста: ${fmtFull(row.gain)} (±20–30%, ${row.gal ? "расчёт по Gamalytic" : "расчёт по PlayRecon"})` +
           (ratio ? `\nрост: ×${ratio.toFixed(2)} за фестиваль` : "");
       }
       row.tr.appendChild(td);
