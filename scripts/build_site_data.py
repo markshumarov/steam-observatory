@@ -260,14 +260,17 @@ def main() -> int:
     # упираться в топ — отдаём весь список одним CSV
     import csv as _csv
 
-    with (SITE_DATA / "ccu.csv").open("w", encoding="utf-8", newline="") as fh:
+    # без собранных замеров не перезаписываем опубликованные файлы: они нужны графикам
+    csv_path = (SITE_DATA / "ccu.csv") if ccu_out else (config.OUT_DIR / "_ccu_skip.csv")
+    with csv_path.open("w", encoding="utf-8", newline="") as fh:
         writer = _csv.writer(fh)
         writer.writerow(["rank", "name", "demo_appid", "base_appid", "peak_players"])
         for i, row in enumerate(ccu_out, 1):
             writer.writerow(
                 [i, row["name"], row["demo_appid"], row["base_appid"] or "", row["peak"]]
             )
-    (SITE_DATA / "ccu.json").write_text(
+    json_path = (SITE_DATA / "ccu.json") if ccu_out else (config.OUT_DIR / "_ccu_skip.json")
+    json_path.write_text(
         json.dumps(
             {
                 "slug": "oct2026",
